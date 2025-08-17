@@ -30,6 +30,10 @@
 }
 
 
+.mediaInfoItem {
+    color: #ffffff !important;
+}
+
 /* Add fixes, start of file */
 /*
 @media all and (min-width: 100em){

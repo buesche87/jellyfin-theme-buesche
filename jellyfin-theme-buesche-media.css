@@ -47,7 +47,6 @@
   padding: .35em 1.9em .35em .35em !important;
 }
 
-
 /* background for media details */
 .detailPagePrimaryContent {
   background: rgba(0, 0, 0, 0.4) !important;
@@ -60,15 +59,23 @@
   border-radius: var(--rounding);
 }
 
-
-
-
 /* Colors for title_2 */
 
 .itemBackdrop::after {
   background: rgba(0,0,0,.5) !important;
 }
 
+/* hide "ends at" info */
+.endsAt {
+  display: none !important;
+}
+
+/* Media Info */
+
+.itemMiscInfo {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
 
 
 /* Add fixes, start of file */
@@ -88,18 +95,6 @@
   }
 }
 */
-
-/* hide "ends at" info */
-.endsAt {
-  display: none !important;
-}
-
-/* Media Info */
-
-.itemMiscInfo {
-  margin-top: 0.6em;
-  margin-bottom: 0.6em;
-}
 
 /*
 .infoWrapper {

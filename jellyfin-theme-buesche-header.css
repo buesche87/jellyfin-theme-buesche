@@ -13,8 +13,8 @@
 .headerTabs.sectionTabs {
   text-size-adjust: 110%;
   font-size: 110%;
-  margin-top: var(--headersize);
-  width: 60%;
+  margin-top: -3.8em; /* -headersize */
+  /* width: 60%; */
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;

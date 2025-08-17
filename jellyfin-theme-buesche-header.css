@@ -27,14 +27,16 @@
   height: var(--headersize);
 }
 
-/* center buttons on taskbar  */
+/* style buttons & hover */
 .emby-tab-button.show-focus:focus {
   color: rgb(var(--accent));
 }
+
 .emby-tab-button {
     padding: 1.1em 1.5em !important;
 }
 
+/* center buttons on taskbar  */
 .headerTop {
     padding: 1em 1em !important;
 }
@@ -45,6 +47,13 @@
 
 .sectionTabs {
     font-size: 100% !important;
+}
+
+.headerButton {
+  border-radius: var(--rounding);
+}
+.headerButton:hover {
+  border-radius: var(--rounding);
 }
 
 #indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {

@@ -4,6 +4,8 @@
 
 /* Card indicators */
 
+:root {--rounding-mediainfo: 2px;}
+
 .cardIndicators,
 .listItemIndicators,
 .mediaSourceIndicator {
@@ -36,4 +38,13 @@
     background: #ae3030eb;
     padding: .3em .6em;
     color: #fff;
+}
+
+/* Media Info */
+.itemMiscInfo {
+    -webkit-align-items: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    border-radius: var(--rounding-mediainfo) !important;
 }

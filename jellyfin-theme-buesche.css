@@ -98,8 +98,21 @@
 
 
 /*
-    Ultrachromic/base.css
+    Modified: Ultrachromic/base.css
 */
+
+
+/* Top "task bar" enlarge text */
+.headerTabs.sectionTabs {
+  text-size-adjust: 110%;
+  font-size: 110%;
+  margin-top: -4.1em !important;
+}
+.pageTitle {
+  margin-top: auto; 
+  margin-bottom: auto;
+}
+
 
 
 .css-4yt2of {
@@ -141,15 +154,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     position: absolute !important;
 }
 
-/* Top "task bar" enlarge text */
-.headerTabs.sectionTabs {
-  text-size-adjust: 110%;
-  font-size: 110%;
-}
-.pageTitle {
-  margin-top: auto; 
-  margin-bottom: auto;
-}
+
 
 /* Theme process progress ring */
 .progressring-spiner {

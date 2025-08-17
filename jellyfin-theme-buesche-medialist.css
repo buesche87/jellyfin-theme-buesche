@@ -27,7 +27,7 @@
 
 /* hide media logo */
 .detailLogo {
-  display: none !important;
+  display: none;
 }
 
 /* slightly move media details to the left */ 

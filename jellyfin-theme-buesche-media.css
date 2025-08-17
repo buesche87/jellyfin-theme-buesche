@@ -3,7 +3,7 @@
 /* media details and button background */
 .detailRibbon {
   background: rgba(0, 0, 0, 0.2) !important;
-  height: 5em;
+  height: 5em !important;
 }
 
 /* enlarge button row on item page, even more on mobile */

@@ -125,9 +125,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 /* Mobile tweaks */
-.layout-mobile .detailPagePrimaryContainer {
-    background: transparent;
-}
 .layout-mobile .adminDrawerLogo {
     border-bottom: none;
 }

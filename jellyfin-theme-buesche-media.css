@@ -1,9 +1,15 @@
 
 
 /* media details and button background */
-.detailPagePrimaryContainer {
+.detailRibbon {
   background: rgba(0, 0, 0, 0.2) !important;
 }
+
+/* 
+.layout-mobile .detailPagePrimaryContainer {
+    background: transparent;
+}
+*/
 
 /* Colors for title_2 */
 .itemBackdrop::after {

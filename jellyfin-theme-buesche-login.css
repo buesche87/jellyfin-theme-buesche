@@ -2,6 +2,12 @@
     Modified: Ultrachromic/login/login_frame.css
 */
 
+/* Login background */
+#loginPage {
+  background: url(https://i.imgur.com/9vL4iNf.png) !important; 
+  background-size: cover !important;
+}
+
 /* please sign in container */
 #loginPage .visualLoginForm {
   padding-top: 1em;

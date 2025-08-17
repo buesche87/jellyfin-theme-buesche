@@ -3,9 +3,12 @@
 
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-login.css');
+@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-header.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-fields.css');
-@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-indicators.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-roundings.css');
+@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-indicators.css');
+@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-media.css');
+@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-cast.css');
 :root {--accent: 204.00787045,151.00999580324999,98.99450000000002;}
 :root {--rounding: 12px;}
 :root {--rounding-indicators: 6px;}

@@ -496,217 +496,16 @@ progress::-webkit-progress-value {
 
 
 /*
-    Ultrachromic/smallercast.css
-*/
-
-/*Shrink and square (or round) cast thumnails*/
-@media all and (min-width: 131.25em){
-  #castContent .card.overflowPortraitCard {
-    width: 6.3vw !important; 
-    font-size: 90% !important;
-  }
-}
-@media all and (min-width: 120em) and (max-width: 131.25em){
-  #castContent .card.overflowPortraitCard {
-    width: 6.4vw !important; 
-    font-size: 90% !important;
-  }
-}
-@media all and (min-width: 100em) and (max-width: 120em){
-  #castContent .card.overflowPortraitCard {
-    width: 7.6vw !important; 
-    font-size: 90% !important;
-  }
-}
-@media all and (min-width: 87.5em) and (max-width: 100em){
-  #castContent .card.overflowPortraitCard {
-    width: 9.3vw !important; 
-    font-size: 90% !important;
-  }
-}
-@media all and (min-width: 75em) and (max-width: 87.5em){
-  #castContent .card.overflowPortraitCard {
-    width: 10.5vw !important; 
-    font-size: 90% !important;
-  }
-}
-@media all and (min-width: 50em) and (max-width: 75em){
-  #castContent .card.overflowPortraitCard {
-    width: 15vw !important;
-    font-size: 90% !important;
-  }
-}
-@media all and (min-width: 43.75em) and (max-width: 50em){
-  #castContent .card.overflowPortraitCard {
-    width: 20.1vw !important; 
-    font-size: 90% !important;
-  }
-}
-@media all and (min-width: 25em) and (max-width: 43.75em){
-  #castContent .card.overflowPortraitCard {
-    width: 31.2vw !important; 
-    font-size: 90% !important;
-  }
-}
-@media all and (max-width: 25em){
-  #castContent .card.overflowPortraitCard {
-    width: 40vw !important; 
-    font-size: 90% !important;
-  }
-}
-
-.cardPadder {
-  background-color: #0000 !important; box-shadow: none !important;
-}
-
-/*Correct image aspect ratio behaviour, set border-radius to zero for square tiles*/
-
-@media all and (min-width: 131.25em){
-  #castContent .cardScalable {
-    width: calc(6.3vw - 0.6em) !important; 
-    height: calc(6.3vw - 0.6em) !important;
-  }
-}
-@media all and (min-width: 120em) and (max-width: 131.25em){
-  #castContent .cardScalable {
-    width:  calc(6.4vw - 0.6em) !important; 
-    height: calc(6.4vw - 0.6em) !important;
-  }
-}
-@media all and (min-width: 100em) and (max-width: 120em){
-  #castContent .cardScalable {
-    width:  calc(7.6vw - 0.6em) !important; 
-    height: calc(7.6vw - 0.6em) !important;
-  }
-}
-@media all and (min-width: 87.5em) and (max-width: 100em){
-  #castContent .cardScalable {
-    width:  calc(9.3vw - 0.6em) !important; 
-    height: calc(9.3vw - 0.6em) !important;
-  }
-}
-@media all and (min-width: 75em) and (max-width: 87.5em){
-  #castContent .cardScalable {
-    width:  calc(10.5vw - 0.6em) !important; 
-    height: calc(10.5vw - 0.6em) !important;
-  }
-}
-@media all and (min-width: 50em) and (max-width: 75em){
-  #castContent .cardScalable {
-    width:  calc(15vw - 0.6em) !important; 
-    height: calc(15vw - 0.6em) !important;
-  }
-}
-@media all and (min-width: 43.75em) and (max-width: 50em){
-  #castContent .cardScalable {
-    width:  calc(20.1vw - 0.6em) !important; 
-    height: calc(20.1vw - 0.6em) !important;
-  }
-}
-@media all and (min-width: 25em) and (max-width: 43.75em){
-  #castContent .cardScalable {
-    width:  calc(31.2vw - 0.6em) !important; 
-    height: calc(31.2vw - 0.6em) !important;
-  }
-}
-@media all and (max-width: 25em){
-  #castContent .cardScalable {
-    width:  calc(40vw - 0.6em) !important;
-    height: calc(40vw - 0.6em) !important;
-  }
-}
-
-/* 
-    Ultrachromic/episodelist/episodes_compactlist.css
-/*
-
-/*Size episode preview images in a more compact way*/
-.listItemImage.listItemImage-large.itemAction.lazy {
-  transition: filter 0.2s
-}
-.listItemImageButton-icon {
-  padding: 0;
-}
-.secondary.listItem-overview.listItemBodyText {
-  height: unset !important;
-  margin: 0;
-}
-.listItemImageButton {
-  margin: auto; 
-  font-size: 1.6em !important;
-}
-@media all and (min-width: 100em){
-  .listItemImage.listItemImage-large.itemAction.lazy {
-    height: 160px !important;
-  }
-  .listItem-content {
-    height: unset !important;
-  }
-  .secondary.listItem-overview.listItemBodyText {
-    height: unset !important;
-    margin: 0;
-  }
-}
-@media all and (max-width: 100em){
-  .listItemImage.listItemImage-large.itemAction.lazy {height: 160px !important;}
-  .listItem-content {height: unset !important;}
-  .secondary.listItem-overview.listItemBodyText {height: unset !important; margin: 0;}
-}
-
-.layout-mobile .listItemImageButton {
-    background: rgba(0, 0, 0, 0);
-}
-
-
-/*
-    Ultrachromic/header/header_transparent.css
-*/
-
-.skinHeader-withBackground {
-    background-color: transparent;
-}
-
-/*Pages the have single unit height taskbar*/
-@media all and (min-width: 100em){
-  #indexPage,
-  #moviesPage,
-  #tvRecommendedPage,
-  #musicRecommendedPage {
-    margin-top: 68px;
-    padding-top: 0px !important;
-    overflow-y: scroll;
-  }
-}
-
-/*Pages the have two unit height taskbar*/
-@media all and (max-width: 100em){
-  #indexPage,
-  #moviesPage,
-  #tvRecommendedPage,
-  #musicRecommendedPage {
-    margin-top: 130px;
-    padding-top: 0.5em !important;
-    overflow-y: scroll;
-  }
-}
-
-.force-scroll {
-    overflow-y: auto;
-    overflow-x: auto;
-}
-
-
-/*
     Ultrachromic/type/dark_withaccent.css
 */
 
-/*This file contains color and style changes for the dark theme type*/
+/* This file contains color and style changes for the dark theme type */
 
 .backgroundContainer.withBackdrop {
     background-color: rgba(0, 0, 0, 0);
 }
 
-/*Some themeing for the dashboard*/
+/* Some themeing for the dashboard */
 
 #user_usage_report_table,
 .detailTable {
@@ -755,7 +554,7 @@ fieldset {
   border-radius: 0.4em;
 }
 
-/*Colors for title_2*/
+/* Colors for title_2 */
 .layout-desktop .detailRibbon {
   background: rgba(0,0,0,.2) !important;
 }
@@ -763,8 +562,7 @@ fieldset {
   background: rgba(0,0,0,.5) !important;
 }
 
-
-/*Homepage modifications, transparent footerplayer and fixed sectiontitles*/
+/* Homepage modifications, transparent footerplayer and fixed sectiontitles */
 .appfooter {
 	background: rgba(0,0,0,0.9);
 }
@@ -772,52 +570,17 @@ fieldset {
 	background: rgba(0,0,0,0.4);
 }
 
-/*Theme the library scan progress bar*/
-progress {
-  background: rgba(0, 0, 0, 0.5) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-}
-progress::-webkit-progress-bar {
-  background: rgba(0, 0, 0, 0.5) !important;
-  border: 0px solid rgba(255, 255, 255, 0.22);
-}
-progress::-moz-progress-bar {
-  background-color: rgba(255,255,255,0.75);
-}
-progress::-webkit-progress-value {
-  background-color: rgba(255,255,255,0.75);
-}
-#divRunningTasks span {
-  color: rgba(255,255,255,0.75) !important;
-}
-.taskProgressOuter {
-  background: rgba(0, 0, 0, 0.5) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-}
-.taskProgressInner {
-  background: rgba(255,255,255,0.75) !important;
-}
-#scheduledTasksPage span {
-  color: rgba(255,255,255,0.75) !important;
-}
-
-/*Login background*/
-#loginPage {
-  background: url(https://i.imgur.com/9vL4iNf.png) !important; 
-  background-size: cover !important;
-}
-
-/*Modify subtitle settings page*/
+/* Modify subtitle settings page */
 .subtitleappearance-preview {
   background: linear-gradient(140deg,#444,#111) !important;
 }
 
-/*Affects blurhash to remove the saturated colors to fit overall look*/
+/* Affects blurhash to remove the saturated colors to fit overall look */
 .blurhash-canvas {
 	filter: opacity(60%) saturate(60%);
 }
 
-/*Dash and general UI styling*/
+/* Dash and general UI styling */
 .navMenuOption-selected, .selectionCommandsPanel {
     background: #101010 !important;
 }
@@ -862,7 +625,7 @@ progress {
     background: rgba(0, 0, 0, 0.5) !important;
 }
 
-/*Theme syncplay*/
+/* Theme syncplay */
 .syncPlayIconCircle {
   color: rgba(255,255,255,1) !important;
   text-shadow: none !important;
@@ -961,7 +724,7 @@ progress {
  }
 }
 
-/*Colors for loading spinner, placeholders, scroll bars*/
+/* Colors for loading spinner, placeholders, scroll bars */
 .mdl-spinner__layer-1 {border-color: rgba(255, 255, 255, 1);}
 .mdl-spinner__layer-2 {border-color: rgba(128, 128, 128, 1);}
 .mdl-spinner__layer-3 {border-color: rgba(40, 40, 40, 1);}
@@ -1092,13 +855,11 @@ progress::-webkit-progress-value {
   scrollbar-color: rgba(var(--accent),0.8) #0000 !important;
 }
 
-
 /* Syncplay theming*/
 .syncPlayIconCircle {
   color: rgba(var(--accent),1) !important;
   text-shadow: none !important;
 }
-
 
 
 /*

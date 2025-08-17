@@ -3,13 +3,13 @@
 /* media details and button background */
 .detailRibbon {
   background: rgba(0, 0, 0, 0.2) !important;
+  height: 5em;
 }
 
-/* 
-.layout-mobile .detailPagePrimaryContainer {
-    background: transparent;
+/* enlarge button row on item page, even more on mobile */
+.mainDetailButtons {
+	font-size: 120%;
 }
-*/
 
 /* Colors for title_2 */
 .itemBackdrop::after {
@@ -30,13 +30,8 @@
 }
 
 
-
-/* Enlarge button row on item page, even more on mobile */
-.mainDetailButtons {
-	font-size: 120%;
-}
-
 /* Add fixes, start of file */
+/*
 @media all and (min-width: 100em){
   .button-flat {
     margin: .2em !important;
@@ -51,6 +46,7 @@
     max-width: 15vw !important;
   }
 }
+*/
 
 /* hide "ends at" info */
 .endsAt {

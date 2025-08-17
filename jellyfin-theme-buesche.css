@@ -945,7 +945,7 @@ progress::-webkit-progress-value {
 /*
     Monochromic/backdrop-hack_style.css
 */
-
+/*
 .layout-mobile .detailPageWrapperContainer {
     margin-top: 0em;
     z-index: 0;
@@ -974,3 +974,4 @@ progress::-webkit-progress-value {
     top: 0;
     filter: blur(20px) saturate(190%) contrast(140%) brightness(25%);
 }
+*/

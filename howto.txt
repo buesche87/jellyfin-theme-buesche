@@ -2,13 +2,14 @@
 
 
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche.css');
+@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-fields.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-indicators.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-roundings.css');
 :root {--accent: 204.00787045,151.00999580324999,98.99450000000002;}
 :root {--rounding: 12px;}
 :root {--rounding-indicators: 6px;}
 :root {--background-selection: 0, 164, 220;}
-:root {--background-indicator: rgba(2,2,0,0.6);}
+:root {--background-indicator: rgba(2,2,0,0.7);}
 
 
 

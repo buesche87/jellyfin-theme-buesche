@@ -1,0 +1,36 @@
+/*
+    Modified "Ultrachromic/cornerindicator/indicator_corner.css"
+*/
+
+/*Card indicators style corner*/
+
+:root {--indicator-background: rgba(2,2,0,0.6);}
+
+.cardIndicators,
+.listItemIndicators,
+.mediaSourceIndicator {
+  right: 0.5em !important;
+  top: 0.5em !important;
+}
+.innerCardFooter {
+  background: rgba(0,0,0,0.4);
+  border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
+  box-shadow: 1px -1px 4px 0 rgba(0,0,0,0.3);
+}
+.countIndicator {
+  background: var(--indicator-background);
+  border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
+  box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+.playedIndicator {
+  background: var(--indicator-background);
+  border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
+  box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+.mediaSourceIndicator {
+  background: var(--indicator-background);
+  border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+  left: 0;
+  top: 0;
+}

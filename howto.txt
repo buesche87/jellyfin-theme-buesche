@@ -1,0 +1,34 @@
+
+
+
+@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche.css');
+@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-indicators.css');
+@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-roundings.css');
+:root {--accent: 204.00787045,151.00999580324999,98.99450000000002;}
+:root {--rounding: 12px;}
+:root {--rounding-indicators: 6px;}
+:root {--indicator: 0, 164, 220;}
+:root {--selection: 0, 164, 220;}
+
+
+
+OLD:
+
+@import url('https://ctalvio.github.io/Ultrachromic/fixes.css');
+@import url('https://ctalvio.github.io/Ultrachromic/jf_font.css');
+@import url('https://ctalvio.github.io/Ultrachromic/base.css');
+@import url('https://ctalvio.github.io/Ultrachromic/accentlist.css');
+@import url('https://ctalvio.github.io/Ultrachromic/rounding_circlehover.css');
+@import url('https://ctalvio.github.io/Ultrachromic/smallercast.css');
+@import url('https://ctalvio.github.io/Ultrachromic/episodelist/episodes_compactlist.css');
+@import url('https://ctalvio.github.io/Ultrachromic/header/header_transparent.css');
+@import url('https://ctalvio.github.io/Ultrachromic/login/login_frame.css');
+@import url('https://ctalvio.github.io/Ultrachromic/fields/fields_border.css');
+@import url('https://ctalvio.github.io/Ultrachromic/cornerindicator/indicator_corner.css');
+@import url('https://ctalvio.github.io/Ultrachromic/type/dark_withaccent.css');
+@import url('https://ctalvio.github.io/Ultrachromic/titlepage/title_simple-logo.css');
+@import url('https://ctalvio.github.io/Ultrachromic/progress/floating.css');
+@import url('https://ctalvio.github.io/Ultrachromic/effects/hoverglow.css');
+@import url('https://ctalvio.github.io/Monochromic/backdrop-hack_style.css');
+:root {--accent: 98.00787045,121.00999580324999,204.99450000000002;}
+:root {--rounding: 12px;}

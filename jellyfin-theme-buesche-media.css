@@ -1,7 +1,38 @@
 
 
+/* Enlarge button row on item page, even more on mobile */
+.mainDetailButtons {
+	font-size: 120%;
+}
+
+/* Add fixes, start of file */
+@media all and (min-width: 100em){
+  .button-flat {
+    margin: .2em !important;
+    padding: .85em !important;
+  }
+}
+@media all and (max-width: 100em){
+  .mainDetailButtons {
+    font-size: 155%;
+  }
+  .detailButton {
+    max-width: 15vw !important;
+  }
+}
+
+/* hide "ends at" info */
+.endsAt {
+  display: none !important;
+}
 
 /* Media Info */
+
+.itemMiscInfo {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
 /*
 .infoWrapper {
     -webkit-align-items: center;
@@ -20,8 +51,3 @@
 }
 
 */
-
-/* hide ends at info */
-.endsAt {
-  display: none !important;
-}

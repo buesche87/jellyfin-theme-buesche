@@ -2,27 +2,6 @@
     Ultrachromic/fixes.css
 */
 
-/* Enlarge button row on item page, even more on mobile */
-.mainDetailButtons {
-	font-size: 120%;
-}
-
-/* Add fixes, start of file */
-@media all and (min-width: 100em){
-  .button-flat {
-    margin: .2em !important;
-    padding: .85em !important;
-  }
-}
-@media all and (max-width: 100em){
-  .mainDetailButtons {
-    font-size: 155%;
-  }
-  .detailButton {
-    max-width: 15vw !important;
-  }
-}
-
 /* Media player */
 .startTimeText, .endTimeText {
     width: 3.4em;
@@ -61,16 +40,6 @@
   .detailPageContent {
     padding-left: 23.45vw !important;
   }
-}
-
-/* Tweak entry field padding and alignment/sizes */
-.emby-input,
-.emby-textarea {
-  padding: .4em .55em;
-}
-
-.selectArrow {
-    margin-top: 1.05em;
 }
 
 /* Fix weird shevron off centering */
@@ -332,11 +301,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
     margin-top: .5em;
     margin-bottom: .5em;
     margin-right: .2em;
-}
-
-/* Rating star, normally yellow */
-.starIcon {
-    color: rgba(255,255,255,.8);
 }
 
 /* Remove background on some icons */

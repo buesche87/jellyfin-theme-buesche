@@ -588,7 +588,7 @@ progress::-webkit-progress-value {
 .blurhash-canvas,
 .dialog,
 .countIndicator,
-.playedIndicator,
+/*.playedIndicator,*/
 .listItemIcon,
 .listItem-border,
 .visualCardBox,

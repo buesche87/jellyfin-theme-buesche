@@ -959,30 +959,31 @@ progress::-webkit-progress-value {
 */
 
 /* MODIFIED */
+:root {--indicator-background: rgba(2,2,0,0.6);}
 
 /*Card indicators style corner*/
-/*.cardIndicators,
+.cardIndicators,
 .listItemIndicators {
-  right: 0 !important;
-  top: 0 !important;
-}*/
+  right: 0.5em !important;
+  top: 0.5em !important;
+}
 .innerCardFooter {
   background: rgba(0,0,0,0.4);
   border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
   box-shadow: 1px -1px 4px 0 rgba(0,0,0,0.3);
 }
 .countIndicator {
-  background: rgba(var(--indicator),0.8);
+  background: var(--indicator-background);
   border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
   box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.3);
 }
 .playedIndicator {
-  background: rgba(var(--indicator),0.8);
+  background: var(--indicator-background);
   border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
   box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.3);
 }
 .mediaSourceIndicator {
-  background: rgba(0,0,0,0.4);
+  background: var(--indicator-background);
   border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
   left: 0;

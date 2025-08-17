@@ -960,21 +960,19 @@ progress::-webkit-progress-value {
 
 /*Card indicators style corner*/
 .innerCardFooter {
+  background: rgba(var(--indicator),0.8);
   border-radius: var(--rounding) var(--rounding) !important;
   box-shadow: 1px -1px 4px 0 rgba(0,0,0,0.3);
 }
-.countIndicator, .playedIndicator {
+.countIndicator {
   background: rgba(var(--indicator),0.8);
   border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
   box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.3);
 }
-.countIndicator {
+.playedIndicator {
   background: rgba(var(--indicator),0.8);
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
-}
-.playedIndicator, .innerCardFooter {
-  background: rgba(var(--indicator),0.8);
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+  border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
+  box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.3);
 }
 .mediaSourceIndicator {
   background: rgba(var(--indicator),0.8);

@@ -308,8 +308,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
     color: rgba(var(--accent)) !important;
 }
 
-/*Title text buttons*/
-button-flat:hover {
+/* Title text buttons */
+.button-flat:hover {
     color: rgba(var(--accent)) !important;
 }
 
@@ -894,7 +894,7 @@ progress::-webkit-progress-value {
     Ultrachromic/effects/hoverglow.css
 */
 
-/*Glow accent on hover*/
+/* Glow accent on hover */
 .raised.homeLibraryButton {
     box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
     border: solid 1px rgba(var(--accent),0) !important;

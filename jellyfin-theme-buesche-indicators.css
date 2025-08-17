@@ -21,16 +21,16 @@
   background: var(--indicator-background);
   border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
   box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.3);
+  color: rgba(var(--accent), 1);
 }
 .playedIndicator {
   background: var(--indicator-background);
   border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
   box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.3);
+  color: rgba(var(--accent), 1);
 }
 .mediaSourceIndicator {
   background: var(--indicator-background);
   border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
-  left: 0;
-  top: 0;
 }

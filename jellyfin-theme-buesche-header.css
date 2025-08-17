@@ -35,6 +35,26 @@
     padding: 1.1em 1.5em !important;
 }
 
+.headerTop {
+    padding: 1em 1em !important;
+}
+
+.headerTabs {
+    margin-top: -4em !important;
+}
+
+.sectionTabs {
+    font-size: 100% !important;
+}
+
+#indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {
+    margin-top: 5em !important;
+    padding-top: 0.5em !important;
+    overflow-y: scroll;
+}
+
+
+
 @media (min-width: 100em) {
     .headerTabs {
         -webkit-align-items: center;
@@ -43,11 +63,10 @@
         align-self: center;
         -webkit-justify-content: center;
         justify-content: center;
-        margin-top: -4.3em;
         position: relative;
         width: auto;
         justify-content: center;
-        margin-top: -3.8em !important;
+        margin-top: -4em !important;
         position: relative;
         width: 60% !important;
     }
@@ -66,36 +85,6 @@
         width: 60% !important;
     }
 }
-
-
-
-
-
-
-
-
-
-.headerTop {
-    padding: 1em 1em !important;
-}
-
-.headerTabs {
-
-}
-
-.sectionTabs {
-    font-size: 100% !important;
-}
-
-#indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {
-    margin-top: 5em !important;
-    padding-top: 0.5em !important;
-    overflow-y: scroll;
-}
-
-
-
-
 
 
 /* fit page content to header size */

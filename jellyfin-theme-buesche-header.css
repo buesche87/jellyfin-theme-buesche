@@ -8,11 +8,6 @@
     background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-
-
-
-
-
 /* Top "task bar" - text & always-scroll */
 .headerTabs.sectionTabs {
   text-size-adjust: 110%;
@@ -26,6 +21,19 @@
   white-space: nowrap;
 }
 
+/* items in "task bar" - same size as header */
+.emby-tabs-slider {
+  white-space: nowrap;
+  height: var(--headersize);
+}
+
+/* center buttons on taskbar  */
+.emby-tab-button.show-focus:focus {
+  color: rgb(var(--accent));
+}
+.emby-tab-button {
+    padding: 1.1em 1.5em !important;
+}
 
 @media (min-width: 100em) {
     .headerTabs {
@@ -38,6 +46,10 @@
         margin-top: -4.3em;
         position: relative;
         width: auto;
+        justify-content: center;
+        margin-top: -3.8em !important;
+        position: relative;
+        width: 60% !important;
     }
 }
 
@@ -49,28 +61,17 @@
         align-self: center;
         -webkit-justify-content: center;
         justify-content: center;
-        margin-top: -4.3em;
+        margin-top: -3.8em !important;
         position: relative;
-        width: auto;
+        width: 60% !important;
     }
 }
 
 
-/* items in "task bar" - same size as header */
-.emby-tabs-slider {
-  white-space: nowrap;
-  height: var(--headersize);
-}
-
-.emby-tab-button {
-    padding: 1.1em 1.5em !important;
-}
 
 
-/* button focus accent color */
-.emby-tab-button.show-focus:focus {
-  color: rgb(var(--accent));
-}
+
+
 
 
 
@@ -79,10 +80,7 @@
 }
 
 .headerTabs {
-    justify-content: center;
-    margin-top: -3.8em !important;
-    position: relative;
-    width: auto;
+
 }
 
 .sectionTabs {

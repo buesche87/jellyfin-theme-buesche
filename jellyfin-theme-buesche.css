@@ -517,14 +517,6 @@ fieldset {
   border-radius: 0.4em;
 }
 
-/* Colors for title_2 */
-.layout-desktop .detailRibbon {
-  background: rgba(0,0,0,.2) !important;
-}
-.itemBackdrop::after {
-  background: rgba(0,0,0,.5) !important;
-}
-
 /* Homepage modifications, transparent footerplayer and fixed sectiontitles */
 .appfooter {
 	background: rgba(0,0,0,0.9);
@@ -831,19 +823,6 @@ progress::-webkit-progress-value {
 
 /* Tweak series/movie/album title screen */
 
-.detailSectionContent {
-  max-width: 66em;
-}
-.trackSelections {
-  max-width: 22em;
-}
-.detailLogo {
-  display: none;
-}
-
-.layout-desktop .detailRibbon {
-  background: rgba(0,0,0,0) !important;
-}
 
 /* Fix poster image not showing in high width windows */
 .layout-desktop .detailImageContainer .card {

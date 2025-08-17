@@ -2,8 +2,28 @@
 
 /* media details and button background */
 .detailPagePrimaryContainer {
-  background: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
 }
+
+/* Colors for title_2 */
+.itemBackdrop::after {
+  background: rgba(0,0,0,.5) !important;
+}
+
+/* hide logo */
+.detailLogo {
+  display: none;
+}
+
+/* details content */
+.detailSectionContent {
+  max-width: 66em;
+}
+.trackSelections {
+  max-width: 22em;
+}
+
+
 
 /* Enlarge button row on item page, even more on mobile */
 .mainDetailButtons {

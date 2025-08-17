@@ -30,7 +30,7 @@
 }
 
 /* button focus accent color */
-emby-tab-button.show-focus:focus {
+.emby-tab-button.show-focus:focus {
   color: rgb(var(--accent));
 }
 

@@ -1,0 +1,19 @@
+/*
+    Ultrachromic/fixes.css
+*/
+
+/* Media player */
+.startTimeText, .endTimeText {
+    width: 3.4em;
+    display: block;
+    text-align: center;
+}
+.osdTitle {
+  margin-left: 0.5em;
+}
+.videoOsdBottom {
+    padding-top: 1em;
+}
+.skinHeader-withBackground.osdHeader {
+    height: 5em;
+}

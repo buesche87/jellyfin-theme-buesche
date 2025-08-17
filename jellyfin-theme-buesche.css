@@ -1,22 +1,6 @@
 /*
-    Ultrachromic/fixes.css
+    Modified: Ultrachromic/fixes.css
 */
-
-/* Media player */
-.startTimeText, .endTimeText {
-    width: 3.4em;
-    display: block;
-    text-align: center;
-}
-.osdTitle {
-  margin-left: 0.5em;
-}
-.videoOsdBottom {
-    padding-top: 1em;
-}
-.skinHeader-withBackground.osdHeader {
-    height: 5em;
-}
 
 /* Accommodate ultrawide aspect ratios */
 @media (min-aspect-ratio: 1.98/1) {
@@ -101,14 +85,10 @@
     Modified: Ultrachromic/base.css
 */
 
-
 .css-4yt2of {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.emby-textarea {
-  font-family: monospace;
-  font-size: 10pt;
-}
+
 .card.show-animation:focus>.cardBox {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);

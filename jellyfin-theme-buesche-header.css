@@ -2,17 +2,18 @@
     Ultrachromic/header/header_transparent.css
 */
 
-:root {--headersitze: 3.8em;}
+:root {--headersize: 3.8em;}
 
 .skinHeader-withBackground {
     background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-/* Top "task bar" enlarge text */
+
+/* Top "task bar" - text & always-scroll */
 .headerTabs.sectionTabs {
   text-size-adjust: 110%;
   font-size: 110%;
-  margin-top: var(--headersitze);
+  margin-top: var(--headersize);
   width: 60%;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -22,11 +23,19 @@
   white-space: nowrap;
 }
 
-
+/* items in "task bar" - same size as header */
 .emby-tabs-slider {
   white-space: nowrap;
-  height: var(--headersitze);
+  height: var(--headersize);
 }
+
+/* button focus accent color */
+emby-tab-button.show-focus:focus {
+  color: rgb(var(--accent));
+}
+
+
+
 
 /*
 .pageTitle {
@@ -37,7 +46,7 @@
 
 /* fit page content to header size */
 #indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {
-  margin-top: var(--headersitze);
+  margin-top: var(--headersize);
 }
 
 /*Pages the have single unit height taskbar*/

@@ -1,45 +1,73 @@
 
 
-/* media details */
+/*
+  media info
+*/
 
-/* media details and button background */
+/* media info and button background */
 .detailRibbon {
   background: rgba(0, 0, 0, 0.2) !important;
   height: 5em !important;
 }
 
-/* enlarge button row on item page, even more on mobile */
+/* media buttons (play, trailer, watched etc.) */
 .mainDetailButtons {
 	font-size: 120%;
 }
 
-/* hide logo */
+/* make media infos the same color */
+.mediaInfoItem {
+  color: #ffffff !important;
+  background: transparent !important;
+}
+
+/*
+  media details
+*/
+
+/* hide media logo */
 .detailLogo {
   display: none;
 }
 
-/* make details the same color */
-.mediaInfoItem {
-    color: #ffffff !important;
-    background: transparent;
+/* slightly move media details to the left */ 
+.detailPageContent {
+  padding-left: 31vw !important;
+  padding-right: 2%;
 }
 
-/* Colors for title_2 */
-.itemBackdrop::after {
-  background: rgba(0,0,0,.5) !important;
+/* track selections (audio & subtitles) */
+.trackSelections {
+  max-width: 100%;
+  width: 50%;
+  padding-bottom: 0.5em;
+}
+.detailTrackSelect {
+  background: transparent !important;
+  padding: .35em 1.9em .35em .35em !important;
 }
 
 
+/* background for media details */
+.detailPagePrimaryContent {
+  background: rgba(0, 0, 0, 0.4) !important;
+  padding: 1em;
+}
 
-/* details content */
+/* details content (media description) */
 .detailSectionContent {
   max-width: 66em;
 }
-.trackSelections {
-  max-width: 22em;
+
+
+
+
+/* Colors for title_2 */
+/*
+.itemBackdrop::after {
+  background: rgba(0,0,0,.5) !important;
 }
-
-
+*/
 
 
 /* Add fixes, start of file */

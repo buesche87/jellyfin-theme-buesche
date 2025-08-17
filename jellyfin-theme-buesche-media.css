@@ -39,7 +39,7 @@
 /* track selections (audio & subtitles) */
 .trackSelections {
   max-width: 100%;
-  width: 50%;
+  width: 60%;
   padding-bottom: 0.5em;
 }
 .detailTrackSelect {
@@ -52,6 +52,7 @@
 .detailPagePrimaryContent {
   background: rgba(0, 0, 0, 0.4) !important;
   padding: 1em;
+  border-radius: var(--rounding);
 }
 
 /* details content (media description) */

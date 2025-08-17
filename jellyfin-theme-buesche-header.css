@@ -12,6 +12,12 @@
   font-size: 110%;
   margin-top: -4em;
 }
+
+.emby-tabs-slider {
+  white-space: nowrap;
+  height: 3.8em;
+}
+
 .pageTitle {
   margin-top: auto; 
   margin-bottom: auto;

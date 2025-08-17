@@ -36,6 +36,8 @@
     padding: 1.1em 1.5em !important;
 }
 
+
+
 /* center buttons on taskbar  */
 .headerTop {
     padding: 1em 1em !important;
@@ -53,6 +55,13 @@
   border-radius: var(--rounding);
 }
 .headerButton:hover {
+  border-radius: var(--rounding);
+}
+
+.paper-icon-button-light {
+  border-radius: var(--rounding);
+}
+.paper-icon-button-light:hover {
   border-radius: var(--rounding);
 }
 

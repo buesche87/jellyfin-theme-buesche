@@ -3,6 +3,7 @@
 */
 
 /* Accommodate ultrawide aspect ratios */
+/*
 @media (min-aspect-ratio: 1.98/1) {
   .detailImageContainer .card {
     width: 21vw !important ;
@@ -25,6 +26,7 @@
     padding-left: 23.45vw !important;
   }
 }
+  */
 
 /* Fix weird shevron off centering */
 .layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {

@@ -2,6 +2,8 @@
     Ultrachromic/header/header_transparent.css
 */
 
+:root {--headersitze: 3.8em;}
+
 .skinHeader-withBackground {
     background-color: rgba(0, 0, 0, 0.4) !important;
 }
@@ -10,19 +12,33 @@
 .headerTabs.sectionTabs {
   text-size-adjust: 110%;
   font-size: 110%;
-  margin-top: -4em;
+  margin-top: var(--headersitze);
+  width: 60%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
 }
+
 
 .emby-tabs-slider {
   white-space: nowrap;
-  height: 3.8em;
+  height: var(--headersitze);
 }
 
+/*
 .pageTitle {
   margin-top: auto; 
   margin-bottom: auto;
-}
+}*/
 
+
+/* fit page content to header size */
+#indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {
+  margin-top: var(--headersitze);
+}
 
 /*Pages the have single unit height taskbar*/
 @media all and (min-width: 100em){

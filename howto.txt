@@ -14,7 +14,7 @@
 :root {--rounding-indicators: 6px;}
 :root {--background-selection: 0, 164, 220;}
 :root {--background-indicator: rgba(2,2,0,0.7);}
-
+:root {--headersitze: 3.8em;}
 
 
 OLD:

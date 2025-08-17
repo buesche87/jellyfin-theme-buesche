@@ -7,6 +7,9 @@
 .detailButton {
   border-radius: var(--rounding);
 }
+.detailButton:hover {
+  border-radius: var(--rounding);
+}
 progress {
   border-radius: var(--rounding);
 }

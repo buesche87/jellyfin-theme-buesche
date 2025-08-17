@@ -1,4 +1,7 @@
 
+.detailPagePrimaryContainer {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
 
 /* Enlarge button row on item page, even more on mobile */
 .mainDetailButtons {

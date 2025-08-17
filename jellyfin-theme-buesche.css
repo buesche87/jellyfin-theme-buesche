@@ -959,9 +959,14 @@ progress::-webkit-progress-value {
 */
 
 /*Card indicators style corner*/
+.cardIndicators,
+.listItemIndicators {
+  right: 0 !important;
+  top: 0 !important;
+}
 .innerCardFooter {
-  background: rgba(var(--indicator),0.8);
-  border-radius: var(--rounding) var(--rounding) !important;
+  background: rgba(0,0,0,0.4);
+  border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
   box-shadow: 1px -1px 4px 0 rgba(0,0,0,0.3);
 }
 .countIndicator {
@@ -975,10 +980,13 @@ progress::-webkit-progress-value {
   box-shadow: -1px 1px 4px 0 rgba(0,0,0,0.3);
 }
 .mediaSourceIndicator {
-  background: rgba(var(--indicator),0.8);
+  background: rgba(0,0,0,0.4);
   border-radius: var(--rounding-indicators) var(--rounding-indicators) !important;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+  left: 0;
+  top: 0;
 }
+
 
 
 /*

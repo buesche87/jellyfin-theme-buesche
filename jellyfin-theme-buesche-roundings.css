@@ -5,7 +5,7 @@
 /* Rounded corners on pretty much everything */
 
 .detailButton {
-  border-radius: 50%;
+  border-radius: var(--rounding);
 }
 progress {
   border-radius: var(--rounding);

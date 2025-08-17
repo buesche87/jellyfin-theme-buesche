@@ -19,7 +19,7 @@
 .trackSelections,
 .selectContainer,
 .detailTrackSelect {
-  padding: .35em 1.9em .35em .35em;
+  padding: .35em 1.9em .35em .35em !important; 
 }
 .selectArrow {
     margin-top: 1.05em;

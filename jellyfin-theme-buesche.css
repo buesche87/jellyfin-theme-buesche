@@ -150,9 +150,6 @@
 */
 
 
-:root {--indicator: 0, 164, 220;}
-:root {--selection: 0, 164, 220;}
-
 .css-4yt2of {
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -562,8 +559,8 @@ progress::-webkit-progress-value {
 .cardOverlayContainer {
 	border-radius: var(--rounding) !important;
 }
-.missingIndicator, 
-.unairedIndicator,
+/*.missingIndicator, */
+/*.unairedIndicator, */
 .detailTable,
 .primaryImageWrapper > img,
 .toast,
@@ -587,8 +584,8 @@ progress::-webkit-progress-value {
 .innerCardFooter,
 .blurhash-canvas,
 .dialog,
-.countIndicator,
-.playedIndicator,
+/*.countIndicator, */
+/*.playedIndicator, */
 .listItemIcon,
 .listItem-border,
 .visualCardBox,
@@ -978,10 +975,6 @@ progress::-webkit-progress-value {
   background: rgba(0,0,0,0.4)
 }
 .mediaSourceIndicator {
-  left: 0;
-  top: 0;
-}
-.mediaSourceIndicator {
   border-radius: var(--rounding-indicators) 0px !important;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
   background: rgba(0,0,0,0.4)
@@ -1099,17 +1092,6 @@ progress::-webkit-progress-value {
 #loginPage {
   background: url(https://i.imgur.com/9vL4iNf.png) !important; 
   background-size: cover !important;
-}
-
-/*Make watched icon, footer on chapter thumnails (and other things), and count indicator dark and transparent*/
-.innerCardFooter,
-.countIndicator, 
-.playedIndicator {
-  background: rgba(0,0,0,0.4); 
-  box-shadow: none;
-}
-.countIndicator {
-  box-shadow: none;
 }
 
 /*Modify subtitle settings page*/

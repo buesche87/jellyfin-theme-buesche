@@ -670,11 +670,6 @@ progress::-webkit-progress-value {
   .secondary.listItem-overview.listItemBodyText {height: unset !important; margin: 0;}
 }
 
-.missingIndicator, .unairedIndicator {
-    background: #ae3030eb;
-    padding: .3em .6em;
-    color: #fff;
-}
 .layout-mobile .listItemImageButton {
     background: rgba(0, 0, 0, 0);
 }
@@ -793,11 +788,11 @@ progress::-webkit-progress-value {
 .emby-select-withcolor:focus,
 .emby-input:focus,
 .itemSelectionPanel {
-  border: 0.01em solid rgba(var(--selection), 0.8) !important;
+  border: 0.01em solid rgba(var(--background-selection), 0.8) !important;
 }
 .emby-checkbox:checked + span + .checkboxOutline {
   background-color: rgba(0, 0 , 0, 0.4) !important; 
-  border: 0.01em solid rgba(var(--selection), 0.8) !important;
+  border: 0.01em solid rgba(var(--background-selection), 0.8) !important;
 }
 
 /*Theme the library scan progress bar*/
@@ -836,7 +831,7 @@ progress::-webkit-progress-value {
 
 /*This file contains color and style changes for the dark theme type*/
 :root {--accent: 255, 255, 255;}
-:root {--selection: 120, 120, 120;}
+:root {--background-selection: 120, 120, 120;}
 
 .backgroundContainer.withBackdrop {
     background-color: rgba(0, 0, 0, 0);

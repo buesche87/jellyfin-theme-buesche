@@ -6,18 +6,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+/* Entry fields, checkmarks, thin borders dark highlight */
 .emby-textarea {
   font-family: monospace;
   font-size: 10pt;
 }
-
-/* Entry fields, checkmarks, thin borders dark highlight */
 .emby-input,
 .emby-textarea {
   padding: .4em .55em;
 }
 .selectArrow {
     margin-top: 1.05em;
+}
+.emby-select {
+  padding: .35em 1.9em .35em .35em !important;
 }
 .checkboxOutline,
 .emby-input,

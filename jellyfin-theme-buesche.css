@@ -2,32 +2,6 @@
     Modified: Ultrachromic/fixes.css
 */
 
-/* Accommodate ultrawide aspect ratios */
-/*
-@media (min-aspect-ratio: 1.98/1) {
-  .detailImageContainer .card {
-    width: 21vw !important ;
-  }
-  .detailPagePrimaryContainer {
-    padding-left: 28.45vw !important;
-  }
-  .detailPageContent {
-    padding-left: 28.45vw !important;
-  }
-}
-@media (min-aspect-ratio: 2.7/1) {
-  .detailImageContainer .card {
-    width: 16vw !important;
-  }
-  .detailPagePrimaryContainer {
-    padding-left: 23.45vw !important;
-  }
-  .detailPageContent {
-    padding-left: 23.45vw !important;
-  }
-}
-  */
-
 /* Fix the UI shifting around */
 .nowPlayingBarCurrentTime {
     width: 6em;
@@ -107,8 +81,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
     position: absolute !important;
 }
 
-
-
 /* Theme process progress ring */
 .progressring-spiner {
   border-color: rgba(var(--accent));
@@ -153,21 +125,18 @@ div[data-role="controlgroup"] a[data-role="button"] {
   }
 }
 
-
-
 /* 
     Ultrachromic/base.css
 */
 
-
 /* Shrink the mouseover chapter image when scrobbling, still media player */
 .chapterThumb {
-    height: 14vh;
-    min-width: 14vh;
+  height: 14vh;
+  min-width: 14vh;
 	box-shadow: 0 0 1.9vh #000;
 }
 .chapterThumbText {
-    font-size: 1em;
+  font-size: 1em;
 }
 .sliderBubble {
   background: #0000;
@@ -261,7 +230,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
     border-color: rgba(255, 255, 255, 0) !important;
 }
 
-/*Fix footers/headers displaying on small pop-ups*/
+/* Fix footers/headers displaying on small pop-ups */
 .formDialogFooter-clear,
 .formDialogHeader-clear,
 .innerCardFooterClear {
@@ -278,9 +247,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
 /* 
     Ultrachromic/accentlist.css
 */
-
-
-
 
 /* Title text buttons */
 .button-flat:hover {
@@ -317,10 +283,10 @@ progress::-webkit-progress-value {
 }
 
 #dashboardPage .playbackProgress > div {
-    background-color: rgba(var(--accent), 0.75) !important;
+  background-color: rgba(var(--accent), 0.75) !important;
 }
 #dashboardPage .transcodingProgress > div {
-    background-color: rgba(var(--accent), 0.35) !important;
+  background-color: rgba(var(--accent), 0.35) !important;
 }
 
 .mdl-slider-background-lower {
@@ -391,7 +357,7 @@ progress::-webkit-progress-value {
   scrollbar-color: rgba(var(--accent),0.8) #0000 !important;
 }
 
-/* Syncplay theming*/
+/* Syncplay theming */
 .syncPlayIconCircle {
   color: rgba(var(--accent),1) !important;
   text-shadow: none !important;
@@ -406,31 +372,23 @@ progress::-webkit-progress-value {
     Ultrachromic/type/dark_withaccent.css
 */
 
-/* This file contains color and style changes for the dark theme type */
-
-/*
-.backgroundContainer.withBackdrop {
-    background-color: rgba(0, 0, 0, 0);
-}
-*/
-
 /* Some themeing for the dashboard */
 #user_usage_report_table,
 .detailTable {
-    background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.5);
 }
 .detailTableBodyRow-shaded {
-    background: #0000 !important;
+  background: #0000 !important;
 }
 
 .infoBanner {
-    background: #101010;
+  background: #101010;
 }
 .navMenuOptionText {
-    margin-top: 0;
+  margin-top: 0;
 }
 .backgroundProgress > div {
-    background-color: #0000;
+  background-color: #0000;
 }
 
 .visualCardBox, .cardImageContainer {
@@ -438,10 +396,10 @@ progress::-webkit-progress-value {
 }
 
 .mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
-    background: rgba(120, 120, 120, 0.6);
+  background: rgba(120, 120, 120, 0.6);
 }
 .mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__thumb {
-    background: white;
+  background: white;
 }
 
 .dashboardSection h3 {
@@ -765,9 +723,6 @@ progress::-webkit-progress-value {
 /*
     Ultrachromic/titlepage/title_simple-logo.css
 */
-
-/* Tweak series/movie/album title screen */
-
 
 /* Fix poster image not showing in high width windows */
 .layout-desktop .detailImageContainer .card {

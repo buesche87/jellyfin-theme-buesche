@@ -46,9 +46,13 @@
 }
 */
 /* style buttons & hover */
-.button-flat.show-focus:focus {
+
+.emby-button.show-focus:focus {
   background: rgba(255, 255, 255, 0.4) !important;
   color: rgb(var(--accent));
+}
+.button-flat.show-focus:focus {
+  background: rgba(255, 255, 255, 0.4) !important;
 }
 /*
 .paper-icon-button-light:focus {

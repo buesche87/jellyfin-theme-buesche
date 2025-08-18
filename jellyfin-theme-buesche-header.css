@@ -64,6 +64,7 @@
 .button-flat:hover,
 .button-flat.show-focus:focus,
 .paper-icon-button-light:hover,
+.paper-icon-button-light:hover:not(:disabled),
 .paper-icon-button-light.show-focus:focus,
 .emby-tab-button:hover,
 .emby-tab-button:hover.show-focus:focus  {

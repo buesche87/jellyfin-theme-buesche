@@ -128,7 +128,7 @@
   background-color: rgba(var(--accent),0.2);
 }
 
-.listItem:hover.show-focus:focus {
+.listItem.show-focus:focus {
   background-color: rgba(var(--accent),0.8);
 }
 

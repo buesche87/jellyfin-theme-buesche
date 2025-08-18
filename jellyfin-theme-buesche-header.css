@@ -198,7 +198,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 /* we won't need a fancy y-scrollbar while scrolling by remote */
 .force-scroll {
-    overflow-y: none !important;
+  overflow-y: hidden !important;
 }
 
 /* Fix the UI shifting around */
@@ -252,5 +252,5 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 /* no scrollbar 
 .libraryDocument {
-  overflow-y: none !important;
+  overflow-y: hidden !important;
 } */

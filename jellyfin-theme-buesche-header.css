@@ -104,10 +104,6 @@
     }
 }
 
-.withSectionTabs  {
-    overflow-y: none !important;
-}
-
 
 /* fit page content to header size */
 /*
@@ -153,8 +149,3 @@
     overflow-y: scroll;
   }
 }*/
-
-.force-scroll {
-    overflow-y: auto;
-    overflow-x: auto;
-}

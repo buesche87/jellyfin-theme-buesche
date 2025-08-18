@@ -7,24 +7,24 @@
     font-size: 110% !important;
 }
 
-.itemsContainer-tv>.overflowPortraitCard, .itemsContainer-tv>.overflowSquareCard {
-    width: 15.6vw !important;
-}
 
+/* itemsContainer-tv */
 .itemsContainer-tv>.backdropCard {
     width: 20% !important;
 }
 
-/* itemsContainer-tv */
-
-@media (min-height: 31.25em) {
-    @supports (width:max(1px,1px)) {
-        [dir=ltr] .padded-right-withalphapicker {
-            padding-right: max(env(safe-area-inset-right), 5%);
-        }
-    }
+.itemsContainer-tv>.overflowBackdropCard {
+    width: 21.5vw !important;
 }
 
+.itemsContainer-tv>.overflowPortraitCard, .itemsContainer-tv>.overflowSquareCard {
+    width: 9.6vw !important;
+}
+
+
+.sectionTitleContainer-cards {
+    padding-bottom: 0.25em !important;
+}
 
 /*
 -----------

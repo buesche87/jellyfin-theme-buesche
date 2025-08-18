@@ -139,11 +139,18 @@
     background: var(--background-dark);
 }
 
+/* list entries like settings */
+.listItem:hover {
+  background-color: rgba(var(--accent),0.2);
+}
+
+.listItem:hover.show-focus:focus {
+  background-color: rgba(var(--accent),0.8);
+}
 
 
 .paperList, 
-.visualCardBox,
-.listItem:hover {
+.visualCardBox{
   background-color: var(--background-darker);
 }
 

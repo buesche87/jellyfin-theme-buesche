@@ -60,7 +60,11 @@
   background-size: cover !important;
 }
 
-.defaultCardBackground {
+#loginPage .itemsContainer {
+  padding-top: 1em;
+}
+
+#loginPage .cardImage {
   color: rgba(var(--accent)) !important;
   background: rgba(255, 255, 255, 0.2) !important;
 }

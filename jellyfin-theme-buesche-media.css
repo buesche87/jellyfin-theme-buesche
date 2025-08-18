@@ -48,6 +48,9 @@
   background: transparent !important;
   padding: .35em 1.9em .35em .35em !important;
 }
+.detailTrackSelect[disabled] {
+  color: white !important;
+}
 
 /* background for media details */
 .detailPagePrimaryContent {

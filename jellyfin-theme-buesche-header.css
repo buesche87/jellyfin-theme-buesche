@@ -59,23 +59,21 @@
   style buttons & hover
 */
 
-/* accent color - focus */
+/* accent color - focus & hover */
+
 .emby-button.show-focus:focus,
-.button-flat.show-focus:focus,
-.paper-icon-button-light.show-focus:focus {
-  color: rgb(var(--accent)) !important;
-}
-
-/* accent color - hover */
-.emby-tab-button:hover,
 .button-flat:hover,
-.paper-icon-button-light:hover {
+.button-flat.show-focus:focus,
+.paper-icon-button-light:hover,
+.paper-icon-button-light.show-focus:focus,
+.emby-tab-button:hover {
   color: rgb(var(--accent)) !important;
-  background: rgba(255, 255, 255, 0.4) !important;
 }
 
-/* button background */
+/* background color - focus & hover  */
+.button-flat:hover,
 .button-flat.show-focus:focus,
+.paper-icon-button-light:hover,
 .paper-icon-button-light.show-focus:focus {
   background: rgba(255, 255, 255, 0.4) !important;
 }

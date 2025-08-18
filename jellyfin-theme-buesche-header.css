@@ -63,14 +63,14 @@
 .emby-button.show-focus:focus,
 .button-flat.show-focus:focus,
 .paper-icon-button-light.show-focus:focus {
-  color: rgb(var(--accent));
+  color: rgb(var(--accent)) !important;
 }
 
 /* accent color - hover */
 .emby-tab-button:hover,
 .button-flat:hover,
 .paper-icon-button-light:hover {
-  color: rgb(var(--accent));
+  color: rgb(var(--accent)) !important;
   background: rgba(255, 255, 255, 0.4) !important;
 }
 

@@ -58,8 +58,3 @@
 #loginPage .itemsContainer {
   padding-top: 1em !important;
 }
-
-/* why would one force a y-scrollbar...? */
-#loginPage .force-scroll {
-    overflow-y: none !important;
-}

@@ -196,7 +196,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
   Fixes
 */
 
-/* why would one force a y-scrollbar...? */
+/* we won't need a fancy y-scrollbar while scrolling by remote */
 .force-scroll {
     overflow-y: none !important;
 }

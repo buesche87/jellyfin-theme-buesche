@@ -2,6 +2,30 @@
   Ultrachromic/header/header_transparent.css & Ultrachromic/fixes.css
 */
 
+/* smaller tv layout */
+.layout-tv {
+    font-size: 110% !important;
+}
+
+.itemsContainer-tv>.overflowPortraitCard, .itemsContainer-tv>.overflowSquareCard {
+    width: 15.6vw !important;
+}
+
+.itemsContainer-tv>.backdropCard {
+    width: 20% !important;
+}
+
+/* itemsContainer-tv */
+
+@media (min-height: 31.25em) {
+    @supports (width:max(1px,1px)) {
+        [dir=ltr] .padded-right-withalphapicker {
+            padding-right: max(env(safe-area-inset-right), 5%);
+        }
+    }
+}
+
+
 /*
 -----------
   taskbar
@@ -190,6 +214,13 @@ div[data-role="controlgroup"] a[data-role="button"] {
   width: 3px;
   border-radius: 2px;
 }
+
+.scrollX {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
 
 /*
 ---------------

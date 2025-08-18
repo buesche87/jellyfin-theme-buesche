@@ -33,16 +33,11 @@
   scrollbar-color: rgba(var(--accent),0.8) #0000 !important;
 }
 
-
-
 /* Theme process progress ring */
 .progressring-spiner {
   border-color: rgba(var(--accent));
   border-width: .35em;
 }
-
-
-
 
 /* 
 ----------

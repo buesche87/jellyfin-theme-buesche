@@ -28,22 +28,6 @@
 }
   */
 
-/* Fix weird shevron off centering */
-.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
- padding-top:0em;
-}
-.sectionTitle {
-	margin-left: .4em !important;
-	margin-top: .2em !important;
-	margin-bottom: .2em !important;
-}
-.sectionTitleTextButton > .material-icons {
-    margin: 0;
-}
-.layout-mobile .sectionTitleTextButton > .material-icons {
-    padding-top: .2em;
-}
-
 /* Fix the UI shifting around */
 .nowPlayingBarCurrentTime {
     width: 6em;
@@ -169,13 +153,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
   }
 }
 
-/* Media player */
-.nowPlayingPageImage {
-  border: none;
-}
-.upNextDialog-countdownText {
-  color: white;
-}
 
 
 /* 

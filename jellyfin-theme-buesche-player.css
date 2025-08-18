@@ -66,3 +66,15 @@
     background: rgba(0, 0, 0, 0.35) !important;
   }
 }
+
+/*
+    Modified: Ultrachromic/base.css
+*/
+
+/* Media player */
+.nowPlayingPageImage {
+  border: none;
+}
+.upNextDialog-countdownText {
+  color: white;
+}

@@ -1,21 +1,30 @@
-
-
-/*
-  media info
+/*  
+==================================
+  Style the media page
+==================================
 */
 
-/* media info and button background */
+/* Details Ribbon with media infos & buttons */
+
+/* style & placement of the ribbon */
 .detailRibbon {
   background: rgba(0, 0, 0, 0.2) !important;
   height: 5em !important;
+  padding-left: 32vw !important;
+  padding-right: 2%;
 }
 
-/* media buttons (play, trailer, watched etc.) */
+/* hide "ends at" info in ribbon */
+.endsAt {
+  display: none !important;
+}
+
+/* make media buttons bigger (play, trailer, watched etc.) */
 .mainDetailButtons {
 	font-size: 120%;
 }
 
-/* make media infos the same color */
+/* make all media infos the same color */
 .mediaInfoItem {
   color: #ffffff !important;
   background: transparent !important;
@@ -29,13 +38,6 @@
 .detailLogo {
   display: none !important;
 }
-
-/* slightly move media details to the left */ 
-.detailPageContent {
-  padding-left: 31vw !important;
-  padding-right: 2%;
-}
-
 
 /* track selections (audio & subtitles) */
 .trackSelections {
@@ -84,16 +86,30 @@
   background: rgba(0,0,0,.5) !important;
 }
 
-/* hide "ends at" info */
-.endsAt {
-  display: none !important;
-}
+
 
 /* Media Info */
-
 .itemMiscInfo {
   margin-top: 0.6em;
   margin-bottom: 0.6em;
+}
+
+
+
+/* Media sections */
+.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+ padding-top:0em;
+}
+.sectionTitle {
+	margin-left: .4em !important;
+	margin-top: .2em !important;
+	margin-bottom: .2em !important;
+}
+.sectionTitleTextButton > .material-icons {
+    margin: 0;
+}
+.layout-mobile .sectionTitleTextButton > .material-icons {
+    padding-top: .2em;
 }
 
 

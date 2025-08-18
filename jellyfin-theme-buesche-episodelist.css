@@ -2,7 +2,7 @@
     Ultrachromic/episodelist/episodes_compactlist.css
 /*
 
-/*Size episode preview images in a more compact way*/
+/* Size episode preview images in a more compact way */
 .listItemImage.listItemImage-large.itemAction.lazy {
   transition: filter 0.2s
 }

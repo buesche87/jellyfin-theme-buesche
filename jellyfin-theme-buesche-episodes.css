@@ -1,5 +1,5 @@
 /* 
-    Ultrachromic/episodelist/episodes_compactlist.css
+  Ultrachromic/episodelist/episodes_compactlist.css
 /*
 
 /* Size episode preview images in a more compact way */
@@ -34,5 +34,3 @@
   .listItem-content {height: unset !important;}
   .secondary.listItem-overview.listItemBodyText {height: unset !important; margin: 0;}
 }
-
-

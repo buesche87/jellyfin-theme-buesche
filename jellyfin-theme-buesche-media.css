@@ -40,6 +40,41 @@
   display: none !important;
 }
 
+#itemDetailPage .itemName.infoText.parentNameLast {
+  display: none;
+}
+
+.hide+.detailPageWrapperContainer .itemName {
+  display: block !important;
+}
+
+.itemName {
+  margin: .5em 0 !important;
+}
+
+
+/*
+#itemDetailPage .detailLogo {
+    position: static;
+    margin-left: 32.5%;
+    display: block;
+    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
+    flex-shrink: 0;
+    background-position: 0 50%;
+    margin-top: 8vh;
+    margin-bottom: -12vh;
+}
+    
+.layout-mobile .detailLogo {
+    display: none !important;
+}
+
+.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
+    display: block;
+}
+
+*/
+
 /* track selections (audio & subtitles) */
 .trackSelections {
   max-width: 100%;

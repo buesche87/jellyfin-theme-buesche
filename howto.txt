@@ -1,7 +1,6 @@
 
 
 
-@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-login.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-header.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-accent.css');

@@ -1,5 +1,10 @@
 /*
-  Ultrachromic/header/header_transparent.css
+  Ultrachromic/header/header_transparent.css & Ultrachromic/fixes.css
+*/
+
+/*
+-----------
+  taskbar
 */
 
 /* Top "task bar" - text & always-scroll */
@@ -36,13 +41,198 @@
     font-size: 105% !important;
 }
 
+/* space between menu items */
+.emby-tab-button {
+  padding: 1.1em 1.5em !important;
+}
+
+
+
+/*
+------------
+  alignments, margins & spaces
+*/
 
 /* page adjustments */
 #indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {
-    margin-top: 5em !important;
-    padding-top: 0.5em !important;
-    /*overflow-y: scroll;*/
+  margin-top: 5em !important;
+  padding-top: 0.5em !important;
+  /*overflow-y: scroll;*/
 }
+
+/* Improve some menu alignments */
+.navMenuOptionText {
+  margin-top: 0;
+}
+.formDialogHeaderTitle {
+  margin-left: 1em;
+}
+.formDialogContent {
+  margin-bottom: 6.2em;
+}
+.dialogContentInner {
+  padding: .5em 1em 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.listItem-indexnumberleft {
+  margin: 1em;
+}
+.listItem {
+  padding-left: 1em;
+}
+
+.dashboardSection h3 {
+  margin: .5em .0em .5em .5em;
+}
+
+.dashboardSection .sectionTitleTextButton > .material-icons.material-icons {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-right: .2em;
+}
+
+
+/* Narrow margins, theme main page */
+.cardBox-bottompadded {
+   margin-bottom: 0.6em !important;
+}
+.itemsContainer > .card > .cardBox {
+  margin-left: 0.6em !important;
+  margin-right: 0.8em;
+}
+
+
+/* home library button */
+.homeLibraryButton {
+    min-width: 12em;
+    margin: 0.4em;
+}
+@media all and (max-width: 26em){
+  .homeLibraryButton {
+    min-width: 45%;
+    width: auto !important;
+  }
+}
+.homeLibraryButton {
+  width: auto !important;
+}
+
+
+/*
+----------
+  misc
+*/
+
+.visualCardBox, .cardImageContainer {
+  box-shadow: none;
+}
+
+.sessionCardFooter {
+  border: none;
+}
+
+/* user setting tab buttons */
+div[data-role="controlgroup"] a[data-role="button"] {
+  display: table-cell !important;
+  margin: 0 !important;
+}
+
+/* Theme process progress ring */
+.progressring {
+    margin: .4em;
+}
+.progressring-bg {
+   display: none;
+}
+
+
+
+/* Shrink the mouseover chapter image when scrobbling, still media player */
+.chapterThumb {
+  height: 14vh;
+  min-width: 14vh;
+	box-shadow: 0 0 1.9vh #000;
+}
+.chapterThumbText {
+  font-size: 1em;
+}
+.sliderBubble {
+  background: #0000;
+}
+.chapterThumbTextContainer {
+  right: auto;
+	bottom: 4px;
+	padding: .25em 0.7em;
+}
+.chapterThumbContainer {
+  box-shadow: 0 0 1.9vh #000;
+}
+.sliderBubble {
+  -webkit-transform: translate3d(-50%,-108%,0);
+  transform: translate3d(-50%,-108%,0);
+}
+
+
+/*Theme slider marker style*/
+.sliderMarker {
+  width: 3px;
+  border-radius: 2px;
+}
+
+/*
+---------------
+  Fixes
+*/
+
+/* Fix the UI shifting around */
+.nowPlayingBarCurrentTime {
+  width: 6em;
+}
+.osdTextContainer {
+  margin: 0 !important;
+  margin-top: 0.2em !important;
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
+}
+
+/* Fix top right user icon when using a profile image */
+.headerUserButtonRound {
+  border-radius: 50px !important;
+}
+
+/* Stop covers from being scrolled on desktop */
+.layout-desktop .detailImageContainer .card {
+    position: fixed !important;
+    /*top: 10% !important; */
+    top: 18vh;
+}
+
+/* Fix footers/headers displaying on small pop-ups */
+.formDialogFooter-clear,
+.formDialogHeader-clear,
+.innerCardFooterClear {
+    background-color: transparent !important;
+}
+
+
+/*
+---------------
+  Mobile
+*/
+
+/* Mobile tweaks */
+.layout-mobile .adminDrawerLogo {
+    border-bottom: none;
+}
+.layout-mobile .itemBackdrop {
+    margin-top: 4rem;
+}
+.layout-mobile .detailImageContainer .card {
+    position: absolute !important;
+}
+
+
 
 
 /* no scrollbar 

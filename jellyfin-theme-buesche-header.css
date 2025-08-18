@@ -124,6 +124,17 @@
   misc
 */
 
+/*
+@media all and (min-width: 32em){
+  .itemBackdrop {
+    display: none;
+  }
+	.layout-desktop .detailRibbon {
+    margin-top: 13vh;
+	}
+}
+*/
+
 .visualCardBox, .cardImageContainer {
   box-shadow: none;
 }
@@ -184,6 +195,11 @@ div[data-role="controlgroup"] a[data-role="button"] {
 ---------------
   Fixes
 */
+
+/* why would one force a y-scrollbar...? */
+.force-scroll {
+    overflow-y: none !important;
+}
 
 /* Fix the UI shifting around */
 .nowPlayingBarCurrentTime {

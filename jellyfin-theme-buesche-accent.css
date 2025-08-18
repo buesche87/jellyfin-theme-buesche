@@ -9,27 +9,18 @@
 :root {--background-dark: rgba(0, 0, 0, 0.2) ;}
 :root {--background-darker: rgba(0, 0, 0, 0.4) ;}
 :root {--background-verydark: rgba(0, 0, 0, 0.6) ;}
+:root {--background-darkest: rgba(0, 0, 0, 0.7) ;}
 
 /* login page */
 #loginPage .cardImage {
   color: rgba(var(--accent)) !important;
-  background: rgba(255, 255, 255, 0.2) !important;
+  background: var(--background-light) !important;
 }
-
 
 /* background & backdrop */
 .skinHeader-withBackground,
 .backgroundContainer.withBackdrop {
-  background-color: var(--background-verydark) !important;
-}
-
-@media all and (min-width: 32em){
-  .itemBackdrop {
-    display: none;
-  }
-	.layout-desktop .detailRibbon {
-    margin-top: 13vh;
-	}
+  background-color: var(--background-darkest) !important;
 }
 
 /* Affects blurhash to remove the saturated colors to fit overall look */

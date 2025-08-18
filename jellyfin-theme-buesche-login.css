@@ -60,6 +60,6 @@
 }
 
 /* no scrollbar */
-#loginPage .force-scroll {
+.hideMainDrawer {
   overflow-y: hidden !important;
 }

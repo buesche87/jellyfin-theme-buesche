@@ -10,11 +10,12 @@
 :root {--background-darker: rgba(0, 0, 0, 0.4) ;}
 :root {--background-verydark: rgba(0, 0, 0, 0.6) ;}
 
-/* login card */
+/* login page */
 #loginPage .cardImage {
   color: rgba(var(--accent)) !important;
-  background: var(--background-light) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
 }
+
 
 /* background & backdrop */
 .skinHeader-withBackground,

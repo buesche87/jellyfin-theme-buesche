@@ -204,8 +204,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 /* Stop covers from being scrolled on desktop */
 .layout-desktop .detailImageContainer .card {
     position: fixed !important;
-    /*top: 10% !important; */
-    top: 18vh;
+    top: 13vh;
 }
 
 /* Fix footers/headers displaying on small pop-ups */

@@ -42,7 +42,7 @@
 }
 */
 /* style buttons & hover */
-.emby-tab-button.show-focus:focus {
+.emby-button.show-focus:focus {
   color: rgb(var(--accent));
 }
 .paper-icon-button-light:focus {

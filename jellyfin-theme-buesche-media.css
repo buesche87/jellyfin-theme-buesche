@@ -64,8 +64,13 @@
 /* reposition media card */
 .layout-tv .detailImageContainer .card {
     left: 3%;
-    top: 48.5%;
+    top: 28.5em;
 }
+
+.layout-tv .itemDetailPage {
+    padding-top: 6em !important;
+}
+
 
 /* details content (media description) */
 .detailSectionContent {

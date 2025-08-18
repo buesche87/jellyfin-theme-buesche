@@ -59,7 +59,8 @@
   background: url(https://i.imgur.com/9vL4iNf.png) !important; 
   background-size: cover !important;
 }
-.defaultCardBackground3 {
-  color: rgba(var(--accent));
+
+.defaultCardBackground {
+  color: rgba(var(--accent)) !important;
   background: rgba(255, 255, 255, 0.2) !important;
 }

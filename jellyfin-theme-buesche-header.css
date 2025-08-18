@@ -10,8 +10,8 @@
 
 /* Top "task bar" - text & always-scroll */
 .headerTabs.sectionTabs {
-  text-size-adjust: 110%;
-  font-size: 110%;
+  text-size-adjust: 105%;
+  font-size: 105% !important;
   width: 50vw;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -32,15 +32,15 @@
 .headerTop {
     padding: 1em 1em !important;
 }
-
+/*
 .headerTabs {
     margin-top: -4em !important;
 }
 
 .sectionTabs {
-    font-size: 100% !important;
+    font-size: 105% !important;
 }
-
+*/
 /* style buttons & hover */
 .emby-tab-button.show-focus:focus {
   color: rgb(var(--accent));

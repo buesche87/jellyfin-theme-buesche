@@ -228,9 +228,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 */
 
 /* we won't need a fancy y-scrollbar while scrolling by remote */
-.force-scroll {
-  overflow-y: hidden !important;
-}
+
 
 /* Fix the UI shifting around */
 .nowPlayingBarCurrentTime {

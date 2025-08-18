@@ -24,8 +24,10 @@
 	font-size: 120%;
 }
 
-/* make all media infos the same color */
-.mediaInfoItem {
+/* media infos - placement and same color */
+.itemMiscInfo {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
   color: #ffffff !important;
 }
 
@@ -52,7 +54,7 @@
   color: white !important;
 }
 
-/* background for media details */
+/* background - card for media details */
 .detailPagePrimaryContent {
   background: rgba(0, 0, 0, 0.4) !important;
   padding: 1em;
@@ -65,84 +67,38 @@
     display: flex;
 }
 
-/* reposition media cardfor tv */
+/* reposition media card for tv */
 .layout-tv .detailImageContainer .card {
-    left: 3%;
-    top: 28.5em;
+  left: 3%;
+  /* padding-top: 1em; */
 }
 
 .layout-tv .itemDetailPage {
-    padding-top: 6em !important;
+  padding-top: 6em !important;
 }
 
+/* Section layout (cast, more like this...) */
 
-/* details content (media description) */
-.detailSectionContent {
-  max-width: 66em;
-  border-radius: var(--rounding);
+/* reduce space between sections */
+.layout-tv .detailVerticalSection {
+  margin-bottom: 0em !important;
 }
 
-/* Colors for title_2 */
-.itemBackdrop::after {
-  background: rgba(0,0,0,.5) !important;
-}
-
-/* Media Info */
-.itemMiscInfo {
-  margin-top: 0.6em;
-  margin-bottom: 0.6em;
-}
-
-/* Media sections */
-.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
- padding-top:0em;
-}
+/* fix section title placement */
 .sectionTitle {
 	margin-left: .4em !important;
 	margin-top: .2em !important;
 	margin-bottom: .2em !important;
 }
 .sectionTitleTextButton > .material-icons {
-    margin: 0;
+  margin: 0;
 }
+
+/* Media sections - Mobile layout */
+.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+ padding-top:0em;
+}
+
 .layout-mobile .sectionTitleTextButton > .material-icons {
-    padding-top: .2em;
+  padding-top: .2em;
 }
-
-
-/* Add fixes, start of file */
-/*
-@media all and (min-width: 100em){
-  .button-flat {
-    margin: .2em !important;
-    padding: .85em !important;
-  }
-}
-@media all and (max-width: 100em){
-  .mainDetailButtons {
-    font-size: 155%;
-  }
-  .detailButton {
-    max-width: 15vw !important;
-  }
-}
-*/
-
-/*
-.infoWrapper {
-    -webkit-align-items: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 0.2em 0.5em 0.2em 0.5em;
-    border-radius: var(--rounding-mediainfo) !important;
-}
-
-.mainDetailButtons {
-    -webkit-align-items: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 0.2em 0.5em 0.2em 0.5em;
-    border-radius: var(--rounding-mediainfo) !important;
-}
-
-*/

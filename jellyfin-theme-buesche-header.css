@@ -47,13 +47,15 @@
 */
 /* style buttons & hover */
 .emby-button.show-focus:focus {
+  background: rgba(255, 255, 255, 0.4) !important;
   color: rgb(var(--accent));
 }
+/*
 .paper-icon-button-light:focus {
   color: rgb(var(--accent));
-}
+}*/
 .emby-tab-button {
-    padding: 1.1em 1.5em !important;
+  padding: 1.1em 1.5em !important;
 }
 
 

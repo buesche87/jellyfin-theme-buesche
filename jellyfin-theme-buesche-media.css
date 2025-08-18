@@ -57,7 +57,7 @@
   background: rgba(0, 0, 0, 0.4) !important;
   padding: 1em;
   border-radius: var(--rounding);
-  /* right: 2%; */
+  right: 2%;
 }
 
 /* don't break line for tv */
@@ -65,7 +65,7 @@
     display: flex;
 }
 
-/* reposition media card */
+/* reposition media cardfor tv */
 .layout-tv .detailImageContainer .card {
     left: 3%;
     top: 28.5em;
@@ -83,20 +83,15 @@
 }
 
 /* Colors for title_2 */
-
 .itemBackdrop::after {
   background: rgba(0,0,0,.5) !important;
 }
-
-
 
 /* Media Info */
 .itemMiscInfo {
   margin-top: 0.6em;
   margin-bottom: 0.6em;
 }
-
-
 
 /* Media sections */
 .layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {

@@ -36,6 +36,7 @@
   padding-right: 2%;
 }
 
+
 /* track selections (audio & subtitles) */
 .trackSelections {
   max-width: 100%;
@@ -52,6 +53,11 @@
   background: rgba(0, 0, 0, 0.4) !important;
   padding: 1em;
   border-radius: var(--rounding);
+}
+
+/* don't break line for tv */
+.layout-tv .detailPagePrimaryContainer {
+    display: flex;
 }
 
 /* details content (media description) */

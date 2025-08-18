@@ -54,6 +54,11 @@
   overflow-y: hidden !important;
 }
 
+.userPreferencesPage {
+  overflow-y: scroll !important;
+}
+
+/*
 -------------------------------------------
   animations
 */

@@ -45,26 +45,25 @@
     font-size: 105% !important;
 }
 */
-/* style buttons & hover */
 
-.emby-button.show-focus:focus {
+/* no scrollbar */
+.libraryDocument {
+  overflow-y: none !important;
+}
+
+
+/* style buttons & hover */
+.emby-button.show-focus:focus,
+.button-flat.show-focus:focus,
+.emby-tab-button.show-focus:focus,
+.paper-icon-button-light.show-focus:focus {
   background: rgba(255, 255, 255, 0.4) !important;
   color: rgb(var(--accent));
 }
-.button-flat.show-focus:focus {
-  background: rgba(255, 255, 255, 0.4) !important;
-}
-/*
-.paper-icon-button-light:focus {
-  color: rgb(var(--accent));
-}*/
+
 .emby-tab-button {
   padding: 1.1em 1.5em !important;
 }
-/*
-.emby-tab-button.show-focus:focus {
-  background: rgba(255, 255, 255, 0.4) !important;
-}*/
 
 .headerButton,
 .headerButton:hover,
@@ -77,11 +76,6 @@
     margin-top: 5em !important;
     padding-top: 0.5em !important;
     /*overflow-y: scroll;*/
-}
-
-
-.libraryDocument {
-  overflow-y: none !important;
 }
 
 

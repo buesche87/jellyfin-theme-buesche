@@ -60,13 +60,12 @@
 */
 
 /* accent color - focus & hover */
-
-.emby-button.show-focus:focus,
 .button-flat:hover,
 .button-flat.show-focus:focus,
 .paper-icon-button-light:hover,
 .paper-icon-button-light.show-focus:focus,
-.emby-tab-button:hover {
+.emby-tab-button:hover,
+.emby-tab-button:hover.show-focus:focus  {
   color: rgb(var(--accent)) !important;
 }
 

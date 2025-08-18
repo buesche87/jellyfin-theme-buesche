@@ -5,7 +5,11 @@
 :root {--headersize: 3.8em;}
 
 .skinHeader-withBackground {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.backgroundContainer.withBackdrop {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Top "task bar" - text & always-scroll */

@@ -8,7 +8,7 @@
   background-size: cover !important;
 }
 
-/* please sign in container */
+/* move "please sign in" */
 #loginPage .visualLoginForm {
   padding-top: 1em;
 }
@@ -18,7 +18,7 @@
     margin: 0.5em 0;
 }
 
-/* Hide "manual" and "forgot" buttons} */
+/* Hide "manual" and "forgot" buttons */
 #loginPage .raised.cancel.block.btnForgotPassword.emby-button {
   display: none;
 }

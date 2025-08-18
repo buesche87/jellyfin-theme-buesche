@@ -9,6 +9,7 @@
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-roundings.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-indicators.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-media.css');
+@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-episodes.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-player.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-cast.css');
 :root {--accent: 204.00787045,151.00999580324999,98.99450000000002;}

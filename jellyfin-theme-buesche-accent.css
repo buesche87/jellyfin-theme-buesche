@@ -1,0 +1,58 @@
+/*
+    Modified: Ultrachromic/login/login_frame.css
+*/
+
+/* :root {--accent: 3.8em;} */
+:root {--background-light: rgba(255, 255, 255, 0.2) ;}
+:root {--background-dark: rgba(255, 255, 255, 0.2) ;}
+
+
+/* login card */
+#loginPage .cardImage {
+  color: rgba(var(--accent)) !important;
+  background: rgba(var(--background-light)) !important;
+}
+
+/* background & backdrop */
+.skinHeader-withBackground,
+.backgroundContainer.withBackdrop {
+  background-color: rgba(var(--background-dark)) !important;
+}
+
+/*
+  buttons, focus & hover
+*/
+
+/* accent color - focus & hover */
+.emby-button.show-focus:focus,
+.button-flat:hover,
+.button-flat.show-focus:focus,
+.paper-icon-button-light:hover,
+.paper-icon-button-light.show-focus:focus,
+.paper-icon-button-light:hover:not(:disabled),
+.cardOverlayButton:hover,
+.emby-tab-button:hover,
+.emby-tab-button:hover.show-focus:focus  {
+  color: rgb(var(--accent)) !important;
+}
+
+/* background color - focus & hover  */
+.button-flat:hover,
+.button-flat.show-focus:focus,
+.paper-icon-button-light:hover,
+.paper-icon-button-light.show-focus:focus {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* space between menu items */
+.emby-tab-button {
+  padding: 1.1em 1.5em !important;
+}
+
+/* boarder radius - normal & hover */
+.headerButton,
+.headerButton:hover,
+.paper-icon-button-light,
+.paper-icon-button-light:hover {
+  border-radius: var(--rounding);
+}

@@ -4,10 +4,10 @@
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-login.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-header.css');
+@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-accent.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-fields.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-roundings.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-indicators.css');
-@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-medialist.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-media.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-player.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-cast.css');

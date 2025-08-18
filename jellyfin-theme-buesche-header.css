@@ -104,7 +104,11 @@
     }
 }
 
-*/
+.withSectionTabs  {
+    overflow-y: none !important;
+}
+
+
 /* fit page content to header size */
 /*
 #indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {

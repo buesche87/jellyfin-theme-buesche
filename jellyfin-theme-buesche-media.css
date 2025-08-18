@@ -53,7 +53,7 @@
   background: rgba(0, 0, 0, 0.4) !important;
   padding: 1em;
   border-radius: var(--rounding);
-  right: 2%;
+  /* right: 2%; */
 }
 
 /* don't break line for tv */

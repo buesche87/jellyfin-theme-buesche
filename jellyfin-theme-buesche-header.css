@@ -36,9 +36,12 @@
 .headerTop {
     padding: 1em 1em !important;
 }
-/*
+
 .headerTabs {
     margin-top: -4em !important;
+    align-items: center;
+    align-self: center;
+    position: relative;
 }
 
 .sectionTabs {

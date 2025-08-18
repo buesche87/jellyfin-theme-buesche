@@ -12,13 +12,14 @@
 .headerTabs.sectionTabs {
   text-size-adjust: 110%;
   font-size: 110%;
-  width: 60%;
+  width: 50vw;
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
+  margin-top: -4.3em !important;
 }
 
 /* items in "task bar" - same size as header */
@@ -73,7 +74,6 @@
 }
 
 
-
 @media (min-width: 100em) {
     .headerTabs {
         -webkit-align-items: center;
@@ -83,11 +83,10 @@
         -webkit-justify-content: center;
         justify-content: center;
         position: relative;
-        width: auto;
         justify-content: center;
-        margin-top: -4.3em !important;
+        /* margin-top: -4.3em !important;
         position: relative;
-        width: 60% !important;
+        width: 60% !important;*/
     }
 }
 
@@ -99,13 +98,13 @@
         align-self: center;
         -webkit-justify-content: center;
         justify-content: center;
-        margin-top: -4.3em !important;
+        /*margin-top: -4.3em !important;
         position: relative;
-        width: 60% !important;
+        width: 60% !important;*/
     }
 }
 
-
+*/
 /* fit page content to header size */
 /*
 #indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {

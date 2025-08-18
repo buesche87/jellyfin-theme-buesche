@@ -58,7 +58,6 @@
   padding: 1.1em 1.5em !important;
 }
 
-
 .headerButton {
   border-radius: var(--rounding);
 }
@@ -81,7 +80,7 @@
 
 
 .libraryDocument {
-      overflow-y: none !important;
+  overflow-y: none !important;
 }
 
 
@@ -115,48 +114,3 @@
     }
 }
 
-
-/* fit page content to header size */
-/*
-#indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {
-  margin-top: var(--headersize);
-}
-*/
-
-/*
-
-
-
-/*
-.pageTitle {
-  margin-top: auto; 
-  margin-bottom: auto;
-}*/
-
-
-
-/*Pages the have single unit height taskbar*/
-/*
-@media all and (min-width: 100em){
-  #indexPage,
-  #moviesPage,
-  #tvRecommendedPage,
-  #musicRecommendedPage {
-    margin-top: 68px;
-    padding-top: 0px !important;
-    overflow-y: scroll;
-  }
-}*/
-
-/*Pages the have two unit height taskbar*/
-/*
-@media all and (max-width: 100em){
-  #indexPage,
-  #moviesPage,
-  #tvRecommendedPage,
-  #musicRecommendedPage {
-    margin-top: 130px;
-    padding-top: 0.5em !important;
-    overflow-y: scroll;
-  }
-}*/

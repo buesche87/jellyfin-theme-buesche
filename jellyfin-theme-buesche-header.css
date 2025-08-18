@@ -278,11 +278,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
   border-radius: 50px !important;
 }
 
-/* Stop covers from being scrolled on desktop */
-.layout-desktop .detailImageContainer .card {
-    position: fixed !important;
-    top: 13vh;
-}
 
 /* Fix footers/headers displaying on small pop-ups */
 .formDialogFooter-clear,

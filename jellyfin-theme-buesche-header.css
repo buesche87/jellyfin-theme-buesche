@@ -9,6 +9,8 @@
 
 
 /* itemsContainer-tv */
+
+/* 20% per card, allows 5 instead of 4 movies per row */
 .itemsContainer-tv>.backdropCard {
     width: 20% !important;
 }
@@ -17,14 +19,32 @@
     width: 21.5vw !important;
 }
 
+/* don't grow icons indefinitely */
 .itemsContainer-tv>.overflowPortraitCard, .itemsContainer-tv>.overflowSquareCard {
-    width: 9.6vw !important;
+    width: 15.6vw !important;
+    max-width: 12em !important;
 }
 
-
+/* add space for icon enlargement */
 .sectionTitleContainer-cards {
-    padding-bottom: 0.25em !important;
+    padding-bottom: 0.5em !important;
 }
+
+
+/*
+-------------------------------------------
+  animations
+*/
+
+.card.show-animation:focus>.cardBox {
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+}
+
+.raised.homeLibraryButton:hover {transition: filter 0.2s}
+.raised.homeLibraryButton {transition: filter 0.2s}
+.listItem:hover {transition: 0.2s;}
+
 
 /*
 -----------

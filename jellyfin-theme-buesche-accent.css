@@ -61,22 +61,6 @@
 }
 
 
-
-/*
--------------------------------------------
-  animations
-*/
-
-.card.show-animation:focus>.cardBox {
-  -webkit-transform:scale(1.1);
-  transform:scale(1.1);
-}
-
-.raised.homeLibraryButton:hover {transition: filter 0.2s}
-.raised.homeLibraryButton {transition: filter 0.2s}
-.listItem:hover {transition: 0.2s;}
-
-
 /*
 -------------------------------------------
   accent color

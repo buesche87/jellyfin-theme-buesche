@@ -30,11 +30,19 @@
     padding-bottom: 0.5em !important;
 }
 
-
-.card.show-animation:focus>.cardBox {
-  margin-right: 1.5em !important;
+.padded-right-withalphapicker {
+    padding-right: 5% !important;
 }
 
+/*
+@media (min-height: 31.25em) {
+    @supports (width:max(1px,1px)) {
+        [dir=ltr] .padded-right-withalphapicker {
+            padding-right: max(env(safe-area-inset-right), 5%);
+        }
+    }
+}
+    */
 /*
 -------------------------------------------
   animations
@@ -105,7 +113,7 @@
 #indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {
   margin-top: 5em !important;
   padding-top: 0.5em !important;
-  /*overflow-y: scroll;*/
+  overflow-y: scroll;
 }
 
 /* Improve some menu alignments */
@@ -172,16 +180,6 @@
   misc
 */
 
-/*
-@media all and (min-width: 32em){
-  .itemBackdrop {
-    display: none;
-  }
-	.layout-desktop .detailRibbon {
-    margin-top: 13vh;
-	}
-}
-*/
 
 .visualCardBox, .cardImageContainer {
   box-shadow: none;
@@ -233,18 +231,12 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 
+
 /*Theme slider marker style*/
 .sliderMarker {
   width: 3px;
   border-radius: 2px;
 }
-
-.scrollX {
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
 
 /*
 ---------------
@@ -252,6 +244,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 */
 
 /* we won't need a fancy y-scrollbar while scrolling by remote */
+
 
 
 /* Fix the UI shifting around */
@@ -300,10 +293,3 @@ div[data-role="controlgroup"] a[data-role="button"] {
     position: absolute !important;
 }
 
-
-
-
-/* no scrollbar 
-.libraryDocument {
-  overflow-y: hidden !important;
-} */

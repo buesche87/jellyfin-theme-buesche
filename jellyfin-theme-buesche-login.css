@@ -58,3 +58,8 @@
 #loginPage .itemsContainer {
   padding-top: 1em !important;
 }
+
+/* no scrollbar */
+#loginPage .force-scroll {
+  overflow-y: hidden !important;
+}

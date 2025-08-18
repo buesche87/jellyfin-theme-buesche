@@ -61,7 +61,8 @@
 
 /* accent color */
 .emby-button.show-focus:focus,
-.button-flat.show-focus:focus {
+.button-flat.show-focus:focus,
+.paper-icon-button-light.show-focus:focus {
   color: rgb(var(--accent));
 }
 

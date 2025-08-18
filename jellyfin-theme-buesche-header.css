@@ -46,7 +46,10 @@
 /*
 
 /* no scrollbar */
-.libraryDocument,
+.libraryDocument {
+  overflow-y: hidden !important;
+}
+
 .hideMainDrawer {
   overflow-y: hidden !important;
 }

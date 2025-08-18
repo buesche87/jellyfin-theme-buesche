@@ -60,6 +60,7 @@
 */
 
 /* accent color - focus & hover */
+.emby-button.show-focus:focus,
 .button-flat:hover,
 .button-flat.show-focus:focus,
 .paper-icon-button-light:hover,

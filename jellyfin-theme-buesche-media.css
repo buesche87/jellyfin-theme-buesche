@@ -53,11 +53,18 @@
   background: rgba(0, 0, 0, 0.4) !important;
   padding: 1em;
   border-radius: var(--rounding);
+  right: 2%;
 }
 
 /* don't break line for tv */
 .layout-tv .detailPagePrimaryContainer {
     display: flex;
+}
+
+/* reposition media card */
+.layout-tv .detailImageContainer .card {
+    left: 3%;
+    top: 48.5%;
 }
 
 /* details content (media description) */

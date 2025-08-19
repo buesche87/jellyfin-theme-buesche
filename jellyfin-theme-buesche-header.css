@@ -97,9 +97,7 @@
 -----------------------------*/
 
 /* wider input fields */
-.readOnlyContent, form {
-    max-width: 60% !important;
-}
+
 
 /* bigger disclaimer area */
 .emby-textarea {

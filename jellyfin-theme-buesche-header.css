@@ -124,8 +124,8 @@
 -----------------------------*/
 
 /* wider input fields */
-#dashboardPage .dashboardGeneralForm {
-  max-width: 60%;
+.dashboardGeneralForm {
+  max-width: 66% !important;
 }
 
 /* user profile cards */
@@ -145,6 +145,9 @@
     resize: vertical !important;
 }
 
+.cardText-secondary {
+  font-size: 75% !important;
+}
 
 /*
 | Alignments

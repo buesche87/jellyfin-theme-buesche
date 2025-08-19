@@ -324,11 +324,10 @@ div[data-role="controlgroup"] a.ui-btn-active {
     border-right: solid 1px rgba(var(--accent), 1) !important;
 }
 
-
 /*
-----------------------------------
-  Borders
-*/
+| Borders
+-----------------------------*/
+
 
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-textarea:focus,
@@ -367,10 +366,9 @@ fieldset {
 
 
 
-
 /*
-  fields, focus & hover
-*/
+| fields, focus & hover
+-----------------------------*/
 
 .checkboxOutline,
 .emby-input,
@@ -427,9 +425,24 @@ progress::-webkit-progress-value {
 
 
 
+/*
+| Animations
+-----------------------------*/
 
+.card.show-animation:focus>.cardBox {
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+}
 
+.raised.homeLibraryButton:hover {transition: filter 0.2s}
+.raised.homeLibraryButton {transition: filter 0.2s}
+.listItem:hover {transition: 0.2s;}
 
+.raised,
+.fab,
+a[data-role="button"] {
+	transition: all 0.2s !important;
+}
 
 
 

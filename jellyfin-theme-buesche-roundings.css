@@ -72,7 +72,6 @@ progress::-webkit-progress-value {
 .checkboxOutline,
 .detailTable,
 .dialog,
-.emby-textarea, 
 .fab,
 .innerCardFooter,
 .itemDetailImage,
@@ -85,7 +84,6 @@ progress::-webkit-progress-value {
 .listItem:hover, 
 .multiSelectCheckboxOutline,
 .nowPlayingPageImage,
-.paperList,
 .primaryImageWrapper > img,
 .raised,
 .sessionNowPlayingInnerContent, 
@@ -132,5 +130,11 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .emby-select {
   border-radius: var(--rounding-input) !important;
 }
+
+
+.blurhash-canvas, .cardContent, .cardContent-button, .cardContent-shadow, .cardImage, .cardImageContainer, .cardOverlayButtonIcon, .cardPadder, .chapterThumb, .chapterThumbContainer, .chapterThumbTextContainer, .checkboxOutline, .detailTable, .dialog, .emby-textarea, .fab, .innerCardFooter, .itemDetailImage, .itemSelectionPanel, .listItem-border, .listItemButton, .listItemIcon, .listItemImage, .listItemImageButton, .listItem:hover, .multiSelectCheckboxOutline, .nowPlayingPageImage, .paperList, .primaryImageWrapper > img, .raised, .sessionNowPlayingInnerContent, .toast, .upNextContainer, .upNextDialog-poster-img, .visualCardBox {
+    border-radius: var(--rounding-input) !important;
+}
+
 
 /* border-radius: 4px !important; */

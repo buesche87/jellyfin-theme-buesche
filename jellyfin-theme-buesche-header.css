@@ -3,15 +3,13 @@
 */
 
 /*
-----------------------------------
-  smaller tv layout
-*/
+| Smaller TV Layout
+-----------------------------*/
 
+/* general "dpi" */
 .layout-tv {
     font-size: 110% !important;
 }
-
-/* itemsContainer-tv */
 
 /* width 20% per card allows 5 instead of 4 movies per row */
 .itemsContainer-tv>.backdropCard {
@@ -37,51 +35,19 @@
 }
 
 /*
-@media (min-height: 31.25em) {
-    @supports (width:max(1px,1px)) {
-        [dir=ltr] .padded-right-withalphapicker {
-            padding-right: max(env(safe-area-inset-right), 5%);
-        }
-    }
-}
-    */
-/*
+| Scrollbar
+-----------------------------*/
 
 /* no scrollbar */
+.hideMainDrawer,
 .libraryDocument {
   overflow-y: hidden !important;
 }
 
-.hideMainDrawer {
-  overflow-y: hidden !important;
-}
-
+/* scrollbar */
 .userPreferencesPage {
   overflow-y: scroll !important;
 }
-
-
-
-/*
--------------------------------------------
-  animations
-*/
-
-.card.show-animation:focus>.cardBox {
-  -webkit-transform:scale(1.1);
-  transform:scale(1.1);
-}
-
-.raised.homeLibraryButton:hover {transition: filter 0.2s}
-.raised.homeLibraryButton {transition: filter 0.2s}
-.listItem:hover {transition: 0.2s;}
-
-.raised,
-.fab,
-a[data-role="button"] {
-	transition: all 0.2s !important;
-}
-
 
 /*
 | Taskbar
@@ -135,12 +101,14 @@ a[data-role="button"] {
     max-width: 60% !important;
 }
 
-
+/* bigger disclaimer area */
+.emby-textarea {
+  height: 5em !important;
+}
 
 /*
-------------
-  alignments, margins & spaces
-*/
+| Alignments
+-----------------------------*/
 
 /* page adjustments */
 #indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {
@@ -181,7 +149,6 @@ a[data-role="button"] {
     margin-right: .2em;
 }
 
-
 /* Narrow margins, theme main page */
 .cardBox-bottompadded {
    margin-bottom: 0.6em !important;
@@ -190,7 +157,6 @@ a[data-role="button"] {
   margin-left: 0.6em !important;
   margin-right: 0.8em;
 }
-
 
 /* home library button */
 .homeLibraryButton {
@@ -209,10 +175,8 @@ a[data-role="button"] {
 
 
 /*
-----------
-  misc
-*/
-
+| Misc
+-----------------------------*/
 
 .visualCardBox, .cardImageContainer {
   box-shadow: none;
@@ -235,8 +199,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .progressring-bg {
    display: none;
 }
-
-
 
 /* Shrink the mouseover chapter image when scrobbling, still media player */
 .chapterThumb {
@@ -263,22 +225,16 @@ div[data-role="controlgroup"] a[data-role="button"] {
   transform: translate3d(-50%,-108%,0);
 }
 
-
-
 /*Theme slider marker style*/
 .sliderMarker {
   width: 3px;
   border-radius: 2px;
 }
 
+
 /*
----------------
-  Fixes
-*/
-
-/* we won't need a fancy y-scrollbar while scrolling by remote */
-
-
+| Fixes
+-----------------------------*/
 
 /* Fix the UI shifting around */
 .nowPlayingBarCurrentTime {
@@ -296,19 +252,12 @@ div[data-role="controlgroup"] a[data-role="button"] {
   border-radius: 50px !important;
 }
 
-
 /* Fix footers/headers displaying on small pop-ups */
 .formDialogFooter-clear,
 .formDialogHeader-clear,
 .innerCardFooterClear {
     background-color: transparent !important;
 }
-
-
-/*
----------------
-  Mobile
-*/
 
 /* Mobile tweaks */
 .layout-mobile .adminDrawerLogo {

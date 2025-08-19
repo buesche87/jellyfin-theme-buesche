@@ -72,6 +72,12 @@
 .raised.homeLibraryButton {transition: filter 0.2s}
 .listItem:hover {transition: 0.2s;}
 
+.raised,
+.fab,
+a[data-role="button"] {
+	transition: all 0.2s !important;
+}
+
 
 /*
 -----------

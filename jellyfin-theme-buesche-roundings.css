@@ -4,7 +4,14 @@
 
 /* Rounded corners on pretty much everything */
 
-/* boarder radius - normal & hover */
+:root {--rounding: 12px;}
+:root {--rounding-input: 4px;}
+
+/*
+| Border Radius
+-----------------------------*/
+
+/* full radius */
 .headerButton,
 .headerButton:hover,
 .paper-icon-button-light,
@@ -44,11 +51,13 @@ progress::-webkit-progress-value {
 .cardOverlayContainer {
 	border-radius: var(--rounding) !important;
 }
-/*.missingIndicator, */
-/*.unairedIndicator, */
-/*.countIndicator, */
-/*.playedIndicator, */
+
+/* .missingIndicator, */
+/* .unairedIndicator, */
+/* .countIndicator, */
+/* .playedIndicator, */
 /* .emby-select-withcolor, */
+/* .emby-input, */
 .blurhash-canvas,
 .cardContent,
 .cardContent-button, 
@@ -63,7 +72,6 @@ progress::-webkit-progress-value {
 .checkboxOutline,
 .detailTable,
 .dialog,
-.emby-input, 
 .emby-textarea, 
 .fab,
 .innerCardFooter,
@@ -116,3 +124,13 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 #userProfilesPage .cardImage, #userProfilesPage .cardContent {
     border-radius: var(--rounding) var(--rounding) 0 0 !important;
 }
+
+
+/* small radius */
+
+.emby-input,
+.emby-select {
+  border-radius: var(--rounding-input) !important;
+}
+
+/* border-radius: 4px !important; */

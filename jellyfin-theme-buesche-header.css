@@ -2,24 +2,26 @@
   Ultrachromic/header/header_transparent.css & Ultrachromic/fixes.css
 */
 
-/* smaller tv layout */
+/*
+----------------------------------
+  smaller tv layout
+*/
+
 .layout-tv {
     font-size: 110% !important;
 }
 
-
 /* itemsContainer-tv */
 
-/* 20% per card, allows 5 instead of 4 movies per row */
+/* width 20% per card allows 5 instead of 4 movies per row */
 .itemsContainer-tv>.backdropCard {
     width: 20% !important;
 }
-
 .itemsContainer-tv>.overflowBackdropCard {
     width: 21.5vw !important;
 }
 
-/* don't grow icons indefinitely */
+/* don't grow icons indefinitely when resizing window */
 .itemsContainer-tv>.overflowPortraitCard, .itemsContainer-tv>.overflowSquareCard {
     width: 15.6vw !important;
     max-width: 12em !important;
@@ -58,6 +60,8 @@
   overflow-y: scroll !important;
 }
 
+
+
 /*
 -------------------------------------------
   animations
@@ -80,9 +84,8 @@ a[data-role="button"] {
 
 
 /*
------------
-  taskbar
-*/
+| Taskbar
+-----------------------------*/
 
 /* Top "task bar" - text & always-scroll */
 .headerTabs.sectionTabs {
@@ -121,6 +124,15 @@ a[data-role="button"] {
 /* space between menu items */
 .emby-tab-button {
   padding: 1.1em 1.5em !important;
+}
+
+/*
+| Settings Page
+-----------------------------*/
+
+/* wider input fields */
+.readOnlyContent, form {
+    max-width: 60% !important;
 }
 
 

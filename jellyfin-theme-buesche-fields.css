@@ -14,10 +14,18 @@
 }
 .emby-input,
 .emby-textarea {
-  padding: .4em .55em;
+  padding: .5em .6em;
 }
 .selectArrow {
   margin-top: 1.05em;
 }
 
 
+/* fit search button in settings */
+.paper-icon-button-light>.material-icons {
+    font-size: 1.5em !important;
+}
+
+.selectLabel {
+    margin-bottom: 0em !important;
+}

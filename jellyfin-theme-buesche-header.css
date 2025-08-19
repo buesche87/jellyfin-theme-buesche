@@ -56,6 +56,9 @@
 .selectArrow {
   margin-top: 1.05em;
 }
+.emby-textarea {
+  resize: vertical !important;
+}
 
 
 /*
@@ -121,19 +124,25 @@
 -----------------------------*/
 
 /* wider input fields */
-
+#dashboardPage .dashboardGeneralForm {
+  max-width: 60%;
+}
 
 /* user profile cards */
-.card:not(.show-animation) {
+#dashboardPage .card:not(.show-animation) {
     width: 13em !important;
 }
 
 /* fit search button in settings */
-.paper-icon-button-light>.material-icons {
+#dashboardPage .paper-icon-button-light>.material-icons {
     font-size: 1.5em !important;
 }
-.selectLabel {
+#dashboardPage .selectLabel {
     margin-bottom: 0em !important;
+}
+
+.customCssContainer textarea {
+    resize: vertical !important;
 }
 
 

@@ -2,30 +2,9 @@
     Modified: Ultrachromic/fields/fields_border.css & Ultrachromic/jf_font.css
 */
 
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-/* Entry fields, checkmarks, thin borders dark highlight */
-.emby-textarea {
-  font-family: monospace;
-  font-size: 10pt;
-}
-.emby-input,
-.emby-textarea {
-  padding: .5em .6em;
-}
-.selectArrow {
-  margin-top: 1.05em;
-}
 
 
-/* fit search button in settings */
-.paper-icon-button-light>.material-icons {
-    font-size: 1.5em !important;
-}
 
-.selectLabel {
-    margin-bottom: 0em !important;
-}
+
+
+

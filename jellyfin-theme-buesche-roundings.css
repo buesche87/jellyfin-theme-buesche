@@ -128,13 +128,13 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 
-/* .blurhash-canvas, */
+/*.blurhash-canvas,
 .cardContent,
 .cardContent-button,
 .cardContent-shadow,
 .cardImage,
 .cardImageContainer,
-.cardOverlayButtonIcon,
+.cardOverlayButtonIcon,*/
 .chapterThumb,
 .chapterThumbContainer,
 .chapterThumbTextContainer,
@@ -143,9 +143,9 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .dialog,
 .emby-textarea,
 .fab,
-.innerCardFooter,
+/*.innerCardFooter,
 .itemDetailImage,
-.itemSelectionPanel,
+.itemSelectionPanel,*/
 .listItem-border,
 .listItemButton,
 .listItemIcon,
@@ -155,12 +155,12 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .multiSelectCheckboxOutline,
 .nowPlayingPageImage,
 .paperList,
-.primaryImageWrapper > img,
-.raised,
+/*.primaryImageWrapper > img, */
+/*.raised,*/
 .sessionNowPlayingInnerContent,
-.toast,
-.upNextContainer,
-.upNextDialog-poster-img {
+.toast
+/*.upNextContainer,
+.upNextDialog-poster-img*/ {
     border-radius: var(--rounding-input) !important;
 }
 

@@ -73,13 +73,13 @@
     overflow: hidden;
 }
 
-
+/*
 .detailImageContainer .card .cardBox {
     margin: 0;
     width: 19vh;
     max-width:19vh;
     object-fit: contain;
-}
+} */
 
 /* reposition media card for tv */
 .layout-tv .detailImageContainer .card {

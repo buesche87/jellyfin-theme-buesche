@@ -121,6 +121,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 /* small radius */
 
+/* .visualCardBox */
 
 .emby-input,
 .emby-select {
@@ -135,6 +136,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .cardImage,
 .cardImageContainer,
 .cardOverlayButtonIcon,*/
+.button-submit,
 .chapterThumb,
 .chapterThumbContainer,
 .chapterThumbTextContainer,

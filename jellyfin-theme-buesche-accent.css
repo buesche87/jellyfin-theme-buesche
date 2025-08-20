@@ -56,12 +56,10 @@
     box-shadow: none;
 }
 
-/* Remove background on some elements */
-.emby-tab-button-active,
+/* Remove background on some icons */
 .listItemIcon {
     background: #0000 !important;
 }
-
 
 
 /*

@@ -57,6 +57,7 @@
 }
 
 /* Remove background on some icons */
+.emby-tab-button-active,
 .listItemIcon {
     background: #0000 !important;
 }

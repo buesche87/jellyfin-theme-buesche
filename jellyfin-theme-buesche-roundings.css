@@ -2,44 +2,34 @@
     Modified Ultrachromic/rounding_circlehover.css
 */
 
-/* Rounded corners on pretty much everything */
-
 :root {--rounding: 12px;}
 :root {--rounding-input: 4px;}
 
 /*
-| Border Radius
+| Border Radius: Full
 -----------------------------*/
 
 /* full radius */
+.detailButton,
+.detailButton:hover,
 .headerButton,
 .headerButton:hover,
 .paper-icon-button-light,
 .paper-icon-button-light:hover {
   border-radius: var(--rounding);
 }
-.detailButton {
-  border-radius: var(--rounding);
-}
-.detailButton:hover {
-  border-radius: var(--rounding);
-}
-progress {
-  border-radius: var(--rounding);
-}
-progress::-webkit-progress-bar {
-  border-radius: var(--rounding);
-}
-progress::-moz-progress-bar {
-  border-radius: var(--rounding);
-}
-progress::-webkit-progress-value {
-  border-radius: var(--rounding);
-}
+
+/* progress */
+progress,
+progress::-webkit-progress-bar,
+progress::-moz-progress-bar,
+progress::-webkit-progress-value,
 .taskProgressOuter,
 .taskProgressInner {
-  border-radius: var(--rounding) !important;
+  border-radius: var(--rounding);
 }
+
+/* forms */
 .formDialogHeader {
   border-top-left-radius: var(--rounding);
   border-top-right-radius: var(--rounding);
@@ -49,10 +39,8 @@ progress::-webkit-progress-value {
   border-bottom-right-radius: var(--rounding);
 }
 
-/* .missingIndicator, */
 /* .unairedIndicator, */
 /* .countIndicator, */
-/* .playedIndicator, */
 /* .emby-select-withcolor, */
 /* .emby-input, */
 .blurhash-canvas,
@@ -93,15 +81,15 @@ progress::-webkit-progress-value {
 .osdPoster img {
   border-radius: var(--rounding); border: none;
 }
-.mdl-slider::-moz-range-thumb {
-  border-radius: var(--rounding);
-}
-.mdl-slider::-ms-thumb {
-  border-radius: var(--rounding);
-}
+
+/* slider */
+.mdl-slider::-moz-range-thumb,
+.mdl-slider::-ms-thumb,
 .mdl-slider::-webkit-slider-thumb {
   border-radius: var(--rounding);
 }
+
+/* user profile (?) */
 div[data-role="controlgroup"] a[data-role="button"]:first-child {
 	border-bottom-left-radius: var(--rounding);
 	border-top-left-radius: var(--rounding);
@@ -111,18 +99,21 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 	border-top-right-radius: var(--rounding);
 }
 
-#divVirtualFolders .cardImageContainer, #divVirtualFolders .cardContent {
+/* cards - half */
+#divVirtualFolders .cardImageContainer, 
+#divVirtualFolders .cardContent {
     border-radius: var(--rounding) var(--rounding) 0 0 !important;
 }
-#userProfilesPage .cardImage, #userProfilesPage .cardContent {
+#userProfilesPage .cardImage, 
+#userProfilesPage .cardContent {
     border-radius: var(--rounding) var(--rounding) 0 0 !important;
 }
 
-
-/* small radius */
+/*
+| Border Radius: Small
+-----------------------------*/
 
 /* .visualCardBox */
-
 .emby-input,
 .emby-select {
   border-radius: var(--rounding-input) !important;
@@ -137,6 +128,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .cardImageContainer,
 .cardOverlayButtonIcon,*/
 .button-submit,
+.countIndicator,
 .chapterThumb,
 .chapterThumbContainer,
 .chapterThumbTextContainer,
@@ -154,9 +146,11 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .listItemImage,
 .listItemImageButton,
 .listItem:hover,
+.mediaSourceIndicator,
 .multiSelectCheckboxOutline,
 .nowPlayingPageImage,
 .paperList,
+.playedIndicator,
 /*.primaryImageWrapper > img, */
 /*.raised,*/
 .sessionNowPlayingInnerContent,
@@ -166,7 +160,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     border-radius: var(--rounding-input) !important;
 }
 
-
+/* Dashboard page */
 #dashboardPage .cardContent,
 #dashboardPage .sessionNowPlayingInnerContent {
     border-radius: var(--rounding-input) var(--rounding-input) 0 0 !important;

@@ -11,6 +11,10 @@
 :root {--background-verydark: rgba(0, 0, 0, 0.6) ;}
 :root {--background-darkest: rgba(0, 0, 0, 0.7) ;}
 
+/*
+| Site-Wide (...)
+-----------------------------*/
+
 /* login page */
 #loginPage .cardImage {
   color: rgba(var(--accent)) !important;
@@ -39,38 +43,11 @@
   border-width: .35em;
 }
 
-/* 
-----------
-  misc
-*/
-
-#itemDetailPage .button-link {color: inherit !important;}
-
-.css-4yt2of {
-  background-color: var(--background-verydark);
-  border-right: 1px solid rgba(var(--accent), 0.12);
-}
-
-.visualCardBox,
-.cardImageContainer {
-    box-shadow: none;
-}
-
-/* Remove background on some icons */
-.listItemIcon {
-    background: #0000 !important;
-}
-
-
 /*
--------------------------------------------
-  accent color & background
-*/
+| Accent Color
+-----------------------------*/
 
-/*
-  accent color and light background
-*/
-
+/* accent color and light background */
 .emby-button.show-focus:focus,
 .button-flat:hover,
 .button-flat.show-focus:focus,
@@ -82,10 +59,7 @@
   background: var(--background-lighter) !important;
 }
 
-/*
-  accent color: full
-*/
-
+/* accent color: full */
 .emby-tab-button:hover,
 .emby-tab-button:hover.show-focus:focus,
 .raised.homeLibraryButton:hover,
@@ -105,10 +79,7 @@
   color: rgba(var(--accent)) !important;
 }
 
-/*
-  accent color: transparent
-*/
-
+/* accent color: transparent */
 .listItem.show-focus:focus {
   background-color: rgba(var(--accent),0.8);
 }
@@ -118,10 +89,9 @@
   background-color: rgba(var(--accent),0.2);
 }
 
-
 /*
-  background: accent color
-*/
+| Background: Accent
+-----------------------------*/
 
 /* accent: opaque */
 .mdl-slider-background-lower {
@@ -179,8 +149,7 @@ a[data-role="button"]:hover {
   background: rgba(var(--accent), 0.5);
 }
 
-
-/* accent: transparency 35% */
+/* background: accent transparency 35% */
 #dashboardPage .transcodingProgress > div {
   background-color: rgba(var(--accent), 0.35) !important;
 }
@@ -189,12 +158,11 @@ a[data-role="button"]:hover {
   background-color: rgba(var(--accent),0.35);
 }
 
-
-
 /*
-  background: verylight
-*/
+| Background: Black & White
+-----------------------------*/
 
+/* background: verylight */
 .raised.homeLibraryButton:hover {
   background: var(--background-verylight) !important;
 }
@@ -204,26 +172,17 @@ a[data-role="button"]:hover {
 }
 
 
-/*
-  background: lighter
-*/
-
+/* background: lighter */
 .raised.homeLibraryButton {
   background: var(--background-lighter) !important;
 }
 
-/*
-  background: dark
-*/
-
+/* background: dark */
 .itemProgressBar {
   background: var(--background-dark);
 }
 
-/*
-  background: darker
-*/
-
+/* background: darker */
 .paperList, 
 .visualCardBox{
   background-color: var(--background-darker);
@@ -236,11 +195,62 @@ a[data-role="button"] {
 }
 
 
+/*
+| Media Indicators
+-----------------------------*/
 
-/* 
--------------------------------------------
-  Background - div 
-*/
+.innerCardFooter {
+  background: var(--background-darker);
+  box-shadow: 1px -1px 4px 0 var(--background-dark);
+}
+.countIndicator {
+  background: var(--background-verydark);
+  box-shadow: -1px 1px 4px 0 var(--background-darker);
+  color: rgba(var(--accent), 1);
+}
+.playedIndicator {
+  background: var(--background-verydark);
+  box-shadow: -1px 1px 4px 0 var(--background-darker);
+  color: rgba(var(--accent), 1);
+}
+.mediaSourceIndicator {
+  background: var(--background-verydark);
+  box-shadow: 1px 1px 4px 0 var(--background-darker);
+}
+.missingIndicator, .unairedIndicator {
+    background: #ae3030eb;
+    padding: .3em .6em;
+    color: #fff;
+}
+
+
+/*
+| Glow on hover
+-----------------------------*/
+
+/* Glow accent on hover */
+.raised.homeLibraryButton {
+    box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
+    border: solid 1px rgba(var(--accent),0) !important;
+}
+.cardOverlayContainer:hover,
+.dialog,
+.toast,
+.raised.homeLibraryButton:hover {
+  box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
+  border: solid 1px rgba(var(--accent),0.6) !important;
+}
+.cardOverlayContainer {
+  border: solid 1px rgba(var(--accent),0.0) !important;
+}
+.drawer-open {
+    box-shadow: 0px 0px 5px rgba(var(--accent), 1) !important;
+    border-right: solid 1px rgba(var(--accent), 1) !important;
+}
+
+/*
+| Background: Div
+-----------------------------*/
 
 .mainDrawer {
     background-color: rgba(0, 0, 0, 0.8);
@@ -298,37 +308,10 @@ div[data-role="controlgroup"] a.ui-btn-active {
     background: rgba(0, 0, 0, 0);
 }
 
-/*
-----------------------------------
-  Glow
-*/
-
-
-/* Glow accent on hover */
-.raised.homeLibraryButton {
-    box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
-    border: solid 1px rgba(var(--accent),0) !important;
-}
-.cardOverlayContainer:hover,
-.dialog,
-.toast,
-.raised.homeLibraryButton:hover {
-  box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent),0.6) !important;
-}
-.cardOverlayContainer {
-  border: solid 1px rgba(var(--accent),0.0) !important;
-}
-.drawer-open {
-    box-shadow: 0px 0px 5px rgba(var(--accent), 1) !important;
-    border-right: solid 1px rgba(var(--accent), 1) !important;
-}
-
 
 /*
 | Borders
 -----------------------------*/
-
 
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-textarea:focus,
@@ -350,11 +333,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .mdl-spinner__layer-4 {border-color: rgba(var(--accent),0.8);}
 */
 
-/*
-------------------------------
-  Borders - div
-*/
-
 /* Remove divider on list items */
 .listItem-border {
   border-color: rgba(255, 255, 255, 0) !important; 
@@ -364,8 +342,6 @@ fieldset {
   border: 1px solid rgba(40, 40, 40, 0.8); 
   border-radius: 0.4em;
 }
-
-
 
 /*
 | fields, focus & hover
@@ -393,7 +369,6 @@ fieldset {
   background-color: var(--background-darker) !important; 
   border: 0.01em solid rgba(var(--accent), 0.8) !important;
 }
-
 
 /* Library scan progress bar */
 progress {
@@ -424,8 +399,6 @@ progress::-webkit-progress-value {
   color: rgba(255,255,255,0.75) !important;
 }
 
-
-
 /*
 | Animations
 -----------------------------*/
@@ -445,11 +418,26 @@ a[data-role="button"] {
 	transition: all 0.2s !important;
 }
 
+/*
+| Misc
+-----------------------------*/
 
+#itemDetailPage .button-link {color: inherit !important;}
 
+.css-4yt2of {
+  background-color: var(--background-verydark);
+  border-right: 1px solid rgba(var(--accent), 0.12);
+}
 
+.visualCardBox,
+.cardImageContainer {
+    box-shadow: none;
+}
 
-
+/* Remove background on some icons */
+.listItemIcon {
+    background: #0000 !important;
+}
 
 
 /* Theme link color */
@@ -484,22 +472,14 @@ a[data-role="button"] {
   }
 }
 
-
-
-
-
 /*
------------------- 
-  Syncplay theming
-*/
+| Syncplay theming
+-----------------------------*/
 
 .syncPlayIconCircle {
   color: rgba(var(--accent),1) !important;
   text-shadow: none !important;
 }
-
-
-
 
 @-webkit-keyframes pulse {
  0% {

@@ -94,11 +94,17 @@
 */
 
 /* Indicators */
+.countIndicator, .fullSyncIndicator, .mediaSourceIndicator, .playedIndicator {
+    background: #00a4dc;
+}
+
+
 .innerCardFooter,
 .countIndicator,
 .playedIndicator,
 .mediaSourceIndicator {
   color: rgb(var(--accent)) !important;
+  background: var(--background-darker);
 }
 
 .missingIndicator, .unairedIndicator {
@@ -108,9 +114,9 @@
 }
 
 /* Buttons */
-
 .emby-tab-button:hover,
 .emby-tab-button:hover.show-focus:focus,
+.emby-tab-button-active,
 .raised.homeLibraryButton:hover,
 .ratingbutton-icon-withrating,
 .playstatebutton-icon-played,

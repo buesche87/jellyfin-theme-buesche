@@ -62,14 +62,13 @@
 }
 
 .userPreferencesPage {
-  overflow-y: scroll !important;
+  overflow-y: scroll;
 }
 
-
-/* no scrollbar */
+/* no scrollbar 
 .libraryDocument {
   overflow-y: hidden;
-}
+} */
 
 /*
 | Inputs - General style

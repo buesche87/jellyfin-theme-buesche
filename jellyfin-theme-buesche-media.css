@@ -24,6 +24,7 @@
 /* make media buttons bigger (play, trailer, watched etc.) */
 .layout-tv .mainDetailButtons {
 	font-size: 120% !important;
+  margin: 1em 0 1em;
 }
 
 /* media infos - placement and same color */
@@ -33,91 +34,49 @@
   color: #ffffff !important;
 }
 
+
+
+.parentName {
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+
 /*
   media details
 */
 
-.detailPageSecondaryContainer {
-  padding-top: 0.8em !important;
-}
 
 /* hide media logo */
 .detailLogo {
   display: none !important;
 }
 
-#itemDetailPage .itemName.infoText.parentNameLast {
-  display: none;
-}
-
 .hide+.detailPageWrapperContainer .itemName {
   display: block !important;
 }
 
-.itemName {
-  margin: .5em 0 !important;
-}
-
-/*
-----------
-  poster
-*/
-
-
+/* Media Cover */
 .detailImageContainer .card {
-    max-height: 80vh;
-    max-width: 25vw;
-    position: fixed !important;
-    top: 46.15vh;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
+  max-height: 80vh;
+  max-width: 25vw;
+  position: fixed !important;
+  top: 477px !important;
+  left: 3% !important;
+  overflow: hidden;
 }
 
-/*
-.detailImageContainer .card .cardBox {
-    margin: 0;
-    width: 19vh;
-    max-width:19vh;
-    object-fit: contain;
-} */
-
-/* reposition media card for tv */
-.layout-tv .detailImageContainer .card {
-  left: 3%;
-  /* padding-top: 1em; */
-}
-
-
-/* Stop covers from being scrolled on desktop */
+/* Don't scroll cover on desktop view */
 .layout-desktop .detailImageContainer .card {
-    position: fixed !important;
-    top: 13vh;
+  position: fixed !important;
+  top: 13vh;
 }
 
-
-/*
-#itemDetailPage .detailLogo {
-    position: static;
-    margin-left: 32.5%;
-    display: block;
-    -webkit-filter: drop-shadow(0 0 10px rgba(2, 2, 2, 0.75));
-    flex-shrink: 0;
-    background-position: 0 50%;
-    margin-top: 8vh;
-    margin-bottom: -12vh;
+/* Episode / Movie Title */
+#itemDetailPage .itemName.infoText.parentNameLast {
+  display: block;
+  padding-bottom: 0.3em;
 }
-    
-.layout-mobile .detailLogo {
-    display: none !important;
-}
-
-.layout-mobile #itemDetailPage .itemName.infoText.parentNameLast {
-    display: block;
-}
-
-*/
 
 /* track selections (audio & subtitles) */
 .trackSelections {
@@ -133,13 +92,39 @@
   color: white !important;
 }
 
-/* background - card for media details */
+/* media title and buttons */
 .detailPagePrimaryContent {
-  background: rgba(0, 0, 0, 0.4) !important;
-  padding: 1em;
+  /*background: rgba(0, 0, 0, 0.4) !important;*/
+  padding-bottom: 1em;
   border-radius: var(--rounding);
   right: 2%;
+  margin-left: 2%;
 }
+
+
+/* Media Description */
+.detailPageContent {
+  padding-left: 32vw !important;
+}
+.detailPageSecondaryContainer {
+  padding-top: 0em !important;
+}
+.layout-tv .detailVerticalSection {
+  margin-left: -1%;
+  margin-bottom: 0em !important;
+}
+
+/* hide Tags */
+.itemTags {
+  display: none !important;
+}
+
+/* narrow space between description and genre */
+.itemDetailsGroup {
+  margin-top: 0.5em !important;
+}
+
+
 
 /* don't break line for tv */
 .layout-tv .detailPagePrimaryContainer {
@@ -153,11 +138,6 @@
 }
 
 /* Section layout (cast, more like this...) */
-
-/* reduce space between sections */
-.layout-tv .detailVerticalSection {
-  margin-bottom: 0em !important;
-}
 
 /* fix section title placement */
 .sectionTitle {

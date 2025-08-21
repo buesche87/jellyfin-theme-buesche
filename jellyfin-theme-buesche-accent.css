@@ -78,7 +78,8 @@
   accent color and light background
 */
 
-/* .emby-button.show-focus:focus, */
+.button-link:hover,
+.button-link.show-focus:focus,
 .button-flat:hover,
 .button-flat.show-focus:focus,
 .paper-icon-button-light:hover,
@@ -129,7 +130,6 @@
 .inputLabelFocused,
 .textareaLabelFocused,
 .buttonActive,
-.button-link,
 .css-17c09up.Mui-selected {
   color: rgba(var(--accent)) !important;
 }
@@ -488,15 +488,6 @@ a[data-role="button"] {
 }
 
 
-
-
-
-
-
-
-/* Theme link color */
-#itemDetailPage .button-link {color: inherit !important;}
-
 /* Accommodate mobile and align buttons and indicators */
 @media all and (min-width: 70em){
   .cardOverlayFab-primary {
@@ -525,9 +516,6 @@ a[data-role="button"] {
     padding: 0.25em;
   }
 }
-
-
-
 
 
 /*

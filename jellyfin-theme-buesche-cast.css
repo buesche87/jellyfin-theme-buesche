@@ -1,8 +1,9 @@
 /*
-  Ultrachromic/smallercast.css
-*/
+| Ultrachromic/smallercast.css
+--------------------------------------------------------*/
 
 /* Shrink and square (or round) cast thumnails */
+
 @media all and (min-width: 131.25em){
   #castContent .card.overflowPortraitCard {
     width: 6.3vw !important; 

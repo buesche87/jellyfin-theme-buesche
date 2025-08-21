@@ -39,21 +39,37 @@
     padding-right: 5% !important;
 }
 
-
-
-/*
-| Pages adjustemnts
------------------------------*/
-
-
 /* page adjustments */
-#indexPage, #moviesPage, #tvRecommendedPage, #musicRecommendedPage {
+#indexPage, 
+#moviesPage, 
+#tvRecommendedPage, 
+#musicRecommendedPage {
   margin-top: 5em !important;
   padding-top: 0.5em !important;
-  overflow-y: scroll;
 }
 
 
+/*
+| Scrollbar - Show / Hide
+-----------------------------*/
+
+#loginPage,
+#indexPage, 
+#moviesPage, 
+#tvRecommendedPage, 
+#itemDetailPage {
+  overflow-y: scroll;
+}
+
+.userPreferencesPage {
+  overflow-y: scroll !important;
+}
+
+
+/* no scrollbar */
+.libraryDocument {
+  overflow-y: hidden;
+}
 
 /*
 | Inputs - General style
@@ -75,27 +91,11 @@
   resize: vertical !important;
 }
 
-
-/*
-| Scrollbar - Show / Hide
------------------------------*/
-
-/* no scrollbar */
-.hideMainDrawer,
-.libraryDocument {
-  overflow-y: hidden !important;
-}
-
-/* scrollbar */
-.userPreferencesPage {
-  overflow-y: scroll !important;
-}
-
 /*
 | Taskbar - Size & Alignment
 -----------------------------*/
 
-/* Top "task bar" - text & always-scroll */
+/* Top "taskbar" - text & vertical-scroll */
 .headerTabs.sectionTabs {
   text-size-adjust: 105%;
   font-size: 105% !important;

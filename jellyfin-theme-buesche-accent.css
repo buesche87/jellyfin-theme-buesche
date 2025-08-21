@@ -11,21 +11,23 @@
 :root {--background-verydark: rgba(0, 0, 0, 0.6) ;}
 :root {--background-darkest: rgba(0, 0, 0, 0.7) ;}
 
+
+/*
+| Page wide colors
+-----------------------------*/
+
 /* login page */
 #loginPage .cardImage {
   color: rgba(var(--accent)) !important;
   background: var(--background-light) !important;
 }
 
+#itemDetailPage .button-link {color: inherit !important;}
+
 /* background & backdrop */
 .skinHeader-withBackground,
 .backgroundContainer.withBackdrop {
   background-color: var(--background-darkest) !important;
-}
-
-/* Affects blurhash to remove the saturated colors to fit overall look */
-.blurhash-canvas {
-	filter: opacity(60%) saturate(60%);
 }
 
 /* scrollbar */
@@ -44,7 +46,11 @@
   misc
 */
 
-#itemDetailPage .button-link {color: inherit !important;}
+/* Affects blurhash to remove the saturated colors to fit overall look */
+.blurhash-canvas {
+	filter: opacity(60%) saturate(60%);
+}
+
 
 .css-4yt2of {
   background-color: var(--background-verydark);
@@ -333,8 +339,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
   border: solid 1px rgba(var(--accent),0.6) !important;
   border-radius: var(--rounding);
 } */
-
-
 
 .cardOverlayContainer:hover,
 .dialog,

@@ -6,6 +6,7 @@
 :root {--rounding-input: 4px;}
 
 /*
+
 | Border Radius: Full
 -----------------------------*/
 
@@ -39,10 +40,8 @@ progress::-webkit-progress-value,
   border-bottom-right-radius: var(--rounding);
 }
 
-/* .unairedIndicator, */
-/* .countIndicator, */
-/* .emby-select-withcolor, */
-/* .emby-input, */
+
+/* cards & items */
 .blurhash-canvas,
 .cardOverlayContainer,
 .cardContent,
@@ -54,25 +53,14 @@ progress::-webkit-progress-value,
 .chapterThumb,
 .chapterThumbContainer,
 .chapterThumbTextContainer,
-.checkboxOutline,
 .detailTable,
-.dialog,
-.fab,
 .innerCardFooter,
 .itemDetailImage,
 .itemSelectionPanel,
-.listItem-border,
-.listItemButton,
-.listItemIcon,
-.listItemImage,
-.listItemImageButton,
-.listItem:hover, 
-.multiSelectCheckboxOutline,
 .nowPlayingPageImage,
 .primaryImageWrapper > img,
 .raised,
 .sessionNowPlayingInnerContent, 
-.toast,
 .upNextContainer,
 .upNextDialog-poster-img,
 .visualCardBox {
@@ -113,20 +101,12 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 | Border Radius: Small
 -----------------------------*/
 
-/* .visualCardBox */
 .emby-input,
 .emby-select {
   border-radius: var(--rounding-input) !important;
 }
 
-
-/*.blurhash-canvas,
-.cardContent,
-.cardContent-button,
-.cardContent-shadow,
-.cardImage,
-.cardImageContainer,
-.cardOverlayButtonIcon,*/
+/* buttons & system */
 .button-submit,
 .countIndicator,
 .chapterThumb,
@@ -137,9 +117,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .dialog,
 .emby-textarea,
 .fab,
-/*.innerCardFooter,
-.itemDetailImage,
-.itemSelectionPanel,*/
 .listItem-border,
 .listItemButton,
 .listItemIcon,
@@ -148,15 +125,9 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .listItem:hover,
 .mediaSourceIndicator,
 .multiSelectCheckboxOutline,
-.nowPlayingPageImage,
 .paperList,
 .playedIndicator,
-/*.primaryImageWrapper > img, */
-/*.raised,*/
-.sessionNowPlayingInnerContent,
-.toast
-/*.upNextContainer,
-.upNextDialog-poster-img*/ {
+.toast {
     border-radius: var(--rounding-input) !important;
 }
 

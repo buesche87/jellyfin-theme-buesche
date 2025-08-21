@@ -4,13 +4,6 @@
 ==================================
 */
 
-/* media indicators in media list */
-.cardIndicators,
-.listItemIndicators,
-.mediaSourceIndicator {
-  right: 0.5em !important;
-  top: 0.5em !important;
-}
 
 
 /* Details Ribbon with media infos & buttons */
@@ -152,10 +145,6 @@
 .layout-tv .detailPagePrimaryContainer {
   display: flex;
 }
-
-
-
-
 
 
 

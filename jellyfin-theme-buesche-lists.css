@@ -3,3 +3,12 @@
   Style the media lists
 ==================================
 */
+
+
+/* media indicators in media list */
+.cardIndicators,
+.listItemIndicators,
+.mediaSourceIndicator {
+  right: 0.5em !important;
+  top: 0.5em !important;
+}

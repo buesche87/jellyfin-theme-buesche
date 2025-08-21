@@ -65,10 +65,11 @@
   overflow-y: scroll;
 }
 
-/* no scrollbar 
+/* no scrollbar */
+
 .libraryDocument {
-  overflow-y: hidden;
-} */
+  overflow-y: hidden !important;
+}
 
 /*
 | Inputs - General style

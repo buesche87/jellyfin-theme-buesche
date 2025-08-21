@@ -61,10 +61,23 @@
   max-height: 80vh;
   max-width: 25vw;
   position: fixed !important;
-  top: 477px !important;
   left: 3% !important;
   overflow: hidden;
 }
+
+/* movie / episode poser */
+.detailImageContainer .card.portraitCard {
+  top: 477px !important;
+}
+
+/* episode snippet */
+.detailImageContainer .card.backdropCard {
+  top: 323px !important;
+}
+
+
+
+
 
 /* Don't scroll cover on desktop view */
 .layout-desktop .detailImageContainer .card {
@@ -82,15 +95,17 @@
 .trackSelections {
   max-width: 100%;
   width: 60%;
+  padding-top: 1em;
   padding-bottom: 0.5em;
 }
 .detailTrackSelect {
   background: transparent !important;
   padding: .35em 1.9em .35em .35em !important;
 }
+/*
 .detailTrackSelect[disabled] {
   color: white !important;
-}
+}*/
 
 /* media title and buttons */
 .detailPagePrimaryContent {

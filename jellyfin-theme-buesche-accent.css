@@ -87,6 +87,22 @@
   accent color: full
 */
 
+/* Indicators */
+.innerCardFooter,
+.countIndicator,
+.playedIndicator,
+.mediaSourceIndicator {
+  color: rgb(var(--accent)) !important;
+}
+
+.missingIndicator, .unairedIndicator {
+    background: #ae3030eb;
+    padding: .3em .6em;
+    color: #fff;
+}
+
+/* Buttons */
+
 .emby-tab-button:hover,
 .emby-tab-button:hover.show-focus:focus,
 .raised.homeLibraryButton:hover,

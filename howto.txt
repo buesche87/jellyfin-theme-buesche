@@ -1,6 +1,3 @@
-
-
-
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-login.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-header.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-accent.css');
@@ -16,3 +13,9 @@
 :root {--background-selection: 0, 164, 220;}
 :root {--background-indicator: rgba(2,2,0,0.7);}
 :root {--headersize: 3.8em;}
+:root {--background-verylight: rgba(255, 255, 255, 0.6) ;}
+:root {--background-lighter: rgba(255, 255, 255, 0.4) ;}
+:root {--background-light: rgba(255, 255, 255, 0.2) ;}
+:root {--background-dark: rgba(0, 0, 0, 0.2) ;}
+:root {--background-darker: rgba(0, 0, 0, 0.4) ;}
+:root {--background-verydark: rgba(0, 0, 0, 0.6) ;}

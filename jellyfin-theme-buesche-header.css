@@ -53,20 +53,21 @@
 | Scrollbar - Show / Hide
 -----------------------------*/
 
-#loginPage,
+/* auto */
 #indexPage, 
 #moviesPage, 
 #tvRecommendedPage, 
 #itemDetailPage {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
+/* force */
 .userPreferencesPage {
   overflow-y: scroll;
 }
 
-/* no scrollbar */
-
+/* hide */
+#loginPage,
 .libraryDocument {
   overflow-y: hidden !important;
 }

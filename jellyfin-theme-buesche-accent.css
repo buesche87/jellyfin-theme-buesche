@@ -41,6 +41,31 @@
   border-width: .35em;
 }
 
+
+/*
+| Button Animations
+-----------------------------*/
+
+/* hovering */
+.raised:hover, 
+.fab:hover,
+.navMenuOption:hover,
+.actionSheetMenuItem:hover,
+.css-17c09up:hover,
+a[data-role="button"]:hover {
+  background: rgba(var(--accent),0.5) !important;
+}
+
+/* focused */
+.raised:focus {
+  background: rgba(var(--accent),0.5) !important;
+}
+
+
+
+
+
+
 /* 
 ----------
   misc
@@ -85,6 +110,7 @@
 .paper-icon-button-light:hover,
 .paper-icon-button-light:hover:not(:disabled),
 .paper-icon-button-light.show-focus:focus,
+.paper-icon-button-light.show-focus:focus:not(:disabled),
 .cardOverlayButton:hover {
   color: rgb(var(--accent)) !important;
   background: var(--background-lighter) !important;
@@ -196,15 +222,6 @@ progress::-webkit-progress-value {
   background-color: rgba(var(--accent), 0.75) !important;
 }
 
-/* accent: transparency 50% */
-.raised:hover, 
-.fab:hover,
-.navMenuOption:hover,
-.actionSheetMenuItem:hover,
-.css-17c09up:hover,
-a[data-role="button"]:hover {
-  background: rgba(var(--accent),0.5) !important;
-}
 
 .mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
   background: rgba(var(--accent), 0.5);
@@ -348,8 +365,9 @@ div[data-role="controlgroup"] a.ui-btn-active {
   border-radius: var(--rounding);
 } */
 
+
 .cardOverlayContainer:hover,
-.dialog,
+/* .dialog, */
 .toast,
 .raised.homeLibraryButton:hover {
   box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
@@ -529,9 +547,6 @@ a[data-role="button"] {
   color: rgba(var(--accent),1) !important;
   text-shadow: none !important;
 }
-
-
-
 
 @-webkit-keyframes pulse {
  0% {

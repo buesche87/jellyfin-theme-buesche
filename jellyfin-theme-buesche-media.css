@@ -60,14 +60,14 @@
 .detailImageContainer .card {
   max-height: 80vh;
   max-width: 25vw;
-  position: fixed !important;
+  /* position: fixed !important; */
   left: 3% !important;
   overflow: hidden;
 }
 
 /* movie / episode poser */
 .detailImageContainer .card.portraitCard {
-  top: 477px !important;
+  top: 50% !important;
 }
 
 /* episode snippet */

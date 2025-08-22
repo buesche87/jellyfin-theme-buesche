@@ -68,11 +68,13 @@
 /* movie / episode poser */
 .detailImageContainer .card.portraitCard {
   top: 50% !important;
+  bottom: initial !important;
 }
 
 /* episode snippet */
 .detailImageContainer .card.backdropCard {
   top: 323px !important;
+  bottom: initial !important;
 }
 
 

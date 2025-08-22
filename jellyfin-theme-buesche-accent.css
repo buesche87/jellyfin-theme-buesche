@@ -185,10 +185,6 @@ a[data-role="button"]:hover {
 */
 
 /* accent: opaque */
-.mdl-slider {
-  background-color: rgba(var(--accent));
-}
-
 .mdl-slider-background-lower {
   background-color: rgba(var(--accent));
 } 

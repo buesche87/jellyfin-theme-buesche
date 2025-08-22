@@ -99,8 +99,10 @@
 .countIndicator,
 .playedIndicator,
 .mediaSourceIndicator {
-  color: rgb(var(--accent)) !important;
-  background: var(--background-darkest);
+  /* color: rgb(var(--accent)) !important; */
+  /* background: var(--background-darkest); */
+  color: black;
+  background: rgb(var(--accent)) !important;
 }
 
 .missingIndicator,

@@ -53,8 +53,8 @@
 .button-flat.show-focus:focus,
 .paper-icon-button-light:hover,
 .paper-icon-button-light:hover:not(:disabled),
-.paper-icon-button-light.show-focus:focus,
-.paper-icon-button-light.show-focus:focus:not(:disabled),
+.paper-icon-button-light:focus,
+.paper-icon-button-light:focus:not(:disabled),
 .cardOverlayButton:hover {
   color: rgb(var(--accent)) !important;
   background: var(--background-lighter) !important;
@@ -78,12 +78,6 @@
 a[data-role="button"]:hover {
   background: rgba(var(--accent),0.5) !important;
 }
-
-
-
-
-
-
 
 /* 
 ----------

@@ -13,6 +13,11 @@
 
 
 
+/* smaller buttons on focus  */
+.paper-icon-button-light.show-focus:focus {
+    -webkit-transform: scale(1.2) !important;
+    transform: scale(1.2) !important;
+}
 
 
 

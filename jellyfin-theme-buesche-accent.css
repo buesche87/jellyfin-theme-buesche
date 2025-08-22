@@ -46,8 +46,31 @@
 | Button Animations
 -----------------------------*/
 
-/* hovering */
+/* hovering & focus - 100%*/
+.button-link:hover,
+.button-link.show-focus:focus,
+.button-flat:hover,
+.button-flat.show-focus:focus,
+.paper-icon-button-light:hover,
+.paper-icon-button-light:hover:not(:disabled),
+.paper-icon-button-light.show-focus:focus,
+.paper-icon-button-light.show-focus:focus:not(:disabled),
+.cardOverlayButton:hover {
+  color: rgb(var(--accent)) !important;
+  background: var(--background-lighter) !important;
+}
+
+/* without background */
+.emby-tab-button:hover,
+.emby-tab-button.show-focus:focus,
+.raised.homeLibraryButton:hover {
+  color: rgb(var(--accent)) !important;
+}
+
+
+/* hovering & focus - 50%*/
 .raised:hover, 
+.raised:focus,
 .fab:hover,
 .navMenuOption:hover,
 .actionSheetMenuItem:hover,
@@ -56,10 +79,6 @@ a[data-role="button"]:hover {
   background: rgba(var(--accent),0.5) !important;
 }
 
-/* focused */
-.raised:focus {
-  background: rgba(var(--accent),0.5) !important;
-}
 
 
 
@@ -103,18 +122,6 @@ a[data-role="button"]:hover {
   accent color and light background
 */
 
-.button-link:hover,
-.button-link.show-focus:focus,
-.button-flat:hover,
-.button-flat.show-focus:focus,
-.paper-icon-button-light:hover,
-.paper-icon-button-light:hover:not(:disabled),
-.paper-icon-button-light.show-focus:focus,
-.paper-icon-button-light.show-focus:focus:not(:disabled),
-.cardOverlayButton:hover {
-  color: rgb(var(--accent)) !important;
-  background: var(--background-lighter) !important;
-}
 
 /*
   accent color: full
@@ -144,9 +151,6 @@ a[data-role="button"]:hover {
 
 
 /* Buttons */
-.emby-tab-button:hover,
-.emby-tab-button.show-focus:focus,
-.raised.homeLibraryButton:hover,
 .ratingbutton-icon-withrating,
 .playstatebutton-icon-played,
 .upNextDialog-countdownText {
@@ -181,6 +185,10 @@ a[data-role="button"]:hover {
 */
 
 /* accent: opaque */
+.mdl-slider {
+  background-color: rgba(var(--accent));
+}
+
 .mdl-slider-background-lower {
   background-color: rgba(var(--accent));
 } 

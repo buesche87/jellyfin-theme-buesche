@@ -2,6 +2,22 @@
     Ultrachromic/fixes.css
 */
 
+
+
+
+
+/* Vdeo OSD (controls) */
+.videoOsdBottom {
+    padding-bottom: max(env(safe-area-inset-bottom), 1em);
+}
+
+
+
+
+
+
+
+
 /* Media player */
 .startTimeText, .endTimeText {
     width: 3.4em;

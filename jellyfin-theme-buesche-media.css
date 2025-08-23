@@ -1,103 +1,83 @@
 /*  
-==================================
-  Style the media details
-==================================
+  ==================================
+  Media Page
+  ==================================
+
+  finny - HTPC Theme for Jellyin
+  Based on: Ultrachromic
+
 */
 
 
 /*
-| Details Ribbon - Media Info
+| Details Ribbon (Media Infos)
 -------------------------------------------------*/
 
 /* style & placement of the ribbon */
 .detailRibbon {
-  /* background: rgba(0, 0, 0, 0.2) !important; */
-  /*height: 3em !important;*/
   padding-left: 32vw !important;
   padding-right: 2%;
 }
 
-/* hide "ends at" info in ribbon */
-.endsAt {
+/* desktop mode only */
+.layout-desktop .detailRibbon {
+    height: 9em !important;
+    margin-top: -11em !important;
+}
+
+/* hide some infos in ribbon and details */
+.detailLogo,
+.endsAt
+.hide+.detailPageWrapperContainer .itemName
+.itemTags {
   display: none !important;
 }
 
 /* make media buttons bigger (play, trailer, watched etc.) */
-.layout-tv .mainDetailButtons {
+.mainDetailButtons {
 	font-size: 120% !important;
   margin: 1em 0 1em;
 }
 
-/* media infos - placement and same color */
+/* media infos - placement and white color */
 .itemMiscInfo {
   margin-top: 0.6em;
   margin-bottom: 0.6em;
   color: #ffffff !important;
 }
-
 .parentName {
   padding-bottom: 0.5em;
   padding-top: 0.5em;
 }
 
 /*
-| Hide Scrollbar
------------------------------*/
-/*
-#itemDetailPage {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
+| Media Poster
+-------------------------------------------------*/
 
-#itemDetailPage::-webkit-scrollbar {
-  display: none;
-}
-*/
-/*
-  media details
-*/
-
-
-/* hide media logo */
-.detailLogo {
-  display: none !important;
-}
-
-.hide+.detailPageWrapperContainer .itemName {
-  display: block !important;
-}
-
-/* Media Cover */
+/* Cover Style*/
 .detailImageContainer .card {
   max-height: 80vh;
   max-width: 25vw;
-  /* position: fixed !important; */
   left: 3% !important;
+  position: absolute !important;
   overflow: hidden;
 }
 
-/* movie / episode poser */
+/* Portrait Position */
 .detailImageContainer .card.portraitCard {
   top: 50% !important;
   bottom: initial !important;
 }
 
-/* episode snippet */
+/* Landscane Position */
 .detailImageContainer .card.backdropCard {
   top: 323px !important;
   bottom: initial !important;
 }
 
-
-
-
-
-/* Don't scroll cover on desktop view */
-.layout-desktop .detailImageContainer .card {
-  position: fixed !important;
-  top: 13vh;
-}
+/*
+| Media Description
+-------------------------------------------------*/
 
 /* Episode / Movie Title */
 #itemDetailPage .itemName.infoText.parentNameLast {
@@ -105,7 +85,15 @@
   padding-bottom: 0.3em;
 }
 
-/* track selections (audio & subtitles) */
+/* Media Title and Buttons */
+.detailPagePrimaryContent {
+  padding-bottom: 1em;
+  border-radius: var(--rounding);
+  right: 2%;
+  margin-left: 2%;
+}
+
+/* Track Selections (audio & subtitles) */
 .trackSelections {
   max-width: 100%;
   width: 60%;
@@ -116,36 +104,20 @@
   background: transparent !important;
   padding: .35em 1.9em .35em .35em !important;
 }
-/*
-.detailTrackSelect[disabled] {
-  color: white !important;
-}*/
-
-/* media title and buttons */
-.detailPagePrimaryContent {
-  /*background: rgba(0, 0, 0, 0.4) !important;*/
-  padding-bottom: 1em;
-  border-radius: var(--rounding);
-  right: 2%;
-  margin-left: 2%;
-}
-
 
 /* Media Description */
+.itemDetailPage {
+  padding-top: 6em !important;
+}
 .detailPageContent {
   padding-left: 32vw !important;
 }
 .detailPageSecondaryContainer {
   padding-top: 0em !important;
 }
-.layout-tv .detailVerticalSection {
+.detailVerticalSection {
   margin-left: -1%;
   margin-bottom: 0em !important;
-}
-
-/* hide Tags */
-.itemTags {
-  display: none !important;
 }
 
 /* narrow space between description and genre */
@@ -153,25 +125,9 @@
   margin-top: 0.5em !important;
 }
 
-
-
-/* don't break line for tv */
-.layout-tv .detailPagePrimaryContainer {
-  display: flex;
-}
-
-
-
-.layout-tv .itemDetailPage {
-  padding-top: 6em !important;
-}
-
-.layout-desktop .detailRibbon {
-    height: 9em !important;
-    margin-top: -11em !important;
-}
-
-/* Section layout (cast, more like this...) */
+/*
+| Section Layout (cast, more...)
+-------------------------------------------------*/
 
 /* fix section title placement */
 .sectionTitle {

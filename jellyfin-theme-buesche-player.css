@@ -1,34 +1,30 @@
-/*
-    Ultrachromic/fixes.css
+/*  
+  ==================================
+  Player & Osd
+  ==================================
+
+  finny - HTPC Theme for Jellyin
+  Based on: Ultrachromic/progress/floating.css
+
 */
 
+/*
+| Vdeo OSD 
+-------------------------------*/
 
-
-
-
-/* Vdeo OSD (controls) */
-.videoOsdBottom {
-    padding-bottom: max(env(safe-area-inset-bottom), 1em);
+/* zoom media buttons  */
+.autoSize.paper-icon-button-light:focus {
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
 }
 
-/* no zoom on header buttons when focused (tv) */
+/* don't zoom header buttons */
 .headerButton {
     -webkit-transform: scale(1.0) !important;
     transform: scale(1.0) !important;
 }
 
-
-/* smaller buttons on focus  */
-.autoSize.paper-icon-button-light:focus {
-    -webkit-transform: scale(1.2) !important;
-    transform: scale(1.2) !important;
-}
-
-
-
-
-
-/* Media player */
+/* style the controls*/
 .startTimeText, .endTimeText {
     width: 3.4em;
     display: block;
@@ -38,15 +34,24 @@
   margin-left: 0.5em;
 }
 .videoOsdBottom {
-    padding-top: 1em;
+  padding-top: 1em;
+  padding-bottom: max(env(safe-area-inset-bottom), 1em);
 }
 .skinHeader-withBackground.osdHeader {
-    height: 5em;
+  height: 5em;
 }
 
+
 /*
-    Ultrachromic/progress/floating.css
-*/
+| Player
+-------------------------------*/
+
+.nowPlayingPageImage {
+  border: none;
+}
+.upNextDialog-countdownText {
+  color: white;
+}
 
 /* New progress bar */
 #indexPage .innerCardFooterClear,
@@ -91,16 +96,4 @@
     backdrop-filter: blur(4px);
     background: rgba(0, 0, 0, 0.35) !important;
   }
-}
-
-/*
-    Modified: Ultrachromic/base.css
-*/
-
-/* Media player */
-.nowPlayingPageImage {
-  border: none;
-}
-.upNextDialog-countdownText {
-  color: white;
 }

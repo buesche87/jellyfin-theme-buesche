@@ -1,9 +1,14 @@
-/*
-| Ultrachromic/episodelist/episodes_compactlist.css
---------------------------------------------------------*/
+/*  
+  ==================================
+  Compact Episodes
+  ==================================
+
+  finny - HTPC Theme for Jellyin
+  Full Credits: Ultrachromic/episodelist/episodes_compactlist.css
+
+*/
 
 /* Size episode preview images in a more compact way */
-
 .listItemImage.listItemImage-large.itemAction.lazy {
   transition: filter 0.2s
 }

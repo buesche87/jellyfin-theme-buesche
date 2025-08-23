@@ -1,9 +1,14 @@
-/*
-| Ultrachromic/smallercast.css
---------------------------------------------------------*/
+/*  
+  ==================================
+  Smaller Cast
+  ==================================
+
+  finny - HTPC Theme for Jellyin
+  Full Credits: Ultrachromic/smallercast.css
+
+*/
 
 /* Shrink and square (or round) cast thumnails */
-
 @media all and (min-width: 131.25em){
   #castContent .card.overflowPortraitCard {
     width: 6.3vw !important; 
@@ -64,7 +69,6 @@
 }
 
 /* Correct image aspect ratio behaviour, set border-radius to zero for square tiles */
-
 @media all and (min-width: 131.25em){
   #castContent .cardScalable {
     width: calc(6.3vw - 0.6em) !important; 

@@ -1,5 +1,11 @@
-/*
-  Ultrachromic/header/header_transparent.css & Ultrachromic/fixes.css
+/*  
+  ==================================
+  Base & Header
+  ==================================
+
+  finny - HTPC Theme for Jellyin
+  Based on: Ultrachromic/header/header_transparent.css & Ultrachromic/fixes.css
+
 */
 
 /* Font */
@@ -13,30 +19,32 @@
 
 /* general "dpi" */
 .layout-tv {
-    font-size: 110% !important;
+  font-size: 110% !important;
 }
 
-/* width 20% per card allows 5 instead of 4 movies per row */
+/* 20% allows 5 instead of 4 movies on a row */
 .itemsContainer-tv>.backdropCard {
-    width: 20% !important;
-}
-.itemsContainer-tv>.overflowBackdropCard {
-    width: 21.5vw !important;
+  width: 20% !important;
 }
 
-/* don't grow icons indefinitely when resizing window */
-.itemsContainer-tv>.overflowPortraitCard, .itemsContainer-tv>.overflowSquareCard {
-    width: 15.6vw !important;
-    max-width: 12em !important;
+/* smaller pictures > more space */
+.itemsContainer-tv>.overflowBackdropCard {
+  width: 21.5vw !important;
+}
+
+/* don't grow icons indefinitely when resizing the window */
+.itemsContainer-tv>.overflowPortraitCard, 
+.itemsContainer-tv>.overflowSquareCard {
+  width: 15.6vw !important;
+  max-width: 12em !important;
 }
 
 /* add space for icon enlargement */
 .sectionTitleContainer-cards {
-    padding-bottom: 0.5em !important;
+  padding-bottom: 0.5em !important;
 }
-
 .padded-right-withalphapicker {
-    padding-right: 5% !important;
+  padding-right: 5% !important;
 }
 
 /* page adjustments */
@@ -52,7 +60,7 @@
 | Scrollbar - Show / Hide
 -----------------------------*/
 
-/* auto - thin */
+/* auto (thin) */
 #indexPage, 
 #moviesPage, 
 #tvRecommendedPage, 
@@ -134,7 +142,7 @@
 }
 
 /*
-| Settings - Size & Alignment
+| Settings Page
 -----------------------------*/
 
 /* wider input fields */
@@ -168,7 +176,7 @@
 }
 
 /*
-| Menu - Alignment
+| Menu Page
 -----------------------------*/
 
 /* Improve some menu alignments */

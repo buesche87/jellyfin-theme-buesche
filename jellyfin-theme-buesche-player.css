@@ -14,7 +14,7 @@
 
 
 /* smaller buttons on focus  */
-.paper-icon-button-light.show-focus:focus {
+.autoSize.paper-icon-button-light:focus {
     -webkit-transform: scale(1.2) !important;
     transform: scale(1.2) !important;
 }

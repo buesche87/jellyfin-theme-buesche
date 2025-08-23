@@ -48,9 +48,9 @@
 
 /* hovering & focus - 100% */
 .button-link:hover,
-.button-link.show-focus:focus,
+.button-link:focus,
 .button-flat:hover,
-.button-flat.show-focus:focus,
+.button-flat:focus,
 .paper-icon-button-light:hover,
 .paper-icon-button-light:hover:not(:disabled),
 .paper-icon-button-light:focus,
@@ -62,7 +62,7 @@
 
 /* without background */
 .emby-tab-button:hover,
-.emby-tab-button.show-focus:focus,
+.emby-tab-button:focus,
 .raised.homeLibraryButton:hover {
   color: rgb(var(--accent)) !important;
 }
@@ -81,7 +81,7 @@ a[data-role="button"]:hover {
 
 
 /* Profile list entries */
-.listItem-border.emby-button.show-focus:focus {
+.listItem-border.emby-button:focus {
   background: rgba(var(--accent),0.8) !important;
 }
 .listItem-border.emby-button:hover {

@@ -106,13 +106,13 @@ a[data-role="button"]:hover {
 
 .visualCardBox,
 .cardImageContainer {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 /* Remove background on some icons */
 .emby-tab-button-active,
 .listItemIcon {
-    background: #0000 !important;
+  background: #0000 !important;
 }
 
 

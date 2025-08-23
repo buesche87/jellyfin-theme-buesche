@@ -43,7 +43,7 @@
 /*
 | Hide Scrollbar
 -----------------------------*/
-
+/*
 #itemDetailPage {
   overflow-y: scroll;
   scrollbar-width: none;
@@ -53,7 +53,7 @@
 #itemDetailPage::-webkit-scrollbar {
   display: none;
 }
-
+*/
 /*
   media details
 */

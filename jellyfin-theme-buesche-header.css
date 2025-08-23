@@ -59,18 +59,29 @@
 #tvRecommendedPage, 
 #itemDetailPage {
   overflow-y: auto;
-}
-
-/* force */
-.userPreferencesPage {
-  overflow-y: scroll;
+  scrollbar-width: thin;
 }
 
 /* hide */
+#itemDetailPage,
+#loginPage {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+#loginPage::-webkit-scrollbar,
+#itemDetailPage::-webkit-scrollbar {
+  display: none;
+}
+
+
+/*
 #loginPage,
 .libraryDocument {
   overflow-y: hidden !important;
 }
+*/
+
 
 /*
 | Inputs - General style

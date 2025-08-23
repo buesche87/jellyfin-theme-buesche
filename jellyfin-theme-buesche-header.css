@@ -48,7 +48,6 @@
   padding-top: 0.5em !important;
 }
 
-
 /*
 | Scrollbar - Show / Hide
 -----------------------------*/
@@ -67,7 +66,7 @@
 .libraryDocument::-webkit-scrollbar, 
 #loginPage,
 #loginPage::-webkit-scrollbar {
-  overflow-y: hidden !important;
+  overflow-y: auto !important;
   scrollbar-width: none;
 }
 

@@ -11,7 +11,7 @@
     padding-bottom: max(env(safe-area-inset-bottom), 1em);
 }
 
-
+/* no zoom on header buttons when focused (tv) */
 .headerButton {
     -webkit-transform: scale(1.0) !important;
     transform: scale(1.0) !important;

@@ -5,8 +5,9 @@
 */
 
 
-
-/* Details Ribbon with media infos & buttons */
+/*
+| Details Ribbon - Media Info
+-------------------------------------------------*/
 
 /* style & placement of the ribbon */
 .detailRibbon {
@@ -34,13 +35,24 @@
   color: #ffffff !important;
 }
 
-
-
 .parentName {
   padding-bottom: 0.5em;
   padding-top: 0.5em;
 }
 
+/*
+| Hide Scrollbar
+-----------------------------*/
+
+#itemDetailPage {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#itemDetailPage::-webkit-scrollbar {
+  display: none;
+}
 
 /*
   media details
@@ -154,6 +166,11 @@
   padding-top: 6em !important;
 }
 
+.layout-desktop .detailRibbon {
+    height: 9em !important;
+    margin-top: -11em !important;
+}
+
 /* Section layout (cast, more like this...) */
 
 /* fix section title placement */
@@ -174,3 +191,5 @@
 .layout-mobile .sectionTitleTextButton > .material-icons {
   padding-top: .2em;
 }
+
+

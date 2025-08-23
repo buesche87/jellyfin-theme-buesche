@@ -449,16 +449,28 @@ fieldset {
   border: 0.01em solid var(--background-light);
 }
 .emby-input:focus,
-.emby-textarea:focus,
-.emby-select-withcolor:focus {
+.emby-textarea:focus {
   background: var(--background-darker) !important; 
 }
+
+.emby-select-withcolor:focus {
+  background: rgba(var(--accent), 0.8)  !important; 
+}
+
 .emby-textarea:focus,
 .emby-select-withcolor:focus,
 .emby-input:focus,
 .itemSelectionPanel {
   border: 0.01em solid rgba(var(--accent), 0.8) !important;
 }
+
+/* select - hover */
+.emby-select-withcolor:hover {
+  background: rgba(var(--accent),0.4);
+}
+
+
+
 .emby-checkbox:checked + span + .checkboxOutline {
   background-color: var(--background-darker) !important; 
   border: 0.01em solid rgba(var(--accent), 0.8) !important;

@@ -53,7 +53,7 @@
 | Scrollbar - Show / Hide
 -----------------------------*/
 
-/* auto */
+/* auto - thin */
 #indexPage, 
 #moviesPage, 
 #tvRecommendedPage, 
@@ -63,25 +63,13 @@
 }
 
 /* hide */
-#itemDetailPage,
-#loginPage {
-  overflow-y: scroll;
+.libraryDocument,
+.libraryDocument::-webkit-scrollbar, 
+#loginPage,
+#loginPage::-webkit-scrollbar {
+  overflow-y: hidden !important;
   scrollbar-width: none;
 }
-
-#loginPage::-webkit-scrollbar,
-#itemDetailPage::-webkit-scrollbar {
-  display: none;
-}
-
-
-/*
-#loginPage,
-.libraryDocument {
-  overflow-y: hidden !important;
-}
-*/
-
 
 /*
 | Inputs - General style

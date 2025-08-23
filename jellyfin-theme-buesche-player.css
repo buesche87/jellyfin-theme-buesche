@@ -12,6 +12,11 @@
 }
 
 
+.headerButton {
+    -webkit-transform: scale(1.0) !important;
+    transform: scale(1.0) !important;
+}
+
 
 /* smaller buttons on focus  */
 .autoSize.paper-icon-button-light:focus {

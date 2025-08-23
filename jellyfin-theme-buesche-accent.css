@@ -81,12 +81,23 @@ a[data-role="button"]:hover {
 
 
 /* Profile list entries */
+/*
 .listItem-border.emby-button:focus {
   background: rgba(var(--accent),0.8) !important;
 }
 .listItem-border.emby-button:hover {
   background: rgba(var(--accent),0.4) !important;
 }
+*/
+.listItem:hover {
+  background: rgba(var(--accent),0.4) !important;
+}
+
+.listItem:focus {
+  background: rgba(var(--accent),0.8) !important;
+}
+
+
 
 /* 
 ----------

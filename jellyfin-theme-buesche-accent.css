@@ -143,39 +143,41 @@
 | Lists & Cards - Glow
 -----------------------------*/
 
-/* Zoom ond focus */
+/* Cards: Zoom on Focus */
 .card.show-animation:focus>.cardBox {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
 }
 
-/* Glow focused cards */
-.card.show-animation:focus>.cardBox {
-  box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent),0.6) !important;
-  border-radius: var(--rounding);
-}
-
-/* Accent: 100% */
-.raised.homeLibraryButton {
+/* Portrait Cards: Glow Card */
+.card.portraitCard.show-animation:hover>.cardBox
+.card.portraitCard.show-animation:focus>.cardBox {
   box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
-  border: solid 1px rgba(var(--accent),0) !important;
+  border: solid 1px rgba(var(--accent),0.6) !important;
 }
 
-/* Accent: 60% */
-.cardOverlayContainer:hover,
+/* Backdrop Cards: Glow Image only */
+.card.overflowBackdropCard.show-animation:hover>.cardBox>.cardScalable,
+.card.overflowBackdropCard.show-animation:focus>.cardBox>.cardScalable {
+  box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
+  border: solid 1px rgba(var(--accent),0.6) !important;
+}
+
+/* Misc Cards: Glow */
 .toast,
 .raised.homeLibraryButton:hover {
   box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
   border: solid 1px rgba(var(--accent),0.6) !important;
 }
 
-/* Card borded only on hover */
-.cardOverlayContainer {
-  border: solid 1px rgba(var(--accent),0.0) !important;
+/* Misc Cards: Don't Glow */
+.cardOverlayContainer, 
+.raised.homeLibraryButton {
+  box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
+  border: solid 1px rgba(var(--accent),0) !important;
 }
 
-/* Misc (??) */
+/* Misc: (??) */
 .drawer-open {
   box-shadow: 0px 0px 5px rgba(var(--accent), 1) !important;
   border-right: solid 1px rgba(var(--accent), 1) !important;
@@ -395,7 +397,7 @@ a[data-role="button"]:hover {
 
 
 /*
-| Slider
+| Slider (Play progress & volume)
 -----------------------------*/
 
 /* Background: Accent: 100% */
@@ -403,12 +405,13 @@ a[data-role="button"]:hover {
   background-color: rgba(var(--accent));
 } 
 
-/* Background: Accent: 100% */
+/* Background & Thumb: Accent: 100% */
 .iconOsdProgressInner,
 .mdl-slider::-moz-range-thumb,
 .mdl-slider::-ms-thumb,
 .mdl-slider::-webkit-slider-thumb {
   background: rgba(var(--accent));
+  color: rgba(var(--accent));
 }
 
 

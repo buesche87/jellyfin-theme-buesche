@@ -8,7 +8,7 @@
 
 */
 
-/* Shrink and square (or round) cast thumnails */
+/* Shrink and square (or round) cast thumbnails */
 @media all and (min-width: 131.25em){
   #castContent .card.overflowPortraitCard {
     width: 6.3vw !important; 

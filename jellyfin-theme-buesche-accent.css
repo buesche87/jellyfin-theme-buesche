@@ -428,11 +428,8 @@ a[data-role="button"]:hover {
   border: 0.01em solid var(--background-light);
 }
 
-/* Colors for loading spinner, placeholders, scroll bars (??) */
-.mdl-spinner__layer-1 {border-color: rgba(var(--accent),0.2);}
-.mdl-spinner__layer-2 {border-color: rgba(128, 128, 128, 1);}
-.mdl-spinner__layer-3 {border-color: rgba(40, 40, 40, 1);}
-.mdl-spinner__layer-4 {border-color: rgba(0, 0, 0, 1);}
+
+
 
 /*
 | Fields & Inputs - Animations
@@ -469,6 +466,26 @@ a[data-role="button"]:hover {
 /*
 | Misc
 -----------------------------*/
+
+
+/* Loading Spinner: Accent Color */
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+  border-color: rgba(var(--accent)) !important;
+}
+
+
+/* Loading Spinner: Background */
+
+/*
+.mdl-spinner__layer-1 {border-color: rgba(255, 255, 255, 0.8);}
+.mdl-spinner__layer-2 {border-color: rgba(128, 128, 128, 1);}
+.mdl-spinner__layer-3 {border-color: rgba(40, 40, 40, 1);}
+.mdl-spinner__layer-4 {border-color: rgba(0, 0, 0, 1);}
+*/
+
 
 /* ?? */
 fieldset {

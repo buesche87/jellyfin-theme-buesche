@@ -150,8 +150,8 @@
 }
 
 
-#moviesPage .backdropCard > .cardFooter > .cardText-secondary 
-#tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
+#moviesPage .cardText-secondary, 
+#tvRecommendedPage .cardText-secondary {
   display: none;
 }
 

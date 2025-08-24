@@ -8,6 +8,19 @@
 
 */
 
+/* account bigger taskbar */
+.layout-tv .itemDetailPage {
+    padding-top: 4.7em !important;
+}
+
+/* hide some elements on page in ribbon and details */
+.detailLogo,
+.endsAt
+.hide+.detailPageWrapperContainer .itemName
+.itemExternalLinks,
+.itemTags {
+  display: none !important;
+}
 
 /*
 | Details Ribbon (Media Infos)
@@ -21,23 +34,14 @@
 
 /* desktop mode only */
 .layout-desktop .detailRibbon {
-    height: 9em !important;
-    margin-top: -11em !important;
+  height: 9em !important;
+  margin-top: -11em !important;
 }
 
-/* hide some infos in ribbon and details */
-.detailLogo,
-.endsAt
-.hide+.detailPageWrapperContainer .itemName
-.itemTags {
-  display: none !important;
-}
 
-/* make media buttons bigger (play, trailer, watched etc.) */
-.mainDetailButtons {
-	font-size: 120% !important;
-  margin: 1em 0 1em;
-}
+/*
+| Media Info and Buttons
+-------------------------------------------------*/
 
 /* media infos - placement and white color */
 .itemMiscInfo {
@@ -49,6 +53,13 @@
   padding-bottom: 0.5em;
   padding-top: 0.5em;
 }
+
+/* make them bigger and fix spacing */
+.layout-tv .mainDetailButtons {
+  font-size: 120% !important;
+  margin-bottom: 0.25em !important;
+}
+
 
 /*
 | Media Poster
@@ -65,13 +76,13 @@
 
 /* Portrait Position */
 .card.portraitCard {
-  top: 20% !important;
+  top: 23% !important;
   bottom: initial !important;
 }
 
 /* Landscane Position */
 .card.backdropCard {
-  top: 20% !important;
+  top: 31% !important;
   bottom: initial !important;
 }
 
@@ -89,8 +100,6 @@
 .detailPagePrimaryContent {
   padding-bottom: 1em;
   border-radius: var(--rounding);
-  right: 2%;
-  margin-left: 2%;
 }
 
 /* Track Selections (audio & subtitles) */
@@ -106,6 +115,7 @@
 }
 
 /* Media Description */
+
 .itemDetailPage {
   padding-top: 6em !important;
 }
@@ -118,6 +128,11 @@
 .detailVerticalSection {
   margin-left: -1%;
   margin-bottom: 0em !important;
+}
+
+.overview.detail-clamp-text {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* narrow space between description and genre */

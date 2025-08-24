@@ -199,7 +199,6 @@
 -----------------------------*/
 
 /* Count & Played */
-.innerCardFooter,
 .countIndicator,
 .playedIndicator,
 .mediaSourceIndicator {
@@ -236,12 +235,49 @@ progress::-webkit-progress-bar {
   border: 0px solid var(--background-light20);
 }
 
+/* Black / White */
+.itemProgressBar {
+  background: var(--background-dark20);
+}
+/* Accent: 35% */
+#dashboardPage .transcodingProgress > div,
+.itemProgressBarForeground {
+  background-color: rgba(var(--accent), 0.35) !important;
+}
+
+/* New progress bar */
+#indexPage .innerCardFooterClear,
+.libraryPage .innerCardFooterClear,
+#itemDetailPage .innerCardFooterClear {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+#indexPage .itemProgressBarForeground,
+.libraryPage .itemProgressBarForeground,
+#itemDetailPage .itemProgressBarForeground,
+#indexPage .itemProgressBar,
+.libraryPage .itemProgressBar,
+#itemDetailPage .itemProgressBar {
+    border-radius: var(--rounding);
+}
+#indexPage .itemProgressBarForeground,
+.libraryPage .itemProgressBarForeground,
+#itemDetailPage .itemProgressBarForeground  {
+    background-color: rgba(var(--accent), 0.95) !important;
+}
+#indexPage .itemProgressBar,
+.libraryPage .itemProgressBar,
+#itemDetailPage .itemProgressBar {
+    height: 6px;
+    background: rgba(0,0,0,0.4);
+    margin: .5em .8em;
+}
+
 
 /* Accent: 75% */
 .playbackProgress > div {
   background-color: rgba(var(--accent),0.75) !important;
 }
-
 
 /* Player watched state: Accent 75% */
 .taskProgressInner,
@@ -249,16 +285,10 @@ progress::-webkit-progress-bar {
   background: rgba(var(--accent),0.75) !important;
 }
 
-
-/* Accent: 35% */
-#dashboardPage .transcodingProgress > div,
-.itemProgressBarForeground {
-  background-color: rgba(var(--accent), 0.35) !important;
-}
-
-/* Black / White */
-.itemProgressBar {
-  background: var(--background-dark20);
+/* Library Scan Progress */
+#divRunningTasks span,
+#scheduledTasksPage span {
+  color: var(--background-light60) !important;
 }
 
 .backgroundProgress > div {
@@ -266,11 +296,11 @@ progress::-webkit-progress-bar {
 }
 
 
-/* Library Scan Progress */
-#divRunningTasks span,
-#scheduledTasksPage span {
-  color: var(--background-light60) !important;
-}
+
+
+
+
+
 
 
 /*

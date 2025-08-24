@@ -155,6 +155,11 @@
   display: none;
 }
 
+#moviesPage .portraitCard > .cardFooter > .cardText-secondary,
+#tvRecommendedPage .portraitCard > .cardFooter > .cardText-secondary {
+  display: block;
+}
+
 
 /* Item Cards: Glow Card */
 .card.backdropCard.show-animation:hover > .cardBox, 

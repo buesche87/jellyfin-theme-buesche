@@ -44,7 +44,7 @@ progress::-webkit-progress-value,
 .cardContent-button, 
 .cardContent-shadow,
 .cardImage,
-/* .cardImageContainer, */
+.cardImageContainer,
 .cardOverlayButtonIcon,
 .chapterThumb,
 .chapterThumbContainer,
@@ -83,17 +83,22 @@ progress::-webkit-progress-value,
 | Full Radius - Top or Bottom
 ---------------------------------------*/
 
-/* top */
-#divVirtualFolders .cardImageContainer {
-  border-top-left-radius: var(--rounding);
-  border-top-right-radius: var(--rounding);
+/* Round Top - Flat Bottom */
+.cardImageContainer.coveredImage {
+  border-top-left-radius: var(--rounding) !important;
+  border-top-right-radius: var(--rounding) !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 
-/* bottom */
+/* Flat Top - Round Bottom */
 #userProfilesPage .cardImage, 
-#userProfilesPage .cardContent  {
-  border-bottom-left-radius: var(--rounding);
-  border-bottom-right-radius: var(--rounding);
+#userProfilesPage .cardContent,
+#divVirtualFolders .cardImageContainer {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: var(--rounding) !important;
+  border-top-right-radius: var(--rounding) !important;
 }
 
 /*

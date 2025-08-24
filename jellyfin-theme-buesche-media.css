@@ -79,13 +79,13 @@
 /* Portrait Position */
 .card.portraitCard {
   top: 23% !important;
-  bottom: initial !important;
+  /*bottom: initial !important; */
 }
 
 /* Landscane Position */
 .card.backdropCard {
-  top: 166px !important;
-  bottom: initial !important;
+  top: 31% !important;
+  /*bottom: initial !important; */
 }
 
 /*

@@ -8,15 +8,15 @@
 
 */
 
-/* :root {--accent: 204,151,98;}
-:root {--background-verylight: rgba(255, 255, 255, 0.6) ;}
-:root {--background-lighter: rgba(255, 255, 255, 0.4) ;}
-:root {--background-light: rgba(255, 255, 255, 0.2) ;}
-:root {--background-dark: rgba(0, 0, 0, 0.2) ;}
-:root {--background-darker: rgba(0, 0, 0, 0.4) ;}
-:root {--background-verydark: rgba(0, 0, 0, 0.6) ;}
-:root {--background-darkest: rgba(0, 0, 0, 0.8) ;}
-*/
+:root {--accent: 204,151,98;}
+:root {--background-light60: rgba(255, 255, 255, 0.6) ;}
+:root {--background-light40: rgba(255, 255, 255, 0.4) ;}
+:root {--background-light20: rgba(255, 255, 255, 0.2) ;}
+:root {--background-dark20: rgba(0, 0, 0, 0.2) ;}
+:root {--background-dark40: rgba(0, 0, 0, 0.4) ;}
+:root {--background-dark60: rgba(0, 0, 0, 0.6) ;}
+:root {--background-dark80: rgba(0, 0, 0, 0.8) ;}
+
 
 /*
 | All Pages
@@ -26,7 +26,7 @@
 /* Background & Backdrop */
 .skinHeader-withBackground,
 .backgroundContainer.withBackdrop {
-  background-color: var(--background-darkest) !important;
+  background-color: var(--background-dark80) !important;
 }
 
 /* scrollbar */
@@ -48,19 +48,19 @@
 }
 
 .mainDrawer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--background-dark80);
 }
 
 .appfooter {
-	background: rgba(0,0,0,0.9);
+	background: var(--background-dark80);
 }
 
 .infoBanner {
-  background: #101010;
+  background: black;
 }
 
 .css-4yt2of {
-  background-color: var(--background-verydark);
+  background-color: var(--background-dark60);
   border-right: 1px solid rgba(var(--accent), 0.12);
 }
 
@@ -71,7 +71,7 @@
 /* Login Page */
 #loginPage .cardImage {
   color: rgba(var(--accent)) !important;
-  background: var(--background-light) !important;
+  background: var(--background-light20) !important;
 }
 
 /* Media Details */
@@ -125,7 +125,7 @@
 /* Background: Dark */
 .paperList, 
 .visualCardBox{
-  background-color: var(--background-darker);
+  background-color: var(--background-dark40);
 }
 
 /* Remove divider on list items */
@@ -205,21 +205,39 @@
 }
 
 /*
-| Play Progress
+| Play Progress in Cards
 -----------------------------*/
 
-/* Accent: 75% */
-#dashboardPage .playbackProgress > div,
-.playbackProgress>div,
+/* Bar: Accent */
 progress::-moz-progress-bar,
 progress::-webkit-progress-value {
+  background-color: rgba(var(--accent),0.75);
+}
+
+/* Background */
+progress,
+.taskProgressOuter {
+  background: var(--background-dark40) !important;
+  border: 1px solid var(--background-light20);
+}
+
+progress::-webkit-progress-bar {
+  border: 0px solid var(--background-light20);
+}
+
+
+/* Accent: 75% */
+.playbackProgress > div {
   background-color: rgba(var(--accent),0.75) !important;
 }
 
+
+/* Player watched state: Accent 75% */
 .taskProgressInner,
 .sliderMarker.watched {
   background: rgba(var(--accent),0.75) !important;
 }
+
 
 /* Accent: 35% */
 #dashboardPage .transcodingProgress > div,
@@ -229,50 +247,18 @@ progress::-webkit-progress-value {
 
 /* Black / White */
 .itemProgressBar {
-  background: var(--background-dark);
+  background: var(--background-dark20);
 }
 
 .backgroundProgress > div {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
 }
 
-/*
-| Library Scan Progress
------------------------------*/
 
-/* Accent */
-.taskProgressInner {
-  background: rgba(var(--accent),0.75) !important;
-}
-
-/* Black & White */
-#divRunningTasks span {
-  color: var(--background-verylight) !important;
-}
-
+/* Library Scan Progress */
+#divRunningTasks span,
 #scheduledTasksPage span {
-  color: rgba(255,255,255,0.75) !important;
-}
-
-/* Background */
-progress,
-progress::-webkit-progress-bar,
-.taskProgressOuter {
-  background: rgba(0, 0, 0, 0.5) !important;
-}
-
-progress::-moz-progress-bar,
-progress::-webkit-progress-value {
-  background-color: rgba(var(--accent),0.75);;
-}
-
-/* Border */
-progress,
-.taskProgressOuter {
-  border: 1px solid rgba(255, 255, 255, 0.22);
-}
-progress::-webkit-progress-bar {
-  border: 0px solid rgba(255, 255, 255, 0.22);
+  color: var(--background-light60) !important;
 }
 
 
@@ -308,16 +294,16 @@ a[data-role="button"],
 .navMenuOption-selected,
 .raised,
 .selectionCommandsPanel {
-  background: var(--background-darker) !important;
+  background: var(--background-dark40) !important;
 }
 
 .raised.homeLibraryButton {
-  background: var(--background-lighter) !important;
+  background: var(--background-light40) !important;
 }
 
 /* user settings button */
 div[data-role="controlgroup"] a.ui-btn-active {
-  background: var(--background-darker) !important;
+  background: var(--background-dark40) !important;
   color: white !important;
 }
 
@@ -378,11 +364,11 @@ a[data-role="button"]:hover {
 .paper-icon-button-light:focus,
 .paper-icon-button-light:focus:not(:disabled),
 .cardOverlayButton:hover {
-  background: var(--background-lighter) !important;
+  background: var(--background-light40) !important;
 }
 
 .raised.homeLibraryButton:hover {
-  background: var(--background-verylight) !important;
+  background: var(--background-light60) !important;
 }
 
 /* List entries */
@@ -429,7 +415,7 @@ a[data-role="button"]:hover {
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor {
-  background: var(--background-verydark); 
+  background: var(--background-dark60); 
 }
 
 /* Borders: Accent 50% */
@@ -442,7 +428,7 @@ a[data-role="button"]:hover {
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor {
-  border: 0.01em solid var(--background-light);
+  border: 0.01em solid var(--background-light20);
 }
 
 
@@ -469,7 +455,7 @@ a[data-role="button"]:hover {
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-input:focus,
 .emby-textarea:focus {
-  background: var(--background-darker) !important; 
+  background: var(--background-dark40) !important; 
 }
 
 /* Borders on Focus: Accent 80% */

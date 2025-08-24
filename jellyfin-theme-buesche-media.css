@@ -10,7 +10,7 @@
 
 /* account bigger taskbar */
 .layout-tv .itemDetailPage {
-    padding-top: 4.7em !important;
+  padding-top: 4.7em !important;
 }
 
 /* hide some elements on page in ribbon and details */
@@ -68,7 +68,9 @@
 /* Cover Style*/
 .detailImageContainer .card {
   max-height: 80vh;
-  max-width: 25vw;
+  max-width: 26vw;
+  -webkit-transform: none;
+  transform: none;
   left: 3% !important;
   position: absolute !important;
   overflow: hidden;
@@ -82,7 +84,7 @@
 
 /* Landscane Position */
 .card.backdropCard {
-  top: 31% !important;
+  top: 166px !important;
   bottom: initial !important;
 }
 
@@ -99,7 +101,7 @@
 /* Media Title and Buttons */
 .detailPagePrimaryContent {
   padding-bottom: 1em;
-  border-radius: var(--rounding);
+  /*border-radius: var(--rounding); */
 }
 
 /* Track Selections (audio & subtitles) */
@@ -115,13 +117,14 @@
 }
 
 /* Media Description */
-
 .itemDetailPage {
   padding-top: 6em !important;
 }
+/*
 .detailPageContent {
   padding-left: 32vw !important;
-}
+}*/
+
 .detailPageSecondaryContainer {
   padding-top: 0em !important;
 }
@@ -143,6 +146,11 @@
 /*
 | Section Layout (cast, more...)
 -------------------------------------------------*/
+
+/* space between sections */
+.layout-tv .detailVerticalSection {
+    margin-bottom: 1em !important;
+}
 
 /* fix section title placement */
 .sectionTitle {

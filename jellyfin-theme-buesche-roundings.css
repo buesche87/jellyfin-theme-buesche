@@ -84,7 +84,7 @@ progress::-webkit-progress-value,
 ---------------------------------------*/
 
 /* Round Top - Flat Bottom */
-.cardImageContainer.coveredImage {
+.cardImageContainer.coveredImage.cardContent {
   border-top-left-radius: var(--rounding) !important;
   border-top-right-radius: var(--rounding) !important;
   border-bottom-left-radius: 0 !important;

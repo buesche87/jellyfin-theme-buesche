@@ -72,6 +72,11 @@ progress::-webkit-progress-value,
   border-radius: var(--rounding);
 }
 
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+  border-radius: var(--rounding);
+}
+
 /*
 | Full Radius - Top or Bottom
 ---------------------------------------*/

@@ -7,7 +7,7 @@
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-episodes.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-player.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-cast.css');
-:root {--accent: 204.00787045,151.00999580324999,98.99450000000002;}
+:root {--accent: 204,151,98;}
 :root {--rounding: 12px;}
 :root {--rounding-indicators: 6px;}
 :root {--background-selection: 0, 164, 220;}

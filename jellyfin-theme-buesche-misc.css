@@ -1,0 +1,145 @@
+/*  
+  ==================================
+  Misc Styling
+  ==================================
+
+  finny - HTPC Theme for Jellyin
+  Based on: Ultrachromic/login/login_frame.css
+
+*/
+
+
+/*
+| Mobile
+-----------------------------*/
+
+/* Accommodate mobile and align buttons and indicators */
+@media all and (min-width: 70em){
+  .cardOverlayFab-primary {
+    background-color: #00000000;
+  }
+  .cardOverlayButtonIcon {
+    background-color: #00000000 !important;
+  }
+  .cardOverlayContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+/* Play button hovering (for low width windows) */
+@media all and (max-width: 70em){
+  .cardOverlayFab-primary {
+    background-color: #00000000;
+  }
+  .cardOverlayButtonIcon {
+    background-color: #00000000 !important;
+  }
+  .cardOverlayContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .cardOverlayButton {
+    padding: 0.25em;
+  }
+}
+
+/*
+| Syncplay
+-----------------------------*/
+
+.syncPlayIconCircle {
+  color: rgba(var(--accent),1) !important;
+  text-shadow: none !important;
+}
+
+@-webkit-keyframes pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}
+@keyframes pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}
+@-webkit-keyframes infinite-pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}
+@keyframes infinite-pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}

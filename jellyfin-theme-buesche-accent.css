@@ -371,10 +371,12 @@ a[data-role="button"]:hover {
   background: var(--background-verylight) !important;
 }
 
-/* Profile list entries */
+/* List entries */
+.listItem-button:focus,
 .listItem-border.emby-button:focus {
   background: rgba(var(--accent),0.8) !important;
 }
+.listItem-button:hover,
 .listItem-border.emby-button:hover {
   background: rgba(var(--accent),0.4) !important;
 }
@@ -437,6 +439,7 @@ a[data-role="button"]:hover {
 
 /* Borders on Focus: Accent 50% */
 .emby-checkbox:checked + span + .checkboxOutline,
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
 .emby-textarea:focus,
 .emby-input:focus {
   border: 0.01em solid rgba(var(--accent),0.5) !important;

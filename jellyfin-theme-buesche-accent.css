@@ -149,14 +149,14 @@
   transform:scale(1.1);
 }
 
-/* Item Cards: Glow Card */
-.card.PortraitCard.show-animation:hover > .cardBox,
-.card.PortraitCard.show-animation:focus > .cardBox {
-  box-shadow: 0px 0px 5px rgba(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent),0.6) !important;
-  border-radius: var(--rounding);
+
+#moviesPage .backdropCard > .cardFooter > .cardText-secondary 
+#tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
+  display: none;
 }
 
+
+/* Item Cards: Glow Card */
 .card.backdropCard.show-animation:hover > .cardBox, 
 .card.backdropCard.show-animation:focus > .cardBox,
 .card.portraitCard.show-animation:hover > .cardBox, 

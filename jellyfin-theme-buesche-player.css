@@ -12,6 +12,12 @@
 | Vdeo OSD 
 -------------------------------*/
 
+/* Hide some elements */
+.btnFullscreen,
+.btnPip {
+  display: none;
+}
+
 /* zoom media buttons  */
 .autoSize.paper-icon-button-light:focus {
   -webkit-transform: scale(1.2) !important;
@@ -25,7 +31,8 @@
 }
 
 /* style the controls*/
-.startTimeText, .endTimeText {
+.startTimeText,
+.endTimeText {
     width: 3.4em;
     display: block;
     text-align: center;

@@ -408,7 +408,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
 
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-textarea:focus,
-.emby-select-withcolor:focus,
 .emby-input:focus,
 .itemSelectionPanel {
   border: 0.01em solid rgba(var(--accent),0.5) !important;
@@ -447,6 +446,7 @@ fieldset {
 | fields, focus & hover
 -----------------------------*/
 
+/* color */
 .checkboxOutline,
 .emby-input,
 .emby-textarea,
@@ -463,18 +463,13 @@ fieldset {
   background: rgba(var(--accent), 0.8)  !important; 
 }
 
+/* border */
 .emby-textarea:focus,
 .emby-select-withcolor:focus,
 .emby-input:focus,
 .itemSelectionPanel {
   border: 0.01em solid rgba(var(--accent), 0.8) !important;
 }
-
-/* select - hover */
-.emby-select-withcolor:hover {
-  background: rgba(var(--accent),0.4);
-}
-
 
 
 .emby-checkbox:checked + span + .checkboxOutline {

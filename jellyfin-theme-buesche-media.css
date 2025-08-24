@@ -64,14 +64,14 @@
 }
 
 /* Portrait Position */
-.detailImageContainer .card.portraitCard {
-  top: 50% !important;
+.card.portraitCard {
+  top: 20% !important;
   bottom: initial !important;
 }
 
 /* Landscane Position */
-.detailImageContainer .card.backdropCard {
-  top: 323px !important;
+.card.backdropCard {
+  top: 20% !important;
   bottom: initial !important;
 }
 

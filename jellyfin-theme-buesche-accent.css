@@ -100,7 +100,10 @@
 /*
 | Lists & Cards
 -----------------------------*/
-
+/* Media Details */
+#itemDetailPage .button-link {
+  color: inherit !important;
+}
 
 /* Background: Dark */
 .paperList {

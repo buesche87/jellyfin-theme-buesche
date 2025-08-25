@@ -2,7 +2,7 @@
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-accent.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-roundings.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-login.css');
-@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-cards.css');
+@import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-lists.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-media.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-episodes.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-player.css');

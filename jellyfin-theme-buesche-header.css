@@ -22,6 +22,23 @@
   font-size: 110% !important;
 }
 
+/* 20% allows 5 instead of 4 movies on a row */
+.itemsContainer-tv>.backdropCard {
+  width: 20% !important;
+}
+
+/* smaller pictures > more space */
+.itemsContainer-tv>.overflowBackdropCard {
+  width: 21.5vw !important;
+}
+
+/* don't grow icons indefinitely when resizing the window */
+.itemsContainer-tv>.overflowPortraitCard, 
+.itemsContainer-tv>.overflowSquareCard {
+  width: 15.6vw !important;
+  max-width: 12em !important;
+}
+
 /* add space for icon enlargement */
 .sectionTitleContainer-cards {
   padding-bottom: 0.5em !important;
@@ -194,7 +211,15 @@
   margin-right: .2em;
 }
 
-
+/* Narrow margins, theme main page */
+.cardBox-bottompadded {
+  margin-bottom: 0.5em !important;
+  margin-right: 1.5em !important;
+}
+.itemsContainer > .card > .cardBox {
+  margin-left: 0.6em !important;
+  margin-right: 0.8em;
+}
 
 /* home library button */
 .homeLibraryButton {
@@ -216,6 +241,9 @@
 | Misc
 -----------------------------*/
 
+.visualCardBox, .cardImageContainer {
+  box-shadow: none;
+}
 
 .sessionCardFooter {
   border: none;

@@ -8,11 +8,6 @@
 
 */
 
-
-/*
-| Cards: General
--------------------------------------------------*/
-
 /* Affects blurhash to remove the saturated colors to fit overall look */
 .blurhash-canvas {
 	filter: opacity(60%) saturate(60%);
@@ -22,6 +17,28 @@
 .card.show-animation:focus > .cardBox {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
+}
+
+/* more space for portrait cards */
+.card.portraitCard.show-focus.show-animation {
+  padding-bottom: 1em !important;
+}
+
+/* 20% allows 5 instead of 4 movies on a row */
+.itemsContainer-tv > .backdropCard {
+  width: 20% !important;
+}
+
+/* smaller pictures > more space */
+.itemsContainer-tv > .overflowBackdropCard {
+  width: 21.5vw !important;
+}
+
+/* don't grow icons indefinitely when resizing the window */
+.itemsContainer-tv > .overflowPortraitCard, 
+.itemsContainer-tv > .overflowSquareCard {
+  width: 15.6vw !important;
+  max-width: 12em !important;
 }
 
 /* Narrow margins, theme main page */
@@ -34,34 +51,62 @@
   margin-right: 0.8em;
 }
 
+
+/*
+| Media Indicators
+-----------------------------*/
+
+/* Alignment */
+.cardIndicators,
+.listItemIndicators,
+.mediaSourceIndicator {
+  right: 0.5em !important;
+  top: 0.5em !important;
+}
+
+/* Accent Color: Count, Played & Media Source */
+.countIndicator,
+.playedIndicator,
+.mediaSourceIndicator {
+  color: black;
+  background: rgb(var(--accent)) !important;
+}
+
+/* Accent Color: Missing & Unaired */
+.missingIndicator,
+.unairedIndicator {
+    background: #ae3030eb;
+    padding: .3em .6em;
+    color: #fff;
+}
+
+/*
+| Media Cards - Color
+-----------------------------*/
+
+.visualCardBox {
+  /* background-color: var(--background-dark40); */
+  box-shadow: none;
+}
+
 /* no shadow */
 .visualCardBox,
 .cardImageContainer {
   box-shadow: none;
 }
 
-/*
-.visualCardBox {
-  background-color: var(--background-dark40);
+/* Media Details */
+#itemDetailPage .button-link {
+  color: inherit !important;
 }
-*/
-
 
 /*
-| Item Cards - Style & Animation
--------------------------------------------------*/
+| Media Cards - Animations
+-----------------------------*/
 
-/* Portrait Card: more space for portrait cards */
-.card.portraitCard.show-focus.show-animation {
-  padding-bottom: 1em !important;
-}
 
-/* Backdrop Cards: 20% allows 5 instead of 4 movies on a row */
-.itemsContainer-tv > .backdropCard {
-  width: 20% !important;
-}
 
-/* Glow Cards on hover and focus */
+/* Glow Card */
 .card.backdropCard.show-animation:hover > .cardBox, 
 .card.backdropCard.show-animation:focus > .cardBox,
 .card.portraitCard.show-animation:hover > .cardBox, 
@@ -71,29 +116,7 @@
     border-radius: var(--rounding);
 }
 
-
-/*
-| Overflow Cards - Style & Animation
--------------------------------------------------*/
-
-/* Backdrop Cards: Smaller pictures > more space */
-.itemsContainer-tv > .overflowBackdropCard {
-  width: 21.5vw !important;
-}
-
-/* Portrait Card: Don't grow indefinitely */
-.itemsContainer-tv > .overflowPortraitCard {
-  width: 15% !important;
-  max-width: 12em !important;
-}
-
-/* Square Card: Don't grow indefinitely */
-.itemsContainer-tv > .overflowSquareCard {
-  width: 15% !important;
-  max-width: 12em !important;
-}
-
-/* Glow Image only on hover and focus */
+/* Glow Image only */
 .card.overflowBackdropCard.show-animation:hover > .cardBox > .cardScalable,
 .card.overflowBackdropCard.show-animation:focus > .cardBox > .cardScalable,
 .card.overflowPortraitCard.show-animation:hover > .cardBox > .cardScalable,
@@ -103,9 +126,23 @@
   border-radius: var(--rounding);
 }
 
+/* Misc: Don't Glow but keep space */
+.cardOverlayContainer {
+  box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
+  border: solid 1px rgba(var(--accent),0) !important;
+}
+
+
+.cardOverlayButton:hover {
+  color: rgb(var(--accent)) !important;
+  background: var(--background-light40) !important;
+}
+
+
+
 /*
 | Media Cards - Roundings
--------------------------------------------------*/
+-----------------------------*/
 
 /* Full Rounding */
 .cardOverlayContainer,
@@ -134,37 +171,10 @@
 }
 
 
-/*
-| Media Indicators
--------------------------------------------------*/
-
-/* Alignment */
-.cardIndicators,
-.listItemIndicators,
-.mediaSourceIndicator {
-  right: 0.5em !important;
-  top: 0.5em !important;
-}
-
-/* Accent Color: Count, Played & Media Source */
-.countIndicator,
-.playedIndicator,
-.mediaSourceIndicator {
-  color: black;
-  background: rgb(var(--accent)) !important;
-}
-
-/* Accent Color: Missing & Unaired */
-.missingIndicator,
-.unairedIndicator {
-    background: #ae3030eb;
-    padding: .3em .6em;
-    color: #fff;
-}
 
 /*
-| Hide some Elements
--------------------------------------------------*/
+| Hide Elements
+-----------------------------*/
 
 /* Remove Year from movie cards */
 #moviesPage .itemsContainer > .backdropCard > .cardFooter > .cardText-secondary,
@@ -178,18 +188,3 @@
   display: block;
 }
 
-/*
-| Misc - Animations
--------------------------------------------------*/
-
-/* Misc: Don't Glow but keep space */
-.cardOverlayContainer {
-  box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
-  border: solid 1px rgba(var(--accent),0) !important;
-}
-
-
-.cardOverlayButton:hover {
-  color: rgb(var(--accent)) !important;
-  background: var(--background-light40) !important;
-}

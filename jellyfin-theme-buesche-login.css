@@ -14,6 +14,12 @@
   background-size: cover !important;
 }
 
+/* Login card (user) */
+#loginPage .cardImage {
+  color: rgba(var(--accent)) !important;
+  background: var(--background-light20) !important;
+}
+
 /* move "please sign in" */
 #loginPage .visualLoginForm {
   padding-top: 1em;

@@ -39,13 +39,6 @@ progress::-webkit-progress-value,
 
 /* Cards & Items */
 .blurhash-canvas,
-.cardOverlayContainer,
-.cardContent,
-.cardContent-button, 
-.cardContent-shadow,
-.cardImage,
-.cardImageContainer,
-.cardOverlayButtonIcon,
 .chapterThumb,
 .chapterThumbContainer,
 .chapterThumbTextContainer,
@@ -58,8 +51,7 @@ progress::-webkit-progress-value,
 .raised,
 .sessionNowPlayingInnerContent, 
 .upNextContainer,
-.upNextDialog-poster-img,
-.visualCardBox {
+.upNextDialog-poster-img {
   border-radius: var(--rounding) !important;
 }
 .osdPoster img {
@@ -82,15 +74,6 @@ progress::-webkit-progress-value,
 /*
 | Full Radius - Top or Bottom
 ---------------------------------------*/
-
-/* Round Top - Flat Bottom */
-#moviesPage .cardImageContainer.cardContent,
-#tvRecommendedPage .cardImageContainer.coveredImage.cardContent {
-  border-top-left-radius: var(--rounding) !important;
-  border-top-right-radius: var(--rounding) !important;
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-}
 
 /* Flat Top - Round Bottom */
 #userProfilesPage .cardImage, 

@@ -22,7 +22,6 @@
 | All Pages
 -----------------------------*/
 
-
 /* Background & Backdrop */
 .skinHeader-withBackground,
 .backgroundContainer.withBackdrop {
@@ -68,16 +67,6 @@
 | Single Pages
 -----------------------------*/
 
-/* Login Page */
-#loginPage .cardImage {
-  color: rgba(var(--accent)) !important;
-  background: var(--background-light20) !important;
-}
-
-/* Media Details */
-#itemDetailPage .button-link {color: inherit !important;}
-
-
 /* Dashboard */
 #user_usage_report_table,
 .detailTable {
@@ -112,73 +101,15 @@
 | Lists & Cards
 -----------------------------*/
 
-/* Affects blurhash to remove the saturated colors to fit overall look */
-.blurhash-canvas {
-	filter: opacity(60%) saturate(60%);
-}
-
-/* more space for portrait cards */
-.card.portraitCard.show-focus.show-animation {
-  padding-bottom: 1em !important;
-}
 
 /* Background: Dark */
-.paperList, 
-.visualCardBox{
+.paperList {
   background-color: var(--background-dark40);
 }
 
 /* Remove divider on list items */
 .listItem-border {
   border-color: rgba(255, 255, 255, 0) !important; 
-}
-
-/* Shadows */
-.visualCardBox,
-.cardImageContainer {
-  box-shadow: none;
-}
-
-/*
-| Lists & Cards - Glow
------------------------------*/
-
-/* Cards: Zoom on Focus */
-.card.show-animation:focus > .cardBox {
-  -webkit-transform:scale(1.1);
-  transform:scale(1.1);
-}
-
-
-#moviesPage .backdropCard > .cardFooter > .cardText-secondary,
-#tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
-  display: none;
-}
-
-#moviesPage .portraitCard > .cardFooter > .cardText-secondary,
-#tvRecommendedPage .portraitCard > .cardFooter > .cardText-secondary {
-  display: block;
-}
-
-
-/* Item Cards: Glow Card */
-.card.backdropCard.show-animation:hover > .cardBox, 
-.card.backdropCard.show-animation:focus > .cardBox,
-.card.portraitCard.show-animation:hover > .cardBox, 
-.card.portraitCard.show-animation:focus > .cardBox {
-    box-shadow: 0px 0px 5px rgba(var(--accent)) !important;
-    border: solid 1px rgba(var(--accent), 0.6) !important;
-    border-radius: var(--rounding);
-}
-
-/* Overflow Cards: Glow Image only */
-.card.overflowBackdropCard.show-animation:hover > .cardBox > .cardScalable,
-.card.overflowBackdropCard.show-animation:focus > .cardBox > .cardScalable,
-.card.overflowPortraitCard.show-animation:hover > .cardBox > .cardScalable,
-.card.overflowPortraitCard.show-animation:focus > .cardBox > .cardScalable {
-  box-shadow: 0px 0px 5px rgba(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent),0.6) !important;
-  border-radius: var(--rounding);
 }
 
 /* Misc: Glow */
@@ -189,7 +120,6 @@
 }
 
 /* Misc: Don't Glow */
-.cardOverlayContainer, 
 .raised.homeLibraryButton {
   box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
   border: solid 1px rgba(var(--accent),0) !important;
@@ -201,25 +131,7 @@
   border-right: solid 1px rgba(var(--accent), 1) !important;
 }
 
-/*
-| Media Indicators
------------------------------*/
 
-/* Count & Played */
-.countIndicator,
-.playedIndicator,
-.mediaSourceIndicator {
-  color: black;
-  background: rgb(var(--accent)) !important;
-}
-
-/* Missing & Unaired */
-.missingIndicator,
-.unairedIndicator {
-    background: #ae3030eb;
-    padding: .3em .6em;
-    color: #fff;
-}
 
 /*
 | Play Progress in Cards
@@ -304,12 +216,6 @@ progress::-webkit-progress-bar {
 
 
 
-
-
-
-
-
-
 /*
 | Player
 -----------------------------*/
@@ -380,7 +286,6 @@ a[data-role="button"] {
 .button-link:focus,
 .button-flat:hover,
 .button-flat:focus,
-.cardOverlayButton:hover,
 .emby-tab-button:hover,
 .emby-tab-button:focus,
 .paper-icon-button-light:hover,
@@ -410,8 +315,7 @@ a[data-role="button"]:hover {
 .paper-icon-button-light:hover,
 .paper-icon-button-light:hover:not(:disabled),
 .paper-icon-button-light:focus,
-.paper-icon-button-light:focus:not(:disabled),
-.cardOverlayButton:hover {
+.paper-icon-button-light:focus:not(:disabled) {
   background: var(--background-light40) !important;
 }
 

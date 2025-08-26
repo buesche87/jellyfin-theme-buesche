@@ -81,17 +81,17 @@
   overflow: hidden;
 }
 
-/* Portrait Position */
+/* Portrait Position 
 .card.portraitCard {
   top: 23% !important;
-  /*bottom: initial !important; */
-}
+  bottom: initial !important; 
+} */
 
-/* Landscane Position */
+/* Landscane Position
 .card.backdropCard {
   top: 50% !important;
-  /*bottom: initial !important; */
-}
+  bottom: initial !important;
+} */
 
 /*
 | Media Description

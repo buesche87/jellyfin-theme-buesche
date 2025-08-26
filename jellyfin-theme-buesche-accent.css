@@ -33,10 +33,14 @@
 * {
   scrollbar-color: rgba(var(--accent),0.8) #0000 !important;
 }
+
+
 ::-webkit-scrollbar-corner,
 ::-webkit-scrollbar-track-piece {
   background-color: #0000;
 }
+
+.mdl-slider::-moz-range-thumb
 ::-webkit-scrollbar-thumb {
   background-color: rgba(var(--accent),0.8) !important;
 }
@@ -228,18 +232,18 @@
 /* Bar: Accent */
 progress::-moz-progress-bar,
 progress::-webkit-progress-value {
-  background-color: rgba(var(--accent),0.75);
+  background-color: rgba(var(--accent),0.75) !important;
 }
 
 /* Background */
 progress,
 .taskProgressOuter {
   background-color: var(--background-dark40) !important;
-  border: 1px solid var(--background-light20);
+  border: 1px solid var(--background-light20) !important;
 }
 
 progress::-webkit-progress-bar {
-  border: 0px solid var(--background-light20);
+  border: 0px solid var(--background-light20) !important;
 }
 
 /* Black / White */
@@ -276,7 +280,7 @@ progress::-webkit-progress-bar {
 .libraryPage .itemProgressBar,
 #itemDetailPage .itemProgressBar {
   height: 6px;
-  background: rgba(0,0,0,0.4);
+  background: var(--background-dark40) !important;
   margin: .5em .8em;
 }
 
@@ -299,7 +303,7 @@ progress::-webkit-progress-bar {
 }
 
 .backgroundProgress > div {
-  background-color: transparent;
+  background-color: #0000 !important;
 }
 
 

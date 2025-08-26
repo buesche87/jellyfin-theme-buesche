@@ -22,9 +22,14 @@
   font-size: 110% !important;
 }
 
-/* 20% allows 5 instead of 4 movies on a row */
-.itemsContainer-tv>.backdropCard {
+/* Backdrop Card List Item: width 20% for each element */
+.itemsContainer-tv > .backdropCard {
   width: 20% !important;
+}
+
+/* Portrait Card List Item: width 15% for each element */
+.itemsContainer-tv > .portraitCard {
+    width: 15% !important;
 }
 
 /* smaller pictures > more space */

@@ -45,6 +45,14 @@
   padding-bottom: 1.5em !important;
 }
 
+/* more space between title and list items */
+.sectionTitleContainer-cards {
+  padding-bottom: 0.5em !important;
+}
+.padded-right-withalphapicker {
+  padding-right: 5% !important;
+}
+
 
 /* page adjustments */
 #indexPage, 

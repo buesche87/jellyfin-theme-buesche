@@ -30,7 +30,6 @@
 .itemsContainer-tv > .backdropCard,
 .itemsContainer-tv > .overflowBackdropCard {
   width: 20% !important;
-  max-width: 20em !important;
 }
 
 /* Portrit ListItems: width 20% for each element */
@@ -38,7 +37,6 @@
 .itemsContainer-tv > .overflowPortraitCard, 
 .itemsContainer-tv > .overflowSquareCard {
   width: 14% !important;
-  max-width: 20em !important;
 }
 
 /* more space for zoomed cards */

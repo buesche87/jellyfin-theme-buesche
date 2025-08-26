@@ -81,7 +81,7 @@
 /* Dashboard */
 #user_usage_report_table,
 .detailTable {
-  background-color: rgba(0,0,0,.5);
+  background-color: var(--background-dark60) ;
 }
 
 .detailTableBodyRow-shaded {
@@ -256,7 +256,7 @@ progress::-webkit-progress-bar {
 #indexPage .innerCardFooterClear,
 .libraryPage .innerCardFooterClear,
 #itemDetailPage .innerCardFooterClear {
-  background-color: transparent !important;
+  background-color: #0000 !important;
   box-shadow: none;
 }
 #indexPage .itemProgressBarForeground,

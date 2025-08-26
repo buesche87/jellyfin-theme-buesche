@@ -22,18 +22,23 @@
   font-size: 110% !important;
 }
 
+.itemsContainer-tv {
+  padding-right: 3.3% !important;
+}
+
 /* Backdrop ListItems: width 20% for each element */
 .itemsContainer-tv > .backdropCard,
 .itemsContainer-tv > .overflowBackdropCard {
   width: 20% !important;
+  max-width: 20em !important;
 }
 
 /* Portrit ListItems: width 20% for each element */
 .itemsContainer-tv > .portraitCard,
 .itemsContainer-tv > .overflowPortraitCard, 
 .itemsContainer-tv > .overflowSquareCard {
-  width: 14% !important;
-  max-width: 12em !important;
+  width: 11% !important;
+  max-width: 20em !important;
 }
 
 /* more space for zoomed cards */

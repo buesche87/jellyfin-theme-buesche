@@ -121,11 +121,6 @@
 	filter: opacity(60%) saturate(60%);
 }
 
-/* more space for portrait cards */
-.card.portraitCard.show-focus.show-animation {
-  padding-bottom: 1em !important;
-}
-
 /* Background: Dark */
 .paperList, 
 .visualCardBox{

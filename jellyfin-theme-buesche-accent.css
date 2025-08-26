@@ -486,13 +486,14 @@ a[data-role="button"]:hover {
 
 /* CheckBox */
 .emby-checkbox:checked + span + .checkboxOutline,
-.emby-checkbox:focus:not(:checked) + span + .checkboxOutline {
-  border: 0.01em solid rgba(var(--accent),0.5) !important;
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
+.emby-checkbox:hover:not(:checked) + span + .checkboxOutline {
+  border: 0.01em solid rgba(var(--accent),0.8) !important;
 }
 
 .emby-checkbox:checked + span + .checkboxOutline {
   background-color: var(--background-dark40) !important; 
-  border: 0.01em solid rgba(var(--accent), 0.8) !important;
+  border: 0.01em solid rgba(var(--accent), 0.5) !important;
 }
 
 

@@ -61,10 +61,12 @@
 -----------------------------*/
 
 /* auto (thin) */
-#indexPage, 
 #moviesPage, 
+#moviesPage::-webkit-scrollbar,
 #tvRecommendedPage, 
-#itemDetailPage {
+#tvRecommendedPage::-webkit-scrollbar,
+#itemDetailPage,
+#itemDetailPage::-webkit-scrollbar {
   overflow-y: auto;
   scrollbar-width: thin;
 }
@@ -72,6 +74,8 @@
 /* hide */
 .libraryDocument,
 .libraryDocument::-webkit-scrollbar, 
+#indexPage, 
+#loginPage::-webkit-scrollbar,
 #loginPage,
 #loginPage::-webkit-scrollbar {
   overflow-y: auto !important;

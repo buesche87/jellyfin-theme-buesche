@@ -22,35 +22,26 @@
   font-size: 110% !important;
 }
 
-/* Backdrop Card List Item: width 20% for each element */
-.itemsContainer-tv > .backdropCard {
+/* Backdrop ListItems: width 20% for each element */
+.itemsContainer-tv > .backdropCard,
+.itemsContainer-tv > .overflowBackdropCard {
   width: 20% !important;
 }
 
-/* Portrait Card List Item: width 15% for each element */
-.itemsContainer-tv > .portraitCard {
-    width: 15% !important;
-}
-
-/* smaller pictures > more space */
-.itemsContainer-tv>.overflowBackdropCard {
-  width: 21.5vw !important;
-}
-
-/* don't grow icons indefinitely when resizing the window */
-.itemsContainer-tv>.overflowPortraitCard, 
-.itemsContainer-tv>.overflowSquareCard {
-  width: 15.6vw !important;
+/* Portrit ListItems: width 20% for each element */
+.itemsContainer-tv > .portraitCard,
+.itemsContainer-tv > .overflowPortraitCard, 
+.itemsContainer-tv > .overflowSquareCard {
+  width: 14% !important;
   max-width: 12em !important;
 }
 
-/* add space for icon enlargement */
-.sectionTitleContainer-cards {
-  padding-bottom: 0.5em !important;
+/* more space for zoomed cards */
+.card.portraitCard.show-focus.show-animation,
+.card.backdropCard.show-focus.show-animation {
+  padding-bottom: 1.5em !important;
 }
-.padded-right-withalphapicker {
-  padding-right: 5% !important;
-}
+
 
 /* page adjustments */
 #indexPage, 

@@ -75,7 +75,7 @@
 .libraryDocument,
 .libraryDocument::-webkit-scrollbar, 
 #indexPage, 
-#loginPage::-webkit-scrollbar,
+#indexPage::-webkit-scrollbar,
 #loginPage,
 #loginPage::-webkit-scrollbar {
   overflow-y: auto !important;

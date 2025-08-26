@@ -209,7 +209,7 @@
 .playedIndicator,
 .mediaSourceIndicator {
   color: black;
-  background-color: rgb(var(--accent)) !important;
+  background-color: rgb(var(--accent), 0.8) !important;
 }
 
 /* Missing & Unaired */
@@ -390,6 +390,8 @@ a[data-role="button"] {
 }
 
 /* Background on Hover & Focus: Accent 50% */
+.alphaPickerButton-tv:focus,
+.alphaPickerButton-tv:hover,
 .raised:hover, 
 .raised:focus,
 .fab:hover,

@@ -24,8 +24,6 @@
     }
 }
 
-
-
 .itemsContainer-tv {
   padding-right: 3.3% !important;
 }
@@ -75,12 +73,12 @@
 
 
 
-/* New progress bar /*
-/*
+/* New progress bar */
+
 #indexPage .innerCardFooterClear,
 .libraryPage .innerCardFooterClear,
 #itemDetailPage .innerCardFooterClear {
-  background: #0000 !important;
+  background: transparent !important;
   box-shadow: none;
 }
 #indexPage .itemProgressBarForeground,
@@ -103,13 +101,12 @@
   background: var(--background-dark40) !important;
   margin: .5em .8em;
 } 
-*/
+
 
 /* Fix footers/headers displaying on small pop-ups */
-/*
+
 .formDialogFooter-clear,
 .formDialogHeader-clear,
 .innerCardFooterClear {
-    background: #0000 !important;
+    background: transparent !important;
 }
-*/

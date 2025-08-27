@@ -71,8 +71,6 @@
 }
 
 
-
-
 /* New progress bar */
 
 #indexPage .innerCardFooterClear,
@@ -104,7 +102,6 @@
 
 
 /* Fix footers/headers displaying on small pop-ups */
-
 .formDialogFooter-clear,
 .formDialogHeader-clear,
 .innerCardFooterClear {

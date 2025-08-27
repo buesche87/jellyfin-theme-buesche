@@ -72,3 +72,41 @@
 .padded-right-withalphapicker {
   padding-right: 5% !important;
 }
+
+
+
+
+/* New progress bar */
+#indexPage .innerCardFooterClear,
+.libraryPage .innerCardFooterClear,
+#itemDetailPage .innerCardFooterClear {
+  background: #0000 !important;
+  box-shadow: none;
+}
+#indexPage .itemProgressBarForeground,
+.libraryPage .itemProgressBarForeground,
+#itemDetailPage .itemProgressBarForeground,
+#indexPage .itemProgressBar,
+.libraryPage .itemProgressBar,
+#itemDetailPage .itemProgressBar {
+  border-radius: var(--rounding);
+}
+#indexPage .itemProgressBarForeground,
+.libraryPage .itemProgressBarForeground,
+#itemDetailPage .itemProgressBarForeground  {
+  background: rgba(var(--accent), 0.95) !important;
+}
+#indexPage .itemProgressBar,
+.libraryPage .itemProgressBar,
+#itemDetailPage .itemProgressBar {
+  height: 6px;
+  background: var(--background-dark40) !important;
+  margin: .5em .8em;
+}
+
+/* Fix footers/headers displaying on small pop-ups */
+.formDialogFooter-clear,
+.formDialogHeader-clear,
+.innerCardFooterClear {
+    background-color: #0000 !important;
+}

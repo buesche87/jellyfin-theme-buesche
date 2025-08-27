@@ -296,12 +296,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
   border-radius: 50px !important;
 }
 
-/* Fix footers/headers displaying on small pop-ups */
-.formDialogFooter-clear,
-.formDialogHeader-clear,
-.innerCardFooterClear {
-    background-color: transparent !important;
-}
+
 
 /* Mobile tweaks */
 .layout-mobile .adminDrawerLogo {

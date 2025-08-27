@@ -33,17 +33,27 @@
 	filter: opacity(60%) saturate(60%);
 }
 
-/* Backdrop ListItems: width 20% for each element */
-.itemsContainer-tv > .backdropCard,
-.itemsContainer-tv > .overflowBackdropCard {
+
+.itemsContainer-tv > .backdropCard {
   width: 30% !important;
 }
 
-/* Overflow cards */
+
+/* Movie / TV Collection */
+.itemsContainer-tv > .card.backdropCard.show-focus.show-animation {
+    width: 20% !important;
+}
+
+/* Backdrop Overflow Cards */
+.itemsContainer-tv > .card.overflowBackdropCard.show-focus.show-animation{
+  width: 30% !important;
+}
+
+/* Overflow Portrait cards */
 .itemsContainer-tv > .portraitCard,
 .itemsContainer-tv > .overflowPortraitCard, 
 .itemsContainer-tv > .overflowSquareCard {
-  width: 14% !important;
+  width: 15% !important;
 }
 
 .overflowBackdropCard > .cardBox > .cardText-first {

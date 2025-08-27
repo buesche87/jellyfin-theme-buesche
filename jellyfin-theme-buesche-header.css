@@ -29,7 +29,7 @@
 /* Backdrop ListItems: width 20% for each element */
 .itemsContainer-tv > .backdropCard,
 .itemsContainer-tv > .overflowBackdropCard {
-  width: 20% !important;
+  width: 24% !important;
 }
 
 /* Portrit ListItems: width 20% for each element */

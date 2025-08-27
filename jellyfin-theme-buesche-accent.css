@@ -26,7 +26,7 @@
 /* Background & Backdrop */
 .skinHeader-withBackground,
 .backgroundContainer.withBackdrop {
-  background-color: var(--background-dark80) !important;
+  background: var(--background-dark80) !important;
 }
 
 /* scrollbar */
@@ -37,12 +37,12 @@
 
 ::-webkit-scrollbar-corner,
 ::-webkit-scrollbar-track-piece {
-  background-color: #0000;
+  background: #0000;
 }
 
 .mdl-slider::-moz-range-thumb
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(var(--accent),0.8) !important;
+  background: rgba(var(--accent),0.8) !important;
 }
 
 /* Theme process progress ring */
@@ -52,19 +52,19 @@
 }
 
 .mainDrawer {
-  background-color: var(--background-dark80);
+  background: var(--background-dark80);
 }
 
 .appfooter {
-	background-color: var(--background-dark80);
+	background: var(--background-dark80);
 }
 
 .infoBanner {
-  background-color: black;
+  background: black;
 }
 
 .css-4yt2of {
-  background-color: var(--background-dark60);
+  background: var(--background-dark60);
   border-right: 1px solid rgba(var(--accent), 0.12);
 }
 
@@ -75,7 +75,7 @@
 /* Login Page */
 #loginPage .cardImage {
   color: rgba(var(--accent)) !important;
-  background-color: var(--background-light20) !important;
+  background: var(--background-light20) !important;
 }
 
 /* Media Details */
@@ -85,15 +85,15 @@
 /* Dashboard */
 #user_usage_report_table,
 .detailTable {
-  background-color: var(--background-dark60) ;
+  background: var(--background-dark60) ;
 }
 
 .detailTableBodyRow-shaded {
-  background-color: #0000 !important;
+  background: #0000 !important;
 }
 
 .layout-mobile .listItemImageButton {
-  background-color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 
 /*
@@ -102,13 +102,13 @@
 
 /* Tab-Buttons in Taskbar */
 .emby-tab-button-active {
-  background-color: #0000 !important;
+  background: #0000 !important;
   color: #fff;
 }
 
 /* Remove background on some icons */
 .listItemIcon {
-  background-color: #0000 !important;
+  background: #0000 !important;
 }
 
 
@@ -124,7 +124,7 @@
 /* Background: Dark */
 .paperList, 
 .visualCardBox{
-  background-color: var(--background-dark40);
+  background: var(--background-dark40);
 }
 
 /* Remove divider on list items */
@@ -209,15 +209,15 @@
 .playedIndicator,
 .mediaSourceIndicator {
   color: black;
-  background-color: rgb(var(--accent), 0.8) !important;
+  background: rgb(var(--accent), 0.8) !important;
 }
 
 /* Missing & Unaired */
 .missingIndicator,
 .unairedIndicator {
-    background-color: #ae3030eb;
-    padding: .3em .6em;
     color: #fff;
+  background: #ae3030eb;
+    padding: .3em .6em;
 }
 
 /*
@@ -227,13 +227,13 @@
 /* Bar: Accent */
 progress::-moz-progress-bar,
 progress::-webkit-progress-value {
-  background-color: rgba(var(--accent),0.75) !important;
+  background: rgba(var(--accent),0.75) !important;
 }
 
 /* Background */
 progress,
 .taskProgressOuter {
-  background-color: var(--background-dark40) !important;
+  background: var(--background-dark40) !important;
   border: 1px solid var(--background-light20) !important;
 }
 
@@ -243,19 +243,19 @@ progress::-webkit-progress-bar {
 
 /* Black / White */
 .itemProgressBar {
-  background-color: var(--background-dark20);
+  background: var(--background-dark20);
 }
 /* Accent: 35% */
 #dashboardPage .transcodingProgress > div,
 .itemProgressBarForeground {
-  background-color: rgba(var(--accent), 0.35) !important;
+  background: rgba(var(--accent), 0.35) !important;
 }
 
 /* New progress bar */
 #indexPage .innerCardFooterClear,
 .libraryPage .innerCardFooterClear,
 #itemDetailPage .innerCardFooterClear {
-  background-color: #0000 !important;
+  background: #0000 !important;
   box-shadow: none;
 }
 #indexPage .itemProgressBarForeground,
@@ -269,7 +269,7 @@ progress::-webkit-progress-bar {
 #indexPage .itemProgressBarForeground,
 .libraryPage .itemProgressBarForeground,
 #itemDetailPage .itemProgressBarForeground  {
-  background-color: rgba(var(--accent), 0.95) !important;
+  background: rgba(var(--accent), 0.95) !important;
 }
 #indexPage .itemProgressBar,
 .libraryPage .itemProgressBar,
@@ -282,13 +282,13 @@ progress::-webkit-progress-bar {
 
 /* Accent: 75% */
 .playbackProgress > div {
-  background-color: rgba(var(--accent),0.75) !important;
+  background: rgba(var(--accent),0.75) !important;
 }
 
 /* Player watched state: Accent 75% */
 .taskProgressInner,
 .sliderMarker.watched {
-  background-color: rgba(var(--accent),0.75) !important;
+  background: rgba(var(--accent),0.75) !important;
 }
 
 /* Library Scan Progress */
@@ -298,7 +298,7 @@ progress::-webkit-progress-bar {
 }
 
 .backgroundProgress > div {
-  background-color: #0000 !important;
+  background: #0000 !important;
 }
 
 
@@ -313,7 +313,7 @@ progress::-webkit-progress-bar {
 -----------------------------*/
 
 .subtitleappearance-preview {
-  background-color: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
+  background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
 }
 
 
@@ -340,16 +340,16 @@ a[data-role="button"],
 .navMenuOption-selected,
 .raised,
 .selectionCommandsPanel {
-  background-color: var(--background-dark40) !important;
+  background: var(--background-dark40) !important;
 }
 
 .raised.homeLibraryButton {
-  background-color: var(--background-light40) !important;
+  background: var(--background-light40) !important;
 }
 
 /* user settings button */
 div[data-role="controlgroup"] a.ui-btn-active {
-  background-color: var(--background-dark40) !important;
+  background: var(--background-dark40) !important;
   color: white !important;
 }
 
@@ -399,7 +399,7 @@ a[data-role="button"] {
 .actionSheetMenuItem:hover,
 .css-17c09up:hover,
 a[data-role="button"]:hover {
-  background-color: rgba(var(--accent),0.5) !important;
+  background: rgba(var(--accent),0.5) !important;
 }
 
 /* Background on Hover & Focus: Black & White*/
@@ -412,21 +412,21 @@ a[data-role="button"]:hover {
 .paper-icon-button-light:focus,
 .paper-icon-button-light:focus:not(:disabled),
 .cardOverlayButton:hover {
-  background-color: var(--background-light40) !important;
+  background: var(--background-light40) !important;
 }
 
 .raised.homeLibraryButton:hover {
-  background-color: var(--background-light60) !important;
+  background: var(--background-light60) !important;
 }
 
 /* List entries */
 .listItem-button:focus,
 .listItem-border.emby-button:focus {
-  background-color: rgba(var(--accent),0.8) !important;
+  background: rgba(var(--accent),0.8) !important;
 }
 .listItem-button:hover,
 .listItem-border.emby-button:hover {
-  background-color: rgba(var(--accent),0.4) !important;
+  background: rgba(var(--accent),0.4) !important;
 }
 
 
@@ -436,14 +436,14 @@ a[data-role="button"]:hover {
 
 /* Background: Accent: 100% */
 .mdl-slider-background-lower {
-  background-color: rgba(var(--accent));
+  background: rgba(var(--accent));
 } 
 
 /* Background & Thumb: Accent: 100% */
 .iconOsdProgressInner,
 .mdl-slider::-moz-range-thumb,
 .mdl-slider::-webkit-slider-thumb {
-  background-color: rgba(var(--accent));
+  background: rgba(var(--accent));
   color: rgba(var(--accent));
 }
 
@@ -454,7 +454,7 @@ a[data-role="button"]:hover {
 
 /* Background: Accent 50% */
 .mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
-  background-color: rgba(var(--accent), 0.5);
+  background: rgba(var(--accent), 0.5);
 }
 
 /* Background: Dark */
@@ -462,7 +462,7 @@ a[data-role="button"]:hover {
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor {
-  background-color: var(--background-dark60); 
+  background: var(--background-dark60); 
 }
 
 /* Borders: Accent 50% */
@@ -493,7 +493,7 @@ a[data-role="button"]:hover {
 }
 
 .emby-checkbox:checked + span + .checkboxOutline {
-  background-color: var(--background-dark40) !important; 
+  background: var(--background-dark40) !important; 
   border: 0.01em solid rgba(var(--accent), 0.5) !important;
 }
 
@@ -504,7 +504,7 @@ a[data-role="button"]:hover {
 .emby-textarea:focus,
 .itemSelectionPanel {
   border: 0.01em solid rgba(var(--accent),0.5) !important;
-  background-color: var(--background-dark40) !important; 
+  background: var(--background-dark40) !important; 
 }
 
 

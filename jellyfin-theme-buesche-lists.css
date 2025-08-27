@@ -54,9 +54,8 @@
 
 .overflowBackdropCard > .cardBox > .cardText-secondary {
     font-size: 95% !important;
-    padding-top: 1em;
+    padding-top: .6em !important;
     color: inherit;
-    font-weight: bold;
 }
 
 /* more space for zoomed cards */

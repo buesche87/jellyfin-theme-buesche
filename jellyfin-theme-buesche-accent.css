@@ -116,10 +116,7 @@
 | Lists & Cards
 -----------------------------*/
 
-/* Affects blurhash to remove the saturated colors to fit overall look */
-.blurhash-canvas {
-	filter: opacity(60%) saturate(60%);
-}
+
 
 /* Background: Dark */
 .paperList, 
@@ -251,35 +248,6 @@ progress::-webkit-progress-bar {
   background: rgba(var(--accent), 0.35) !important;
 }
 
-/* New progress bar */
-#indexPage .innerCardFooterClear,
-.libraryPage .innerCardFooterClear,
-#itemDetailPage .innerCardFooterClear {
-  background: #0000 !important;
-  box-shadow: none;
-}
-#indexPage .itemProgressBarForeground,
-.libraryPage .itemProgressBarForeground,
-#itemDetailPage .itemProgressBarForeground,
-#indexPage .itemProgressBar,
-.libraryPage .itemProgressBar,
-#itemDetailPage .itemProgressBar {
-  border-radius: var(--rounding);
-}
-#indexPage .itemProgressBarForeground,
-.libraryPage .itemProgressBarForeground,
-#itemDetailPage .itemProgressBarForeground  {
-  background: rgba(var(--accent), 0.95) !important;
-}
-#indexPage .itemProgressBar,
-.libraryPage .itemProgressBar,
-#itemDetailPage .itemProgressBar {
-  height: 6px;
-  background: var(--background-dark40) !important;
-  margin: .5em .8em;
-}
-
-
 /* Accent: 75% */
 .playbackProgress > div {
   background: rgba(var(--accent),0.75) !important;
@@ -300,12 +268,6 @@ progress::-webkit-progress-bar {
 .backgroundProgress > div {
   background: #0000 !important;
 }
-
-
-
-
-
-
 
 
 /*

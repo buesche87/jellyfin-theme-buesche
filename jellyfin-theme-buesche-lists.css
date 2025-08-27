@@ -17,8 +17,6 @@
 }
 
 
-
-
 @supports (backdrop-filter: blur(15px)) {
     #indexPage .itemProgressBar, .libraryPage .itemProgressBar, #itemDetailPage .itemProgressBar {
         backdrop-filter: blur(12px);
@@ -32,10 +30,15 @@
   padding-right: 3.3% !important;
 }
 
+/* Affects blurhash to remove the saturated colors to fit overall look */
+.blurhash-canvas {
+	filter: opacity(60%) saturate(60%);
+}
+
 /* Backdrop ListItems: width 20% for each element */
 .itemsContainer-tv > .backdropCard,
 .itemsContainer-tv > .overflowBackdropCard {
-  width: 24% !important;
+  width: 30% !important;
 }
 
 /* Overflow cards */
@@ -50,8 +53,8 @@
 }
 
 .overflowBackdropCard > .cardBox > .cardText-secondary {
-    font-size: 83% !important;
-    padding-top: 0.6em;
+    font-size: 95% !important;
+    padding-top: 1em;
     color: inherit;
     font-weight: bold;
 }

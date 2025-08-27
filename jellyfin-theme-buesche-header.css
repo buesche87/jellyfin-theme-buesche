@@ -32,11 +32,22 @@
   width: 24% !important;
 }
 
-/* Portrit ListItems: width 20% for each element */
+/* Overflow cards */
 .itemsContainer-tv > .portraitCard,
 .itemsContainer-tv > .overflowPortraitCard, 
 .itemsContainer-tv > .overflowSquareCard {
   width: 14% !important;
+}
+
+.overflowBackdropCard > .cardBox > .cardText-first {
+  display: none;
+}
+
+.overflowBackdropCard > .cardBox > .cardText-secondary {
+    font-size: 83% !important;
+    padding-top: 0.6em;
+    color: inherit;
+    font-weight: bold;
 }
 
 /* more space for zoomed cards */

@@ -79,6 +79,7 @@
   background: transparent !important;
   box-shadow: none;
 }
+
 #indexPage .itemProgressBarForeground,
 .libraryPage .itemProgressBarForeground,
 #itemDetailPage .itemProgressBarForeground,
@@ -87,18 +88,21 @@
 #itemDetailPage .itemProgressBar {
   border-radius: var(--rounding);
 }
+
 #indexPage .itemProgressBarForeground,
 .libraryPage .itemProgressBarForeground,
 #itemDetailPage .itemProgressBarForeground  {
   background: rgba(var(--accent), 0.95) !important;
 }
+
 #indexPage .itemProgressBar,
 .libraryPage .itemProgressBar,
 #itemDetailPage .itemProgressBar {
   height: 6px;
-  background: var(--background-dark40) !important;
+  background: var(--background-dark40);
   margin: .5em .8em;
 } 
+
 
 
 /* Fix footers/headers displaying on small pop-ups */

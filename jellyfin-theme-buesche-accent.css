@@ -238,13 +238,8 @@ progress::-webkit-progress-bar {
   border: 0px solid var(--background-light20) !important;
 }
 
-/* Black / White */
-.itemProgressBar {
-  background: var(--background-dark20);
-}
 /* Accent: 35% */
-#dashboardPage .transcodingProgress > div,
-.itemProgressBarForeground {
+#dashboardPage .transcodingProgress > div {
   background: rgba(var(--accent), 0.35) !important;
 }
 

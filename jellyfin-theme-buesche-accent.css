@@ -31,7 +31,7 @@
 
 /* scrollbar */
 * {
-  scrollbar-color: rgba(var(--accent),0.8) #0000 !important;
+  scrollbar-color: rgba(var(--accent),0.8) !important;
 }
 
 
@@ -40,7 +40,7 @@
   background: #0000;
 }
 
-.mdl-slider::-moz-range-thumb
+.mdl-slider::-moz-range-thumb,
 ::-webkit-scrollbar-thumb {
   background: rgba(var(--accent),0.8) !important;
 }
@@ -391,9 +391,13 @@ a[data-role="button"]:hover {
 | Slider (Play progress & volume)
 -----------------------------*/
 
+.mdl-slider {
+  color: rgba(var(--accent)) !important;
+} 
+
 /* Background: Accent: 100% */
 .mdl-slider-background-lower {
-  background: rgba(var(--accent));
+  background: rgba(var(--accent)) !important;
 } 
 
 /* Background & Thumb: Accent: 100% */

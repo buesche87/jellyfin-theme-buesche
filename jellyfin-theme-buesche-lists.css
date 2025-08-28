@@ -59,10 +59,12 @@
   width: 16% !important;
 }
 
+/* Hide Series Title on overflow backdropo cards */
 .overflowBackdropCard > .cardBox > .cardText-first {
   display: none;
 }
 
+/* Make Episode Title bigger */
 .overflowBackdropCard > .cardBox > .cardText-secondary {
     font-size: 95% !important;
     padding-top: .6em !important;
@@ -84,8 +86,17 @@
 }
 
 
-/* New progress bar */
 
+/* TV Shows Main Page - Narrow spaces */
+.itemsContainer.padded-left.padded-right.itemsContainer-tv.padded-right-withalphapicker.vertical-wrap {
+  padding-right: 2% !important;
+  padding-left: 5% !important;
+}
+
+
+
+
+/* New progress bar */
 #indexPage .innerCardFooterClear,
 .libraryPage .innerCardFooterClear,
 #itemDetailPage .innerCardFooterClear {
@@ -115,8 +126,6 @@
   background: var(--background-dark40);
   margin: .5em .8em;
 } 
-
-
 
 /* Fix footers/headers displaying on small pop-ups */
 .formDialogFooter-clear,

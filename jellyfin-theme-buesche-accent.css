@@ -34,17 +34,6 @@
   scrollbar-color: rgba(var(--accent),0.8) !important;
 }
 
-
-::-webkit-scrollbar-corner,
-::-webkit-scrollbar-track-piece {
-  background: #0000;
-}
-
-.mdl-slider::-moz-range-thumb,
-::-webkit-scrollbar-thumb {
-  background: rgba(var(--accent),0.8) !important;
-}
-
 /* Theme process progress ring */
 .progressring-spiner {
   border-color: rgba(var(--accent));
@@ -273,6 +262,33 @@ progress::-webkit-progress-bar {
   background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
 }
 
+/* Play progress & volume */
+.mdl-slider {
+  color: rgba(var(--accent)) !important;
+} 
+
+/* Background: Accent: 100% */
+.mdl-slider-background-lower {
+  background: rgba(var(--accent)) !important;
+} 
+
+/* Background & Thumb: Accent: 100% */
+.iconOsdProgressInner,
+.mdl-slider::-webkit-slider-thumb {
+  background: rgba(var(--accent));
+  color: rgba(var(--accent));
+}
+
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track-piece {
+  background: #0000;
+}
+
+.mdl-slider::-moz-range-thumb,
+.mdl-slider::-webkit-scrollbar-thumb {
+  background: rgba(var(--accent),0.8) !important;
+}
 
 /*
 | Buttons
@@ -280,7 +296,7 @@ progress::-webkit-progress-bar {
 
 /* Accent Color: 100% */
 .buttonActive,
-.css-17c09up.Mui-selected
+.css-17c09up.Mui-selected,
 .inputLabelFocused,
 .navMenuOption-selected,
 .playstatebutton-icon-played,
@@ -387,26 +403,8 @@ a[data-role="button"]:hover {
 }
 
 
-/*
-| Slider (Play progress & volume)
------------------------------*/
 
-.mdl-slider {
-  color: rgba(var(--accent)) !important;
-} 
 
-/* Background: Accent: 100% */
-.mdl-slider-background-lower {
-  background: rgba(var(--accent)) !important;
-} 
-
-/* Background & Thumb: Accent: 100% */
-.iconOsdProgressInner,
-.mdl-slider::-moz-range-thumb,
-.mdl-slider::-webkit-slider-thumb {
-  background: rgba(var(--accent));
-  color: rgba(var(--accent));
-}
 
 
 /*

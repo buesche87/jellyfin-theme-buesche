@@ -33,6 +33,10 @@
 	filter: opacity(60%) saturate(60%);
 }
 
+/*
+| Item Cards
+---------------------------------------*/
+
 /* Backdrop Card */
 .itemsContainer-tv > .backdropCard {
   width: 30% !important;
@@ -45,7 +49,7 @@
 
 /* Thumb Cards in Movie / TV Collection */
 .itemsContainer-tv > .card.backdropCard.show-focus.show-animation {
-    width: 20% !important;
+  width: 20% !important;
 }
 
 /* Backdrop Overflow Cards */
@@ -59,6 +63,10 @@
   width: 16% !important;
 }
 
+/*
+| Item Description
+---------------------------------------*/
+
 /* Hide Series Title on overflow backdropo cards */
 .overflowBackdropCard > .cardBox > .cardText-first {
   display: none;
@@ -66,10 +74,22 @@
 
 /* Make Episode Title bigger */
 .overflowBackdropCard > .cardBox > .cardText-secondary {
-    font-size: 95% !important;
-    padding-top: .6em !important;
-    color: inherit;
+  font-size: 95% !important;
+  padding-top: .6em !important;
+  color: inherit;
 }
+
+
+/*
+| Alignments & Size
+---------------------------------------*/
+
+/* TV Shows Main Page - Narrow spaces */
+.itemsContainer.padded-left.padded-right.itemsContainer-tv.padded-right-withalphapicker.vertical-wrap {
+  padding-right: 2% !important;
+  padding-left: 5% !important;
+}
+
 
 /* more space for zoomed cards */
 .card.portraitCard.show-focus.show-animation,
@@ -86,15 +106,50 @@
 }
 
 
+/*
+| Roundings
+---------------------------------------*/
 
-/* TV Shows Main Page - Narrow spaces */
-.itemsContainer.padded-left.padded-right.itemsContainer-tv.padded-right-withalphapicker.vertical-wrap {
-  padding-right: 2% !important;
-  padding-left: 5% !important;
+/* Round Top - Flat Bottom */
+#moviesPage .cardImageContainer.cardContent,
+#tvRecommendedPage .cardImageContainer.cardContent {
+  border-top-left-radius: var(--rounding) !important;
+  border-top-right-radius: var(--rounding) !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+
+/*
+| Glow
+---------------------------------------*/
+
+
+/* Item Cards: Glow Card */
+.card.backdropCard.show-animation:hover > .cardBox, 
+.card.backdropCard.show-animation:focus > .cardBox,
+.card.portraitCard.show-animation:hover > .cardBox, 
+.card.portraitCard.show-animation:focus > .cardBox {
+    box-shadow: 0px 0px 5px rgba(var(--accent)) !important;
+    border: solid 1px rgba(var(--accent), 0.6) !important;
+    border-radius: var(--rounding);
+}
+
+/* Overflow Cards: Glow Image only */
+.card.overflowBackdropCard.show-animation:hover > .cardBox > .cardScalable,
+.card.overflowBackdropCard.show-animation:focus > .cardBox > .cardScalable,
+.card.overflowPortraitCard.show-animation:hover > .cardBox > .cardScalable,
+.card.overflowPortraitCard.show-animation:focus > .cardBox > .cardScalable {
+  box-shadow: 0px 0px 5px rgba(var(--accent)) !important;
+  border: solid 1px rgba(var(--accent),0.6) !important;
+  border-radius: var(--rounding);
 }
 
 
 
+/*
+| Progress Bar
+---------------------------------------*/
 
 /* New progress bar */
 #indexPage .innerCardFooterClear,
@@ -131,5 +186,6 @@
 .formDialogFooter-clear,
 .formDialogHeader-clear,
 .innerCardFooterClear {
-    background: transparent !important;
+  background: transparent !important;
+  background-color: transparent !important;
 }

@@ -83,15 +83,6 @@ progress::-webkit-progress-value,
 | Full Radius - Top or Bottom
 ---------------------------------------*/
 
-/* Round Top - Flat Bottom */
-#moviesPage .cardImageContainer.cardContent,
-#tvRecommendedPage .cardImageContainer.coveredImage.cardContent {
-  border-top-left-radius: var(--rounding) !important;
-  border-top-right-radius: var(--rounding) !important;
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-}
-
 /* Flat Top - Round Bottom */
 #userProfilesPage .cardImage, 
 #userProfilesPage .cardContent,

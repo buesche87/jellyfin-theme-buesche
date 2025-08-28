@@ -33,13 +33,17 @@
 	filter: opacity(60%) saturate(60%);
 }
 
-
+/* Backdrop Card */
 .itemsContainer-tv > .backdropCard {
   width: 30% !important;
 }
 
+/* Portrait cards */
+.itemsContainer-tv > .portraitCard {
+  width: 16% !important;
+}
 
-/* Movie / TV Collection */
+/* Thumb Cards in Movie / TV Collection */
 .itemsContainer-tv > .card.backdropCard.show-focus.show-animation {
     width: 20% !important;
 }
@@ -50,10 +54,9 @@
 }
 
 /* Overflow Portrait cards */
-.itemsContainer-tv > .portraitCard,
 .itemsContainer-tv > .overflowPortraitCard, 
 .itemsContainer-tv > .overflowSquareCard {
-  width: 15% !important;
+  width: 16% !important;
 }
 
 .overflowBackdropCard > .cardBox > .cardText-first {

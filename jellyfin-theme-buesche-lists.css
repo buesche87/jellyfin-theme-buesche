@@ -145,47 +145,35 @@
   border-radius: var(--rounding);
 }
 
-
-
 /*
 | Progress Bar
 ---------------------------------------*/
 
-/* New progress bar */
-#indexPage .innerCardFooterClear,
-.libraryPage .innerCardFooterClear,
-#itemDetailPage .innerCardFooterClear {
-  background: transparent !important;
-  box-shadow: none;
-}
-
+/* Card progress bar */
 #indexPage .itemProgressBarForeground,
 .libraryPage .itemProgressBarForeground,
-#itemDetailPage .itemProgressBarForeground,
-#indexPage .itemProgressBar,
-.libraryPage .itemProgressBar,
-#itemDetailPage .itemProgressBar {
+#itemDetailPage .itemProgressBarForeground{
   border-radius: var(--rounding);
-}
-
-#indexPage .itemProgressBarForeground,
-.libraryPage .itemProgressBarForeground,
-#itemDetailPage .itemProgressBarForeground  {
   background: rgba(var(--accent), 0.95) !important;
 }
 
+
+/* Card progress bar container */
 #indexPage .itemProgressBar,
 .libraryPage .itemProgressBar,
 #itemDetailPage .itemProgressBar {
   height: 6px;
   background: var(--background-dark40);
   margin: .5em .8em;
+  border-radius: var(--rounding);
 } 
 
-/* Fix footers/headers displaying on small pop-ups */
-.formDialogFooter-clear,
-.formDialogHeader-clear,
-.innerCardFooterClear {
+/* Card progress background */
+#indexPage .innerCardFooterClear,
+.libraryPage .innerCardFooterClear,
+#itemDetailPage .innerCardFooterClear {
   background: transparent !important;
-  background-color: transparent !important;
+  border-radius: var(--rounding) !important;
+  box-shadow: none;
 }
+

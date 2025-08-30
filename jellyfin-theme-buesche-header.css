@@ -244,6 +244,16 @@ div[data-role="controlgroup"] a[data-role="button"] {
    display: none;
 }
 
+
+/* Fix footers/headers displaying on small pop-ups */
+.formDialogFooter-clear,
+.formDialogHeader-clear {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+
+
 /* Shrink the mouseover chapter image when scrobbling, still media player */
 .chapterThumb {
   height: 14vh;

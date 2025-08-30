@@ -152,7 +152,7 @@
 /* Card progress bar */
 #indexPage .itemProgressBarForeground,
 .libraryPage .itemProgressBarForeground,
-#itemDetailPage .itemProgressBarForeground{
+#itemDetailPage .itemProgressBarForeground {
   background-color: rgba(var(--accent), 0.95) !important;
   border-radius: var(--rounding) !important;
 }

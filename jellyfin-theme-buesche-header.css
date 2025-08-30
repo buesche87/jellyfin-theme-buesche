@@ -192,16 +192,6 @@
   margin-right: .2em;
 }
 
-/* Narrow margins, theme main page */
-.cardBox-bottompadded {
-  margin-bottom: 0.5em !important;
-  margin-right: 1.5em !important;
-}
-.itemsContainer > .card > .cardBox {
-  margin-left: 0.6em !important;
-  margin-right: 0.8em;
-}
-
 /* home library button */
 .homeLibraryButton {
     min-width: 12em;

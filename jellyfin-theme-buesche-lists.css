@@ -16,7 +16,6 @@
   top: 0.5em !important;
 }
 
-
 @supports (backdrop-filter: blur(15px)) {
     #indexPage .itemProgressBar, .libraryPage .itemProgressBar, #itemDetailPage .itemProgressBar {
         backdrop-filter: blur(12px);
@@ -39,7 +38,7 @@
 
 /* Backdrop Card */
 .itemsContainer-tv > .backdropCard {
-  width: 30% !important;
+  width: 20% !important;
 }
 
 /* Portrait cards */
@@ -47,13 +46,8 @@
   width: 16% !important;
 }
 
-/* Thumb Cards in Movie / TV Collection */
-.itemsContainer-tv > .card.backdropCard.show-focus.show-animation {
-  width: 20% !important;
-}
-
 /* Backdrop Overflow Cards */
-.itemsContainer-tv > .card.overflowBackdropCard.show-focus.show-animation{
+.itemsContainer-tv > .overflowBackdropCard {
   width: 30% !important;
 }
 
@@ -62,6 +56,13 @@
 .itemsContainer-tv > .overflowSquareCard {
   width: 16% !important;
 }
+
+/* make space for zoom */
+.itemsContainer > .card > .cardBox {
+  margin-left: 0.6em !important;
+  margin-right: 0.8em;
+}
+
 
 /*
 | Item Description
@@ -85,25 +86,34 @@
 ---------------------------------------*/
 
 /* TV Shows Main Page - Narrow spaces */
-.itemsContainer.padded-left.padded-right.itemsContainer-tv.padded-right-withalphapicker.vertical-wrap {
+.itemsContainer-tv {
+  padding-top: 1% !important;
   padding-right: 2% !important;
   padding-left: 5% !important;
 }
 
-
 /* more space for zoomed cards */
-.card.portraitCard.show-focus.show-animation,
-.card.backdropCard.show-focus.show-animation {
+.portraitCard.show-focus.show-animation,
+.backdropCard.show-focus.show-animation {
   padding-bottom: 1.5em !important;
 }
 
 /* more space between title and list items */
+/*
 .sectionTitleContainer-cards {
   padding-bottom: 0.5em !important;
 }
 .padded-right-withalphapicker {
   padding-right: 5% !important;
 }
+*/
+
+/* Narrow margins */
+.cardBox-bottompadded {
+  margin-bottom: 0.5em !important;
+  margin-right: 1.5em !important;
+}
+
 
 
 /*

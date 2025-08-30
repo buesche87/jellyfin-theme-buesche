@@ -309,6 +309,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 
 /* Mobile tweaks */
+/*
 .layout-mobile .adminDrawerLogo {
     border-bottom: none;
 }
@@ -318,4 +319,4 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .layout-mobile .detailImageContainer .card {
     position: absolute !important;
 }
-
+*/

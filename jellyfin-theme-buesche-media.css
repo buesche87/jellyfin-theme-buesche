@@ -29,7 +29,7 @@
 /* style & placement of the ribbon */
 .detailRibbon {
   padding-left: 32vw !important;
-  padding-right: 2%;
+  padding-right: 2% !important;
 }
 
 /* desktop mode only */
@@ -71,27 +71,31 @@
 -------------------------------------------------*/
 
 /* Cover Style*/
-.detailImageContainer .card {
+.detailImageContainer > .card {
   max-height: 80vh;
   max-width: 26vw;
-  -webkit-transform: none;
-  transform: none;
   left: 3% !important;
   position: absolute !important;
   overflow: hidden;
+  -webkit-transform: none;
+  transform: none;
 }
 
 /* Portrait Position */
+/*
 .card.portraitCard {
   top: 28% !important;
   bottom: initial !important; 
 }
+/*
 
 /* Landscane Position */
+/*
 .card.backdropCard {
   top: 50% !important;
   bottom: initial !important;
 }
+*/
 
 /*
 | Media Description

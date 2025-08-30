@@ -117,12 +117,19 @@
 
 
 /*
-| Roundings
+| Card Roundings
 ---------------------------------------*/
 
+/* Full Radius */
+#moviesPage .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-hidden,
+#tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-hidden {
+  border-radius: var(--rounding) !important;
+}
+
+
 /* Round Top - Flat Bottom */
-#moviesPage .cardImageContainer.cardContent,
-#tvRecommendedPage .cardImageContainer.cardContent {
+#moviesPage .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast,
+#tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast {
   border-top-left-radius: var(--rounding) !important;
   border-top-right-radius: var(--rounding) !important;
   border-bottom-left-radius: 0 !important;

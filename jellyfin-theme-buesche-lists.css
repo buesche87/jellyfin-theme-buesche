@@ -153,19 +153,18 @@
 #indexPage .itemProgressBarForeground,
 .libraryPage .itemProgressBarForeground,
 #itemDetailPage .itemProgressBarForeground{
-  border-radius: var(--rounding);
-  background: rgba(var(--accent), 0.95) !important;
+  background-color: rgba(var(--accent), 0.95) !important;
+  border-radius: var(--rounding) !important;
 }
-
 
 /* Card progress bar container */
 #indexPage .itemProgressBar,
 .libraryPage .itemProgressBar,
 #itemDetailPage .itemProgressBar {
-  height: 6px;
-  background: var(--background-dark40);
-  margin: .5em .8em;
-  border-radius: var(--rounding);
+  background-color: var(--background-dark40) !important;
+  border-radius: var(--rounding) !important;
+  height: 6px !important;
+  margin: .5em .8em !important;
 } 
 
 /* Card progress background */
@@ -174,6 +173,6 @@
 #itemDetailPage .innerCardFooterClear {
   background: transparent !important;
   border-radius: var(--rounding) !important;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 

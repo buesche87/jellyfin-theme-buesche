@@ -185,9 +185,9 @@
 } 
 
 /* Card progress background */
-#indexPage .innerCardFooterClear,
-.libraryPage .innerCardFooterClear,
-#itemDetailPage .innerCardFooterClear {
+#indexPage .innerCardFooter,
+.libraryPage .innerCardFooter,
+#itemDetailPage .innerCardFooter {
   background: transparent !important;
   border-radius: var(--rounding) !important;
   box-shadow: none !important;

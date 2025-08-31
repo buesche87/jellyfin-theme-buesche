@@ -32,6 +32,13 @@
 	filter: opacity(60%) saturate(60%);
 }
 
+/* Shadows */
+.visualCardBox,
+.cardImageContainer {
+  box-shadow: none;
+}
+
+
 /*
 | Item Cards
 ---------------------------------------*/
@@ -98,22 +105,11 @@
   padding-bottom: 1.5em !important;
 }
 
-/* more space between title and list items */
-/*
-.sectionTitleContainer-cards {
-  padding-bottom: 0.5em !important;
-}
-.padded-right-withalphapicker {
-  padding-right: 5% !important;
-}
-*/
-
 /* Narrow margins */
 .cardBox-bottompadded {
   margin-bottom: 0.5em !important;
   margin-right: 1.5em !important;
 }
-
 
 
 /*

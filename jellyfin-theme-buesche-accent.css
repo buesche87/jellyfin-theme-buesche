@@ -118,11 +118,6 @@
   border-color: rgba(255, 255, 255, 0) !important; 
 }
 
-/* Shadows */
-.visualCardBox,
-.cardImageContainer {
-  box-shadow: none;
-}
 
 /*
 | Lists & Cards - Glow

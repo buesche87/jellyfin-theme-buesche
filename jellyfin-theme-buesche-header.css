@@ -23,7 +23,6 @@
 }
 
 
-
 /* page adjustments */
 #indexPage, 
 #moviesPage, 
@@ -105,7 +104,7 @@
 
 /* center buttons on taskbar  */
 .headerTop {
-    padding: 1em 1em !important;
+  padding: 1em 1em !important;
 }
 .headerTabs {
   margin-top: -4em !important;
@@ -138,14 +137,14 @@
 
 /* fit search button in settings */
 #dashboardPage .paper-icon-button-light>.material-icons {
-    font-size: 1.5em !important;
+  font-size: 1.5em !important;
 }
 #dashboardPage .selectLabel {
-    margin-bottom: 0em !important;
+  margin-bottom: 0em !important;
 }
 
 .customCssContainer textarea {
-    resize: vertical !important;
+  resize: vertical !important;
 }
 
 .cardText-first {
@@ -194,8 +193,8 @@
 
 /* home library button */
 .homeLibraryButton {
-    min-width: 12em;
-    margin: 0.4em;
+  min-width: 12em;
+  margin: 0.4em;
 }
 @media all and (max-width: 26em){
   .homeLibraryButton {
@@ -228,12 +227,11 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 /* Theme process progress ring */
 .progressring {
-    margin: .4em;
+  margin: .4em;
 }
 .progressring-bg {
-   display: none;
+  display: none;
 }
-
 
 /* Fix footers/headers displaying on small pop-ups */
 .formDialogFooter-clear,
@@ -241,8 +239,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
   background: transparent !important;
   background-color: transparent !important;
 }
-
-
 
 /* Shrink the mouseover chapter image when scrobbling, still media player */
 .chapterThumb {
@@ -295,7 +291,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .headerUserButtonRound {
   border-radius: 50px !important;
 }
-
 
 
 /* Mobile tweaks */

@@ -65,7 +65,8 @@
 }
 
 .cardPadder {
-  background-color: #0000 !important; box-shadow: none !important;
+  background-color: #0000 !important;
+  box-shadow: none !important;
 }
 
 /* Correct image aspect ratio behaviour, set border-radius to zero for square tiles */

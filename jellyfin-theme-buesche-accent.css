@@ -252,7 +252,6 @@ progress::-webkit-progress-bar {
   color: rgba(var(--accent));
 }
 
-
 ::-webkit-scrollbar-corner,
 ::-webkit-scrollbar-track-piece {
   background: #0000;
@@ -377,9 +376,6 @@ a[data-role="button"]:hover {
 
 
 
-
-
-
 /*
 | Fields & Inputs
 -----------------------------*/
@@ -411,8 +407,6 @@ a[data-role="button"]:hover {
 }
 
 
-
-
 /*
 | Fields & Inputs - Animations
 -----------------------------------*/
@@ -439,13 +433,6 @@ a[data-role="button"]:hover {
   background: var(--background-dark40) !important; 
 }
 
-
-/* Borders on Focus: Accent 80% */
-/*
-.itemSelectionPanel {
-  border: 0.01em solid rgba(var(--accent), 0.8) !important;
-}
-*/
 
 /*
 | Misc

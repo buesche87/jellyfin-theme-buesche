@@ -141,7 +141,6 @@
 | Glow
 ---------------------------------------*/
 
-
 /* Item Cards: Glow Card */
 .card.backdropCard.show-animation:hover > .cardBox, 
 .card.backdropCard.show-animation:focus > .cardBox,
@@ -161,7 +160,6 @@
   border: solid 1px rgba(var(--accent),0.6) !important;
   border-radius: var(--rounding);
 }
-
 
 /* Item Cards: Fix image resesizeing when hovered */
 .card.backdropCard.show-animation > .cardBox, 
@@ -201,6 +199,7 @@
 .libraryPage .innerCardFooter,
 #itemDetailPage .innerCardFooter {
   background: transparent !important;
+  background-color: transparent !important;
   border-radius: var(--rounding) !important;
   box-shadow: none !important;
 }

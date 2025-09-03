@@ -98,6 +98,9 @@
   overflow-y: hidden;
   white-space: nowrap;
   margin-top: -4em !important;
+  align-items: center;
+  align-self: center;
+  position: relative;
 }
 
 /* items in "task bar" - same size as header */
@@ -106,18 +109,14 @@
   height: 3.8em;
 }
 
-/* center buttons on taskbar  */
+/* center buttons on taskbar */
 .headerTop {
   padding: 1em 1em !important;
 }
-.headerTabs {
-  margin-top: -4em !important;
-  align-items: center;
-  align-self: center;
-  position: relative;
-}
+
+/* make buttons slightly bigger */
 .sectionTabs {
-    font-size: 105% !important;
+  font-size: 105% !important;
 }
 
 /* space between menu items */

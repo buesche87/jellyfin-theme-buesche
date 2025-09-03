@@ -8,7 +8,7 @@
 
 */
 
-/* account bigger taskbar */
+/* Bigger Taskbar */
 .layout-tv .itemDetailPage {
   padding-top: 4.7em !important;
 }
@@ -21,6 +21,13 @@
 .itemTags {
   display: none !important;
 }
+
+/* Move page content to bottom */
+.layout-tv .detailPagePrimaryContainer {
+  display: block;
+  padding-top: 2em;
+}
+
 
 /*
 | Details Ribbon (Media Infos)

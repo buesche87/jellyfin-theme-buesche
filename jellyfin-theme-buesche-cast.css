@@ -64,11 +64,6 @@
   }
 }
 
-.cardPadder {
-  background-color: #0000 !important;
-  box-shadow: none !important;
-}
-
 /* Correct image aspect ratio behaviour, set border-radius to zero for square tiles */
 @media all and (min-width: 131.25em){
   #castContent .cardScalable {

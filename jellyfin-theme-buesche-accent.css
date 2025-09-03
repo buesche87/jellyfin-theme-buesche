@@ -8,7 +8,7 @@
 
 */
 
-:root {--accent: 204,151,98;}
+:root {--accent: 204, 151, 98 ;}
 :root {--background-light60: rgba(255, 255, 255, 0.6) ;}
 :root {--background-light40: rgba(255, 255, 255, 0.4) ;}
 :root {--background-light20: rgba(255, 255, 255, 0.2) ;}
@@ -31,7 +31,7 @@
 
 /* scrollbar */
 * {
-  scrollbar-color: rgba(var(--accent),0.8) !important;
+  scrollbar-color: rgba(var(--accent), 0.8) !important;
 }
 
 /* Theme process progress ring */

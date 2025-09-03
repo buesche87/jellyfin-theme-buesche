@@ -22,7 +22,6 @@
   font-size: 110% !important;
 }
 
-
 /* page adjustments */
 #indexPage, 
 #moviesPage, 
@@ -81,6 +80,11 @@
 /*
 | Taskbar - Size & Alignment
 -----------------------------*/
+
+/* don't scroll taskbar in tv mode */
+.layout-tv .skinHeader {
+  position: relative !important;
+}
 
 /* Top "taskbar" - text & vertical-scroll */
 .headerTabs.sectionTabs {

@@ -83,7 +83,7 @@
 
 /* don't scroll taskbar in tv mode */
 .layout-tv .skinHeader {
-  position: relative !important;
+  position: fixed !important;
 }
 
 /* Top "taskbar" - text & vertical-scroll */

@@ -58,18 +58,6 @@
 | Item Cards
 ---------------------------------------*/
 
-/* Zoom on Focus */
-.card.show-animation:focus > .cardBox {
-  -webkit-transform:scale(1.1);
-  transform:scale(1.1);
-}
-
-/* More space for zoom */
-.itemsContainer > .card > .cardBox {
-  margin-left: 0.5em !important;
-  margin-right: 2em;
-}
-
 /* Backdrop Card size*/
 .itemsContainer-tv > .backdropCard {
   width: 20% !important;
@@ -121,6 +109,28 @@
   border-bottom-right-radius: 0 !important;
 }
 
+
+/*
+| Item Cards - Animation
+---------------------------------------*/
+
+/* Zoom on Focus */
+.card.show-animation:focus > .cardBox {
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+}
+
+/* More space for zoom */
+.itemsContainer > .card > .cardBox {
+  margin-left: 0.5em !important;
+  margin-right: 2em;
+}
+
+/* text color on focus */
+.card.show-animation:focus > .cardBox > .cardText-first,
+.card.show-animation:focus > .cardBox > .cardText-secondary {
+  color: rgba(var(--accent));
+}
 
 
 /*

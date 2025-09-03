@@ -173,20 +173,6 @@
 }
 
 /*
-| Cards Text size
------------------------------*/
-
-/* Title */
-.cardText-first {
-  padding-top: .5em !important;
-}
-
-/* Secondary Infos */
-.cardText-secondary {
-  font-size: 75% !important;
-}
-
-/*
 | Menu Page
 -----------------------------*/
 

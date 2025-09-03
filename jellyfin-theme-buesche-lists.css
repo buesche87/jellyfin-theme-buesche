@@ -151,6 +151,7 @@
 ---------------------------------------*/
 
 /* Item Cards: Glow Card */
+/*
 .card.backdropCard.show-animation:hover > .cardBox, 
 .card.backdropCard.show-animation:focus > .cardBox,
 .card.portraitCard.show-animation:hover > .cardBox, 
@@ -159,8 +160,10 @@
   border: solid 1px rgba(var(--accent), 0.6) !important;
   border-radius: var(--rounding);
 }
+  */
 
 /* Overflow Cards: Glow Image only */
+/*
 .card.overflowBackdropCard.show-animation:hover > .cardBox > .cardScalable,
 .card.overflowBackdropCard.show-animation:focus > .cardBox > .cardScalable,
 .card.overflowPortraitCard.show-animation:hover > .cardBox > .cardScalable,
@@ -169,8 +172,10 @@
   border: solid 1px rgba(var(--accent),0.6) !important;
   border-radius: var(--rounding);
 }
+*/
 
 /* Item Cards: Fix image resesizeing when hovered */
+/*
 .card.backdropCard.show-animation > .cardBox, 
 .card.portraitCard.show-animation > .cardBox,
 .card.overflowBackdropCard.show-animation > .cardBox > .cardScalable,
@@ -179,7 +184,7 @@
   border: solid 1px transparent !important;
   border-radius: var(--rounding);
 }
-
+*/
 
 /*
 | Progress Bar

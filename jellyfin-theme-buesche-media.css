@@ -35,7 +35,7 @@
 
 /* style & placement of the ribbon */
 .detailRibbon {
-  padding-left: 32vw !important;
+  /* padding-left: 32vw !important; */
   padding-right: 2% !important;
 }
 

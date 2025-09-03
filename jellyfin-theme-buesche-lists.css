@@ -98,10 +98,15 @@
 ---------------------------------------*/
 
 /* TV Shows Main Page - Narrow spaces */
-.itemsContainer-tv {
+.itemsContainer.padded-left.padded-right.itemsContainer-tv.padded-right-withalphapicker.vertical-wrap {
   padding-top: 1% !important;
-  padding-right: 2% !important;
-  padding-left: 5% !important;
+  padding-right: 3% !important; 
+  padding-left: 3% !important;
+}
+
+.itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX.itemsContainer-tv {
+  padding-top: 1% !important;
+  padding-left: 1% !important;
 }
 
 /* more space for zoomed cards */

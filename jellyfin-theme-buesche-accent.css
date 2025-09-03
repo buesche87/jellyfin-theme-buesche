@@ -112,24 +112,8 @@
 
 
 /*
-| Lists & Cards - Glow
+| Lists & Cards
 -----------------------------*/
-
-/* Cards: Zoom on Focus */
-.card.show-animation:focus > .cardBox {
-  -webkit-transform:scale(1.1);
-  transform:scale(1.1);
-}
-
-#moviesPage .backdropCard > .cardFooter > .cardText-secondary,
-#tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
-  display: none;
-}
-
-#moviesPage .portraitCard > .cardFooter > .cardText-secondary,
-#tvRecommendedPage .portraitCard > .cardFooter > .cardText-secondary {
-  display: block;
-}
 
 /* Misc: Glow */
 .toast,

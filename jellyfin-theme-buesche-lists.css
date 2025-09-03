@@ -58,31 +58,49 @@
 | Item Cards
 ---------------------------------------*/
 
-/* Backdrop Card */
-.itemsContainer-tv > .backdropCard {
-  width: 20% !important;
-}
-
-/* Portrait cards */
-.itemsContainer-tv > .portraitCard {
-  width: 16% !important;
-}
-
-/* Backdrop Overflow Cards */
-.itemsContainer-tv > .overflowBackdropCard {
-  width: 30% !important;
-}
-
-/* Overflow Portrait cards */
-.itemsContainer-tv > .overflowPortraitCard, 
-.itemsContainer-tv > .overflowSquareCard {
-  width: 16% !important;
+/* Zoom on Focus */
+.card.show-animation:focus > .cardBox {
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
 }
 
 /* make space for zoom */
 .itemsContainer > .card > .cardBox {
   margin-left: 0.6em !important;
   margin-right: 0.8em;
+}
+
+/* Backdrop Card size*/
+.itemsContainer-tv > .backdropCard {
+  width: 20% !important;
+}
+
+/* Backdrop Overflow Cards size */
+.itemsContainer-tv > .overflowBackdropCard {
+  width: 30% !important;
+}
+
+/* Portrait cards size */
+.itemsContainer-tv > .portraitCard {
+  width: 16% !important;
+}
+
+/* Overflow Portrait cards size */
+.itemsContainer-tv > .overflowPortraitCard, 
+.itemsContainer-tv > .overflowSquareCard {
+  width: 16% !important;
+}
+
+/* Remove item description on backdrop cards */
+#moviesPage .backdropCard > .cardFooter > .cardText-secondary,
+#tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
+  display: none !important;
+}
+
+/* Show item description on portrait cards */
+#moviesPage .portraitCard > .cardFooter > .cardText-secondary,
+#tvRecommendedPage .portraitCard > .cardFooter > .cardText-secondary {
+  display: block !important;
 }
 
 /* Full Radius */

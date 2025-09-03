@@ -65,18 +65,6 @@ progress::-webkit-progress-value,
   border: none;
 }
 
-/* Slider */
-.mdl-slider::-moz-range-thumb,
-.mdl-slider::-ms-thumb,
-.mdl-slider::-webkit-slider-thumb {
-  border-radius: var(--rounding);
-}
-
-/* Scrollbar */
-::-webkit-scrollbar-thumb {
-  border-radius: var(--rounding);
-}
-
 /*
 | Full Radius - Top or Bottom
 ---------------------------------------*/

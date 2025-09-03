@@ -8,24 +8,6 @@
 
 */
 
-/* media indicators in media list */
-.cardIndicators,
-.listItemIndicators,
-.mediaSourceIndicator {
-  right: 0.5em !important;
-  top: 0.5em !important;
-}
-
-@supports (backdrop-filter: blur(15px)) {
-  #indexPage .itemProgressBar, .libraryPage .itemProgressBar, #itemDetailPage .itemProgressBar {
-    backdrop-filter: blur(12px);
-    background: rgba(0, 0, 0, 0.35) !important;
-  }
-}
-
-.itemsContainer-tv {
-  padding-right: 3.3% !important;
-}
 
 /* Affects blurhash to remove the saturated colors to fit overall look */
 .blurhash-canvas {
@@ -43,6 +25,34 @@
   box-shadow: none !important;
 }
 
+/*
+| Lists - Alignments & Size
+---------------------------------------*/
+
+/* Main Lists */
+.itemsContainer-tv.vertical-wrap {
+  padding-top: 1% !important;
+  padding-right: 3% !important; 
+  padding-left: 3% !important;
+}
+
+/* Scrollable List */
+.itemsContainer-tv.scrollSlider {
+  padding-top: 1% !important;
+  padding-left: 1% !important;
+}
+
+/* more space for zoomed cards */
+.portraitCard.show-focus.show-animation,
+.backdropCard.show-focus.show-animation {
+  padding-bottom: 1.5em !important;
+}
+
+/* Narrow margins */
+.cardBox-bottompadded {
+  margin-bottom: 0.5em !important;
+  margin-right: 1.5em !important;
+}
 
 /*
 | Item Cards
@@ -75,6 +85,24 @@
   margin-right: 0.8em;
 }
 
+/* Full Radius */
+#moviesPage .cardImageContainer.coveredImage.cardContent.lazy-hidden,
+#tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy-hidden {
+  border-radius: var(--rounding) !important;
+}
+
+/* Round Top - Flat Bottom */
+#moviesPage .card-hoverable:hover .cardOverlayContainer,
+#moviesPage .cardImageContainer.coveredImage.cardContent.lazy-image-fadein-fast,
+#moviesPage .cardImageContainer.coveredImage.cardContent.lazy-image-fadein-fast:hover,
+#tvRecommendedPage .card-hoverable:hover .cardOverlayContainer,
+#tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy-image-fadein-fast,
+#tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy-image-fadein-fast:hover {
+  border-top-left-radius: var(--rounding) !important;
+  border-top-right-radius: var(--rounding) !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
 
 /*
 | Item Description
@@ -92,58 +120,68 @@
   color: inherit;
 }
 
+/*
+| Media Indicators
+-----------------------------*/
+
+/* Indicator alignment */
+.cardIndicators,
+.listItemIndicators,
+.mediaSourceIndicator {
+  right: 0.5em !important;
+  top: 0.5em !important;
+}
+
+/* Count & Played */
+.countIndicator,
+.playedIndicator,
+.mediaSourceIndicator {
+  color: black;
+  background: rgb(var(--accent), 0.8) !important;
+}
+
+/* Missing & Unaired */
+.missingIndicator,
+.unairedIndicator {
+    color: #fff;
+  background: #ae3030eb;
+    padding: .3em .6em;
+}
 
 /*
-| Alignments & Size
+| Progress Bar
 ---------------------------------------*/
 
-/* TV Shows Main Page - Narrow spaces */
-.itemsContainer.padded-left.padded-right.itemsContainer-tv.padded-right-withalphapicker.vertical-wrap {
-  padding-top: 1% !important;
-  padding-right: 3% !important; 
-  padding-left: 3% !important;
-}
-
-.itemsContainer.scrollSlider.focuscontainer-x.animatedScrollX.itemsContainer-tv {
-  padding-top: 1% !important;
-  padding-left: 1% !important;
-}
-
-/* more space for zoomed cards */
-.portraitCard.show-focus.show-animation,
-.backdropCard.show-focus.show-animation {
-  padding-bottom: 1.5em !important;
-}
-
-/* Narrow margins */
-.cardBox-bottompadded {
-  margin-bottom: 0.5em !important;
-  margin-right: 1.5em !important;
-}
-
-
-/*
-| Card Roundings
----------------------------------------*/
-
-/* Full Radius */
-#moviesPage .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-hidden,
-#tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-hidden {
+/* Card progress bar */
+#indexPage .itemProgressBarForeground,
+.libraryPage .itemProgressBarForeground,
+#itemDetailPage .itemProgressBarForeground {
+  background-color: rgba(var(--accent), 0.95) !important;
   border-radius: var(--rounding) !important;
 }
 
-/* Round Top - Flat Bottom */
-#moviesPage .card-hoverable:hover .cardOverlayContainer,
-#moviesPage .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast,
-#moviesPage .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast:hover,
-#tvRecommendedPage .card-hoverable:hover .cardOverlayContainer,
-#tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast,
-#tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy.blurhashed.lazy-image-fadein-fast:hover {
-  border-top-left-radius: var(--rounding) !important;
-  border-top-right-radius: var(--rounding) !important;
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
+/* Card progress bar container */
+#indexPage .itemProgressBar,
+.libraryPage .itemProgressBar,
+#itemDetailPage .itemProgressBar {
+  /* background-color: var(--background-dark40) !important; */
+  border-radius: var(--rounding) !important;
+  height: 6px !important;
+  margin: .5em .8em !important;
+  backdrop-filter: blur(12px);
+} 
+
+/* Card progress background */
+/*
+#indexPage .innerCardFooter,
+.libraryPage .innerCardFooter,
+#itemDetailPage .innerCardFooter {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-radius: var(--rounding) !important;
+  box-shadow: none !important;
 }
+*/
 
 
 /*
@@ -186,36 +224,3 @@
 }
 */
 
-/*
-| Progress Bar
----------------------------------------*/
-
-/* Card progress bar */
-#indexPage .itemProgressBarForeground,
-.libraryPage .itemProgressBarForeground,
-#itemDetailPage .itemProgressBarForeground {
-  background-color: rgba(var(--accent), 0.95) !important;
-  border-radius: var(--rounding) !important;
-}
-
-/* Card progress bar container */
-#indexPage .itemProgressBar,
-.libraryPage .itemProgressBar,
-#itemDetailPage .itemProgressBar {
-  /* background-color: var(--background-dark40) !important; */
-  border-radius: var(--rounding) !important;
-  height: 6px !important;
-  margin: .5em .8em !important;
-} 
-
-/* Card progress background */
-/*
-#indexPage .innerCardFooter,
-.libraryPage .innerCardFooter,
-#itemDetailPage .innerCardFooter {
-  background: transparent !important;
-  background-color: transparent !important;
-  border-radius: var(--rounding) !important;
-  box-shadow: none !important;
-}
-*/

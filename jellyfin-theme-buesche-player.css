@@ -55,7 +55,31 @@
 .nowPlayingPageImage {
   border: none;
 }
+
 .upNextDialog-countdownText {
   color: white;
+}
+
+
+/* Subtitle preview */
+.subtitleappearance-preview {
+  background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
+}
+
+/* Play progress & volume */
+.mdl-slider {
+  color: rgba(var(--accent)) !important;
+} 
+
+/* Background: Accent: 100% */
+.mdl-slider-background-lower {
+  background: rgba(var(--accent)) !important;
+} 
+
+/* Background & Thumb: Accent: 100% */
+.iconOsdProgressInner,
+.mdl-slider::-webkit-slider-thumb {
+  background: rgba(var(--accent));
+  color: rgba(var(--accent));
 }
 

@@ -22,16 +22,10 @@
 | All Pages
 -----------------------------*/
 
-
 /* Background & Backdrop */
 .skinHeader-withBackground,
 .backgroundContainer.withBackdrop {
   background: var(--background-dark80) !important;
-}
-
-/* scrollbar */
-* {
-  scrollbar-color: rgba(var(--accent), 0.8) !important;
 }
 
 /* Theme process progress ring */
@@ -158,26 +152,6 @@
 }
 
 /*
-| Media Indicators
------------------------------*/
-
-/* Count & Played */
-.countIndicator,
-.playedIndicator,
-.mediaSourceIndicator {
-  color: black;
-  background: rgb(var(--accent), 0.8) !important;
-}
-
-/* Missing & Unaired */
-.missingIndicator,
-.unairedIndicator {
-    color: #fff;
-  background: #ae3030eb;
-    padding: .3em .6em;
-}
-
-/*
 | Play Progress in Cards
 -----------------------------*/
 
@@ -229,36 +203,6 @@ progress::-webkit-progress-bar {
 | Player
 -----------------------------*/
 
-.subtitleappearance-preview {
-  background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
-}
-
-/* Play progress & volume */
-.mdl-slider {
-  color: rgba(var(--accent)) !important;
-} 
-
-/* Background: Accent: 100% */
-.mdl-slider-background-lower {
-  background: rgba(var(--accent)) !important;
-} 
-
-/* Background & Thumb: Accent: 100% */
-.iconOsdProgressInner,
-.mdl-slider::-webkit-slider-thumb {
-  background: rgba(var(--accent));
-  color: rgba(var(--accent));
-}
-
-::-webkit-scrollbar-corner,
-::-webkit-scrollbar-track-piece {
-  background: #0000;
-}
-
-.mdl-slider::-moz-range-thumb,
-.mdl-slider::-webkit-scrollbar-thumb {
-  background: rgba(var(--accent),0.8) !important;
-}
 
 /*
 | Buttons

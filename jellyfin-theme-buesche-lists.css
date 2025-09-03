@@ -191,7 +191,7 @@
 .playedIndicator,
 .mediaSourceIndicator {
   color: black;
-  background: rgb(var(--accent), 0.8) !important;
+  background: rgb(var(--accent), 0.7) !important;
 }
 
 /* Missing & Unaired */

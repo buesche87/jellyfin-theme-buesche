@@ -79,30 +79,20 @@
 
 /* Cover Style*/
 .detailImageContainer .card {
-  max-height: 80vh;
   max-width: 26vw;
-  -webkit-transform: none;
-  transform: none;
   left: 3% !important;
-  position: absolute !important;
-  overflow: hidden;
 }
 
 /* Portrait Position */
-/*
-.card.portraitCard {
-  top: 28% !important;
-  bottom: initial !important; 
+.detailPagePrimaryContainer.detailRibbon .card.portraitCard {
+  top: 50% !important;
 }
-/*
 
 /* Landscane Position */
-/*
-.card.backdropCard {
-  top: 50% !important;
-  bottom: initial !important;
+.detailPagePrimaryContainer.detailRibbon .card.backdropCard {
+  top: 32% !important;
 }
-*/
+
 
 /*
 | Media Description

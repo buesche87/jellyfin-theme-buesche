@@ -184,11 +184,6 @@ progress::-webkit-progress-bar {
 
 
 /*
-| Player
------------------------------*/
-
-
-/*
 | Buttons
 -----------------------------*/
 
@@ -299,7 +294,6 @@ a[data-role="button"]:hover {
 .listItem-border.emby-button:hover {
   background: rgba(var(--accent),0.4) !important;
 }
-
 
 
 /*

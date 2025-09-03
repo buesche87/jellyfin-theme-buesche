@@ -91,18 +91,6 @@
   width: 16% !important;
 }
 
-/* Remove item description on backdrop cards */
-#moviesPage .backdropCard > .cardFooter > .cardText-secondary,
-#tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
-  display: none !important;
-}
-
-/* Show item description on portrait cards */
-#moviesPage .portraitCard > .cardFooter > .cardText-secondary,
-#tvRecommendedPage .portraitCard > .cardFooter > .cardText-secondary {
-  display: block !important;
-}
-
 /* Full Radius */
 #moviesPage .cardImageContainer.coveredImage.cardContent.lazy-hidden,
 #tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy-hidden {
@@ -137,6 +125,29 @@
   padding-top: .6em !important;
   color: inherit;
 }
+
+/* Remove item description on backdrop cards */
+#moviesPage .backdropCard > .cardFooter > .cardText-secondary,
+#tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
+  display: none !important;
+}
+
+/* Show item description on portrait cards */
+#moviesPage .portraitCard > .cardFooter > .cardText-secondary,
+#tvRecommendedPage .portraitCard > .cardFooter > .cardText-secondary {
+  display: block !important;
+}
+
+/* Title */
+.cardText-first {
+  padding-top: .5em !important;
+}
+
+/* Secondary Infos */
+.cardText-secondary {
+  font-size: 75% !important;
+}
+
 
 /*
 | Media Indicators

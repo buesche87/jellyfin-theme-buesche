@@ -146,7 +146,7 @@
 
 /* Make Episode Title bigger */
 .overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-secondary {
-  font-size: 95% !important;
+  font-size: 100% !important;
   padding-top: .6em !important;
   color: inherit;
 }

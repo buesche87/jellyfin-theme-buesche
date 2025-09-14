@@ -145,6 +145,20 @@
   margin-top: 0.5em !important;
 }
 
+/* Links on media page */
+#itemDetailPage .button-link {
+  color: inherit !important;
+}
+
+/* Links on media page: focus & hover */
+#itemDetailPage .button-link:focus,
+#itemDetailPage .button-link:hover {
+  color: rgba(var(--accent),0.8) !important;
+  background: var(--transparent) !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
 /*
 | Section Layout (cast, more...)
 -------------------------------------------------*/

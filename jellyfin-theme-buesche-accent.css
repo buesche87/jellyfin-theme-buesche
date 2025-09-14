@@ -61,9 +61,17 @@
   background: var(--light20) !important;
 }
 
-/* Media Details */
-#itemDetailPage .button-link {color: inherit !important;}
+/* Links on media page */
+#itemDetailPage .button-link {
+  color: inherit !important;
+}
 
+/* Links on media page: focus & hover */
+#itemDetailPage .button-link:focus,
+#itemDetailPage .button-link:hover {
+  color: rgba(var(--accent),0.8) !important;
+  background: var(--transparent) !important;
+}
 
 /* Dashboard */
 #user_usage_report_table,
@@ -237,8 +245,6 @@ a[data-role="button"] {
 }
 
 /* Accent on Hover & Focus: 100% */
-.button-link:hover,
-.button-link:focus,
 .button-flat:hover,
 .button-flat:focus,
 .cardOverlayButton:hover,
@@ -266,8 +272,6 @@ a[data-role="button"]:hover {
 }
 
 /* Background on Hover & Focus: Black & White*/
-.button-link:hover,
-.button-link:focus,
 .button-flat:hover,
 .button-flat:focus,
 .paper-icon-button-light:hover,

@@ -8,7 +8,6 @@
 
 */
 
-
 /* Affects blurhash to remove the saturated colors to fit overall look */
 .blurhash-canvas {
 	filter: opacity(60%) saturate(60%);
@@ -85,22 +84,7 @@
   border-radius: var(--rounding) !important;
 }
 
-/* Round Top - Flat Bottom */
-/*
-#moviesPage .card-hoverable:hover .cardOverlayContainer,
-#moviesPage .cardImageContainer.coveredImage.cardContent.lazy-image-fadein-fast,
-#moviesPage .cardImageContainer.coveredImage.cardContent.lazy-image-fadein-fast:hover,
-#tvRecommendedPage .card-hoverable:hover .cardOverlayContainer,
-#tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy-image-fadein-fast,
-#tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy-image-fadein-fast:hover {
-  border-top-left-radius: var(--rounding) !important;
-  border-top-right-radius: var(--rounding) !important;
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-}
-*/
-
-
+/* Rounded top, flat bottom */
 .itemsContainer-tv.vertical-wrap .card.portraitCard .cardImageContainer.lazy-image-fadein-fast,
 .itemsContainer-tv.vertical-wrap .card.backdropCard .cardImageContainer.lazy-image-fadein-fast {
   border-top-left-radius: var(--rounding) !important;
@@ -223,19 +207,6 @@
   margin: .5em .8em !important;
   backdrop-filter: blur(12px);
 } 
-
-/* Card progress background */
-/*
-#indexPage .innerCardFooter,
-.libraryPage .innerCardFooter,
-#itemDetailPage .innerCardFooter {
-  background: transparent !important;
-  background-color: transparent !important;
-  border-radius: var(--rounding) !important;
-  box-shadow: none !important;
-}
-*/
-
 
 /*
 | Glow

@@ -373,15 +373,3 @@ fieldset {
   border: 1px solid rgba(40, 40, 40, 0.8); 
   border-radius: 0.4em;
 }
-
-/* Loading Spinner: Background */
-
-/*
-.mdl-spinner__layer-1 {border-color: rgba(255, 255, 255, 0.8);}
-.mdl-spinner__layer-2 {border-color: rgba(128, 128, 128, 1);}
-.mdl-spinner__layer-3 {border-color: rgba(40, 40, 40, 1);}
-.mdl-spinner__layer-4 {border-color: rgba(0, 0, 0, 1);}
-*/
-
-
-

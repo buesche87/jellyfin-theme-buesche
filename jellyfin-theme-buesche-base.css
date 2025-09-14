@@ -25,9 +25,20 @@
 }
 
 /* Background & Backdrop */
-.skinHeader-withBackground,
-.backgroundContainer.withBackdrop {
+.appfooter,
+.backgroundContainer.withBackdrop,
+.mainDrawer,
+.skinHeader-withBackground {
   background: var(--dark80) !important;
+}
+
+.infoBanner {
+  background: black;
+}
+
+.css-4yt2of {
+  background: var(--dark60);
+  border-right: 1px solid rgba(var(--accent), 0.12);
 }
 
 /*
@@ -232,73 +243,21 @@
 
 
 /*
-| Menu Page
+| Loading spinner & Progress Ring
 -----------------------------*/
 
-/* Improve some menu alignments */
-.navMenuOptionText {
-  margin-top: 0;
-}
-.formDialogHeaderTitle {
-  margin-left: 1em;
-}
-.formDialogContent {
-  margin-bottom: 6.2em;
-}
-.dialogContentInner {
-  padding: .5em 1em 1em;
-  padding-right: 1em;
-  padding-left: 1em;
-}
-.listItem-indexnumberleft {
-  margin: 1em;
-}
-.listItem {
-  padding-left: 1em;
+/* Loading Spinner: Accent Color */
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+  border-color: rgba(var(--accent)) !important;
 }
 
-/* Remove background on some icons */
-.listItemIcon {
-  background: var(--transparent) !important;
-}
-
-/* Remove divider on list items */
-.listItem-border {
-  border-color: var(--transparent) !important; 
-}
-
-
-
-/* home library button */
-.homeLibraryButton {
-  min-width: 12em;
-  margin: 0.4em;
-}
-@media all and (max-width: 26em){
-  .homeLibraryButton {
-    min-width: 45%;
-    width: auto !important;
-  }
-}
-.homeLibraryButton {
-  width: auto !important;
-}
-
-
-
-/*
-| Misc
------------------------------*/
-
-/* current sessions */
-.sessionCardFooter {
-  border: none;
-}
-
-/* user setting tab buttons */
-div[data-role="controlgroup"] a[data-role="button"] {
-  display: table-cell !important;
-  margin: 0 !important;
+/* Theme process progress ring */
+.progressring-spiner {
+  border-color: rgba(var(--accent));
+  border-width: .35em;
 }
 
 /* Theme process progress ring */
@@ -310,63 +269,15 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 
-/* Loading Spinner: Accent Color */
-.mdl-spinner__layer-1,
-.mdl-spinner__layer-2,
-.mdl-spinner__layer-3,
-.mdl-spinner__layer-4 {
-  border-color: rgba(var(--accent)) !important;
-}
-
-
-/* Fix footers/headers displaying on small pop-ups */
-.formDialogFooter-clear,
-.formDialogHeader-clear {
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-/* Shrink the mouseover chapter image when scrobbling, still media player */
-.chapterThumb {
-  height: 14vh;
-  min-width: 14vh;
-	box-shadow: 0 0 1.9vh #000;
-}
-.chapterThumbText {
-  font-size: 1em;
-}
-.sliderBubble {
-  background: #0000;
-}
-.chapterThumbTextContainer {
-  right: auto;
-	bottom: 4px;
-	padding: .25em 0.7em;
-}
-.chapterThumbContainer {
-  box-shadow: 0 0 1.9vh #000;
-}
-.sliderBubble {
-  -webkit-transform: translate3d(-50%,-108%,0);
-  transform: translate3d(-50%,-108%,0);
-}
-
-/*Theme slider marker style*/
-.sliderMarker {
-  width: 3px;
-  border-radius: 2px;
-}
+/*
+| Div UI styles
+-----------------------------*/
 
 /* Glow Toast */
 .toast {
   box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
   border: solid 1px rgba(var(--accent),0.6) !important;
 }
-
-
-/*
-| Fixes
------------------------------*/
 
 /* Fix top right user icon when using a profile image */
 .headerUserButtonRound {

@@ -50,3 +50,9 @@
 .customCssContainer textarea {
   resize: vertical !important;
 }
+
+/* Library Scan Progress */
+#divRunningTasks span,
+#scheduledTasksPage span {
+  color: var(--light60) !important;
+}

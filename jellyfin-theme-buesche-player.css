@@ -59,6 +59,12 @@
   padding-right: 0.5em !important;
 }
 
+/* Progressbar */
+.taskProgressInner,
+.sliderMarker.watched {
+  background: rgba(var(--accent),0.75) !important;
+}
+
 /*
 | Player
 -------------------------------*/

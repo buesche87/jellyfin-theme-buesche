@@ -8,34 +8,6 @@
 
 */
 
-/*
-| All Pages
------------------------------*/
-
-/* Theme process progress ring */
-.progressring-spiner {
-  border-color: rgba(var(--accent));
-  border-width: .35em;
-}
-
-.mainDrawer {
-  background: var(--dark80);
-}
-
-.appfooter {
-	background: var(--dark80);
-}
-
-.infoBanner {
-  background: black;
-}
-
-.css-4yt2of {
-  background: var(--dark60);
-  border-right: 1px solid rgba(var(--accent), 0.12);
-}
-
-
 
 /*
 | Play Progress in Cards
@@ -58,26 +30,9 @@ progress::-webkit-progress-bar {
   border: 0px solid var(--light20) !important;
 }
 
-/* Accent: 35% */
-#dashboardPage .transcodingProgress > div {
-  background: rgba(var(--accent), 0.35) !important;
-}
-
 /* Accent: 75% */
 .playbackProgress > div {
   background: rgba(var(--accent),0.75) !important;
-}
-
-/* Player watched state: Accent 75% */
-.taskProgressInner,
-.sliderMarker.watched {
-  background: rgba(var(--accent),0.75) !important;
-}
-
-/* Library Scan Progress */
-#divRunningTasks span,
-#scheduledTasksPage span {
-  color: var(--light60) !important;
 }
 
 .backgroundProgress > div {

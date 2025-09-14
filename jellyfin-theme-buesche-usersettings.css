@@ -8,3 +8,34 @@
 
 */
 
+/* Improve some menu alignments */
+.navMenuOptionText {
+  margin-top: 0;
+}
+.formDialogHeaderTitle {
+  margin-left: 1em;
+}
+.formDialogContent {
+  margin-bottom: 6.2em;
+}
+.dialogContentInner {
+  padding: .5em 1em 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.listItem-indexnumberleft {
+  margin: 1em;
+}
+.listItem {
+  padding-left: 1em;
+}
+
+/* Remove background on some icons */
+.listItemIcon {
+  background: var(--transparent) !important;
+}
+
+/* Remove divider on list items */
+.listItem-border {
+  border-color: var(--transparent) !important; 
+}

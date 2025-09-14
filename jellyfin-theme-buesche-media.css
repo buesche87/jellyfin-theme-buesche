@@ -169,7 +169,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 
 /* Media sections - Mobile layout */
-.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+.layout-mobile:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
  padding-top:0em;
 }
 

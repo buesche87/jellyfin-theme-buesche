@@ -326,11 +326,12 @@ a[data-role="button"]:hover {
 
 /* CheckBoxes: Checked */
 .emby-checkbox:checked + span + .checkboxOutline {
-  border: 0.01em solid rgba(var(--accent), 0.5) !important;
+  border: 0.01em solid rgba(var(--accent), 0.6) !important;
+  background: rgba(var(--accent), 0.6) !important;
 }
 
 /* Links */
-a.button-link.emby-button.show-focus {
+.button-link {
   color: rgb(var(--accent), 0.8) !important;
 }
 

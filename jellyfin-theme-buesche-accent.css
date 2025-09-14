@@ -61,18 +61,6 @@
   background: var(--light20) !important;
 }
 
-/* Links on media page */
-#itemDetailPage .button-link {
-  color: inherit !important;
-}
-
-/* Links on media page: focus & hover */
-#itemDetailPage .button-link:focus,
-#itemDetailPage .button-link:hover {
-  color: rgba(var(--accent),0.8) !important;
-  background: var(--transparent) !important;
-}
-
 /* Dashboard */
 #user_usage_report_table,
 .detailTable {
@@ -293,6 +281,20 @@ a[data-role="button"]:hover {
 .listItem-border.emby-button:hover {
   background: rgba(var(--accent),0.8) !important;
 }
+
+/* Filter Menu: Select Text */
+.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
+  margin-left: 0.5em;
+}
+
+/* Filter Menu: Entry Hover & Focus */
+.emby-collapse > .emby-button.show-focus:focus,
+.emby-collapse > .emby-button.show-focus:hover {
+  background: rgba(var(--accent),0.8) !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
 
 /*
 | Fields & Inputs

@@ -18,8 +18,6 @@
 :root {--dark80: rgba(0, 0, 0, 0.8) ;}
 :root {--transparent: #0000 ;}
 
-
-
 /*
 | All Pages
 -----------------------------*/
@@ -319,6 +317,8 @@ a[data-role="button"]:hover {
 }
 
 /* CheckBoxes: Focus & Hover */
+.emby-checkbox:focus + .checkboxLabel,
+.emby-checkbox:hover + .checkboxLabel,
 .emby-checkbox:focus + span + .checkboxOutline,
 .emby-checkbox:hover + span + .checkboxOutline {
   border: 0.01em solid rgba(var(--accent),0.8) !important;

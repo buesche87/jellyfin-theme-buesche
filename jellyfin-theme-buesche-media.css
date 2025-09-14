@@ -159,7 +159,7 @@
 }
 
 /* fix section title placement */
-.sectionTitle {
+h2.sectionTitle.sectionTitle-cards.padded-right {
 	margin-left: .4em !important;
 	margin-top: .2em !important;
 	margin-bottom: .2em !important;

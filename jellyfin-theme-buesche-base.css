@@ -8,9 +8,26 @@
 
 */
 
+/* Accent Colors */
+:root {--accent: 204, 151, 98 ;}
+:root {--light60: rgba(255, 255, 255, 0.6) ;}
+:root {--light40: rgba(255, 255, 255, 0.4) ;}
+:root {--light20: rgba(255, 255, 255, 0.2) ;}
+:root {--dark20: rgba(0, 0, 0, 0.2) ;}
+:root {--dark40: rgba(0, 0, 0, 0.4) ;}
+:root {--dark60: rgba(0, 0, 0, 0.6) ;}
+:root {--dark80: rgba(0, 0, 0, 0.8) ;}
+:root {--transparent: #0000 ;}
+
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
   font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Background & Backdrop */
+.skinHeader-withBackground,
+.backgroundContainer.withBackdrop {
+  background: var(--dark80) !important;
 }
 
 /*
@@ -39,7 +56,6 @@
 * {
   scrollbar-color: rgba(var(--accent), 0.8) !important;
 }
-
 
 /* Show - auto (thin) */
 #moviesPage, 
@@ -80,27 +96,82 @@
 
 
 /*
-| Inputs - General style
+| Fields & Inputs
 -----------------------------*/
 
-/* Entry fields, checkmarks, thin borders dark highlight */
+/* Textarea */
 .emby-textarea {
+  background: var(--dark60); 
+  border: 0.01em solid var(--light20);
+  border-radius: var(--rounding-input) !important;
+  resize: vertical !important;
   font-family: monospace;
   font-size: 10pt;
-}
-.emby-input,
-.emby-textarea {
   padding: .5em .6em;
+}
+
+/* Input */
+.emby-input{
+  background: var(--dark60); 
+  border: 0.01em solid var(--light20);
+  border-radius: var(--rounding-input) !important;
+  padding: .5em .6em;
+}
+
+/* Select */
+.emby-select-withcolor {
+  background: var(--dark60); 
+  border: 0.01em solid var(--light20);
 }
 .selectArrow {
   margin-top: 1.05em;
 }
-.emby-textarea {
-  resize: vertical !important;
+.emby-select {
+  border-radius: var(--rounding-input) !important;
+}
+
+/* Checkbox */
+.checkboxOutline {
+  background: var(--dark60); 
+  border: 0.01em solid var(--light20);
+}
+
+/* Links */
+.button-link {
+  color: rgb(var(--accent), 0.8) !important;
 }
 
 /*
-| Taskbar - Size & Alignment
+| Fields & Inputs: Animation
+-----------------------------*/
+
+/* Input, Textarea & Select: Focus */
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus {
+  border: 0.01em solid rgba(var(--accent),0.5) !important;
+  background: var(--dark40) !important; 
+}
+
+/* Checkbox: Focus & Hover */
+.emby-checkbox:focus + .checkboxLabel,
+.emby-checkbox:hover + .checkboxLabel {
+  color: rgb(var(--accent), 0.8) !important;
+}
+.emby-checkbox:focus + span + .checkboxOutline,
+.emby-checkbox:hover + span + .checkboxOutline {
+  border: 0.01em solid rgba(var(--accent),0.8) !important;
+}
+
+/* Checkbox: Checked */
+.emby-checkbox:checked + span + .checkboxOutline {
+  border: 0.01em solid rgba(var(--accent), 0.6) !important;
+  background: rgba(var(--accent), 0.6) !important;
+}
+
+
+/*
+| Taskbar
 -----------------------------*/
 
 /* don't scroll taskbar in tv mode */
@@ -125,7 +196,7 @@
   position: relative;
 }
 
-/* items in "task bar" - same size as header */
+/* items in "taskbar" - same size as header */
 .emby-tabs-slider {
   white-space: nowrap;
   height: 3.8em;
@@ -141,40 +212,24 @@
   font-size: 105% !important;
 }
 
-/* space between menu items */
+/* Tab Buttons */
 .emby-tab-button {
   padding: 1.1em 1.5em !important;
 }
 
-.emby-tab-button.show-focus:focus {
+/* Tab Buttons: Focus & Hover */
+.emby-tab-button:hover,
+.emby-tab-button:focus {
+  color: rgb(var(--accent)) !important;
   transform: scale(1.2) !important;
 }
 
-/*
-| Dashboard Page
------------------------------*/
-
-/* wider input fields */
-.dashboardGeneralForm {
-  max-width: 66% !important;
+/* Tab Button: Active */
+.emby-tab-button-active {
+  background: var(--transparent) !important;
+  color: #fff;
 }
 
-/* user profile cards */
-#dashboardPage .card:not(.show-animation) {
-  width: 13em !important;
-}
-
-/* fit search button in settings */
-#dashboardPage .paper-icon-button-light>.material-icons {
-  font-size: 1.5em !important;
-}
-#dashboardPage .selectLabel {
-  margin-bottom: 0em !important;
-}
-
-.customCssContainer textarea {
-  resize: vertical !important;
-}
 
 /*
 | Menu Page
@@ -202,15 +257,17 @@
   padding-left: 1em;
 }
 
-.dashboardSection h3 {
-  margin: .5em .0em .5em .5em;
+/* Remove background on some icons */
+.listItemIcon {
+  background: var(--transparent) !important;
 }
 
-.dashboardSection .sectionTitleTextButton > .material-icons.material-icons {
-  margin-top: .5em;
-  margin-bottom: .5em;
-  margin-right: .2em;
+/* Remove divider on list items */
+.listItem-border {
+  border-color: var(--transparent) !important; 
 }
+
+
 
 /* home library button */
 .homeLibraryButton {
@@ -226,6 +283,7 @@
 .homeLibraryButton {
   width: auto !important;
 }
+
 
 
 /*
@@ -250,6 +308,16 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .progressring-bg {
   display: none;
 }
+
+
+/* Loading Spinner: Accent Color */
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+  border-color: rgba(var(--accent)) !important;
+}
+
 
 /* Fix footers/headers displaying on small pop-ups */
 .formDialogFooter-clear,
@@ -289,21 +357,16 @@ div[data-role="controlgroup"] a[data-role="button"] {
   border-radius: 2px;
 }
 
+/* Glow Toast */
+.toast {
+  box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
+  border: solid 1px rgba(var(--accent),0.6) !important;
+}
+
 
 /*
 | Fixes
 -----------------------------*/
-
-/* Fix the UI shifting around */
-.nowPlayingBarCurrentTime {
-  width: 6em;
-}
-.osdTextContainer {
-  margin: 0 !important;
-  margin-top: 0.2em !important;
-  padding-left: 0.5em !important;
-  padding-right: 0.5em !important;
-}
 
 /* Fix top right user icon when using a profile image */
 .headerUserButtonRound {
@@ -311,15 +374,3 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 
-/* Mobile tweaks */
-/*
-.layout-mobile .adminDrawerLogo {
-    border-bottom: none;
-}
-.layout-mobile .itemBackdrop {
-    margin-top: 4rem;
-}
-.layout-mobile .detailImageContainer .card {
-    position: absolute !important;
-}
-*/

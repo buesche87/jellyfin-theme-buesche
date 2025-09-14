@@ -9,11 +9,6 @@
 */
 
 /*
-:root {--rounding: 12px;}
-:root {--rounding-input: 4px;}
-*/
-
-/*
 | Full Radius 
 -------------------------------*/
 
@@ -101,16 +96,12 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 /* buttons & system */
 .button-submit,
-.countIndicator,
 .chapterThumb,
 .chapterThumbContainer,
 .chapterThumbTextContainer,
 .checkboxOutline,
 .detailTable,
 .dialog,
-.emby-input,
-.emby-select 
-.emby-textarea,
 .formDialogHeader,
 .formDialogFooter,
 .fab,

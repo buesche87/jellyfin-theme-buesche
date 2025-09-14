@@ -8,25 +8,9 @@
 
 */
 
-:root {--accent: 204, 151, 98 ;}
-:root {--light60: rgba(255, 255, 255, 0.6) ;}
-:root {--light40: rgba(255, 255, 255, 0.4) ;}
-:root {--light20: rgba(255, 255, 255, 0.2) ;}
-:root {--dark20: rgba(0, 0, 0, 0.2) ;}
-:root {--dark40: rgba(0, 0, 0, 0.4) ;}
-:root {--dark60: rgba(0, 0, 0, 0.6) ;}
-:root {--dark80: rgba(0, 0, 0, 0.8) ;}
-:root {--transparent: #0000 ;}
-
 /*
 | All Pages
 -----------------------------*/
-
-/* Background & Backdrop */
-.skinHeader-withBackground,
-.backgroundContainer.withBackdrop {
-  background: var(--dark80) !important;
-}
 
 /* Theme process progress ring */
 .progressring-spiner {
@@ -51,82 +35,7 @@
   border-right: 1px solid rgba(var(--accent), 0.12);
 }
 
-/*
-| Single Pages
------------------------------*/
 
-/* Login Page */
-#loginPage .cardImage {
-  color: rgba(var(--accent)) !important;
-  background: var(--light20) !important;
-}
-
-/* Dashboard */
-#user_usage_report_table,
-.detailTable {
-  background: var(--dark60) ;
-}
-
-.layout-mobile .listItemImageButton,
-.detailTableBodyRow-shaded {
-  background: var(--transparent) !important;
-}
-
-/*
-| Taskbar
------------------------------*/
-
-/* Tab-Buttons in Taskbar */
-.emby-tab-button-active {
-  background: var(--transparent) !important;
-  color: #fff;
-}
-
-/* Remove background on some icons */
-.listItemIcon {
-  background: var(--transparent) !important;
-}
-
-
-/*
-| Lists & Cards
------------------------------*/
-
-/* Background: Dark */
-.paperList, 
-.visualCardBox{
-  background: var(--dark40);
-}
-
-/* Remove divider on list items */
-.listItem-border {
-  border-color: var(--transparent)!important; 
-}
-
-
-/*
-| Lists & Cards
------------------------------*/
-
-/* Misc: Glow */
-.toast,
-.raised.homeLibraryButton:hover {
-  box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent),0.6) !important;
-}
-
-/* Misc: Don't Glow */
-.cardOverlayContainer, 
-.raised.homeLibraryButton {
-  box-shadow: 0px 0px 5px rgba(var(--accent), 0) !important;
-  border: solid 1px rgba(var(--accent),0) !important;
-}
-
-/* Misc: (??) */
-.drawer-open {
-  box-shadow: 0px 0px 5px rgba(var(--accent), 1) !important;
-  border-right: solid 1px rgba(var(--accent), 1) !important;
-}
 
 /*
 | Play Progress in Cards
@@ -194,16 +103,9 @@ progress::-webkit-progress-bar {
 }
 
 /* Background: Black & White */
-a[data-role="button"],
-.fab,
 .navMenuOption-selected,
-.raised,
 .selectionCommandsPanel {
   background: var(--dark40) !important;
-}
-
-.raised.homeLibraryButton {
-  background: var(--light40) !important;
 }
 
 /* user settings button */
@@ -218,8 +120,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 -----------------------------*/
 
 /* Transitions */
-.raised.homeLibraryButton,
-.raised.homeLibraryButton:hover {
+.raised.homeLibraryButton {
   transition: filter 0.2s
 }
 .listItem:hover {
@@ -227,52 +128,42 @@ div[data-role="controlgroup"] a.ui-btn-active {
   background: none !important;
 }
 
-.raised,
+a[data-role="button"],
 .fab,
-a[data-role="button"] {
+.raised {
 	transition: all 0.2s !important;
+  background: var(--dark40) !important;
 }
 
 /* Accent on Hover & Focus: 100% */
 .button-flat:hover,
 .button-flat:focus,
 .cardOverlayButton:hover,
-.emby-tab-button:hover,
-.emby-tab-button:focus,
 .paper-icon-button-light:hover,
 .paper-icon-button-light:hover:not(:disabled),
 .paper-icon-button-light:focus,
-.paper-icon-button-light:focus:not(:disabled),
-.raised.homeLibraryButton:hover {
+.paper-icon-button-light:focus:not(:disabled) {
   color: rgb(var(--accent)) !important;
-}
-
-/* Background on Hover & Focus: Accent 50% */
-.alphaPickerButton-tv:focus,
-.alphaPickerButton-tv:hover,
-.raised:hover, 
-.raised:focus,
-.fab:hover,
-.navMenuOption:hover,
-.actionSheetMenuItem:hover,
-.css-17c09up:hover,
-a[data-role="button"]:hover {
-  background: rgba(var(--accent),0.8) !important;
-}
-
-/* Background on Hover & Focus: Black & White*/
-.button-flat:hover,
-.button-flat:focus,
-.paper-icon-button-light:hover,
-.paper-icon-button-light:hover:not(:disabled),
-.paper-icon-button-light:focus,
-.paper-icon-button-light:focus:not(:disabled),
-.cardOverlayButton:hover {
   background: var(--light40) !important;
 }
 
 .raised.homeLibraryButton:hover {
+  color: rgb(var(--accent)) !important;
   background: var(--light60) !important;
+  transition: filter 0.2s
+}
+
+/* Background on Hover & Focus: Accent 50% */
+a[data-role="button"]:hover,
+.actionSheetMenuItem:hover,
+.alphaPickerButton-tv:focus,
+.alphaPickerButton-tv:hover,
+.css-17c09up:hover,
+.fab:hover,
+.navMenuOption:hover,
+.raised:hover, 
+.raised:focus {
+  background: rgba(var(--accent),0.8) !important;
 }
 
 /* Profile List Entries: Focus & Hover */
@@ -283,93 +174,3 @@ a[data-role="button"]:hover {
   background: rgba(var(--accent),0.8) !important;
 }
 
-/* Filter Menu: Select Text */
-.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
-  margin-left: 0.5em;
-}
-
-/* Filter Menu: Entry Hover & Focus */
-.emby-collapse > .emby-button.show-focus:focus,
-.emby-collapse > .emby-button.show-focus:hover {
-  background: rgba(var(--accent),0.8) !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-}
-
-
-/*
-| Fields & Inputs
------------------------------*/
-
-/* Inputs */
-.emby-input,
-.emby-textarea,
-.emby-select-withcolor {
-  background: var(--dark60); 
-  border: 0.01em solid var(--light20);
-}
-
-/* Inputs: Focus */
-.emby-input:focus,
-.emby-textarea:focus,
-.emby-select-withcolor:focus {
-  border: 0.01em solid rgba(var(--accent),0.5) !important;
-  background: var(--dark40) !important; 
-}
-
-/* Checkboxes */
-.checkboxOutline {
-  background: var(--dark60); 
-  border: 0.01em solid var(--light20);
-}
-
-/* CheckBoxes: Focus & Hover */
-.emby-checkbox:focus + .checkboxLabel,
-.emby-checkbox:hover + .checkboxLabel {
-  color: rgb(var(--accent), 0.8) !important;
-}
-
-
-.emby-checkbox:focus + span + .checkboxOutline,
-.emby-checkbox:hover + span + .checkboxOutline {
-  border: 0.01em solid rgba(var(--accent),0.8) !important;
-}
-
-/* CheckBoxes: Checked */
-.emby-checkbox:checked + span + .checkboxOutline {
-  border: 0.01em solid rgba(var(--accent), 0.6) !important;
-  background: rgba(var(--accent), 0.6) !important;
-}
-
-/* Links */
-.button-link {
-  color: rgb(var(--accent), 0.8) !important;
-}
-
-/* Borders: Accent 50% */
-.itemSelectionPanel {
-  border: 0.01em solid rgba(var(--accent),0.5) !important;
-}
-
-/*
-| Misc
------------------------------*/
-
-/* Loading Spinner: Accent Color */
-.mdl-spinner__layer-1,
-.mdl-spinner__layer-2,
-.mdl-spinner__layer-3,
-.mdl-spinner__layer-4 {
-  border-color: rgba(var(--accent)) !important;
-}
-
-/* ?? */
-.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
-  background: rgba(var(--accent), 0.5);
-}
-
-/* ?? */
-fieldset {
-  border: 1px solid rgba(40, 40, 40, 0.8); 
-  border-radius: 0.4em;
-}

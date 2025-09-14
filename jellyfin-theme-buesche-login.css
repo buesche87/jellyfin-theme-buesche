@@ -64,4 +64,7 @@
 #loginPage .itemsContainer {
   padding-top: 1em !important;
 }
-
+#loginPage .cardImage {
+  color: rgba(var(--accent)) !important;
+  background: var(--light20) !important;
+}

@@ -170,6 +170,7 @@
 .mediaSourceIndicator {
   color: black;
   background: rgb(var(--accent), 0.7) !important;
+  border-radius: var(--rounding-input) !important;
 }
 
 /* Missing & Unaired */
@@ -207,6 +208,23 @@
   margin: .5em .8em !important;
   backdrop-filter: blur(12px);
 } 
+
+/*
+| Media Filter Menu
+---------------------------------------*/
+
+/* Text Position */
+.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
+  margin-left: 0.5em;
+}
+
+/* Hover & Focus */
+.emby-collapse > .emby-button.show-focus:focus,
+.emby-collapse > .emby-button.show-focus:hover {
+  background: rgba(var(--accent),0.8) !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
 
 /*
 | Glow

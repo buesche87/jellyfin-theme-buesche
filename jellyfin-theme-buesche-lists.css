@@ -140,27 +140,21 @@
 ---------------------------------------*/
 
 /* Hide Series Title on overflow backdropo cards */
-.overflowBackdropCard > .cardBox > .cardText-first {
+.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-first {
   display: none;
 }
 
 /* Make Episode Title bigger */
-.overflowBackdropCard > .cardBox > .cardText-secondary {
+.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-secondary {
   font-size: 95% !important;
   padding-top: .6em !important;
   color: inherit;
 }
 
 /* Remove item description on backdrop cards */
-#moviesPage .backdropCard > .cardFooter > .cardText-secondary,
+#moviesPage .backdropCard[data-type="Episode"] > .cardFooter > .cardText-secondary,
 #tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
   display: none !important;
-}
-
-/* Show item description on portrait cards */
-#moviesPage .portraitCard > .cardFooter > .cardText-secondary,
-#tvRecommendedPage .portraitCard > .cardFooter > .cardText-secondary {
-  display: block !important;
 }
 
 /* Title */

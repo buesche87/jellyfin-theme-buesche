@@ -224,7 +224,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 }
 .listItem:hover {
   transition: 0.2s;
-  background: rgba(var(--accent),0.8) !important;
+  background: none !important;
 }
 
 .raised,

@@ -126,10 +126,6 @@
 .itemDetailPage {
   padding-top: 6em !important;
 }
-/*
-.detailPageContent {
-  padding-left: 32vw !important;
-}*/
 
 .detailPageSecondaryContainer {
   padding-top: 0em !important;
@@ -177,4 +173,27 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   padding-top: .2em;
 }
 
+/*
+| Default card backgrounds
+-------------------------------------------------*/
 
+
+.defaultCardBackground1 {
+  background: rgba(var(--accent),0.4) !important;
+}
+
+.defaultCardBackground2 {
+  background: rgba(var(--accent),0.5) !important;
+}
+
+.defaultCardBackground3 {
+  background: rgba(var(--accent),0.6) !important;
+}
+
+.defaultCardBackground4 {
+  background: rgba(var(--accent),0.7) !important;
+}
+
+.defaultCardBackground5 {
+  background: rgba(var(--accent),0.8) !important;
+}

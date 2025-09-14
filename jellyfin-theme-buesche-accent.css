@@ -9,13 +9,15 @@
 */
 
 :root {--accent: 204, 151, 98 ;}
-:root {--background-light60: rgba(255, 255, 255, 0.6) ;}
-:root {--background-light40: rgba(255, 255, 255, 0.4) ;}
-:root {--background-light20: rgba(255, 255, 255, 0.2) ;}
-:root {--background-dark20: rgba(0, 0, 0, 0.2) ;}
-:root {--background-dark40: rgba(0, 0, 0, 0.4) ;}
-:root {--background-dark60: rgba(0, 0, 0, 0.6) ;}
-:root {--background-dark80: rgba(0, 0, 0, 0.8) ;}
+:root {--light60: rgba(255, 255, 255, 0.6) ;}
+:root {--light40: rgba(255, 255, 255, 0.4) ;}
+:root {--light20: rgba(255, 255, 255, 0.2) ;}
+:root {--dark20: rgba(0, 0, 0, 0.2) ;}
+:root {--dark40: rgba(0, 0, 0, 0.4) ;}
+:root {--dark60: rgba(0, 0, 0, 0.6) ;}
+:root {--dark80: rgba(0, 0, 0, 0.8) ;}
+:root {--transparent: #0000 ;}
+
 
 
 /*
@@ -25,7 +27,7 @@
 /* Background & Backdrop */
 .skinHeader-withBackground,
 .backgroundContainer.withBackdrop {
-  background: var(--background-dark80) !important;
+  background: var(--dark80) !important;
 }
 
 /* Theme process progress ring */
@@ -35,11 +37,11 @@
 }
 
 .mainDrawer {
-  background: var(--background-dark80);
+  background: var(--dark80);
 }
 
 .appfooter {
-	background: var(--background-dark80);
+	background: var(--dark80);
 }
 
 .infoBanner {
@@ -47,7 +49,7 @@
 }
 
 .css-4yt2of {
-  background: var(--background-dark60);
+  background: var(--dark60);
   border-right: 1px solid rgba(var(--accent), 0.12);
 }
 
@@ -58,7 +60,7 @@
 /* Login Page */
 #loginPage .cardImage {
   color: rgba(var(--accent)) !important;
-  background: var(--background-light20) !important;
+  background: var(--light20) !important;
 }
 
 /* Media Details */
@@ -68,15 +70,12 @@
 /* Dashboard */
 #user_usage_report_table,
 .detailTable {
-  background: var(--background-dark60) ;
+  background: var(--dark60) ;
 }
 
+.layout-mobile .listItemImageButton,
 .detailTableBodyRow-shaded {
-  background: #0000 !important;
-}
-
-.layout-mobile .listItemImageButton {
-  background: rgba(0, 0, 0, 0);
+  background: var(--transparent) !important;
 }
 
 /*
@@ -85,13 +84,13 @@
 
 /* Tab-Buttons in Taskbar */
 .emby-tab-button-active {
-  background: #0000 !important;
+  background: var(--transparent) !important;
   color: #fff;
 }
 
 /* Remove background on some icons */
 .listItemIcon {
-  background: #0000 !important;
+  background: var(--transparent) !important;
 }
 
 
@@ -102,12 +101,12 @@
 /* Background: Dark */
 .paperList, 
 .visualCardBox{
-  background: var(--background-dark40);
+  background: var(--dark40);
 }
 
 /* Remove divider on list items */
 .listItem-border {
-  border-color: rgba(255, 255, 255, 0) !important; 
+  border-color: var(--transparent)!important; 
 }
 
 
@@ -148,12 +147,12 @@ progress::-webkit-progress-value {
 /* Background */
 progress,
 .taskProgressOuter {
-  background: var(--background-dark40) !important;
-  border: 1px solid var(--background-light20) !important;
+  background: var(--dark40) !important;
+  border: 1px solid var(--light20) !important;
 }
 
 progress::-webkit-progress-bar {
-  border: 0px solid var(--background-light20) !important;
+  border: 0px solid var(--light20) !important;
 }
 
 /* Accent: 35% */
@@ -175,11 +174,11 @@ progress::-webkit-progress-bar {
 /* Library Scan Progress */
 #divRunningTasks span,
 #scheduledTasksPage span {
-  color: var(--background-light60) !important;
+  color: var(--light60) !important;
 }
 
 .backgroundProgress > div {
-  background: #0000 !important;
+  background: var(--transparent) !important;
 }
 
 
@@ -206,16 +205,16 @@ a[data-role="button"],
 .navMenuOption-selected,
 .raised,
 .selectionCommandsPanel {
-  background: var(--background-dark40) !important;
+  background: var(--dark40) !important;
 }
 
 .raised.homeLibraryButton {
-  background: var(--background-light40) !important;
+  background: var(--light40) !important;
 }
 
 /* user settings button */
 div[data-role="controlgroup"] a.ui-btn-active {
-  background: var(--background-dark40) !important;
+  background: var(--dark40) !important;
   color: white !important;
 }
 
@@ -278,81 +277,67 @@ a[data-role="button"]:hover {
 .paper-icon-button-light:focus,
 .paper-icon-button-light:focus:not(:disabled),
 .cardOverlayButton:hover {
-  background: var(--background-light40) !important;
+  background: var(--light40) !important;
 }
 
 .raised.homeLibraryButton:hover {
-  background: var(--background-light60) !important;
+  background: var(--light60) !important;
 }
 
-/* List entries */
+/* Profile List Entries: Focus & Hover */
 .listItem-button:focus,
-.listItem-border.emby-button:focus {
+.listItem-button:hover,
+.listItem-border.emby-button:focus,
+.listItem-border.emby-button:hover {
   background: rgba(var(--accent),0.8) !important;
 }
-.listItem-button:hover,
-.listItem-border.emby-button:hover {
-  background: rgba(var(--accent),0.4) !important;
-}
-
 
 /*
 | Fields & Inputs
 -----------------------------*/
 
-/* Background: Accent 50% */
-.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
-  background: rgba(var(--accent), 0.5);
-}
-
-/* Background: Dark */
-.checkboxOutline,
+/* Inputs */
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor {
-  background: var(--background-dark60); 
+  background: var(--dark60); 
+  border: 0.01em solid var(--light20);
+}
+
+/* Inputs: Focus */
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus {
+  border: 0.01em solid rgba(var(--accent),0.5) !important;
+  background: var(--dark40) !important; 
+}
+
+/* Checkboxes */
+.checkboxOutline {
+  background: var(--dark60); 
+  border: 0.01em solid var(--light20);
+}
+
+/* CheckBoxes: Focus & Hover */
+.emby-checkbox:focus + span + .checkboxOutline,
+.emby-checkbox:hover + span + .checkboxOutline {
+  border: 0.01em solid rgba(var(--accent),0.8) !important;
+}
+
+/* CheckBoxes: Checked */
+.emby-checkbox:checked + span + .checkboxOutline {
+  border: 0.01em solid rgba(var(--accent), 0.5) !important;
+}
+
+/* Links */
+a.button-link.emby-button.show-focus {
+  color: rgb(var(--accent), 0.8) !important;
 }
 
 /* Borders: Accent 50% */
 .itemSelectionPanel {
   border: 0.01em solid rgba(var(--accent),0.5) !important;
 }
-
-/* Borders: Black & White */
-.checkboxOutline,
-.emby-input,
-.emby-textarea,
-.emby-select-withcolor {
-  border: 0.01em solid var(--background-light20);
-}
-
-
-/*
-| Fields & Inputs - Animations
------------------------------------*/
-
-/* CheckBox */
-.emby-checkbox:checked + span + .checkboxOutline,
-.emby-checkbox:focus:not(:checked) + span + .checkboxOutline,
-.emby-checkbox:hover:not(:checked) + span + .checkboxOutline {
-  border: 0.01em solid rgba(var(--accent),0.8) !important;
-}
-
-.emby-checkbox:checked + span + .checkboxOutline {
-  background: var(--background-dark40) !important; 
-  border: 0.01em solid rgba(var(--accent), 0.5) !important;
-}
-
-
-/* Text & Select: Accent 50% */
-.emby-input:focus,
-.emby-select-withcolor:focus,
-.emby-textarea:focus,
-.itemSelectionPanel {
-  border: 0.01em solid rgba(var(--accent),0.5) !important;
-  background: var(--background-dark40) !important; 
-}
-
 
 /*
 | Misc
@@ -366,6 +351,16 @@ a[data-role="button"]:hover {
   border-color: rgba(var(--accent)) !important;
 }
 
+/* ?? */
+.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
+  background: rgba(var(--accent), 0.5);
+}
+
+/* ?? */
+fieldset {
+  border: 1px solid rgba(40, 40, 40, 0.8); 
+  border-radius: 0.4em;
+}
 
 /* Loading Spinner: Background */
 
@@ -377,8 +372,4 @@ a[data-role="button"]:hover {
 */
 
 
-/* ?? */
-fieldset {
-  border: 1px solid rgba(40, 40, 40, 0.8); 
-  border-radius: 0.4em;
-}
+

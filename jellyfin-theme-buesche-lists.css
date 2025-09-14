@@ -197,9 +197,14 @@
 /* Missing & Unaired */
 .missingIndicator,
 .unairedIndicator {
-    color: #fff;
+  color: #fff;
   background: #ae3030eb;
-    padding: .3em .6em;
+  padding: .3em .6em;
+}
+
+/* Filter indicator */
+.filterIndicator {
+  background: rgb(var(--accent), 0.7) !important;
 }
 
 /*

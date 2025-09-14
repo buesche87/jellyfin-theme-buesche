@@ -53,7 +53,6 @@ progress::-webkit-progress-value,
 .itemSelectionPanel,
 .nowPlayingPageImage,
 .primaryImageWrapper > img,
-.raised,
 .sessionNowPlayingInnerContent, 
 .upNextContainer,
 .upNextDialog-poster-img,
@@ -125,6 +124,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .multiSelectCheckboxOutline,
 .paperList,
 .playedIndicator,
+.raised,
 .toast {
   border-radius: var(--rounding-input) !important;
 }

@@ -77,7 +77,6 @@
   color: white;
 }
 
-
 /* Subtitle preview */
 .subtitleappearance-preview {
   background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
@@ -100,3 +99,8 @@
   color: rgba(var(--accent));
 }
 
+/* Skip-Button: Hover & Focus */
+.skip-button:focus,
+.skip-button:hover {
+  background: rgba(var(--accent), 0.8) !important
+}

@@ -218,7 +218,6 @@
   margin-left: 0.5em;
 }
 
-/* Hover & Focus */
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
   background: rgba(var(--accent),0.8) !important;

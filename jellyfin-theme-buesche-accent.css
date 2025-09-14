@@ -318,7 +318,11 @@ a[data-role="button"]:hover {
 
 /* CheckBoxes: Focus & Hover */
 .emby-checkbox:focus + .checkboxLabel,
-.emby-checkbox:hover + .checkboxLabel,
+.emby-checkbox:hover + .checkboxLabel {
+  color: rgb(var(--accent), 0.8) !important;
+}
+
+
 .emby-checkbox:focus + span + .checkboxOutline,
 .emby-checkbox:hover + span + .checkboxOutline {
   border: 0.01em solid rgba(var(--accent),0.8) !important;

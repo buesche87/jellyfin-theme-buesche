@@ -90,18 +90,6 @@ a[data-role="button"],
   background: var(--dark40) !important;
 }
 
-/* Accent on Hover & Focus: 100% */
-.button-flat:hover,
-.button-flat:focus,
-.cardOverlayButton:hover,
-.paper-icon-button-light:hover,
-.paper-icon-button-light:hover:not(:disabled),
-.paper-icon-button-light:focus,
-.paper-icon-button-light:focus:not(:disabled) {
-  color: rgb(var(--accent)) !important;
-  background: var(--light40) !important;
-}
-
 .raised.homeLibraryButton:hover {
   color: rgb(var(--accent)) !important;
   background: var(--light60) !important;

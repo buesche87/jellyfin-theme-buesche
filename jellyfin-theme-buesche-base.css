@@ -120,6 +120,7 @@
 .paper-icon-button-light:focus:not(:disabled) {
   color: rgb(var(--accent)) !important;
   background: transparent !important;
+  transform: scale(1.2) !important;
 }
 
 

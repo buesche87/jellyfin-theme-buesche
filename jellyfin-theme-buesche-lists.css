@@ -204,9 +204,9 @@
 #itemDetailPage .itemProgressBar {
   background-color: var(--dark40) !important;
   border-radius: var(--rounding) !important;
-  height: 6px !important;
+  height: .4em !important;
   margin: .5em .8em !important;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(6px);
 } 
 
 /*

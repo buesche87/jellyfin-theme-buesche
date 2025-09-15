@@ -28,7 +28,7 @@
 | Lists - Alignments & Size
 ---------------------------------------*/
 
-/* Main Lists */
+/* Main List */
 .itemsContainer-tv.vertical-wrap {
   padding-top: 1% !important;
   padding-right: 3% !important; 
@@ -47,7 +47,7 @@
   padding-bottom: 1.5em !important;
 }
 
-/* Narrow margins */
+/* narrow margins */
 .cardBox-bottompadded {
   margin-bottom: 0.5em !important;
   margin-right: 1.5em !important;
@@ -62,21 +62,25 @@
   width: 20% !important;
 }
 
-/* Backdrop Overflow Cards size */
+/* Backdrop Overflow Card size */
 .itemsContainer-tv > .overflowBackdropCard {
   width: 30% !important;
 }
 
-/* Portrait cards size */
+/* Portrait Cards size */
 .itemsContainer-tv > .portraitCard {
   width: 16% !important;
 }
 
-/* Overflow Portrait cards size */
+/* Overflow Portrait Cards size */
 .itemsContainer-tv > .overflowPortraitCard, 
 .itemsContainer-tv > .overflowSquareCard {
   width: 16% !important;
 }
+
+/*
+| Item Cards - Image
+---------------------------------------*/
 
 /* Full Radius */
 #moviesPage .cardImageContainer.coveredImage.cardContent.lazy-hidden,
@@ -84,7 +88,7 @@
   border-radius: var(--rounding) !important;
 }
 
-/* Rounded top, flat bottom */
+/* Rounded Top, Flat Bottom */
 .itemsContainer-tv.vertical-wrap .card.portraitCard .cardImageContainer.lazy-image-fadein-fast,
 .itemsContainer-tv.vertical-wrap .card.backdropCard .cardImageContainer.lazy-image-fadein-fast {
   border-top-left-radius: var(--rounding) !important;
@@ -93,9 +97,41 @@
   border-bottom-right-radius: 0 !important;
 }
 
+/*
+| Item Cards - Description
+---------------------------------------*/
+
+/* Series Title padding */
+.cardText-first {
+  padding-top: .5em !important;
+}
+
+/* Episode / Year - size */
+.cardText-secondary {
+  font-size: 75% !important;
+}
+
+/* Series Title - Hide on Overflow Backdrop Cards */
+.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-first {
+  display: none;
+}
+
+/* Episode / Year - Bigger on Overflow Backdrop Cards */
+.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-secondary {
+  font-size: 100% !important;
+  padding-top: .6em !important;
+  color: inherit;
+}
+
+/* Episode / Year - Remove for Movie Backdrop Cards */
+/* > data-type="Episode" > why? */
+#moviesPage .backdropCard[data-type="Episode"] > .cardFooter > .cardText-secondary,
+#tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
+  display: none !important;
+}
 
 /*
-| Item Cards - Animation
+| Item Cards - Animations
 ---------------------------------------*/
 
 /* Zoom on Focus */
@@ -118,42 +154,8 @@
   color: rgba(var(--accent));
 }
 
-
 /*
-| Item Description
----------------------------------------*/
-
-/* Hide Series Title on overflow backdropo cards */
-.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-first {
-  display: none;
-}
-
-/* Make Episode Title bigger */
-.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-secondary {
-  font-size: 100% !important;
-  padding-top: .6em !important;
-  color: inherit;
-}
-
-/* Remove item description on backdrop cards */
-#moviesPage .backdropCard[data-type="Episode"] > .cardFooter > .cardText-secondary,
-#tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
-  display: none !important;
-}
-
-/* Title */
-.cardText-first {
-  padding-top: .5em !important;
-}
-
-/* Secondary Infos */
-.cardText-secondary {
-  font-size: 75% !important;
-}
-
-
-/*
-| Media Indicators
+| Item Cards - Indicators
 -----------------------------*/
 
 /* Indicator alignment */
@@ -187,7 +189,7 @@
 }
 
 /*
-| Progress Bar
+| Item Cards - Progress Bar
 ---------------------------------------*/
 
 /* Card progress bar */
@@ -216,7 +218,7 @@
 } 
 
 /*
-| Media Filter Menu
+| Filter Menu
 ---------------------------------------*/
 
 /* Text Position */
@@ -224,6 +226,7 @@
   margin-left: 0.5em;
 }
 
+/* Animation */
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
   background: rgba(var(--accent),0.8) !important;
@@ -259,7 +262,7 @@
 }
 */
 
-/* Item Cards: Fix image resesizeing when hovered */
+/* Item Cards: Fix image resizeing when hovered */
 /*
 .card.backdropCard.show-animation > .cardBox, 
 .card.portraitCard.show-animation > .cardBox,

@@ -191,17 +191,23 @@
 ---------------------------------------*/
 
 /* Card progress bar */
+/*
 #indexPage .itemProgressBarForeground,
 .libraryPage .itemProgressBarForeground,
-#itemDetailPage .itemProgressBarForeground {
+#itemDetailPage .itemProgressBarForeground 
+*/ 
+.itemProgressBar {
   background-color: rgba(var(--accent), 0.95) !important;
   border-radius: var(--rounding) !important;
 }
 
 /* Card progress bar container */
+/*
 #indexPage .itemProgressBar,
 .libraryPage .itemProgressBar,
-#itemDetailPage .itemProgressBar {
+#itemDetailPage .itemProgressBar
+*/
+.itemProgressBar {
   background-color: var(--dark40) !important;
   border-radius: var(--rounding) !important;
   height: .4em !important;

@@ -198,7 +198,7 @@
 .libraryPage .itemProgressBarForeground,
 #itemDetailPage .itemProgressBarForeground 
 */ 
-.itemProgressBar {
+.itemProgressBarForeground {
   background-color: rgba(var(--accent), 0.95) !important;
   border-radius: var(--rounding) !important;
 }

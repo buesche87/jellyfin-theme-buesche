@@ -120,6 +120,13 @@
 .paper-icon-button-light:focus:not(:disabled) {
   color: rgb(var(--accent)) !important;
   background: transparent !important;
+}
+
+
+/* Menu Button Animation - Focus only */
+.button-flat:focus,
+.paper-icon-button-light:focus,
+.paper-icon-button-light:focus:not(:disabled) {
   transform: scale(1.2) !important;
 }
 

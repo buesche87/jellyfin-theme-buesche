@@ -119,7 +119,7 @@
 .paper-icon-button-light:focus,
 .paper-icon-button-light:focus:not(:disabled) {
   color: rgb(var(--accent)) !important;
-  /* background: var(--light40) !important; */
+  background: transparent !important;
 }
 
 

@@ -67,11 +67,15 @@
   margin-bottom: 0.25em !important;
 }
 
-/* More space for focused button */
-.paper-icon-button-light:focus,
+/* Media Buttons > Play */ 
 .button-flat.detailButton:focus {
   margin-left: 0.9em !important;
   margin-right: 0.9em !important;
+  border: solid 1px rgba(var(--accent), 0.6) !important;
+}
+
+/* OSD Buttons */
+.paper-icon-button-light:focus {
   border: solid 1px rgba(var(--accent), 0.6) !important;
 }
 

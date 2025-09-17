@@ -68,6 +68,7 @@
 }
 
 /* More space for focused button */
+.paper-icon-button-light:focus,
 .button-flat.detailButton:focus {
   margin-left: 0.9em !important;
   margin-right: 0.9em !important;
@@ -75,6 +76,8 @@
 }
 
 /* Buttons */
+.paper-icon-button-light,
+.paper-icon-button-light:hover,
 .button-flat.detailButton,
 .button-flat.detailButton:hover {
   border-radius: var(--rounding);

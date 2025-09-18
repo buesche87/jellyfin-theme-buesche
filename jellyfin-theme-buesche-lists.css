@@ -121,9 +121,8 @@ mit footer soll folgendes gelten:
 
 */
 
-
-.itemsContainer-tv.vertical-wrap .card.portraitCard:has(.cardFooter) .cardImageContainer.lazy-image-fadein-fast,
-.itemsContainer-tv.vertical-wrap .card.backdropCard:has(.cardFooter) .cardImageContainer.lazy-image-fadein-fast {
+.card.portraitCard:has(.cardFooter) .cardImageContainer.lazy-image-fadein-fast,
+.card.backdropCard:has(.cardFooter) .cardImageContainer.lazy-image-fadein-fast {
   border-top-left-radius: var(--rounding) !important;
   border-top-right-radius: var(--rounding) !important;
   border-bottom-left-radius: 0 !important;

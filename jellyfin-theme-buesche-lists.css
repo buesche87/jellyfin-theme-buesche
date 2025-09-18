@@ -121,6 +121,7 @@ mit footer soll folgendes gelten:
 
 */
 
+/* Rounded Top - Flat Bottom with Card Footer present */
 .card.portraitCard:has(.cardFooter),
 .card.backdropCard:has(.cardFooter) {
   border-top-left-radius: var(--rounding) !important;

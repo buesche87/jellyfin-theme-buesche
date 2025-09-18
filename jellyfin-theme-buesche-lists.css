@@ -90,40 +90,9 @@
   border-radius: var(--rounding) !important;
 }
 
-/* Rounded Top, Flat Bottom */
-
-/*
-mit footer:
-- cardBox visualCardBox 
-  > cardScalable
-    > .cardImageContainer.lazy-image-fadein-fast
-  > cardFooter
-    > cardText-first
-    > cardText-secondary
-
-ohne footer:
-- cardBox visualCardBox 
-  > cardScalable
-    > .cardImageContainer.lazy-image-fadein-fast
-  > cardText-first
-  > cardText-secondary
-
-
-mit footer soll folgendes gelten:
-
-.itemsContainer-tv.vertical-wrap .card.portraitCard .cardImageContainer.lazy-image-fadein-fast,
-.itemsContainer-tv.vertical-wrap .card.backdropCard .cardImageContainer.lazy-image-fadein-fast {
-  border-top-left-radius: var(--rounding) !important;
-  border-top-right-radius: var(--rounding) !important;
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-}
-
-*/
-
 /* Rounded Top - Flat Bottom with Card Footer present */
-.card.portraitCard:has(.cardFooter),
-.card.backdropCard:has(.cardFooter) {
+.card.portraitCard:has(.cardFooter) .cardImageContainer,
+.card.backdropCard:has(.cardFooter) .cardImageContainer {
   border-top-left-radius: var(--rounding) !important;
   border-top-right-radius: var(--rounding) !important;
   border-bottom-left-radius: 0 !important;

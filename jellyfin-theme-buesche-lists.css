@@ -217,6 +217,14 @@ mit footer soll folgendes gelten:
   padding: .3em .6em;
 }
 
+/* Multi Select Checkboxes */
+.multiSelectCheckboxOutline {
+  border-top-left-radius: var(--rounding) !important;
+  border-top-right-radius: var(--rounding-input) !important;
+  border-bottom-right-radius: var(--rounding-input) !important;
+  border-bottom-left-radius: var(--rounding-input) !important;
+}
+
 /*
 | Item Cards - Progress Bar
 ---------------------------------------*/

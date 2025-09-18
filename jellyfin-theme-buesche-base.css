@@ -220,7 +220,6 @@
   text-size-adjust: 105%;
   font-size: 105% !important;
   width: 50vw;
-  -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
   overflow-x: auto;

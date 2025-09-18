@@ -121,8 +121,8 @@ mit footer soll folgendes gelten:
 
 */
 
-.card.portraitCard:has(.cardFooter) .cardImageContainer.lazy-image-fadein-fast,
-.card.backdropCard:has(.cardFooter) .cardImageContainer.lazy-image-fadein-fast {
+.card.portraitCard:has(.cardFooter),
+.card.backdropCard:has(.cardFooter) {
   border-top-left-radius: var(--rounding) !important;
   border-top-right-radius: var(--rounding) !important;
   border-bottom-left-radius: 0 !important;

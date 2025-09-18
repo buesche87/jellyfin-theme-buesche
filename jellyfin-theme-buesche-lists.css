@@ -19,10 +19,6 @@
   box-shadow: none;
 }
 
-.cardPadder {
-  background-color: #0000 !important;
-  box-shadow: none !important;
-}
 
 /*
 | Lists - Alignments & Size
@@ -57,25 +53,31 @@
 | Item Cards
 ---------------------------------------*/
 
-/* Backdrop Card size*/
-.itemsContainer-tv > .backdropCard {
-  width: 20% !important;
-}
-
-/* Backdrop Overflow Card size */
-.itemsContainer-tv > .overflowBackdropCard {
-  width: 30% !important;
-}
-
-/* Portrait Cards size */
+/* Portrait Card: Size */
 .itemsContainer-tv > .portraitCard {
   width: 16% !important;
 }
 
-/* Overflow Portrait Cards size */
+/* Backdrop Card: Size*/
+.itemsContainer-tv > .backdropCard {
+  width: 20% !important;
+}
+
+/* Overflow Portrait Card: Size */
 .itemsContainer-tv > .overflowPortraitCard, 
 .itemsContainer-tv > .overflowSquareCard {
   width: 16% !important;
+}
+
+/* Overflow Backdrop Card: Size */
+.itemsContainer-tv > .overflowBackdropCard {
+  width: 30% !important;
+}
+
+/* Card Button Container */
+.cardPadder {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 /*
@@ -89,6 +91,26 @@
 }
 
 /* Rounded Top, Flat Bottom */
+
+/*
+mit footer:
+- cardBox visualCardBox 
+  > cardScalable
+    > .cardImageContainer.lazy-image-fadein-fast
+  > cardFooter
+    > cardText-first
+    > cardText-secondary
+
+ohne footer:
+- cardBox visualCardBox 
+  > cardScalable
+    > .cardImageContainer.lazy-image-fadein-fast
+  > cardText-first
+  > cardText-secondary
+
+
+mit footer soll folgendes gelten:
+
 .itemsContainer-tv.vertical-wrap .card.portraitCard .cardImageContainer.lazy-image-fadein-fast,
 .itemsContainer-tv.vertical-wrap .card.backdropCard .cardImageContainer.lazy-image-fadein-fast {
   border-top-left-radius: var(--rounding) !important;
@@ -97,26 +119,38 @@
   border-bottom-right-radius: 0 !important;
 }
 
+*/
+
+
+.itemsContainer-tv.vertical-wrap .card.portraitCard:has(.cardFooter) .cardImageContainer.lazy-image-fadein-fast,
+.itemsContainer-tv.vertical-wrap .card.backdropCard:has(.cardFooter) .cardImageContainer.lazy-image-fadein-fast {
+  border-top-left-radius: var(--rounding) !important;
+  border-top-right-radius: var(--rounding) !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+
 /*
 | Item Cards - Description
 ---------------------------------------*/
 
-/* Series Title padding */
+/* Series Title: Padding */
 .cardText-first {
   padding-top: .5em !important;
 }
 
-/* Episode / Year - size */
+/* Secondary Text: Size */
 .cardText-secondary {
   font-size: 75% !important;
 }
 
-/* Series Title - Hide on Overflow Backdrop Cards */
+/* Overflow Backdrop Card: Hide Series Title */
 .overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-first {
   display: none;
 }
 
-/* Episode / Year - Bigger on Overflow Backdrop Cards */
+/* Overflow Backdrop Card: Make "S0E0 - Episodename" Bigger */
 .overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-secondary {
   font-size: 100% !important;
   padding-top: .6em !important;

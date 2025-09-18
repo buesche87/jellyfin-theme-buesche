@@ -124,15 +124,21 @@
 }
 
 /* Episode / Year - Remove for Movie Backdrop Cards */
-/* > data-type="Episode" > why? */
+/* > data-type="Episode" > why? 
 #moviesPage .backdropCard[data-type="Episode"] > .cardFooter > .cardText-secondary,
 #tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
   display: none !important;
-}
+} */
 
 /*
 | Item Cards - Animations
 ---------------------------------------*/
+
+/* More Space for Zoom-Animation*/
+.itemsContainer > .card > .cardBox {
+  margin-left: 0.5em !important;
+  margin-right: 2em;
+}
 
 /* Zoom on Focus */
 .card.show-animation:focus > .cardBox {
@@ -140,13 +146,7 @@
   transform:scale(1.1);
 }
 
-/* More space for zoom */
-.itemsContainer > .card > .cardBox {
-  margin-left: 0.5em !important;
-  margin-right: 2em;
-}
-
-/* text color on focus */
+/* Color on Focus */
 .card.show-animation:focus > .cardBox > .cardText-first,
 .card.show-animation:focus > .cardBox > .cardText-secondary,
 .card.show-animation:focus > .cardBox > .cardFooter > .cardText-first,
@@ -158,7 +158,7 @@
 | Item Cards - Indicators
 -----------------------------*/
 
-/* Indicator alignment */
+/* Alignment */
 .cardIndicators,
 .listItemIndicators,
 .mediaSourceIndicator {
@@ -183,50 +183,41 @@
   padding: .3em .6em;
 }
 
-/* Filter indicator */
-.filterIndicator {
-  background: rgb(var(--accent), 0.7) !important;
-}
-
 /*
 | Item Cards - Progress Bar
 ---------------------------------------*/
 
-/* Card progress bar */
-/*
-#indexPage .itemProgressBarForeground,
-.libraryPage .itemProgressBarForeground,
-#itemDetailPage .itemProgressBarForeground 
-*/ 
-.itemProgressBarForeground {
-  background-color: rgba(var(--accent), 0.95) !important;
+/* Container */
+.innerCardFooter {
+  background: transparent !important;
   border-radius: var(--rounding) !important;
 }
 
-/* Card progress bar container */
-/*
-#indexPage .itemProgressBar,
-.libraryPage .itemProgressBar,
-#itemDetailPage .itemProgressBar
-*/
+/* Background */
 .itemProgressBar {
-  background-color: var(--dark40) !important;
+  background: var(--dark40) !important;
   border-radius: var(--rounding) !important;
   height: .4em !important;
   margin: .5em .8em !important;
   backdrop-filter: blur(6px);
 } 
 
+/* Slider*/
+.itemProgressBarForeground {
+  background-color: rgba(var(--accent), 0.95) !important;
+  border-radius: var(--rounding) !important;
+}
+
 /*
-| Filter Menu
+| Media Filter
 ---------------------------------------*/
 
-/* Text Position */
+/* Menu - Text Position */
 .emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
   margin-left: 0.5em;
 }
 
-/* Animation */
+/* Menu - Animation */
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
   background: rgba(var(--accent),0.8) !important;
@@ -234,43 +225,7 @@
   transform: none !important;
 }
 
-/*
-| Glow
----------------------------------------*/
-
-/* Item Cards: Glow Card */
-/*
-.card.backdropCard.show-animation:hover > .cardBox, 
-.card.backdropCard.show-animation:focus > .cardBox,
-.card.portraitCard.show-animation:hover > .cardBox, 
-.card.portraitCard.show-animation:focus > .cardBox {
-  box-shadow: 0px 0px 5px rgba(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent), 0.6) !important;
-  border-radius: var(--rounding);
+/* Indicator */
+.filterIndicator {
+  background: rgb(var(--accent), 0.7) !important;
 }
-  */
-
-/* Overflow Cards: Glow Image only */
-/*
-.card.overflowBackdropCard.show-animation:hover > .cardBox > .cardScalable,
-.card.overflowBackdropCard.show-animation:focus > .cardBox > .cardScalable,
-.card.overflowPortraitCard.show-animation:hover > .cardBox > .cardScalable,
-.card.overflowPortraitCard.show-animation:focus > .cardBox > .cardScalable {
-  box-shadow: 0px 0px 5px rgba(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent),0.6) !important;
-  border-radius: var(--rounding);
-}
-*/
-
-/* Item Cards: Fix image resizeing when hovered */
-/*
-.card.backdropCard.show-animation > .cardBox, 
-.card.portraitCard.show-animation > .cardBox,
-.card.overflowBackdropCard.show-animation > .cardBox > .cardScalable,
-.card.overflowPortraitCard.show-animation > .cardBox > .cardScalable {
-  box-shadow: 0px 0px 5px transparent !important;
-  border: solid 1px transparent !important;
-  border-radius: var(--rounding);
-}
-*/
-

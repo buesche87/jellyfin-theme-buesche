@@ -75,7 +75,7 @@
 }
 
 /* OSD Buttons */
-.ltr > .paper-icon-button-light:focus {
+.paper-icon-button-light.show-focus:focus {
   border: solid 1px rgba(var(--accent), 0.6) !important;
 }
 

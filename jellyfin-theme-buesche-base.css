@@ -130,6 +130,13 @@
 }
 
 
+/* Buttons: Keep border size but transparent */
+.paper-icon-button-light {
+  border-radius: var(--rounding);
+  border: solid 1px transparent !important;
+}
+
+
 /*
 | Fields & Inputs
 -----------------------------*/

@@ -124,6 +124,12 @@
   /*border-radius: var(--rounding); */
 }
 
+/* Genres */
+p.itemGenres {
+  display: none;
+}
+
+
 /* Track Selections (audio & subtitles) */
 .trackSelections {
   max-width: 100%;

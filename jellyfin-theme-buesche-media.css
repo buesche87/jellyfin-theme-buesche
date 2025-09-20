@@ -61,27 +61,16 @@
   padding-top: 0.5em;
 }
 
-
-
-/* Media Button Container */ 
-/*
-.layout-tv .mainDetailButtons {
-
-  margin-bottom: 0.25em !important;
-}
-  */
-
-
 /* Media Button */ 
 .detailButton {
   font-size: 120% !important;
   border-radius: var(--rounding);
   border: solid 1px transparent !important;
+  padding: 1em !important;
 }
 
 /* Media Button: Focus */ 
 .detailButton:focus {
-  /* margin-right: 0.9em !important; */
   border: solid 1px rgba(var(--accent), 0.6) !important;
 }
 

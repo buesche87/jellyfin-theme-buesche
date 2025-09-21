@@ -50,12 +50,18 @@
 | Media Info and Buttons
 -------------------------------------------------*/
 
+/* Info Container */
+.infoWrapper {
+  padding-bottom: 0.15em;
+}
+
 /* media infos - placement and white color */
 .itemMiscInfo {
   margin-top: 0.6em;
   margin-bottom: 0.6em;
   color: #ffffff !important;
 }
+
 .parentName {
   padding-bottom: 0.5em;
   padding-top: 0.5em;
@@ -66,8 +72,8 @@
   font-size: 120% !important;
   border-radius: var(--rounding);
   border: solid 1px transparent !important;
-  padding: .7em !important;
-  margin-right: .7em !important; 
+  padding: .6em !important;
+  margin-right: .6em !important; 
 }
 
 /* Media Button: Focus */ 
@@ -118,14 +124,14 @@ p.itemGenres {
   display: none;
 }
 
-
 /* Track Selections (audio & subtitles) */
 .trackSelections {
   max-width: 100%;
   width: 60%;
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
+
 .detailTrackSelect {
   background: transparent !important;
   padding: .35em 1.9em .35em .35em !important;

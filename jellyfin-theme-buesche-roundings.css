@@ -33,7 +33,6 @@ progress::-webkit-progress-value,
 /* Cards & Items */
 .blurhash-canvas,
 .cardOverlayContainer,
-.cardContent,
 .cardContent-button, 
 .cardContent-shadow,
 .cardImage,
@@ -55,20 +54,6 @@ progress::-webkit-progress-value,
 .osdPoster img {
   border-radius: var(--rounding); 
   border: none;
-}
-
-/*
-| Full Radius - Top or Bottom
----------------------------------------*/
-
-/* Flat Top - Round Bottom */
-#userProfilesPage .cardImage, 
-#userProfilesPage .cardContent,
-#divVirtualFolders .cardImageContainer {
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
-  border-top-left-radius: var(--rounding) !important;
-  border-top-right-radius: var(--rounding) !important;
 }
 
 /*
@@ -116,10 +101,4 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .raised,
 .toast {
   border-radius: var(--rounding-input) !important;
-}
-
-/* Only on Dashboard */
-#dashboardPage .cardContent,
-#dashboardPage .sessionNowPlayingInnerContent {
-  border-radius: var(--rounding-input) var(--rounding-input) 0 0 !important;
 }

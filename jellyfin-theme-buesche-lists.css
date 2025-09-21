@@ -85,14 +85,12 @@
 ---------------------------------------*/
 
 /* Full Radius */
-#moviesPage .cardImageContainer.coveredImage.cardContent.lazy-hidden,
-#tvRecommendedPage .cardImageContainer.coveredImage.cardContent.lazy-hidden {
+.cardContent {
   border-radius: var(--rounding) !important;
 }
 
 /* Rounded Top - Flat Bottom with Card Footer present */
-.itemsContainer-tv.vertical-wrap > .card.portraitCard:has(.cardFooter) > .cardImageContainer.lazy-image-fadein-fast,
-.itemsContainer-tv.vertical-wrap > .card.backdropCard:has(.cardFooter) > .cardImageContainer.lazy-image-fadein-fast {
+.card:has(.cardFooter) .cardcontent {
   border-top-left-radius: var(--rounding) !important;
   border-top-right-radius: var(--rounding) !important;
   border-bottom-left-radius: 0 !important;

@@ -18,22 +18,11 @@
   display: none;
 }
 
-/* Border on Button Focus */
-/* TODO: NOT headerHomeButton */
-.paper-icon-button-light.show-focus:focus {
-  border: solid 1px rgba(var(--accent), 0.6) !important;
-}
-
 /* Zoom OSD Buttons on Focus */
-.autoSize.paper-icon-button-light:focus {
+.autoSize.paper-icon-button-light:not(.headerButton):focus {
+  border: solid 1px rgba(var(--accent), 0.6) !important;
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
-}
-
-/* don't zoom header buttons */
-.headerButton {
-  -webkit-transform: scale(1.0) !important;
-  transform: scale(1.0) !important;
 }
 
 /* style the controls*/

@@ -104,9 +104,9 @@
 }
     */
 
-
 /* Card Image: Bottom Flat if View Mode = Card */
-.card:has(.cardFooter) .cardContent {
+.card:has(.cardFooter) .cardContent,
+.card:has(.cardFooter) .cardOverlayContainer {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
@@ -117,7 +117,6 @@
   border-bottom-right-radius: var(--rounding) !important;
   background: var(--dark60) !important;
 }
-
 
 /*
 | Item Cards - Description

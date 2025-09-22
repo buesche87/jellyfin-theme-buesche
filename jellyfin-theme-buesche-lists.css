@@ -76,7 +76,7 @@
 
 /* Card Button Container */
 .cardPadder {
-  background-color: transparent !important;
+  background-color: #0000 !important;
   box-shadow: none !important;
 }
 
@@ -235,7 +235,7 @@
 
 /* Container */
 .innerCardFooter {
-  background: transparent !important;
+  background: #0000 !important;
   border-radius: var(--rounding) !important;
 }
 

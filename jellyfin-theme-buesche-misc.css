@@ -39,7 +39,7 @@ fieldset {
 
 .layout-mobile .listItemImageButton,
 .detailTableBodyRow-shaded {
-  background: var(--transparent) !important;
+  background: #0000 !important;
 }
 
 
@@ -241,8 +241,8 @@ div[data-role="controlgroup"] a[data-role="button"] {
 /* Fix footers/headers displaying on small pop-ups */
 .formDialogFooter-clear,
 .formDialogHeader-clear {
-  background: transparent !important;
-  background-color: transparent !important;
+  background: #0000 !important;
+  background-color: #0000 !important;
 }
 
 /*Theme slider marker style*/

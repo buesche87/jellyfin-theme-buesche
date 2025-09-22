@@ -71,7 +71,7 @@
 .detailButton {
   font-size: 120% !important;
   border-radius: var(--rounding);
-  border: solid 1px transparent !important;
+  border: solid 1px #0000 !important;
   padding: .6em !important;
   margin-right: .6em !important; 
 }
@@ -133,7 +133,7 @@ p.itemGenres {
 }
 
 .detailTrackSelect {
-  background: transparent !important;
+  background: #0000 !important;
   padding: .35em 1.9em .35em .35em !important;
 }
 
@@ -169,7 +169,7 @@ p.itemGenres {
 #itemDetailPage .button-link:focus,
 #itemDetailPage .button-link:hover {
   color: rgba(var(--accent),0.8) !important;
-  background: var(--transparent) !important;
+  background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
 }

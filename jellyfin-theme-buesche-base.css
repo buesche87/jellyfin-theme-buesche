@@ -123,9 +123,13 @@
 .paper-icon-button-light:focus,
 .paper-icon-button-light:focus:not(:disabled) {
   color: rgb(var(--accent)) !important;
-  background: transparent !important;
+  background: #0000 !important;
 }
 
+.paper-icon-button-light {
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
 /* Menu Button Animation - Focus only */
 .button-flat:focus,
@@ -138,7 +142,7 @@
 /* Buttons: Keep border size but transparent */
 .paper-icon-button-light {
   border-radius: var(--rounding);
-  border: solid 1px transparent !important;
+  border: solid 1px #0000 !important;
 }
 
 
@@ -275,7 +279,7 @@
 
 /* Tab Button: Active */
 .emby-tab-button-active {
-  background: transparent !important;
+  background: #0000 !important;
   color: #fff;
 }
 

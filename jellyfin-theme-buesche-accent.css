@@ -36,7 +36,7 @@ progress::-webkit-progress-bar {
 }
 
 .backgroundProgress > div {
-  background: transparent !important;
+  background: #0000 !important;
 }
 
 

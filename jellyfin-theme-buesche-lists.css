@@ -117,18 +117,10 @@
 
 
 /* Card Image: Bottom Flat if View Mode = Card */
-.portraitCard:has(.cardFooter) .cardImage,
-.portraitCard:has(.cardFooter) .cardScalable,
-.portraitCard:has(.cardFooter) .cardContent,
-.portraitCard:has(.cardFooter) .cardOverlayContainer {
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-}
-
-.backdropCard:has(.cardFooter) .cardImage,
-.backdropCard:has(.cardFooter) .cardScalable,
-.backdropCard:has(.cardFooter) .cardContent,
-.backdropCard:has(.cardFooter) .cardOverlayContainer {
+.card:has(.cardFooter) .cardImage,
+.card:has(.cardFooter) .cardScalable,
+.card:has(.cardFooter) .cardContent,
+.card:has(.cardFooter) .cardOverlayContainer {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }

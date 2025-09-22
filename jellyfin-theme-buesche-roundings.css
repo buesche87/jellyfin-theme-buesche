@@ -32,11 +32,6 @@ progress::-webkit-progress-value,
 
 /* Cards & Items */
 .blurhash-canvas,
-.cardOverlayContainer,
-.cardContent-button, 
-.cardContent-shadow,
-.cardImage,
-.cardOverlayButtonIcon,
 .chapterThumb,
 .chapterThumbContainer,
 .chapterThumbTextContainer,
@@ -51,6 +46,7 @@ progress::-webkit-progress-value,
 .visualCardBox {
   border-radius: var(--rounding) !important;
 }
+
 .osdPoster img {
   border-radius: var(--rounding); 
   border: none;

@@ -104,7 +104,20 @@
 }
     */
 
+
+    
+
+.cardOverlayContainer,
+.cardContent-button, 
+.cardContent-shadow,
+.cardImage,
+.cardOverlayButtonIcon {
+  border-radius: var(--rounding);
+}
+
+
 /* Card Image: Bottom Flat if View Mode = Card */
+.card:has(.cardFooter) .cardImage,
 .card:has(.cardFooter) .cardScalable,
 .card:has(.cardFooter) .cardContent,
 .card:has(.cardFooter) .cardOverlayContainer {
@@ -118,6 +131,9 @@
   border-bottom-right-radius: var(--rounding) !important;
   background: rgba(0, 0, 0, var(--headeropac)) !important;
 }
+
+
+
 
 /*
 | Item Cards - Description

@@ -32,10 +32,10 @@
 
 /* Remove background on some icons */
 .listItemIcon {
-  background: var(--transparent) !important;
+  background: transparent !important;
 }
 
 /* Remove divider on list items */
 .listItem-border {
-  border-color: var(--transparent) !important; 
+  border-color: transparent !important; 
 }

@@ -19,7 +19,6 @@
 :root {--dark40: rgba(0, 0, 0, 0.4) ;}
 :root {--dark60: rgba(0, 0, 0, 0.6) ;}
 :root {--dark80: rgba(0, 0, 0, 0.8) ;}
-:root {--transparent: #0000 ;}
 
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
@@ -28,16 +27,11 @@
 
 /* Background & Backdrop */
 .appfooter,
+.backgroundContainer.withBackdrop,
 .mainDrawer,
 .skinHeader-withBackground {
-  background: var(--dark80) !important;
+  background: rgba(0, 0, 0, var(--headeropac)) !important;
 }
-
-/* Header */
-.backgroundContainer.withBackdrop {
-  background: rgba(0, 0, 0, var(--headeropac))
-}
-
 
 .infoBanner {
   background: black;
@@ -274,7 +268,7 @@
 
 /* Tab Button: Active */
 .emby-tab-button-active {
-  background: var(--transparent) !important;
+  background: transparent !important;
   color: #fff;
 }
 

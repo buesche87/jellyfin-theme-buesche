@@ -126,10 +126,13 @@
   background: #0000 !important;
 }
 
+
+/*
 .paper-icon-button-light:not(.headerButton) {
   margin-left: 1em;
   margin-right: 1em;
 }
+*/
 
 /* Menu Button Animation - Focus only */
 .button-flat:focus,

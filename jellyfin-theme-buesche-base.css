@@ -222,7 +222,12 @@
   position: fixed !important;
 }
 
-/* Top "taskbar" - text & vertical-scroll */
+/* center buttons on taskbar */
+.headerTop {
+  padding: .6em .6em !important;
+}
+
+/* Middle "taskbar" - text & vertical-scroll */
 .headerTabs.sectionTabs {
   text-size-adjust: 105%;
   font-size: 105% !important;
@@ -232,7 +237,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  margin-top: -4em !important;
+  margin-top: -3.6em !important;
   align-items: center;
   align-self: center;
   position: relative;
@@ -242,11 +247,6 @@
 .emby-tabs-slider {
   white-space: nowrap;
   height: 3.8em;
-}
-
-/* center buttons on taskbar */
-.headerTop {
-  padding: 1em 1em !important;
 }
 
 /* make buttons slightly bigger */

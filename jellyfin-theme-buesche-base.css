@@ -81,7 +81,6 @@
 #tvRecommendedPage::-webkit-scrollbar,
 #itemDetailPage,
 #itemDetailPage::-webkit-scrollbar {
-  overflow-y: auto;
   scrollbar-width: thin;
 }
 

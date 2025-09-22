@@ -27,11 +27,16 @@
 
 /* Background & Backdrop */
 .appfooter,
-.backgroundContainer.withBackdrop,
 .mainDrawer,
 .skinHeader-withBackground {
   background: rgba(0, 0, 0, var(--headeropac)) !important;
 }
+
+
+.backgroundContainer.withBackdrop {
+  background:  rgba(0, 0, 0, 0.7);
+}
+
 
 .infoBanner {
   background: black;

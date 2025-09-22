@@ -10,6 +10,8 @@
 
 /* Accent Colors */
 :root {--accent: 204, 151, 98 ;}
+:root {--headeropac: 0.6 ;}
+
 :root {--light60: rgba(255, 255, 255, 0.6) ;}
 :root {--light40: rgba(255, 255, 255, 0.4) ;}
 :root {--light20: rgba(255, 255, 255, 0.2) ;}
@@ -26,11 +28,16 @@
 
 /* Background & Backdrop */
 .appfooter,
-.backgroundContainer.withBackdrop,
 .mainDrawer,
 .skinHeader-withBackground {
   background: var(--dark80) !important;
 }
+
+/* Header */
+.backgroundContainer.withBackdrop {
+  background: rgba(0, 0, 0, var(--headeropac))
+}
+
 
 .infoBanner {
   background: black;

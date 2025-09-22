@@ -105,6 +105,7 @@
     */
 
 /* Card Image: Bottom Flat if View Mode = Card */
+.card:has(.cardFooter) .cardScalable,
 .card:has(.cardFooter) .cardContent,
 .card:has(.cardFooter) .cardOverlayContainer {
   border-bottom-left-radius: 0 !important;

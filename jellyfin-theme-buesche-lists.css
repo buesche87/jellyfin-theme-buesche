@@ -98,6 +98,27 @@
   border-bottom-right-radius: 0 !important;
 }
   */
+/*
+.cardContent:not(.defaultCardBackground) {
+    background-color: transparent;
+}
+    */
+
+
+/* Card Image: Bottom Flat if View Mode = Card */
+.card:has(.cardFooter) .cardContent {
+
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+/* Card Footer */
+.cardFooter {
+  border-bottom-left-radius: var(--rounding) !important;
+  border-bottom-right-radius: var(--rounding) !important;
+  background: var(--dark60) !important;
+}
+
 
 /*
 | Item Cards - Description

@@ -90,12 +90,14 @@
 }
 
 /* Rounded Top - Flat Bottom with Card Footer present */
+/*
 .card:has(.cardFooter) .cardImageContainer {
   border-top-left-radius: var(--rounding) !important;
   border-top-right-radius: var(--rounding) !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
+  */
 
 /*
 | Item Cards - Description

@@ -126,7 +126,7 @@
   background: #0000 !important;
 }
 
-.paper-icon-button-light {
+.paper-icon-button-light:not(.headerButton) {
   margin-left: 1em;
   margin-right: 1em;
 }

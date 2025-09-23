@@ -59,14 +59,14 @@
   margin-right: .5em;
 }
 
-
+/* space between buttons */
 .btnPreviousPage,
 .btnNextPage,
 .btnSelectView,
 .btnSort,
- .btnFilter-wrapper {
-    margin-left: .4em;
-    margin-right: .4em;
+.btnFilter-wrapper {
+  margin-left: .4em;
+  margin-right: .4em;
 }
 
 
@@ -101,6 +101,7 @@
   box-shadow: none !important;
 }
 
+
 /*
 | Item Cards - Image
 ---------------------------------------*/
@@ -117,14 +118,7 @@
   border-radius: var(--rounding);
 }
 
-
-/* Card Image: Bottom Flat if View Mode = Card */
-/*
-.card:has(.cardFooter) .cardImage,
-.card:has(.cardFooter) .cardScalable,
-.card:has(.cardFooter) .cardContent, 
-*/
-
+/* Round Top, Flat Bottom */
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
 .visualCardBox:has(.cardFooter) .coveredImage,
 .visualCardBox:has(.cardFooter) .cardImageContainer,
@@ -137,10 +131,7 @@
 .cardFooter:not(.visualCardBox-cardFooter) {
   border-bottom-left-radius: var(--rounding) !important;
   border-bottom-right-radius: var(--rounding) !important;
-  background: rgba(0, 0, 0, var(--headeropac)) !important;
 }
-
-
 
 
 /*
@@ -169,27 +160,20 @@
   color: inherit;
 }
 
-/* Episode / Year - Remove for Movie Backdrop Cards */
-/* > data-type="Episode" > why? 
-#moviesPage .backdropCard[data-type="Episode"] > .cardFooter > .cardText-secondary,
-#tvRecommendedPage .backdropCard > .cardFooter > .cardText-secondary {
-  display: none !important;
-} */
-
 /*
 | Item Cards - Animations
 ---------------------------------------*/
-
-/* More Space for Zoom-Animation*/
-.itemsContainer > .card > .cardBox {
-  margin-left: 0.5em !important;
-  margin-right: 2em;
-}
 
 /* Zoom on Focus */
 .card.show-animation:focus > .cardBox {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
+}
+
+/* More Space for Zoom-Animation */
+.itemsContainer > .card > .cardBox {
+  margin-left: 0.5em !important;
+  margin-right: 2em;
 }
 
 /* Color on Focus */

@@ -10,7 +10,9 @@
 
 /* Accent Colors */
 :root {--accent: 204, 151, 98 ;}
-:root {--headeropac: 0.6 ;}
+:root {--headeropacity: 0.7 ;}
+:root {--bgopacity: 0.4 ;}
+:root {--footeropacity: 1 ;}
 
 :root {--light60: rgba(255, 255, 255, 0.6) ;}
 :root {--light40: rgba(255, 255, 255, 0.4) ;}
@@ -26,15 +28,19 @@
 }
 
 /* Background & Backdrop */
-.appfooter,
 .mainDrawer,
 .skinHeader-withBackground {
-  background: rgba(0, 0, 0, var(--headeropac)) !important;
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
+/* Card Footer */
+.cardFooter:not(.visualCardBox-cardFooter) {
+  background: rgba(0, 0, 0, var(--footeropacity)) !important;
+}
 
+/* Background Opacity */
 .backgroundContainer.withBackdrop {
-  background:  rgba(0, 0, 0, 0.7);
+  background:  rgba(0, 0, 0, var(--bgopacity)) ;
 }
 
 

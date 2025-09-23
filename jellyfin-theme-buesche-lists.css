@@ -122,8 +122,9 @@
 .card:has(.cardFooter) .cardScalable,
 .card:has(.cardFooter) .cardContent, 
 */
-.card:has(.cardFooter) .cardImageContainer,
-.card:has(.cardFooter) .cardOverlayContainer {
+.visualCardBox:has(.cardFooter) .coveredImage,
+.visualCardBox:has(.cardFooter) .cardImageContainer,
+.visualCardBox:has(.cardFooter) .cardOverlayContainer {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }

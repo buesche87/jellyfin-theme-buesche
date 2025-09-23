@@ -49,6 +49,27 @@
   margin-right: 1.5em !important;
 }
 
+
+/*
+| Lists Menu
+---------------------------------------*/
+
+/* space after item count */
+.listPaging > span {
+  margin-right: .4em;
+}
+
+
+.btnPreviousPage,
+.btnNextPage,
+.btnSelectView,
+.btnSort,
+ .btnFilter-wrapper {
+    margin-left: .4em;
+    margin-right: .4em;
+}
+
+
 /*
 | Item Cards
 ---------------------------------------*/

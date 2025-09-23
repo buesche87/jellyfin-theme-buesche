@@ -31,19 +31,16 @@ progress::-webkit-progress-value,
 }
 
 /* Cards & Items */
-.blurhash-canvas,
 .chapterThumb,
 .chapterThumbContainer,
 .chapterThumbTextContainer,
-.detailTable,
 .itemDetailImage,
 .itemSelectionPanel,
 .nowPlayingPageImage,
 .primaryImageWrapper > img,
 .sessionNowPlayingInnerContent, 
 .upNextContainer,
-.upNextDialog-poster-img,
-.visualCardBox {
+.upNextDialog-poster-img {
   border-radius: var(--rounding) !important;
 }
 
@@ -75,9 +72,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 /* buttons & system */
 .button-submit,
-.chapterThumb,
-.chapterThumbContainer,
-.chapterThumbTextContainer,
 .checkboxOutline,
 .detailTable,
 .dialog,

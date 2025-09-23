@@ -105,34 +105,15 @@
 | Item Cards - Image
 ---------------------------------------*/
 
-/* Full Radius */
-.cardContent {
-  border-radius: var(--rounding);
-}
-
-/* Rounded Top - Flat Bottom with Card Footer present */
-/*
-.card:has(.cardFooter) .cardImageContainer {
-  border-top-left-radius: var(--rounding) !important;
-  border-top-right-radius: var(--rounding) !important;
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-}
-  */
-/*
-.cardContent:not(.defaultCardBackground) {
-    background-color: transparent;
-}
-    */
-
-
-    
-
+/* Full Rounding */
+.blurhash-canvas,
+.cardContent,
 .cardOverlayContainer,
 .cardContent-button, 
 .cardContent-shadow,
 .cardImage,
-.cardOverlayButtonIcon {
+.cardOverlayButtonIcon,
+.visualCardBox {
   border-radius: var(--rounding);
 }
 
@@ -143,6 +124,8 @@
 .card:has(.cardFooter) .cardScalable,
 .card:has(.cardFooter) .cardContent, 
 */
+
+.visualCardBox:has(.cardFooter) .blurhash-canvas,
 .visualCardBox:has(.cardFooter) .coveredImage,
 .visualCardBox:has(.cardFooter) .cardImageContainer,
 .visualCardBox:has(.cardFooter) .cardOverlayContainer {

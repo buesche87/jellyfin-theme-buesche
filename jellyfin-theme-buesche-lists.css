@@ -56,7 +56,7 @@
 
 /* space after item count */
 .listPaging > span {
-  margin-right: .4em;
+  margin-right: .5em;
 }
 
 
@@ -107,7 +107,7 @@
 
 /* Full Radius */
 .cardContent {
-  border-radius: var(--rounding) !important;
+  border-radius: var(--rounding);
 }
 
 /* Rounded Top - Flat Bottom with Card Footer present */

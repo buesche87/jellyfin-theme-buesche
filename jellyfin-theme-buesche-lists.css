@@ -122,10 +122,13 @@
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
 .visualCardBox:has(.cardFooter) .coveredImage,
 .visualCardBox:has(.cardFooter) .cardImageContainer,
-.visualCardBox:has(.cardFooter) .cardOverlayContainer {
+.visualCardBox:has(.cardFooter) .cardOverlayContainer,
+.visualCardBox:has(.cardFooter) .sessionNowPlayingInnerContent {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
+
+
 
 /* Media Card Footer */
 .cardFooter:not(.visualCardBox-cardFooter) {
@@ -226,14 +229,16 @@
 ---------------------------------------*/
 
 /* Container */
+/*
 .innerCardFooter {
   background: #0000 !important;
   border-radius: var(--rounding) !important;
 }
+  */
 
 /* Background */
 .itemProgressBar {
-  background: var(--dark40) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
   border-radius: var(--rounding) !important;
   height: .4em !important;
   margin: .5em .8em !important;

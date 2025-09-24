@@ -38,7 +38,6 @@ progress::-webkit-progress-value,
 .itemSelectionPanel,
 .nowPlayingPageImage,
 .primaryImageWrapper > img,
-.sessionNowPlayingInnerContent, 
 .upNextContainer,
 .upNextDialog-poster-img {
   border-radius: var(--rounding) !important;

@@ -56,3 +56,16 @@
 #scheduledTasksPage span {
   color: var(--light60) !important;
 }
+
+
+/* Progressbar */
+.activeSession .backgroundProgress, 
+.activeSession .playbackProgress, 
+.activeSession .transcodingProgress {
+    bottom: 0;
+    height: 6px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 92.5%;
+}

@@ -120,6 +120,7 @@
 
 /* Round Top, Flat Bottom */
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
+.visualCardBox:has(.cardFooter) .cardImage,
 .visualCardBox:has(.cardFooter) .coveredImage,
 .visualCardBox:has(.cardFooter) .cardImageContainer,
 .visualCardBox:has(.cardFooter) .cardOverlayContainer,

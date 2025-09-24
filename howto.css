@@ -11,13 +11,9 @@
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-usersettings.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-dashboard.css');
 @import url('https://buesche87.github.io/jellyfin-theme-buesche/jellyfin-theme-buesche-misc.css');
-:root {--accent: 255,153,0 ;}
+:root {--accent: 204, 151, 98 ;}
 :root {--rounding: 12px ;}
 :root {--rounding-input: 4px ;}
-:root {--background-verylight: rgba(255, 255, 255, 0.6) ;}
-:root {--background-lighter: rgba(255, 255, 255, 0.4) ;}
-:root {--background-light: rgba(255, 255, 255, 0.2) ;}
-:root {--background-dark: rgba(0, 0, 0, 0.2) ;}
-:root {--background-darker: rgba(0, 0, 0, 0.4) ;}
-:root {--background-verydark: rgba(0, 0, 0, 0.6) ;}
-:root {--background-darkest: rgba(0, 0, 0, 0.8) ;}
+:root {--headeropacity: 0.7 ;}
+:root {--bgopacity: 0.4 ;}
+:root {--footeropacity: 0.8 ;}

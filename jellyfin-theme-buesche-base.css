@@ -133,12 +133,13 @@
 }
 
 /* Menu Button Animation - Focus only */
+/*
 .button-flat:focus,
 .paper-icon-button-light:focus,
 .paper-icon-button-light:focus:not(:disabled) {
   transform: scale(1.2) !important;
 }
-
+*/
 
 /* Buttons: Keep border size but transparent */
 /*

@@ -132,14 +132,6 @@
   background: #0000 !important;
 }
 
-
-/*
-.paper-icon-button-light:not(.headerButton) {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-*/
-
 /* Menu Button Animation - Focus only */
 .button-flat:focus,
 .paper-icon-button-light:focus,
@@ -149,10 +141,12 @@
 
 
 /* Buttons: Keep border size but transparent */
+/*
 .paper-icon-button-light {
   border-radius: var(--rounding);
   border: solid 1px #0000 !important;
 }
+  */
 
 
 /*

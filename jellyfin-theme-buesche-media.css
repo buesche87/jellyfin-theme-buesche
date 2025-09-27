@@ -71,14 +71,14 @@
 .detailButton {
   font-size: 120% !important;
   border-radius: var(--rounding);
-  border: solid 1px #0000 !important;
+  border: solid 2px #0000 !important;
   padding: .6em !important;
   margin-right: .6em !important; 
 }
 
 /* Media Button: Focus */ 
 .detailButton:focus {
-  border: solid 1px rgba(var(--accent), 0.6) !important;
+  border: solid 2px rgba(var(--accent), 0.6) !important;
 }
 
 

@@ -12,15 +12,32 @@
 | Vdeo OSD 
 -------------------------------*/
 
-/* Hide some Elements on OSD */
+/* OSD Header: Size */
+.libraryPage,
+.libraryPage:not(.noSecondaryNavPage) {
+  padding-top: 4.5em !important;
+}
+
+/* OSD Header: Hide some Elements */
 .btnFullscreen,
 .btnPip {
   display: none;
 }
 
-/* Zoom OSD Buttons on Focus */
+/* OSD Footer */
+.buttons.focuscontainer-x {
+  padding: .5em 0 0 !important;
+}
+
+/* OSD Buttons: Style */
+.autoSize.paper-icon-button-light:not(.headerButton) {
+  border: solid 2px #0000 !important;
+  padding: .35em !important;
+}
+
+/* OSD Buttons: Zoom on Focus */
 .autoSize.paper-icon-button-light:not(.headerButton):focus {
-  border: solid 1px rgba(var(--accent), 0.6) !important;
+  border: solid 2px rgba(var(--accent), 0.6) !important;
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
 }

@@ -30,13 +30,13 @@
 }
 
 /* OSD Buttons: Style */
-.autoSize.paper-icon-button-light:not(.headerButton) {
+.paper-icon-button-light.show-focus:not(.headerButton) {
   border: solid 2px #0000 !important;
   padding: .35em !important;
 }
 
 /* OSD Buttons: Zoom on Focus */
-.autoSize.paper-icon-button-light:not(.headerButton):focus {
+.paper-icon-button-light.show-focus:not(.headerButton):focus {
   border: solid 2px rgba(var(--accent), 0.6) !important;
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;

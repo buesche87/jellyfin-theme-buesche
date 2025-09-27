@@ -71,6 +71,7 @@
   padding-top: 0.5em !important;
 }
 
+
 /*
 | Scrollbar
 -----------------------------*/
@@ -116,6 +117,7 @@
   background: #0000 !important;
 }
 
+
 /*
 | Buttons
 -----------------------------*/
@@ -128,8 +130,6 @@
   border-radius: var(--rounding);
 }
 
-
-
 /* Menu Button Animation - Hover & Focus */
 .button-flat:hover,
 .button-flat:focus,
@@ -141,6 +141,7 @@
   color: rgb(var(--accent)) !important;
   background: #0000 !important;
 }
+
 
 /*
 | Fields & Inputs
@@ -188,6 +189,12 @@
   color: rgb(var(--accent), 0.8) !important;
 }
 
+/* Links */
+.button-link:focus {
+  background: #0000 !important; 
+}
+
+
 /*
 | Fields & Inputs: Animation
 -----------------------------*/
@@ -224,8 +231,6 @@
 }
 
 
-
-
 /*
 | Taskbar
 -----------------------------*/
@@ -256,14 +261,6 @@
   position: relative;
   transition: filter 0.2s
 }
-
-/* items in "taskbar" - same size as header */
-/*
-.emby-tabs-slider {
-  white-space: nowrap;
-  height: 3.8em;
-}
-  */
 
 /* make buttons slightly bigger */
 .sectionTabs {

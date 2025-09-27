@@ -8,6 +8,7 @@
 
 */
 
+
 /*
 | Full Radius 
 -------------------------------*/
@@ -24,6 +25,7 @@
 .upNextDialog-poster-img {
   border-radius: var(--rounding) !important;
 }
+
 
 /*
 | Full Radius - Sides

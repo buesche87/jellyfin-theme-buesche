@@ -129,8 +129,6 @@
   border-bottom-right-radius: 0 !important;
 }
 
-
-
 /* Media Card Footer */
 .cardFooter:not(.visualCardBox-cardFooter) {
   border-bottom-left-radius: var(--rounding) !important;
@@ -164,6 +162,7 @@
   color: inherit;
 }
 
+
 /*
 | Item Cards - Animations
 ---------------------------------------*/
@@ -187,6 +186,7 @@
 .card.show-animation:focus > .cardBox > .cardFooter > .cardText-secondary {
   color: rgba(var(--accent));
 }
+
 
 /*
 | Item Cards - Indicators
@@ -225,17 +225,10 @@
   border-bottom-left-radius: var(--rounding-input) !important;
 }
 
+
 /*
 | Item Cards - Progress Bar
 ---------------------------------------*/
-
-/* Container */
-/*
-.innerCardFooter {
-  background: #0000 !important;
-  border-radius: var(--rounding) !important;
-}
-  */
 
 /* Background */
 .itemProgressBar {
@@ -251,6 +244,7 @@
   background-color: rgba(var(--accent), 0.95) !important;
   border-radius: var(--rounding) !important;
 }
+
 
 /*
 | Media Filter

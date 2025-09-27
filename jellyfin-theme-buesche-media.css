@@ -203,10 +203,10 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   padding-top: .2em;
 }
 
+
 /*
 | Default card backgrounds
 -------------------------------------------------*/
-
 
 .defaultCardBackground1 {
   background: rgba(var(--accent),0.4) !important;

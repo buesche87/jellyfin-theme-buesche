@@ -8,6 +8,7 @@
 
 */
 
+
 /*
 | Vdeo OSD 
 -------------------------------*/
@@ -92,6 +93,7 @@
 .upNextDialog-countdownText {
   color: rgba(var(--accent)) !important;
 }
+
 
 /*
 | Player

@@ -3,7 +3,7 @@
   User settings
   ==================================
 
-  finny - HTPC Theme for Jellyin
+  finnyTV - HTPC Theme for Jellyin
   Based on: Ultrachromic/login/login_frame.css
 
 */
@@ -26,9 +26,29 @@
 .listItem-indexnumberleft {
   margin: 1em;
 }
+
+/* Menu Items */
 .listItem {
   padding-left: 1em;
 }
+
+/* Menu Items: Hover & Focus */
+/* TODO: FOCUS ok? */
+.listItem:hover,
+.listItem:Focus {
+  transition: 0.2s;
+  background: none !important;
+}
+
+/* Menu Items: Focus & Hover */
+.listItem-button:focus,
+.listItem-button:hover,
+.listItem-border.emby-button:focus,
+.listItem-border.emby-button:hover {
+  background: rgba(var(--accent),0.8) !important;
+}
+
+
 
 /* Remove background on some icons */
 .listItemIcon {
@@ -38,4 +58,11 @@
 /* Remove divider on list items */
 .listItem-border {
   border-color: #0000 !important; 
+}
+
+
+/* user settings button */
+div[data-role="controlgroup"] a.ui-btn-active {
+  background: var(--dark40) !important;
+  color: white !important;
 }

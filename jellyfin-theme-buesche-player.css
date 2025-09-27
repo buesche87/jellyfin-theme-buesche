@@ -3,7 +3,7 @@
   Player & Osd
   ==================================
 
-  finny - HTPC Theme for Jellyin
+  finnyTV - HTPC Theme for Jellyin
   Based on: Ultrachromic/progress/floating.css
 
 */
@@ -54,6 +54,13 @@
   margin-left: 0.5em;
 }
 
+
+.osdPoster img {
+  border-radius: var(--rounding); 
+  border: none;
+}
+
+
 .videoOsdBottom {
   padding-top: 1em;
   padding-bottom: max(env(safe-area-inset-bottom), 1em);
@@ -79,6 +86,11 @@
 .taskProgressInner,
 .sliderMarker.watched {
   background: rgba(var(--accent),0.75) !important;
+}
+
+/* Upnext Countdown */
+.upNextDialog-countdownText {
+  color: rgba(var(--accent)) !important;
 }
 
 /*

@@ -3,7 +3,7 @@
   Dashboard
   ==================================
 
-  finny - HTPC Theme for Jellyin
+  finnyTV - HTPC Theme for Jellyin
   Based on: Ultrachromic/login/login_frame.css
 
 */
@@ -58,14 +58,51 @@
 }
 
 
-/* Progressbar */
+/*
+| Progressbar
+-----------------------------*/
+
+/* Progress in Cards */
 .activeSession .backgroundProgress, 
 .activeSession .playbackProgress, 
 .activeSession .transcodingProgress {
-    bottom: 0;
-    height: 6px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    width: 92.5%;
+  bottom: 0;
+  height: 6px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 92.5%;
 }
+
+/* Playback Progress Background*/
+.playbackProgress > div {
+  background: rgba(var(--accent),0.75) !important;
+}
+
+/* Playback Progress Background*/
+.backgroundProgress > div,
+.transcodingProgress > div {
+  background: #0000 !important;
+}
+
+/* Progressbar: Background */
+progress::-moz-progress-bar,
+progress::-webkit-progress-value {
+  background: rgba(var(--accent),0.75) !important;
+  border-radius: var(--rounding);
+}
+
+/* Progressbar: Remaining */
+progress::-webkit-progress-bar {
+  border: 0px solid var(--light20) !important;
+  border-radius: var(--rounding);
+}
+
+/* Progressbar: Background */
+progress,
+.taskProgressOuter {
+  background: var(--dark40) !important;
+  border: 1px solid var(--light20) !important;
+  border-radius: var(--rounding);
+}
+

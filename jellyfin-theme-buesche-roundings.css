@@ -3,7 +3,7 @@
   Roundings
   ==================================
 
-  finny - HTPC Theme for Jellyin
+  finnyTV - HTPC Theme for Jellyin
   Modified Ultrachromic/rounding_circlehover.css
 
 */
@@ -11,24 +11,6 @@
 /*
 | Full Radius 
 -------------------------------*/
-
-/* Buttons */
-.headerButton,
-.headerButton:hover,
-.paper-icon-button-light,
-.paper-icon-button-light:hover {
-  border-radius: var(--rounding);
-}
-
-/* Progress */
-progress,
-progress::-webkit-progress-bar,
-progress::-moz-progress-bar,
-progress::-webkit-progress-value,
-.taskProgressOuter,
-.taskProgressInner {
-  border-radius: var(--rounding);
-}
 
 /* Cards & Items */
 .chapterThumb,
@@ -41,11 +23,6 @@ progress::-webkit-progress-value,
 .upNextContainer,
 .upNextDialog-poster-img {
   border-radius: var(--rounding) !important;
-}
-
-.osdPoster img {
-  border-radius: var(--rounding); 
-  border: none;
 }
 
 /*

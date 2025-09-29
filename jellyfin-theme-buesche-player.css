@@ -33,7 +33,7 @@
 /* OSD Buttons: Style */
 .paper-icon-button-light.show-focus:not(.headerButton) {
   border: solid 2px #0000 !important;
-  padding: .35em !important;
+  padding: .4em !important;
 }
 
 /* OSD Buttons: Zoom on Focus */

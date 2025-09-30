@@ -34,8 +34,11 @@
 -----------------------------*/
 
 /* Disable Slides: They don't work well using a remote */
-#slides-container {
+.layout-tv #slides-container {
   display: var(--displayslides) !important;
+}
+.layout-tv .homeSectionsContainer {
+  top: 0 !important ;
 }
 
 /* Headers & Background: Transparency */
@@ -134,6 +137,7 @@
 .paper-icon-button-light,
 .paper-icon-button-light:hover {
   border-radius: var(--rounding);
+
 }
 
 /* Menu Button Animation - Hover & Focus */

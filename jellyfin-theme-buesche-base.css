@@ -40,6 +40,11 @@
 .layout-tv .homeSectionsContainer {
   top: 0 !important ;
 }
+.homeSectionsContainer {
+  background: var(--dark60) !important;
+  box-shadow: 1px -20px 20px 10px var(--dark60) !important;
+}
+
 
 /* Headers & Background: Transparency */
 .mainDrawer,

@@ -27,15 +27,19 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Background & Backdrop */
+/*
+| Background
+-----------------------------*/
+
+/* Disable Slides: They don't work well using a remote */
+#slides-container {
+  display: none !important;
+}
+
+/* Headers & Background: Transparency */
 .mainDrawer,
 .skinHeader-withBackground {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-
-/* Card Footer */
-.cardFooter:not(.visualCardBox-cardFooter) {
-  background: rgba(0, 0, 0, var(--footeropacity)) !important;
 }
 
 /* Background Opacity */

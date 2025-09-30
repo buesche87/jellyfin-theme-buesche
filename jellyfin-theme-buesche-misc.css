@@ -9,6 +9,12 @@
 */
 
 
+/* Card Footer */
+.cardFooter:not(.visualCardBox-cardFooter) {
+  background: rgba(0, 0, 0, var(--footeropacity)) !important;
+}
+
+
 /* Misc: (??) */
 .drawer-open {
   box-shadow: 0px 0px 5px rgba(var(--accent), 1) !important;

@@ -51,13 +51,13 @@
 /* Remove background on some icons */
 .listItemIcon {
   background: #0000 !important;
-  border-radius: var(--rounding-input) !important;
+  border-radius: var(--rounding-system) !important;
 }
 
 /* Remove divider on list items */
 .listItem-border {
   border-color: #0000 !important;
-  border-radius: var(--rounding-input) !important;
+  border-radius: var(--rounding-system) !important;
 }
 
 /* user settings button */
@@ -71,7 +71,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .listItemImage,
 .listItemImageButton,
 .listItem:hover {
-  border-radius: var(--rounding-input) !important;
+  border-radius: var(--rounding-system) !important;
 }
 
 /*

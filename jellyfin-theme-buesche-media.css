@@ -130,7 +130,7 @@ p.itemGenres {
 
 
 .detailTable {
-  border-radius: var(--rounding-input) !important;
+  border-radius: var(--rounding-system) !important;
 }
 
 

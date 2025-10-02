@@ -19,7 +19,7 @@
 /* Background: Dark */
 .paperList {
   background: var(--dark40);
-  border-radius: var(--rounding-input) !important;
+  border-radius: var(--rounding-system) !important;
 }
 
 /* ?? */

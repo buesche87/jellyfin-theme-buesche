@@ -115,7 +115,7 @@
 }
 
 .layout-tv {
-  scrollbar-width: none; 
+  scrollbar-width: none !important; 
 }
 
 

@@ -14,10 +14,24 @@
 -------------------------------*/
 
 /* OSD Header: Size */
+/*
+.skinHeader-withBackground.osdHeader {
+  height: 5em;
+}
+
+
 .libraryPage,
 .libraryPage:not(.noSecondaryNavPage) {
   padding-top: 4.5em !important;
 }
+*/
+
+/* OSD Bottom: Background */
+.videoOsdBottom {
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+
 
 /* OSD Header: Hide some Elements */
 .btnFullscreen,
@@ -67,9 +81,7 @@
   padding-bottom: max(env(safe-area-inset-bottom), 1em);
 }
 
-.skinHeader-withBackground.osdHeader {
-  height: 5em;
-}
+
 
 /* Fix the UI shifting around */
 .nowPlayingBarCurrentTime {

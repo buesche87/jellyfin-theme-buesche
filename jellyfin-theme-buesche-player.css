@@ -13,27 +13,20 @@
 | Vdeo OSD 
 -------------------------------*/
 
-/* OSD Header: Size */
-
+/* OSD Header */
 .skinHeader-withBackground.osdHeader {
+  height: 3.2em;
   --webkit-backdrop-filter: none;
+  box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
-/*
-.libraryPage,
-.libraryPage:not(.noSecondaryNavPage) {
-  padding-top: 4.5em !important;
-}
-*/
-
-/* OSD Bottom: Background */
+/* OSD Bottom */
 .videoOsdBottom {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
-  box-shadow: 1px -20px 20px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
+  box-shadow: 0px -10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
   padding-top: .5em;
   padding-bottom: max(env(safe-area-inset-bottom), 1em);
 }
-
 
 /* OSD Header: Hide some Elements */
 .btnFullscreen,
@@ -41,7 +34,7 @@
   display: none;
 }
 
-/* OSD Footer */
+/* OSD Footer: Space between Icons */
 .buttons.focuscontainer-x {
   padding: .5em 0 0 !important;
 }

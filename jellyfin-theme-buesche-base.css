@@ -173,7 +173,6 @@
 .paper-icon-button-light,
 .paper-icon-button-light:hover {
   border-radius: var(--rounding);
-
 }
 
 /* Menu Button Animation - Hover & Focus */
@@ -186,6 +185,56 @@
 .paper-icon-button-light:focus:not(:disabled) {
   color: rgb(var(--accent)) !important;
   background: #0000 !important;
+}
+
+/* Misc Buttons */
+.button-submit,
+.fab,
+.raised {
+  border-radius: var(--rounding-input) !important;
+}
+
+
+/*
+| Button Animations
+-----------------------------*/
+
+/* Transitions */
+.raised.homeLibraryButton {
+  transition: filter 0.2s
+}
+
+a[data-role="button"],
+.fab,
+.raised {
+	transition: all 0.2s !important;
+  background: var(--dark40) !important;
+}
+
+.raised.homeLibraryButton:hover {
+  color: rgb(var(--accent)) !important;
+  background: var(--light60) !important;
+  transition: filter 0.2s
+}
+
+/* Background on Hover & Focus: Accent 50% */
+a[data-role="button"]:hover,
+.actionSheetMenuItem:hover,
+.alphaPickerButton-tv:focus,
+.alphaPickerButton-tv:hover,
+.css-17c09up:hover,
+.fab:hover,
+.navMenuOption:hover,
+.raised:hover, 
+.raised:focus {
+  background: rgba(var(--accent),0.8) !important;
+}
+
+/* Button: Active */
+.buttonActive,
+.playstatebutton-icon-played,
+.ratingbutton-icon-withrating {
+  color: rgba(var(--accent)) !important;
 }
 
 
@@ -259,7 +308,6 @@
   color: rgba(var(--accent)) !important;
 }
 
-
 /* Checkbox: Focus & Hover */
 .emby-checkbox:focus + .checkboxLabel,
 .emby-checkbox:hover + .checkboxLabel {
@@ -274,6 +322,20 @@
 .emby-checkbox:checked + span + .checkboxOutline {
   border: 0.01em solid rgba(var(--accent), 0.6) !important;
   background: rgba(var(--accent), 0.6) !important;
+}
+
+
+/* Fields: Active */
+.css-17c09up.Mui-selected,
+.inputLabelFocused,
+.navMenuOption-selected {
+  color: rgba(var(--accent)) !important;
+}
+
+/* Background: Black & White */
+.navMenuOption-selected,
+.selectionCommandsPanel {
+  background: var(--dark40) !important;
 }
 
 

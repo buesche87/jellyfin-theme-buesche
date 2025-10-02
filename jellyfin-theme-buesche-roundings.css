@@ -20,9 +20,7 @@
 .itemDetailImage,
 .itemSelectionPanel,
 .nowPlayingPageImage,
-.primaryImageWrapper > img,
-.upNextContainer,
-.upNextDialog-poster-img {
+.primaryImageWrapper > img {
   border-radius: var(--rounding) !important;
 }
 
@@ -56,12 +54,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .formDialogHeader,
 .formDialogFooter,
 .fab,
-.listItem-border,
-.listItemButton,
-.listItemIcon,
-.listItemImage,
-.listItemImageButton,
-.listItem:hover,
 .mediaSourceIndicator,
 .multiSelectCheckboxOutline,
 .paperList,

@@ -48,21 +48,28 @@
   background: rgba(var(--accent),0.8) !important;
 }
 
-
-
 /* Remove background on some icons */
 .listItemIcon {
   background: #0000 !important;
+  border-radius: var(--rounding-input) !important;
 }
 
 /* Remove divider on list items */
 .listItem-border {
-  border-color: #0000 !important; 
+  border-color: #0000 !important;
+  border-radius: var(--rounding-input) !important;
 }
-
 
 /* user settings button */
 div[data-role="controlgroup"] a.ui-btn-active {
   background: var(--dark40) !important;
   color: white !important;
+}
+
+/* List items */
+.listItemButton,
+.listItemImage,
+.listItemImageButton,
+.listItem:hover {
+  border-radius: var(--rounding-input) !important;
 }

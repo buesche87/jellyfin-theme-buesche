@@ -138,3 +138,10 @@
 .skip-button:hover {
   background: rgba(var(--accent), 0.8) !important
 }
+
+
+
+.upNextContainer,
+.upNextDialog-poster-img {
+  border-radius: var(--rounding) !important;
+}

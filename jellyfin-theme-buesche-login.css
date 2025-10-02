@@ -47,7 +47,7 @@
   margin-right: auto;
   background: rgba(0, 0, 0, 0.35);
   width: 24em;
-  border-radius: var(--rounding);
+  border-radius: var(--rounding-media);
   padding-bottom: 2em !important;
 }
 #loginPage .squareCard {

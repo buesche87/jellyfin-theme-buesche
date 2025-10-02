@@ -151,7 +151,7 @@
 .mdl-slider::-ms-thumb,
 .mdl-slider::-webkit-slider-thumb,
 ::-webkit-scrollbar-thumb {
-  border-radius: var(--rounding);
+  border-radius: var(--rounding-media);
   background: rgba(var(--accent),0.8) !important;
 }
 
@@ -171,7 +171,7 @@
 .headerButton:hover,
 .paper-icon-button-light,
 .paper-icon-button-light:hover {
-  border-radius: var(--rounding);
+  border-radius: var(--rounding-media);
 }
 
 /* Menu Button Animation - Hover & Focus */

@@ -66,7 +66,7 @@
 
 
 .osdPoster img {
-  border-radius: var(--rounding); 
+  border-radius: var(--rounding-media); 
   border: none;
 }
 
@@ -108,7 +108,7 @@
   height: 14vh;
   min-width: 14vh;
 	box-shadow: 0 0 1.9vh #000;
-  border-radius: var(--rounding) !important;
+  border-radius: var(--rounding-media) !important;
 }
 .chapterThumbText {
   font-size: 1em;
@@ -120,11 +120,11 @@
   right: auto;
 	bottom: 4px;
 	padding: .25em 0.7em;
-  border-radius: var(--rounding) !important;
+  border-radius: var(--rounding-media) !important;
 }
 .chapterThumbContainer {
   box-shadow: 0 0 1.9vh #000;
-  border-radius: var(--rounding) !important;
+  border-radius: var(--rounding-media) !important;
 }
 .sliderBubble {
   -webkit-transform: translate3d(-50%,-108%,0);
@@ -177,5 +177,5 @@
 
 .upNextContainer,
 .upNextDialog-poster-img {
-  border-radius: var(--rounding) !important;
+  border-radius: var(--rounding-media) !important;
 }

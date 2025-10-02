@@ -70,7 +70,7 @@
 /* Media Button */ 
 .detailButton {
   font-size: 120% !important;
-  border-radius: var(--rounding);
+  border-radius: var(--rounding-media);
   border: solid 2px #0000 !important;
   padding: .6em !important;
   margin-right: .6em !important;
@@ -120,7 +120,7 @@
 /* Media Title and Buttons */
 .detailPagePrimaryContent {
   padding-bottom: 1em;
-  /*border-radius: var(--rounding); */
+  /*border-radius: var(--rounding-media); */
 }
 
 /* Genres */

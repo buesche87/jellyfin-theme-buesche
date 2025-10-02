@@ -89,13 +89,13 @@
 progress::-moz-progress-bar,
 progress::-webkit-progress-value {
   background: rgba(var(--accent),0.75) !important;
-  border-radius: var(--rounding);
+  border-radius: var(--rounding-media);
 }
 
 /* Progressbar: Remaining */
 progress::-webkit-progress-bar {
   border: 0px solid var(--light20) !important;
-  border-radius: var(--rounding);
+  border-radius: var(--rounding-media);
 }
 
 /* Progressbar: Background */
@@ -103,6 +103,6 @@ progress,
 .taskProgressOuter {
   background: var(--dark40) !important;
   border: 1px solid var(--light20) !important;
-  border-radius: var(--rounding);
+  border-radius: var(--rounding-media);
 }
 

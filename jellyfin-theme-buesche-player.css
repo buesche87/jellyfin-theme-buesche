@@ -14,12 +14,12 @@
 -------------------------------*/
 
 /* OSD Header: Size */
-/*
+
 .skinHeader-withBackground.osdHeader {
-  height: 5em;
+  --webkit-backdrop-filter: none;
 }
 
-
+/*
 .libraryPage,
 .libraryPage:not(.noSecondaryNavPage) {
   padding-top: 4.5em !important;

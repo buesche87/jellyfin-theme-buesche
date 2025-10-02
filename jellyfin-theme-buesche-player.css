@@ -29,8 +29,10 @@
 /* OSD Bottom: Background */
 .videoOsdBottom {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
+  box-shadow: 1px -20px 20px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
+  padding-top: .5em;
+  padding-bottom: max(env(safe-area-inset-bottom), 1em);
 }
-
 
 
 /* OSD Header: Hide some Elements */
@@ -76,10 +78,7 @@
 }
 
 
-.videoOsdBottom {
-  padding-top: 1em;
-  padding-bottom: max(env(safe-area-inset-bottom), 1em);
-}
+
 
 
 

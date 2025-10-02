@@ -100,6 +100,40 @@
 
 
 /*
+| Chapter Thumbnails
+-------------------------------*/
+
+/* Shrink the mouseover chapter image when scrobbling, still media player */
+.chapterThumb {
+  height: 14vh;
+  min-width: 14vh;
+	box-shadow: 0 0 1.9vh #000;
+  border-radius: var(--rounding) !important;
+}
+.chapterThumbText {
+  font-size: 1em;
+}
+.sliderBubble {
+  background: #0000;
+}
+.chapterThumbTextContainer {
+  right: auto;
+	bottom: 4px;
+	padding: .25em 0.7em;
+  border-radius: var(--rounding) !important;
+}
+.chapterThumbContainer {
+  box-shadow: 0 0 1.9vh #000;
+  border-radius: var(--rounding) !important;
+}
+.sliderBubble {
+  -webkit-transform: translate3d(-50%,-108%,0);
+  transform: translate3d(-50%,-108%,0);
+}
+
+
+
+/*
 | Player
 -------------------------------*/
 

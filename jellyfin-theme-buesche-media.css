@@ -104,6 +104,9 @@
 }
 
 
+
+
+
 /*
 | Media Description
 -------------------------------------------------*/
@@ -124,6 +127,13 @@
 p.itemGenres {
   display: none;
 }
+
+
+.detailTable {
+  border-radius: var(--rounding-input) !important;
+}
+
+
 
 /* Track Selections (audio & subtitles) */
 .trackSelections {

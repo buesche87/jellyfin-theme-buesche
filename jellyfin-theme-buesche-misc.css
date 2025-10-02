@@ -15,10 +15,11 @@
 }
 
 
+
 /* Background: Dark */
-.paperList, 
-.visualCardBox {
+.paperList {
   background: var(--dark40);
+  border-radius: var(--rounding-input) !important;
 }
 
 /* ?? */
@@ -200,40 +201,11 @@ fieldset {
 }
 
 
-/* Shrink the mouseover chapter image when scrobbling, still media player */
-.chapterThumb {
-  height: 14vh;
-  min-width: 14vh;
-	box-shadow: 0 0 1.9vh #000;
-}
-.chapterThumbText {
-  font-size: 1em;
-}
-.sliderBubble {
-  background: #0000;
-}
-.chapterThumbTextContainer {
-  right: auto;
-	bottom: 4px;
-	padding: .25em 0.7em;
-}
-.chapterThumbContainer {
-  box-shadow: 0 0 1.9vh #000;
-}
-.sliderBubble {
-  -webkit-transform: translate3d(-50%,-108%,0);
-  transform: translate3d(-50%,-108%,0);
-}
+
 
 /* current sessions */
 .sessionCardFooter {
   border: none;
-}
-
-/* user setting tab buttons */
-div[data-role="controlgroup"] a[data-role="button"] {
-  display: table-cell !important;
-  margin: 0 !important;
 }
 
 /* Fix footers/headers displaying on small pop-ups */
@@ -247,6 +219,16 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .sliderMarker {
   width: 3px;
   border-radius: 2px;
+}
+
+
+
+/* Cards & Items */
+.itemDetailImage,
+.itemSelectionPanel,
+.nowPlayingPageImage,
+.primaryImageWrapper > img {
+  border-radius: var(--rounding) !important;
 }
 
 

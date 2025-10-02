@@ -73,3 +73,25 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .listItem:hover {
   border-radius: var(--rounding-input) !important;
 }
+
+/*
+| Buttons
+---------------------------------------*/
+
+/* Radius Left */
+div[data-role="controlgroup"] a[data-role="button"]:first-child {
+	border-bottom-left-radius: var(--rounding);
+	border-top-left-radius: var(--rounding);
+}
+
+/* Radius Right */
+div[data-role="controlgroup"] a[data-role="button"]:last-child {
+	border-bottom-right-radius: var(--rounding);
+	border-top-right-radius: var(--rounding);
+}
+
+/* user setting tab buttons */
+div[data-role="controlgroup"] a[data-role="button"] {
+  display: table-cell !important;
+  margin: 0 !important;
+}

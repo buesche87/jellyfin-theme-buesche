@@ -11,7 +11,7 @@
 /* Accent Colors */
 :root {--accent: 204, 151, 98 ;}
 :root {--headeropacity: 0.7 ;}
-:root {--bgopacity: 0.4 ;}
+:root {--bgopacity: 0.5 ;}
 :root {--footeropacity: 1 ;}
 
 :root {--displayslides: none ;}
@@ -33,40 +33,58 @@
 | Background
 -----------------------------*/
 
-/* Disable Slides: They don't work well using a remote */
+/* Header: Transparency */
+.skinHeader-withBackground {
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+/* Menu Drawer: Transparency */
+.mainDrawer {
+  background: rgba(0, 0, 0, var(--dark80)) !important;
+}
+
+
+
+/* TV: Disable Slides, they don't work well using a remote */
 .layout-tv #slides-container {
   display: var(--displayslides) !important;
 }
+
+/* TV: Move up elements on homescreen */
 .layout-tv .homeSectionsContainer {
   top: 0 !important ;
 }
 
+/* TV: Background Darkness */
+.layout-tv .backgroundContainer.withBackdrop {
+  background:  rgba(0, 0, 0, var(--bgopacity)) ;
+}
+
+
+
+/* Desktop: Background Opacity */
+.layout-desktop .backgroundContainer.withBackdrop {
+  background: rgba(0, 0, 0, var(--dark40)) ;
+}
+
+/* Desktop: Home Elements Background */
 .layout-desktop .homeSectionsContainer {
   background: var(--dark60) !important;
   box-shadow: 1px -20px 20px 10px var(--dark60) !important;
 }
 
-
-/* Headers & Background: Transparency */
-.mainDrawer,
-.skinHeader-withBackground {
-  background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-
-/* Background Opacity */
-.backgroundContainer.withBackdrop {
-  background:  rgba(0, 0, 0, var(--bgopacity)) ;
-}
-
-
+/*
 .infoBanner {
   background: black;
 }
+  */
 
+  /*
 .css-4yt2of {
   background: var(--dark60);
   border-right: 1px solid rgba(var(--accent), 0.12);
 }
+  */
 
 /*
 | Smaller TV Layout
@@ -96,7 +114,14 @@
   scrollbar-color: rgba(var(--accent), 0.8) !important;
 }
 
+.layout-tv {
+  scrollbar-width: none; 
+}
+
+
+
 /* Show - auto (thin) */
+/*
 #moviesPage, 
 #moviesPage::-webkit-scrollbar,
 #tvRecommendedPage, 
@@ -105,8 +130,10 @@
 #itemDetailPage::-webkit-scrollbar {
   scrollbar-width: thin;
 }
+  */
 
 /* Hide */
+/*
 .libraryDocument,
 .libraryDocument::-webkit-scrollbar, 
 #indexPage, 
@@ -116,6 +143,7 @@
   overflow-y: auto !important;
   scrollbar-width: none;
 }
+  */
 
 /* Scrollbar Thumb*/
 .mdl-slider::-moz-range-thumb,

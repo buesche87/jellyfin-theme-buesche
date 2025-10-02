@@ -125,19 +125,19 @@
 
 
 /* Show - auto (thin) */
-/*
+
 #moviesPage, 
 #moviesPage::-webkit-scrollbar,
 #tvRecommendedPage, 
 #tvRecommendedPage::-webkit-scrollbar,
 #itemDetailPage,
 #itemDetailPage::-webkit-scrollbar {
-  scrollbar-width: thin;
+  scrollbar-width: none !important; 
 }
-  */
+
 
 /* Hide */
-/*
+
 .libraryDocument,
 .libraryDocument::-webkit-scrollbar, 
 #indexPage, 
@@ -145,9 +145,9 @@
 #loginPage,
 #loginPage::-webkit-scrollbar {
   overflow-y: auto !important;
-  scrollbar-width: none;
+  scrollbar-width: none !important; 
 }
-  */
+
 
 /* Scrollbar Thumb*/
 .mdl-slider::-moz-range-thumb,

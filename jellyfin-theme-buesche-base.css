@@ -40,7 +40,12 @@
 
 /* Menu Drawer: Transparency */
 .mainDrawer {
-  background: rgba(0, 0, 0, var(--dark80)) !important;
+  background: var(--dark80) !important;
+}
+
+/* Menu Drawer: Border */
+.drawer-open {
+  box-shadow: 0px 0px 7px rgba(var(--accent), .6) !important;
 }
 
 

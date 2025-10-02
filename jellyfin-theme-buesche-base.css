@@ -44,6 +44,24 @@
   box-shadow: 0px 0px 7px rgba(var(--accent), .6) !important;
 }
 
+/* Dialogs */
+.dialog,
+.formDialogHeader,
+.formDialogFooter {
+  border-radius: var(--rounding-system) !important;
+}
+
+/* Toast: Glow */
+.toast {
+  box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
+  border: solid 1px rgba(var(--accent),0.6) !important;
+  border-radius: var(--rounding-system) !important;
+}
+
+/* Fix top right user icon when using a profile image */
+.headerUserButtonRound {
+  border-radius: 50px !important;
+}
 
 /*
 | TV UI: Style
@@ -78,11 +96,13 @@
   background:  rgba(0, 0, 0, var(--bgdarkness)) ;
 }
 
-
+/*
+| Desktop UI: Style
+-----------------------------*/
 
 /* Desktop: Background Opacity */
 .layout-desktop .backgroundContainer.withBackdrop {
-  background: rgba(0, 0, 0, var(--dark40)) ;
+  background: rgba(0, 0, 0, var(--bgdarkness)) ;
 }
 
 /* Desktop: Home Elements Background */
@@ -91,23 +111,60 @@
   box-shadow: 1px -20px 20px 10px var(--dark60) !important;
 }
 
-/*
-.infoBanner {
-  background: black;
-}
-  */
-
-  /*
-.css-4yt2of {
-  background: var(--dark60);
-  border-right: 1px solid rgba(var(--accent), 0.12);
-}
-  */
 
 /*
-| Smaller TV Layout
+| Taskbar
 -----------------------------*/
 
+/* don't scroll taskbar in tv mode */
+.layout-tv .skinHeader {
+  position: fixed !important;
+}
+
+/* center buttons on taskbar */
+.headerTop {
+  padding: .6em .6em !important;
+}
+
+/* Taskbar - text & vertical-scroll */
+.headerTabs.sectionTabs {
+  text-size-adjust: 105%;
+  font-size: 105% !important;
+  margin-top: -3.6em !important;
+  width: 40vw;
+  scrollbar-width: none;
+  scroll-behavior: smooth !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  align-items: center;
+  align-self: center;
+  position: relative;
+  transition: filter 0.2s
+}
+
+/* make buttons slightly bigger */
+.sectionTabs {
+  font-size: 105% !important;
+}
+
+/* Page: Text Buttons */
+.emby-tab-button {
+  padding: 1.1em 1.5em !important;
+}
+
+/* Tab Buttons: Focus & Hover */
+.emby-tab-button:hover,
+.emby-tab-button:focus {
+  color: rgb(var(--accent)) !important;
+  transform: scale(1.2) !important;
+}
+
+/* Tab Button: Active */
+.emby-tab-button-active {
+  background: #0000 !important;
+  color: #fff;
+}
 
 
 /*
@@ -117,11 +174,6 @@
 /* scrollbar Color */
 * {
   scrollbar-color: rgba(var(--accent), 0.8) !important;
-}
-
-.layout-tv {
-  overflow-y: auto;
-  scrollbar-width: none; 
 }
 
 /* Show - auto (thin) */
@@ -161,7 +213,6 @@
   background: #0000 !important;
 }
 
-
 /*
 | Buttons
 -----------------------------*/
@@ -192,9 +243,6 @@
 .raised {
   border-radius: var(--rounding-system) !important;
 }
-
-
-
 
 /*
 | Button Animations
@@ -286,11 +334,6 @@ a[data-role="button"]:hover,
   color: rgb(var(--accent), 0.8) !important;
 }
 
-/* Links */
-.button-link:focus {
-  background: #0000 !important; 
-}
-
 
 /*
 | Fields & Inputs: Animation
@@ -326,6 +369,10 @@ a[data-role="button"]:hover,
   background: rgba(var(--accent), 0.6) !important;
 }
 
+/* Links: Focus */
+.button-link:focus {
+  background: #0000 !important; 
+}
 
 /* Fields: Active */
 .css-17c09up.Mui-selected,
@@ -338,61 +385,6 @@ a[data-role="button"]:hover,
 .navMenuOption-selected,
 .selectionCommandsPanel {
   background: var(--dark40) !important;
-}
-
-
-/*
-| Taskbar
------------------------------*/
-
-/* don't scroll taskbar in tv mode */
-.layout-tv .skinHeader {
-  position: fixed !important;
-}
-
-/* center buttons on taskbar */
-.headerTop {
-  padding: .6em .6em !important;
-}
-
-/* Middle "taskbar" - text & vertical-scroll */
-.headerTabs.sectionTabs {
-  text-size-adjust: 105%;
-  font-size: 105% !important;
-  margin-top: -3.6em !important;
-  width: 40vw;
-  scrollbar-width: none;
-  scroll-behavior: smooth !important;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  align-items: center;
-  align-self: center;
-  position: relative;
-  transition: filter 0.2s
-}
-
-/* make buttons slightly bigger */
-.sectionTabs {
-  font-size: 105% !important;
-}
-
-/* Tab Buttons */
-.emby-tab-button {
-  padding: 1.1em 1.5em !important;
-}
-
-/* Tab Buttons: Focus & Hover */
-.emby-tab-button:hover,
-.emby-tab-button:focus {
-  color: rgb(var(--accent)) !important;
-  transform: scale(1.2) !important;
-}
-
-/* Tab Button: Active */
-.emby-tab-button-active {
-  background: #0000 !important;
-  color: #fff;
 }
 
 
@@ -421,29 +413,4 @@ a[data-role="button"]:hover,
 .progressring-bg {
   display: none;
 }
-
-
-/*
-| Div UI styles
------------------------------*/
-
-/* Dialogs */
-.dialog,
-.formDialogHeader,
-.formDialogFooter {
-  border-radius: var(--rounding-system) !important;
-}
-
-/* Toast: Glow */
-.toast {
-  box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent),0.6) !important;
-  border-radius: var(--rounding-system) !important;
-}
-
-/* Fix top right user icon when using a profile image */
-.headerUserButtonRound {
-  border-radius: 50px !important;
-}
-
 

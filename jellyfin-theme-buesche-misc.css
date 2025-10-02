@@ -200,9 +200,6 @@ fieldset {
   width: auto !important;
 }
 
-
-
-
 /* current sessions */
 .sessionCardFooter {
   border: none;
@@ -230,6 +227,21 @@ fieldset {
 .primaryImageWrapper > img {
   border-radius: var(--rounding-media) !important;
 }
+
+
+/*
+.infoBanner {
+  background: black;
+}
+  */
+
+  /*
+.css-4yt2of {
+  background: var(--dark60);
+  border-right: 1px solid rgba(var(--accent), 0.12);
+}
+  */
+
 
 
 /*
@@ -271,10 +283,6 @@ fieldset {
   border-radius: var(--rounding-media);
 }
 */
-
-
-
-
 
 /*
 | Lists & Cards

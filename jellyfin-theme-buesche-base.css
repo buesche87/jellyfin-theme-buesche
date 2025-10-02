@@ -58,6 +58,18 @@
   border-radius: var(--rounding-system) !important;
 }
 
+/* Desaturate Blurhash */
+.blurhash-canvas {
+	filter: opacity(60%) saturate(60%);
+}
+
+/* No Shadows on Cards */
+.cardPadder,
+.visualCardBox,
+.cardImageContainer {
+  box-shadow: none;
+}
+
 /* Fix top right user icon when using a profile image */
 .headerUserButtonRound {
   border-radius: 50px !important;

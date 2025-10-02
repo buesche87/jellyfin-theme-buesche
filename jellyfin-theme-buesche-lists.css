@@ -8,25 +8,8 @@
 
 */
 
-/* Affects blurhash to remove the saturated colors to fit overall look */
-.blurhash-canvas {
-	filter: opacity(60%) saturate(60%);
-}
-
-/* Shadows */
-.visualCardBox,
-.cardImageContainer {
-  box-shadow: none;
-}
-
 /*
-.visualCardBox {
-  background: var(--dark40);
-}
-  */
-
-/*
-| Lists - Alignments & Size
+| Media List: Alignment & Size
 ---------------------------------------*/
 
 /* Main List */
@@ -56,15 +39,15 @@
 
 
 /*
-| Lists Menu
+| List Menu: Alignment
 ---------------------------------------*/
 
-/* space after item count */
+/* Item Count: Alignment */
 .listPaging > span {
   margin-right: .5em;
 }
 
-/* space between buttons */
+/* Buttons: Alignment */
 .btnPreviousPage,
 .btnNextPage,
 .btnSelectView,
@@ -74,9 +57,26 @@
   margin-right: .4em;
 }
 
+/* Filter Menu: Alignment */
+.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
+  margin-left: 0.5em;
+}
+
+/* Filter Menu: Animation */
+.emby-collapse > .emby-button.show-focus:focus,
+.emby-collapse > .emby-button.show-focus:hover {
+  background: rgba(var(--accent),0.8) !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+/* Filter Indicator */
+.filterIndicator {
+  background: rgb(var(--accent), 0.7) !important;
+}
 
 /*
-| Item Cards
+| Item Cards: Size & Style
 ---------------------------------------*/
 
 /* Portrait Card: Size */
@@ -100,15 +100,14 @@
   width: 30% !important;
 }
 
-/* Card Button Container */
+/* Card Buttons: No background */
 .cardPadder {
   background-color: #0000 !important;
-  box-shadow: none !important;
 }
 
 
 /*
-| Item Cards - Image
+| Item Card: Content Style
 ---------------------------------------*/
 
 /* Full Rounding */
@@ -140,9 +139,8 @@
   border-bottom-right-radius: var(--rounding-media) !important;
 }
 
-
 /*
-| Item Cards - Description
+| Item Cards: Description
 ---------------------------------------*/
 
 /* Series Title: Padding */
@@ -169,7 +167,7 @@
 
 
 /*
-| Item Cards - Animations
+| Item Cards: Animation
 ---------------------------------------*/
 
 /* Zoom on Focus */
@@ -194,7 +192,7 @@
 
 
 /*
-| Item Cards - Indicators
+| Item Cards: Indicators
 -----------------------------*/
 
 /* Alignment */
@@ -232,7 +230,7 @@
 
 
 /*
-| Item Cards - Progress Bar
+| Item Cards: Progress Bar
 ---------------------------------------*/
 
 /* Background */
@@ -250,25 +248,3 @@
   border-radius: var(--rounding-media) !important;
 }
 
-
-/*
-| Media Filter
----------------------------------------*/
-
-/* Menu - Text Position */
-.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
-  margin-left: 0.5em;
-}
-
-/* Menu - Animation */
-.emby-collapse > .emby-button.show-focus:focus,
-.emby-collapse > .emby-button.show-focus:hover {
-  background: rgba(var(--accent),0.8) !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-}
-
-/* Indicator */
-.filterIndicator {
-  background: rgb(var(--accent), 0.7) !important;
-}

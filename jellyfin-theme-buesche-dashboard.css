@@ -12,6 +12,7 @@
 #user_usage_report_table,
 .detailTable {
   background: var(--dark60) ;
+  border-radius: var(--rounding-system) !important;
 }
 
 .dashboardSection h3 {

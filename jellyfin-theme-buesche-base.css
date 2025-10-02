@@ -46,18 +46,15 @@
 
 
 /* TV: Disable Slides, they don't work well using a remote */
-/*
 .layout-tv #slides-container {
   display: var(--displayslides) !important;
 }
-  */
+
 
 /* TV: Move up elements on homescreen */
-/*
 .layout-tv .homeSectionsContainer {
   top: 0 !important ;
 }
-  */
 
 /* TV: Background Darkness */
 .layout-tv .backgroundContainer.withBackdrop {
